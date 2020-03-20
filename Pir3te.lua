@@ -31,7 +31,7 @@ print("\27[34m"..[[
                                                                                                                              
 >> CH > @pirate_te3m
 >> DEVELOPER > @CUUUUUU 
->> DEVELOPER > @TTUNA
+>> DEVELOPER > @Alhassan_Talib
 ]].."\27[m")
 
 io.popen("mkdir Pir3te_Files")
@@ -5738,22 +5738,29 @@ if text == "تحديث" and DevPir3te(msg) then
 dofile("Pir3te.lua")  
 send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
+if text == 'مطور السورس'  then
+Text = [[
+━━━━━━━◉━━━━━━━
+> DEVELOPER > @Alhassan_Talib <
+━━━━━━━◉━━━━━━━
+]]
+send(msg.chat_id_, msg.id_,Text)
+end
+
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس قرصان  🔰
+🔰 اهلا بك في سورس القرصان   🔰
 
-🌐┇ [Pir3te TEAM](https://t.me/pirate_te3m)
+🌐┇Pirate TEAM 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 📊┇ [Source Channel](https://t.me/pirate_te3m)
 
-📋┇ [Pir3te Dev](https://t.me/pirate_te3m)
+📁┇ [Source  Files](https://t.me/pirate_te3m)
 
-📁┇ [Source  Files](https://t.me/Pir3teFIles)
-
-🌐┇ [DEV Pir3te](https://t.me/ttuna)
+🌐┇ [DEV Pirate](https://t.me/Alhassan_Talib)
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📧┇ [TWS Pir3te ](https://t.me/N8ibot)
+📧┇ [TWS Pirate](https://t.me/PirateTe3mBot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5771,6 +5778,7 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
+
 
 
 if text == 'م1'  then
