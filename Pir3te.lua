@@ -21,12 +21,17 @@ print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
+ ____  _     _____ _       
+|  _ \(_)_ _|___ /| |_ ___ 
+| |_) | | '__||_ \| __/ _ \
+|  __/| | |  ___) | ||  __/
+|_|   |_|_| |____/ \__\___|
+                                                                                                                                                                         
 تم تنصيب سورس قرصان بل كامل ✔️  
                                                                                                                              
->> CH > @pirate_te3m
+>> CH > @PIRATE_TE3M
 >> DEVELOPER > @CUUUUUU 
 >> DEVELOPER > @Alhassan_Talib
-
 ]].."\27[m")
 
 io.popen("mkdir Pir3te_Files")
@@ -399,7 +404,7 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "pirate_te3m")
+local UserName = (data.username_ or "PIRATE_TE3M")
 for Pir3te in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = Pir3te
 end
@@ -4182,7 +4187,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"🔘 ┇  حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "pirate_te3m")
+local UserName = (b.username_ or "PIRATE_TE3M")
 send(msg.chat_id_, msg.id_,"🚸 ┇ منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -4202,7 +4207,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"📬 ┇ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "pirate_te3m")
+local UserName = (b.username_ or "PIRATE_TE3M")
 send(msg.chat_id_, msg.id_,"🚸 ┇ تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
@@ -4237,8 +4242,8 @@ database:set(bot_id.."Pir3te:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ┇ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال") then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
+if text == (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان") then
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
 local namebot = {
 "يروحي فداك "..Namebot.. " اامرنيي😰 ",
 "كول ححبيببي انييي🙊 "..Namebot,
@@ -4258,11 +4263,11 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
 send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
 send(msg.chat_id_, msg.id_,"ءلكيوت ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5265,7 +5270,7 @@ Teext = [[
 🎁 ┇ بيع مجوهراتي + العدد » 
 🔖 ┇ لستبدال كل مجوهره بـ(50) رساله*
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡 ┇ Ch ~⪼ @pirate_te3m 🃏
+📡 ┇ Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Teext) 
 end
@@ -5595,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزال \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات قرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5760,7 +5765,7 @@ Text = [[
 - م4 ~ لعرض اوامر المنشئين 👨🏻‍🔧
 - م5 ~ لعرض اوامر المطورين 👨🏻‍💻
 ━━━━━━━◉━━━━━━━
-🛠 CH: @pirate_te3m
+🛠 CH: @PIRATE_TE3M
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5796,7 +5801,7 @@ Text = [[
 🔱|↫ الماركداون
 🔱|↫ الاشعارات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡  Ch ~⪼ @pirate_te3m 🃏
+📡  Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5849,7 +5854,7 @@ Text = [[
 🔆|↫ وضع قوانين
 🔅|↫ وضع ترحيب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡  Ch ~⪼ @pirate_te3m 🃏
+📡  Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5904,7 +5909,7 @@ Text = [[
 〽️|↫ تغير رد المميز   + النص
 🎫|↫ تغير رد المنشئ الاساسي + النص
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡  Ch ~⪼ @pirate_te3m 🃏
+📡  Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5936,7 +5941,7 @@ Text = [[
 🎐|↫اضف مجوهرات + عدد بالرد
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡  Ch ~⪼ @pirate_te3m 🃏
+📡  Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -5989,7 +5994,7 @@ Text = [[
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ⚠️ ~ ويمكن للمطور استخدام كل اوامر البوت ايضا
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡  Ch ~⪼ @pirate_te3m 🃏
+📡  Ch ~⪼ @PIRATE_TE3M 🃏
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -6650,7 +6655,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
+local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
 if not database:get(bot_id.."Pir3te:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -6811,7 +6816,7 @@ end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print('\27[30;32m»» تم عمل النسخه بواسطه حسن مؤيد  ««\n\27[1;37m')
+print('\27[30;32m»» تم تعديل هذا النسخه بواسطه حسن مؤيد ««\n\27[1;37m')
 local list = database:smembers(bot_id..'Pir3te:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
