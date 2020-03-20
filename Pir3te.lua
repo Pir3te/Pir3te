@@ -16,22 +16,17 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,853647243,665877797}
+List_Sudos = {Id_Sudo,725624600,665877797}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features fast and powerful
- ____  _     _____ _       
-|  _ \(_)_ _|___ /| |_ ___ 
-| |_) | | '__||_ \| __/ _ \
-|  __/| | |  ___) | ||  __/
-|_|   |_|_| |____/ \__\___|
-                                                                                                                                                                         
 تم تنصيب سورس قرصان بل كامل ✔️  
                                                                                                                              
 >> CH > @pirate_te3m
 >> DEVELOPER > @CUUUUUU 
 >> DEVELOPER > @Alhassan_Talib
+
 ]].."\27[m")
 
 io.popen("mkdir Pir3te_Files")
@@ -4242,8 +4237,8 @@ database:set(bot_id.."Pir3te:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "📫 ┇ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان") then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
+if text == (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال") then
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
 local namebot = {
 "يروحي فداك "..Namebot.. " اامرنيي😰 ",
 "كول ححبيببي انييي🙊 "..Namebot,
@@ -4263,11 +4258,11 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
 send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] ")
 end
 if text == "شسمك" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
 send(msg.chat_id_, msg.id_,"ءلكيوت ["..Namebot.."] ")
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" then 
@@ -5600,7 +5595,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات قرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات كوزال \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -6655,7 +6650,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "قرصان")
+local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "كوزال")
 if not database:get(bot_id.."Pir3te:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -6816,7 +6811,7 @@ end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print('\27[30;32m»» يرجى الاننتضار لحين تنظيف المجموعات الوهميه ««\n\27[1;37m')
+print('\27[30;32m»» تم عمل النسخه بواسطه حسن مؤيد  ««\n\27[1;37m')
 local list = database:smembers(bot_id..'Pir3te:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
