@@ -5738,7 +5738,6 @@ if text == "تحديث" and DevPir3te(msg) then
 dofile("Pir3te.lua")  
 send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
-
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
 🔰 اهلا بك في سورس القرصان   🔰
@@ -5756,6 +5755,7 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
+
 if text == 'الاوامر'  then
 Text = [[
 • هناك  5 اوامر لعرضها ✅
@@ -5770,8 +5770,6 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-
-
 
 if text == 'م1'  then
 Text = [[
@@ -6000,6 +5998,8 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
+
+
 end ---- Chat_Type = 'GroupBot' 
 end ---- Chat_Type = 'GroupBot' 
 
