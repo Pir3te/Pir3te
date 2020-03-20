@@ -4,6 +4,7 @@
 | |_) | | '__||_ \| __/ _ \
 |  __/| | |  ___) | ||  __/
 |_|   |_|_| |____/ \__\___|
+
 --]]
 database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
 serpent = dofile("./File_Libs/serpent.lua")
@@ -17,6 +18,7 @@ bot_id  = token:match("(%d+)")
 Id_Sudo = Sudo
 List_Sudos = {Id_Sudo,853647243,725624600,665877797}
 print("\27[34m"..[[
+
 >> Best Source in Telegram
 >> Features fast and powerful
  ____  _     _____ _       
@@ -25,7 +27,7 @@ print("\27[34m"..[[
 |  __/| | |  ___) | ||  __/
 |_|   |_|_| |____/ \__\___|
                                                                                                                                                                          
-Êã ÊäÕíÈ ÓæÑÓ ŞÑÕÇä Èá ßÇãá ??  
+ØªÙ… ØªÙ†ØµÙŠØ¨ Ø³ÙˆØ±Ø³ Ù‚Ø±ØµØ§Ù† Ø¨Ù„ ÙƒØ§Ù…Ù„ âœ”ï¸  
                                                                                                                              
 >> CH > @PIRATE_TE3M
 >> DEVELOPER > @CUUUUUU 
@@ -138,23 +140,23 @@ return var
 end 
 function Get_Rank(user_id,chat_id)
 if DevPir3tee(user_id) == true then
-var = "ÇáãØæÑ ÇáÇÓÇÓí"  
+var = "Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ"  
 elseif tonumber(user_id) == tonumber(bot_id) then  
-var = "ÇáÈæÊ"
+var = "Ø§Ù„Ø¨ÙˆØª"
 elseif database:sismember(bot_id.."Pir3te:Sudo:User", user_id) then
-var = database:get(bot_id.."Pir3te:Sudo:Rd"..chat_id) or "ÇáãØæÑ"  
+var = database:get(bot_id.."Pir3te:Sudo:Rd"..chat_id) or "Ø§Ù„Ù…Ø·ÙˆØ±"  
 elseif database:sismember(bot_id.."Pir3te:Basic:Constructor"..chat_id, user_id) then
-var = database:get(bot_id.."Pir3te:BasicConstructor:Rd"..chat_id) or "ÇáãäÔÆ ÇÓÇÓí"
+var = database:get(bot_id.."Pir3te:BasicConstructor:Rd"..chat_id) or "Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ"
 elseif database:sismember(bot_id.."Pir3te:Constructor"..chat_id, user_id) then
-var = database:get(bot_id.."Pir3te:Constructor:Rd"..chat_id) or "ÇáãäÔÆ"  
+var = database:get(bot_id.."Pir3te:Constructor:Rd"..chat_id) or "Ø§Ù„Ù…Ù†Ø´Ø¦"  
 elseif database:sismember(bot_id.."Pir3te:Manager"..chat_id, user_id) then
-var = database:get(bot_id.."Pir3te:Manager:Rd"..chat_id) or "ÇáãÏíÑ"  
+var = database:get(bot_id.."Pir3te:Manager:Rd"..chat_id) or "Ø§Ù„Ù…Ø¯ÙŠØ±"  
 elseif database:sismember(bot_id.."Pir3te:Mod:User"..chat_id, user_id) then
-var = database:get(bot_id.."Pir3te:Mod:Rd"..chat_id) or "ÇáÇÏãä"  
+var = database:get(bot_id.."Pir3te:Mod:Rd"..chat_id) or "Ø§Ù„Ø§Ø¯Ù…Ù†"  
 elseif database:sismember(bot_id.."Pir3te:Special:User"..chat_id, user_id) then  
-var = database:get(bot_id.."Pir3te:Special:Rd"..chat_id) or "ÇáããíÒ"  
+var = database:get(bot_id.."Pir3te:Special:Rd"..chat_id) or "Ø§Ù„Ù…Ù…ÙŠØ²"  
 else  
-var = database:get(bot_id.."Pir3te:Memp:Rd"..chat_id) or "ÇáÚÖæ"
+var = database:get(bot_id.."Pir3te:Memp:Rd"..chat_id) or "Ø§Ù„Ø¹Ø¶Ùˆ"
 end  
 return var
 end 
@@ -406,22 +408,22 @@ local UserName = (data.username_ or "PIRATE_TE3M")
 for Pir3te in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = Pir3te
 end
-local NameUser = "?? ? ÈæÇÓØå - ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "?? ? ÇáÚÖæ ~ ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUser = "ğŸ—£ â”‡ Ø¨ÙˆØ§Ø³Ø·Ù‡ - ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "ğŸ—£ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ ~ ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáãÓÍ\n")
+send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\nğŸš« â”‡ Ø®Ø§ØµÙŠØ© - Ø§Ù„Ù…Ø³Ø­\n")
 return false
 end
 if status == "lockktm" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáßÊã\n")
+send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\nğŸš« â”‡ Ø®Ø§ØµÙŠØ© - Ø§Ù„ÙƒØªÙ…\n")
 return false
 end
 if status == "lockkick" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáØÑÏ\n")
+send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\nğŸš« â”‡ Ø®Ø§ØµÙŠØ© - Ø§Ù„Ø·Ø±Ø¯\n")
 return false
 end
 if status == "lockkid" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáÊŞííÏ\n")
+send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\nğŸš« â”‡ Ø®Ø§ØµÙŠØ© - Ø§Ù„ØªÙ‚ÙŠÙŠØ¯\n")
 return false
 end
 if status == "unlock" then
@@ -437,38 +439,38 @@ send(msg.chat_id_, msg.id_,NameUser.."\n"..text)
 return false
 end
 else
-send(msg.chat_id_, msg.id_,"?? ?  ÇáÍÓÇÈ ãÍĞæİ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå")
+send(msg.chat_id_, msg.id_,"ğŸ‘¤ â”‡  Ø§Ù„Ø­Ø³Ø§Ø¨ Ù…Ø­Ø°ÙˆÙ ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡")
 end
 end,nil)   
 end -- end
 function Total_message(msgs)  
 local message = ''  
 if tonumber(msgs) < 100 then 
-message = 'ÛíÑ ãÊİÇÚá' 
+message = 'ØºÙŠØ± Ù…ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 200 then 
-message = 'ÈÏå íÊÍÓä' 
+message = 'Ø¨Ø¯Ù‡ ÙŠØªØ­Ø³Ù†' 
 elseif tonumber(msgs) < 400 then 
-message = 'ÔÈå ãÊİÇÚá' 
+message = 'Ø´Ø¨Ù‡ Ù…ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 700 then 
-message = 'ãÊİÇÚá' 
+message = 'Ù…ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 1200 then 
-message = 'ãÊİÇÚá Şæí' 
+message = 'Ù…ØªÙØ§Ø¹Ù„ Ù‚ÙˆÙŠ' 
 elseif tonumber(msgs) < 2000 then 
-message = 'ãÊİÇÚá ÌÏÇ' 
+message = 'Ù…ØªÙØ§Ø¹Ù„ Ø¬Ø¯Ø§' 
 elseif tonumber(msgs) < 3500 then 
-message = 'ÇŞæì ÊİÇÚá'  
+message = 'Ø§Ù‚ÙˆÙ‰ ØªÙØ§Ø¹Ù„'  
 elseif tonumber(msgs) < 4000 then 
-message = 'ãÊİÇÚá äÇÑ' 
+message = 'Ù…ØªÙØ§Ø¹Ù„ Ù†Ø§Ø±' 
 elseif tonumber(msgs) < 4500 then 
-message = 'ŞãÉ ÇáÊİÇÚá' 
+message = 'Ù‚Ù…Ø© Ø§Ù„ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 5500 then 
-message = 'ÇŞæì ãÊİÇÚá' 
+message = 'Ø§Ù‚ÙˆÙ‰ Ù…ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 7000 then 
-message = 'ãáß ÇáÊİÇÚá' 
+message = 'Ù…Ù„Ùƒ Ø§Ù„ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 9500 then 
-message = 'ÇãÈÑæØæÑ ÇáÊİÇÚá' 
+message = 'Ø§Ù…Ø¨Ø±ÙˆØ·ÙˆØ± Ø§Ù„ØªÙØ§Ø¹Ù„' 
 elseif tonumber(msgs) < 10000000000 then 
-message = 'ÑÈ ÇáÊİÇÚá'  
+message = 'Ø±Ø¨ Ø§Ù„ØªÙØ§Ø¹Ù„'  
 end 
 return message 
 end
@@ -491,14 +493,14 @@ end
 function add_file(msg,chat,ID_FILE,File_Name)
 if File_Name:match('.json') then
 if tonumber(File_Name:match('(%d+)')) ~= tonumber(bot_id) then 
-sendtext(chat,msg.id_,"?? ? ãáİ ÇáäÓÎå ÇáÇÍÊíÇØíå áíÓ áåÇĞÇ ÇáÈæÊ")   
+sendtext(chat,msg.id_,"ğŸ”– â”‡ Ù…Ù„Ù Ø§Ù„Ù†Ø³Ø®Ù‡ Ø§Ù„Ø§Ø­ØªÙŠØ§Ø·ÙŠÙ‡ Ù„ÙŠØ³ Ù„Ù‡Ø§Ø°Ø§ Ø§Ù„Ø¨ÙˆØª")   
 return false 
 end      
 local File = json:decode(https.request('https://api.telegram.org/bot' .. token .. '/getfile?file_id='..ID_FILE) ) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path, ''..File_Name) 
-send(chat,msg.id_,"? ? ÌÇÑí ...\n?? ? ÑİÚ Çáãáİ ÇáÇä")   
+send(chat,msg.id_,"â™» â”‡ Ø¬Ø§Ø±ÙŠ ...\nğŸ“¥ â”‡ Ø±ÙØ¹ Ø§Ù„Ù…Ù„Ù Ø§Ù„Ø§Ù†")   
 else
-sendtext(chat,msg.id_,"*?? ? ÚĞÑÇ Çáãáİ áíÓ ÈÕíÛÉ {JSON} íÑÌì ÑİÚ Çáãáİ ÇáÕÍíÍ*")   
+sendtext(chat,msg.id_,"*ğŸ“› â”‡ Ø¹Ø°Ø±Ø§ Ø§Ù„Ù…Ù„Ù Ù„ÙŠØ³ Ø¨ØµÙŠØºØ© {JSON} ÙŠØ±Ø¬Ù‰ Ø±ÙØ¹ Ø§Ù„Ù…Ù„Ù Ø§Ù„ØµØ­ÙŠØ­*")   
 end      
 local info_file = io.open('./'..bot_id..'.json', "r"):read('*a')
 local groups = JSON.decode(info_file)
@@ -530,12 +532,12 @@ if v.linkgroup then
 if v.linkgroup ~= "" then
 database:set(bot_id.."Pir3te:Private:Group:Link"..idg,v.linkgroup)   
 end;end;end
-send(chat,msg.id_,"?? ? Êã ÑİÚ Çáãáİ ÈäÌÇÍ æÊİÚíá ÇáãÌãæÚÇÊ\n?? ? æÑİÚ {ÇáÇãäÔÆíä ÇáÇÓÇÓíä ; æÇáãäÔÆíä ; æÇáãÏÑÇÁ; æÇáÇÏãäíå} ÈäÌÇÍ")   
+send(chat,msg.id_,"ğŸ”° â”‡ ØªÙ… Ø±ÙØ¹ Ø§Ù„Ù…Ù„Ù Ø¨Ù†Ø¬Ø§Ø­ ÙˆØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª\nğŸ“¬ â”‡ ÙˆØ±ÙØ¹ {Ø§Ù„Ø§Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ† ; ÙˆØ§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† ; ÙˆØ§Ù„Ù…Ø¯Ø±Ø§Ø¡; ÙˆØ§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡} Ø¨Ù†Ø¬Ø§Ø­")   
 end
 
 function Is_Not_Spam(msg,type)
 if type == "kick" then 
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ØÑÏå")  
+Reply_Status(msg,msg.sender_user_id_,"reply","ğŸ“¬ â”‡ Ù‚Ø§Ù… Ø¨Ø§Ù„ØªÙƒØ±Ø§Ø± Ù‡Ù†Ø§ ÙˆØªÙ… Ø·Ø±Ø¯Ù‡")  
 Kick_Group(msg.chat_id_,msg.sender_user_id_) 
 return false  
 end 
@@ -546,11 +548,11 @@ end
 if type == "keed" then
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..msg.chat_id_.. "&user_id=" ..msg.sender_user_id_.."") 
 database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ÊŞííÏå")  
+Reply_Status(msg,msg.sender_user_id_,"reply","ğŸ“¬ â”‡ Ù‚Ø§Ù… Ø¨Ø§Ù„ØªÙƒØ±Ø§Ø± Ù‡Ù†Ø§ ÙˆØªÙ… ØªÙ‚ÙŠÙŠØ¯Ù‡")  
 return false  
 end  
 if type == "mute" then
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ßÊãå")  
+Reply_Status(msg,msg.sender_user_id_,"reply","ğŸ“¬ â”‡ Ù‚Ø§Ù… Ø¨Ø§Ù„ØªÙƒØ±Ø§Ø± Ù‡Ù†Ø§ ÙˆØªÙ… ÙƒØªÙ…Ù‡")  
 database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
 return false  
 end
@@ -566,7 +568,7 @@ end
 end
 send(msg.chat_id_, msg.id_,pre_msg)  
 end
-function Pir3te_Started_Bot(msg,data) -- ÈÏÇíÉ ÇáÚãá
+function Pir3te_Started_Bot(msg,data) -- Ø¨Ø¯Ø§ÙŠØ© Ø§Ù„Ø¹Ù…Ù„
 if msg then
 local msg = data.message_
 local text = msg.content_.text_
@@ -583,419 +585,8 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.text_) 
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,photo) 
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do d)
-tdcli_function ({
-ID="DeleteMessages",
-chat_id_=chat,
-message_ids_=id
-},function(arg,data) 
-end,nil)
-end
-function DeleteMessage_(chat,id,func)
-tdcli_function ({
-ID="DeleteMessages",
-chat_id_=chat,
-message_ids_=id
-},func or dl_cb,nil)
-end
-function getInputFile(file) 
-if file:match("/") then 
-infile = {ID = "InputFileLocal", 
-path_ = file} 
-elseif file:match("^%d+$") then 
-infile = {ID = "InputFileId", 
-id_ = file} 
-else infile = {ID = "InputFilePersistentId", 
-persistent_id_ = file} 
-end 
-return infile 
-end
-function RestrictChat(User_id,Chat_id)
-https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..Chat_id.."&user_id="..User_id)
-end
-function s_api(web) 
-local info, res = https.request(web) 
-local req = json:decode(info) 
-if res ~= 200 then 
-return false 
-end 
-if not req.ok then 
-return false end 
-return req 
-end 
-function sendText(chat_id, text, reply_to_message_id, markdown) 
-send_api = "https://api.telegram.org/bot"..token 
-local url = send_api.."/sendMessage?chat_id=" .. chat_id .. "&text=" .. URL.escape(text) 
-if reply_to_message_id ~= 0 then 
-url = url .. "&reply_to_message_id=" .. reply_to_message_id  
-end 
-if markdown == "md" or markdown == "markdown" then 
-url = url.."&parse_mode=Markdown" 
-elseif markdown == "html" then 
-url = url.."&parse_mode=HTML" 
-end 
-return s_api(url)  
-end
-function send_inline_key(chat_id,text,keyboard,inline,reply_id) 
-local response = {} 
-response.keyboard = keyboard 
-response.inline_keyboard = inline 
-response.resize_keyboard = true 
-response.one_time_keyboard = false 
-response.selective = false  
-local send_api = "https://api.telegram.org/bot"..token.."/sendMessage?chat_id="..chat_id.."&text="..URL.escape(text).."&parse_mode=Markdown&disable_web_page_preview=true&reply_markup="..URL.escape(JSON.encode(response)) 
-if reply_id then 
-send_api = send_api.."&reply_to_message_id="..reply_id 
-end 
-return s_api(send_api) 
-end
-function GetInputFile(file)  
-local file = file or ""   
-if file:match("/") then  
-infile = {ID= "InputFileLocal", path_  = file}  
-elseif file:match("^%d+$") then  
-infile ={ID="InputFileId",id_=file}  
-else infile={ID="InputFilePersistentId",persistent_id_ = file}  
-end 
-return infile 
-end
-function sendPhoto(chat_id,reply_id,photo,caption,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessagePhoto",
-photo_ = GetInputFile(photo),
-added_sticker_file_ids_ = {},
-width_ = 0,
-height_ = 0,
-caption_ = caption or ""
-}
-},func or dl_cb,nil)
-end
-	
-function sendVoice(chat_id,reply_id,voice,caption,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageVoice",
-voice_ = GetInputFile(voice),
-duration_ = "",
-waveform_ = "",
-caption_ = caption or ""
-}},func or dl_cb,nil)
-end
-
-function sendAnimation(chat_id,reply_id,animation,caption,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageAnimation",
-animation_ = GetInputFile(animation),
-width_ = 0,
-height_ = 0,
-caption_ = caption or ""
-}},func or dl_cb,nil)
-end
-
-function sendAudio(chat_id,reply_id,audio,title,caption,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageAudio",
-audio_ = GetInputFile(audio),
-duration_ = "",
-title_ = title or "",
-performer_ = "",
-caption_ = caption or ""
-}},func or dl_cb,nil)
-end
-
-function sendSticker(chat_id,reply_id,sticker,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageSticker",
-sticker_ = GetInputFile(sticker),
-width_ = 0,
-height_ = 0
-}},func or dl_cb,nil)
-end
-
-function sendVideo(chat_id,reply_id,video,caption,func)
-tdcli_function({ 
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 0,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageVideo",  
-video_ = GetInputFile(video),
-added_sticker_file_ids_ = {},
-duration_ = 0,
-width_ = 0,
-height_ = 0,
-caption_ = caption or ""
-}},func or dl_cb,nil)
-end
-
-
-function sendDocument(chat_id,reply_id,document,caption,func)
-tdcli_function({
-ID="SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_id,
-disable_notification_ = 0,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID="InputMessageDocument",
-document_ = GetInputFile(document),
-caption_ = caption
-}},func or dl_cb,nil)
-end
-function Kick_Group(chat,user)
-tdcli_function ({
-ID = "ChangeChatMemberStatus",
-chat_id_ = chat,
-user_id_ = user,
-status_ = {ID = "ChatMemberStatusKicked"},},function(arg,data) end,nil)
-end
-
-function Reply_Status(msg,user_id,status,text)
-tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
-if data.first_name_ ~= false then
-local UserName = (data.username_ or "PIRATE_TE3M")
-for Pir3te in string.gmatch(data.first_name_, "[^%s]+") do
-data.first_name_ = Pir3te
-end
-local NameUser = "?? ? ÈæÇÓØå - ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "?? ? ÇáÚÖæ ~ ["..data.first_name_.."](T.me/"..UserName..")"
-if status == "lock" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáãÓÍ\n")
-return false
-end
-if status == "lockktm" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáßÊã\n")
-return false
-end
-if status == "lockkick" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáØÑÏ\n")
-return false
-end
-if status == "lockkid" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n?? ? ÎÇÕíÉ - ÇáÊŞííÏ\n")
-return false
-end
-if status == "unlock" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text)
-return false
-end
-if status == "reply" then
-send(msg.chat_id_, msg.id_,NameUserr.."\n"..text)
-return false
-end
-if status == "reply_Add" then
-send(msg.chat_id_, msg.id_,NameUser.."\n"..text)
-return false
-end
-else
-send(msg.chat_id_, msg.id_,"?? ?  ÇáÍÓÇÈ ãÍĞæİ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå")
-end
-end,nil)   
-end -- end
-function Total_message(msgs)  
-local message = ''  
-if tonumber(msgs) < 100 then 
-message = 'ÛíÑ ãÊİÇÚá' 
-elseif tonumber(msgs) < 200 then 
-message = 'ÈÏå íÊÍÓä' 
-elseif tonumber(msgs) < 400 then 
-message = 'ÔÈå ãÊİÇÚá' 
-elseif tonumber(msgs) < 700 then 
-message = 'ãÊİÇÚá' 
-elseif tonumber(msgs) < 1200 then 
-message = 'ãÊİÇÚá Şæí' 
-elseif tonumber(msgs) < 2000 then 
-message = 'ãÊİÇÚá ÌÏÇ' 
-elseif tonumber(msgs) < 3500 then 
-message = 'ÇŞæì ÊİÇÚá'  
-elseif tonumber(msgs) < 4000 then 
-message = 'ãÊİÇÚá äÇÑ' 
-elseif tonumber(msgs) < 4500 then 
-message = 'ŞãÉ ÇáÊİÇÚá' 
-elseif tonumber(msgs) < 5500 then 
-message = 'ÇŞæì ãÊİÇÚá' 
-elseif tonumber(msgs) < 7000 then 
-message = 'ãáß ÇáÊİÇÚá' 
-elseif tonumber(msgs) < 9500 then 
-message = 'ÇãÈÑæØæÑ ÇáÊİÇÚá' 
-elseif tonumber(msgs) < 10000000000 then 
-message = 'ÑÈ ÇáÊİÇÚá'  
-end 
-return message 
-end
-function download_to_file(url, file_path) 
-local respbody = {} 
-local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
-local response = nil 
-options.redirect = false 
-response = {https.request(options)} 
-local code = response[2] 
-local headers = response[3] 
-local status = response[4] 
-if code ~= 200 then return false, code 
-end 
-file = io.open(file_path, "w+") 
-file:write(table.concat(respbody)) 
-file:close() 
-return file_path, code 
-end 
-function add_file(msg,chat,ID_FILE,File_Name)
-if File_Name:match('.json') then
-if tonumber(File_Name:match('(%d+)')) ~= tonumber(bot_id) then 
-sendtext(chat,msg.id_,"?? ? ãáİ ÇáäÓÎå ÇáÇÍÊíÇØíå áíÓ áåÇĞÇ ÇáÈæÊ")   
-return false 
-end      
-local File = json:decode(https.request('https://api.telegram.org/bot' .. token .. '/getfile?file_id='..ID_FILE) ) 
-download_to_file('https://api.telegram.org/file/bot'..token..'/'..File.result.file_path, ''..File_Name) 
-send(chat,msg.id_,"? ? ÌÇÑí ...\n?? ? ÑİÚ Çáãáİ ÇáÇä")   
-else
-sendtext(chat,msg.id_,"*?? ? ÚĞÑÇ Çáãáİ áíÓ ÈÕíÛÉ {JSON} íÑÌì ÑİÚ Çáãáİ ÇáÕÍíÍ*")   
-end      
-local info_file = io.open('./'..bot_id..'.json', "r"):read('*a')
-local groups = JSON.decode(info_file)
-vardump(groups)  
-for idg,v in pairs(groups.GP_BOT) do
-database:sadd(bot_id..'Pir3te:Chek:Groups',idg) 
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..idg,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..idg,"del")    
-end
-if v.MNSH then
-for k,idmsh in pairs(v.MNSH) do
-database:sadd(bot_id.."Pir3te:Constructor"..idg,idmsh)
-end;end
-if v.MDER then
-for k,idmder in pairs(v.MDER) do
-database:sadd(bot_id.."Pir3te:Manager"..idg,idmder)  
-end;end
-if v.MOD then
-for k,idmod in pairs(v.MOD) do
-database:sadd(bot_id.."Pir3te:Mod:User"..idg,idmod)  
-end;end
-if v.ASAS then
-for k,idASAS in pairs(v.ASAS) do
-database:sadd(bot_id.."Pir3te:Basic:Constructor"..idg,idASAS)  
-end;end
-if v.linkgroup then
-if v.linkgroup ~= "" then
-database:set(bot_id.."Pir3te:Private:Group:Link"..idg,v.linkgroup)   
-end;end;end
-send(chat,msg.id_,"?? ? Êã ÑİÚ Çáãáİ ÈäÌÇÍ æÊİÚíá ÇáãÌãæÚÇÊ\n?? ? æÑİÚ {ÇáÇãäÔÆíä ÇáÇÓÇÓíä ; æÇáãäÔÆíä ; æÇáãÏÑÇÁ; æÇáÇÏãäíå} ÈäÌÇÍ")   
-end
-
-function Is_Not_Spam(msg,type)
-if type == "kick" then 
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ØÑÏå")  
-Kick_Group(msg.chat_id_,msg.sender_user_id_) 
-return false  
-end 
-if type == "del" then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})    
-return false
-end 
-if type == "keed" then
-https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" ..msg.chat_id_.. "&user_id=" ..msg.sender_user_id_.."") 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ÊŞííÏå")  
-return false  
-end  
-if type == "mute" then
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊßÑÇÑ åäÇ æÊã ßÊãå")  
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_) 
-return false  
-end
-end  
-function Pir3te_Files(msg)
-for v in io.popen('ls Pir3te_Files'):lines() do
-if v:match(".lua$") then
-plugin = dofile("Pir3te_Files/"..v)
-if plugin.Pir3te and msg then
-pre_msg = plugin.Pir3te(msg)
-end
-end
-end
-send(msg.chat_id_, msg.id_,pre_msg)  
-end
-function Pir3te_Started_Bot(msg,data) -- ÈÏÇíÉ ÇáÚãá
-if msg then
-local msg = data.message_
-local text = msg.content_.text_
-if msg.chat_id_ then
-local id = tostring(msg.chat_id_)
-if id:match("-100(%d+)") then
-database:incr(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) 
-Chat_Type = 'GroupBot' 
-elseif id:match("^(%d+)") then
-database:sadd(bot_id..'Pir3te:UsersBot',msg.sender_user_id_)  
-Chat_Type = 'UserBot' 
-else
-Chat_Type = 'GroupBot' 
-end
-end
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1026,7 +617,7 @@ sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)
 database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
 end 
 end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ…Øª Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ø§Ù„Ù‰ *~ "..#list.." ~* Ù…Ø¬Ù…ÙˆØ¹Ù‡ ")     
 database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
@@ -1456,10 +1047,10 @@ local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.cha
 if GetWelcomeGroup then 
 t = GetWelcomeGroup
 else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
+t = "\nâ€¢ Ù†ÙˆØ±Øª Ø­Ø¨ÙŠ \nâ€¢  name \nâ€¢ user" 
 end 
 t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
+t = t:gsub("user",("@"..result.username_ or "Ù„Ø§ ÙŠÙˆØ¬Ø¯")) 
 send(msg.chat_id_, msg.id_,t)
 end,nil) 
 end 
@@ -1485,14 +1076,14 @@ photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_
 end 
 tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
 if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ ÙˆØ§Ù„Ù…Ø­Ø§ÙˆÙ„Ù‡ Ù„Ø§Ø­Ù‚Ø§") 
 database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
 return false  end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© ØªØºÙŠÙŠØ± Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ÙŠØ±Ø¬Ù‰ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ù‡ Ù„Ø§Ø­Ù‚Ø§") 
 database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
 else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… ØªØºÙŠÙŠØ± ØµÙˆØ±Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 end
 end, nil) 
 database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
@@ -1500,47 +1091,47 @@ end
 end
 --------------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
+if text == "Ø§Ù„ØºØ§Ø¡" then 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ÙˆØ¶Ø¹ Ø§Ù„ÙˆØµÙ") 
 database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
 return false  
 end 
 database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
 https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… ØªØºÙŠÙŠØ± ÙˆØµÙ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")   
 return false  
 end 
 --------------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
+if text == "Ø§Ù„ØºØ§Ø¡" then 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ Ø§Ù„ØªØ±Ø­ÙŠØ¨") 
 database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 return false  
 end 
 database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… Ø­ÙØ¸ ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")   
 return false   
 end
 --------------------------------------------------------------------------------------------------------------
 if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
+if text == "Ø§Ù„ØºØ§Ø¡" then
+send(msg.chat_id_,msg.id_,"ğŸ“¥ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ Ø§Ù„Ø±Ø§Ø¨Ø·")       
 database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
 return false
 end
 if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
 local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
 database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
+send(msg.chat_id_,msg.id_,"ğŸ“¥ â”‡ ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø±Ø§Ø¨Ø· Ø¨Ù†Ø¬Ø§Ø­")       
 database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
 return false 
 end
 end 
 
 if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù„Ù„Ø®Ø§Øµ") 
 database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1567,14 +1158,14 @@ for k,v in pairs(list) do
 sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ…Øª Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ø§Ù„Ù‰ *~ "..#list.." ~* Ù…Ø´ØªØ±Ùƒ ÙÙŠ Ø§Ù„Ø®Ø§Øµ ")     
 database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
 if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1601,14 +1192,14 @@ for k,v in pairs(list) do
 sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ…Øª Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ø§Ù„Ù‰ *~ "..#list.." ~* Ù…Ø¬Ù…ÙˆØ¹Ù‡ ")     
 database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
 if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -1622,14 +1213,14 @@ message_ids_ = {[0] = msg.id_},
 disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ…Øª Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ø§Ù„Ù‰ *~ "..#list.." ~* Ù…Ø¬Ù…ÙˆØ¹Ù‡ ")     
 database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
 end
 if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -1643,7 +1234,7 @@ message_ids_ = {[0] = msg.id_},
 disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ…Øª Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ø§Ù„Ù‰ *~ "..#list.." ~* Ù…Ø´ØªØ±Ùƒ ÙÙŠ Ø§Ù„Ø®Ø§Øµ ")     
 database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
@@ -1653,25 +1244,25 @@ end
 if text and not Vips(msg) then  
 local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
 if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
+Reply_Status(msg,msg.sender_user_id_,"reply","ğŸ“¬ â”‡ "..Pir3te_Msg)  
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
 return false
 end
 end
 if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
+if text == "Ø§Ù„ØºØ§Ø¡" or text == "Ø§Ù„ØºØ§Ø¡ âœ–" then   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ Ø§Ø³Ù… Ø§Ù„Ø¨ÙˆØª") 
 database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
 return false  
 end 
 database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
 database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
+send(msg.chat_id_, msg.id_, "ğŸ“¥ â”‡  ØªÙ… Ø­ÙØ¸ Ø§Ø³Ù… Ø§Ù„Ø¨ÙˆØª")  
 return false
 end 
 if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
 database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù…Ø± Ø§Ù„Ø¬Ø¯ÙŠØ¯")  
 database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
 return false
@@ -1680,670 +1271,670 @@ if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg
 local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
 database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
 database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø§Ù…Ø±")  
 database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' then
 if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
 database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡")  
 return false
 end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ø¶Ø§ÙÙ‡" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ø¶Ø§ÙØ© Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡")  
 return false
 end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø¯Ø®ÙˆÙ„ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡")  
 return false
 end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¨ÙˆØªØ§Øª" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¨ÙˆØªØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¨ÙˆØªØ§Øª Ø¨Ø§Ù„Ø·Ø±Ø¯" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¨ÙˆØªØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
 database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ«Ø¨ÙŠØª" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
 database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
 tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªØ«Ø¨ÙŠØª Ù‡Ù†Ø§")  
 return false
 end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ ØªØ¹Ø¯ÙŠÙ„")  
 return false
 end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "Ù‚ÙÙ„ ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…ÙŠØ¯ÙŠØ§" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ ØªØ¹Ø¯ÙŠÙ„")  
 return false
 end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙ„" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
 database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
 list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
 for i,lock in pairs(list) do 
 database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
 end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø§ÙˆØ§Ù…Ø±")  
 return false
 end 
 --------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„Ø§Ø¶Ø§ÙÙ‡" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ø¶Ø§ÙØ© Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡")  
 return false
 end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
+if text == "ÙØªØ­ Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
 database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡")  
 return false
 end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„Ø¯Ø®ÙˆÙ„" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø¯Ø®ÙˆÙ„ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡")  
 return false
 end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„Ø¨ÙˆØªØ§Øª" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ Ø§Ù„Ø¨ÙˆØªØ§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„Ø¨ÙˆØªØ§Øª " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸƒ\nğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ Ø§Ù„Ø¨ÙˆØªØ§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
+if text == "ÙØªØ­ Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
 database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "ÙØªØ­ Ø§Ù„ØªØ«Ø¨ÙŠØª" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
 database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ Ø§Ù„ØªØ«Ø¨ÙŠØª Ù‡Ù†Ø§")  
 return false
 end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "ÙØªØ­ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ ØªØ¹Ø¯ÙŠÙ„")  
 return false
 end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
+if text == "ÙØªØ­ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ø§Ù„Ù…ÙŠØ¯ÙŠØ§" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
 database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ ØªØ¹Ø¯ÙŠÙ„")  
 return false
 end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„ÙƒÙ„" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
 database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
 list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
 for i,lock in pairs(list) do 
 database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
 end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙÙ€ØªØ­ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø§ÙˆØ§Ù…Ø±")  
 return false
 end 
 --------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·")  
 return false
 end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø· Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·")  
 return false
 end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø· Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·")  
 return false
 end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø· Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·")  
 return false
 end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø±ÙˆØ§Ø¨Ø·")  
 return false
 end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ§Ùƒ" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªØ§Ùƒ")  
 return false
 end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ§Ùƒ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªØ§Ùƒ")  
 return false
 end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ§Ùƒ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªØ§Ùƒ")  
 return false
 end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªØ§Ùƒ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªØ§Ùƒ")  
 return false
 end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ØªØ§Ùƒ" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ØªØ§Ùƒ")  
 return false
 end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡")  
 return false
 end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡")  
 return false
 end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡")  
 return false
 end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡")  
 return false
 end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø´Ø§Ø±Ø­Ù‡")  
 return false
 end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØ±"and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØ±")  
 return false
 end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØ± Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØ±")  
 return false
 end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØ± Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØ±")  
 return false
 end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØ± Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØ±")  
 return false
 end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ØµÙˆØ±" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ØµÙˆØ±")  
 return false
 end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ")  
 return false
 end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ")  
 return false
 end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ")  
 return false
 end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ")  
 return false
 end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ")  
 return false
 end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡")  
 return false
 end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡")  
 return false
 end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡")  
 return false
 end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡")  
 return false
 end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡")  
 return false
 end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨")  
 return false
 end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨")  
 return false
 end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨")  
 return false
 end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨")  
 return false
 end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨")  
 return false
 end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§ØºØ§Ù†ÙŠ")  
 return false
 end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø§ØºØ§Ù†ÙŠ" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø§ØºØ§Ù†ÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØª" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØª")  
 return false
 end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØª Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØª")  
 return false
 end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØª Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØª")  
 return false
 end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØµÙˆØª Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØµÙˆØª")  
 return false
 end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ØµÙˆØª" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ØµÙˆØª")  
 return false
 end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯")  
 return false
 end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯")  
 return false
 end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯")  
 return false
 end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯")  
 return false
 end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯")  
 return false
 end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡")  
 return false
 end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡")  
 return false
 end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡")  
 return false
 end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡")  
 return false
 end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡")  
 return false
 end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ÙØ§Øª" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ÙØ§Øª Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ÙØ§Øª Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ù„ÙØ§Øª Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ù„ÙØ§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ù…Ù„ÙØ§Øª" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ù…Ù„ÙØ§Øª")  
 return false
 end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ")  
 return false
 end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ")  
 return false
 end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ")  
 return false
 end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†")  
 return false
 end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ† Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†")  
 return false
 end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ† Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†")  
 return false
 end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ† Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†")  
 return false
 end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†")  
 return false
 end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¬Ù‡Ø§Øª" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¬Ù‡Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¬Ù‡Ø§Øª Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¬Ù‡Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¬Ù‡Ø§Øª Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¬Ù‡Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø¬Ù‡Ø§Øª Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø¬Ù‡Ø§Øª")  
 return false
 end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø¬Ù‡Ø§Øª" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø¬Ù‡Ø§Øª")  
 return false
 end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´")  
 return false
 end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´ Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´")  
 return false
 end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´ Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´")  
 return false
 end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´ Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´")  
 return false
 end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´")  
 return false
 end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†")  
 return false
 end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ† Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†")  
 return false
 end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ† Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†")  
 return false
 end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
+if text == "Ù‚ÙÙ„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ† Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then
 database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ€Ù„ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†")  
 return false
 end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
+if text == "ÙØªØ­ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†")  
 return false
 end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø± Ø¨Ø§Ù„Ø·Ø±Ø¯" and Addictive(msg) then 
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
+Reply_Status(msg,msg.sender_user_id_,"lockkick","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø±")
 return false
 end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø±" and Addictive(msg) then 
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
+Reply_Status(msg,msg.sender_user_id_,"lock","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø± Ø¨Ø§Ù„Ø­Ø°Ù")
 return false
 end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø± Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯" and Addictive(msg) then 
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
+Reply_Status(msg,msg.sender_user_id_,"lockkid","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø±")
 return false
 end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
+if text == "Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø± Ø¨Ø§Ù„ÙƒØªÙ…" and Addictive(msg) then 
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
+Reply_Status(msg,msg.sender_user_id_,"lockktm","ğŸ’¢ï¸ â”‡ ØªÙ… Ù‚ÙÙ„ Ø§Ù„ØªÙƒØ±Ø§Ø±")
 return false
 end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
+if text == "ÙØªØ­ Ø§Ù„ØªÙƒØ±Ø§Ø±" and Addictive(msg) then 
 database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
+Reply_Status(msg,msg.sender_user_id_,"unlock","ğŸ’¢ï¸ â”‡ ØªÙ… ÙØªØ­ Ø§Ù„ØªÙƒØ±Ø§Ø±")
 return false
 end 
 
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
+if text == ("Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù…") and DevPir3te(msg) then
 database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
+send(msg.chat_id_, msg.id_, "\nğŸ“® â”‡ ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù…")
 return false
 end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
+if text == ("Ù…Ø³Ø­ Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†") and DevPir3te(msg) then
 database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
+send(msg.chat_id_, msg.id_, "\nğŸ“® â”‡  ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†  ")
 end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ†" and DevBot(msg) then
 database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
+texts = "âœ– â”‡  ØªÙ… Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙŠÙ†"
 send(msg.chat_id_, msg.id_, texts)
 end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†" and BasicConstructor(msg) then
 database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
+texts = "âœ– â”‡  ØªÙ… Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† "
 send(msg.chat_id_, msg.id_, texts)
 end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡" and Constructor(msg) then
 database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
+texts = "âœ– â”‡  ØªÙ… Ù…Ø³Ø­ Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡ "
 send(msg.chat_id_, msg.id_, texts)
 end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡" and Owner(msg) then
 database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
+send(msg.chat_id_, msg.id_, "ğŸ—‘ â”‡  ØªÙ… Ù…Ø³Ø­  Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠØ©  ")
 end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
+send(msg.chat_id_, msg.id_, "ğŸ—‘ â”‡  ØªÙ… Ù…Ø³Ø­  Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†  ")
 end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…ÙƒØªÙˆÙ…ÙŠÙ†" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
+send(msg.chat_id_, msg.id_, "ğŸ—‘ â”‡  ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…ÙƒØªÙˆÙ…ÙŠÙ† ")
 end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù…Ø­Ø¸ÙˆØ±ÙŠÙ†" and Addictive(msg) then
 database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
+send(msg.chat_id_, msg.id_, "\nğŸš· â”‡ ØªÙ… Ù…Ø³Ø­ Ø§Ù„Ù…Ø­Ø¸ÙˆØ±ÙŠÙ†")
 end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
+if text == ("Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù…") and DevPir3te(msg) then
 local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
+t = "\nğŸš« â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø­Ø¸ÙˆØ±ÙŠÙ† Ø¹Ø§Ù… \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -2353,30 +1944,30 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø­Ø¸ÙˆØ±ÙŠÙ† Ø¹Ø§Ù…"
 end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
+if text == ("Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†") and DevPir3te(msg) then
 local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
+t = "\nğŸ‘¨ğŸ¿â€ğŸ’»  â”‡  Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†   ØŒ\nê”¹â”‰â™¦ï¸â”‰ â”‰ â”‰ â”‰â™¦ï¸â”‰ê”¹\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
+t = t.."|"..k.."|~âª¼ ([@"..username.."])\n"
 else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
+t = t.."|"..k.."|~âª¼ (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø·ÙˆØ±ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
+if text == "Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ†" and DevBot(msg) then
 local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ† \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -2386,14 +1977,14 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ø³Ø§Ø³ÙŠÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
+if text == ("Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†") and BasicConstructor(msg) then
 local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -2403,1343 +1994,13 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ù†Ø´Ø¦ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
+if text == ("Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡") and Constructor(msg) then
 local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
-local ch = msg.chat_id_
-local type = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") 
-Is_Not_Spam(msg,type)  
-end
-database:setex(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
-local edit_id = data.text_ or "nil"  
-Num_Msg_Max = 5
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") 
-end
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") 
-end 
-end 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) and not Vips(msg) then       
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
-return false     
-end     
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
-end
-if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-local mem_id = msg.content_.members_  
-for i=0,#mem_id do  
-Kick_Group(msg.chat_id_,mem_id[i].id_)
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-return false  
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if not Vips(msg) then 
-if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.entities_ then 
-if msg.content_.entities_[0] then 
-if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
-if not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end  
-end 
-end
-end 
-
-if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end 
-
-
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.text_ and not Vips(msg) then  
-local _nl, ctrl_ = string.gsub(text, "%c", "")  
-local _nl, real_ = string.gsub(text, "%d", "")   
-sens = 400  
-if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then
-if msg.content_.ID == "MessageChatJoinByLink" then
-tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
-if GetWelcomeGroup then 
-t = GetWelcomeGroup
-else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
-end 
-t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
-send(msg.chat_id_, msg.id_,t)
-end,nil) 
-end 
-end 
--------------------------------------------------------
-if msg.content_.ID == "MessagePinMessage" then
-if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
-else
-local Msg_Pin = database:get(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then
-PinMessage(msg.chat_id_,Msg_Pin)
-end
-end
-end
-------------------------------------------------------
-if msg.content_.photo_ then  
-if database:get(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
-if msg.content_.photo_.sizes_[3] then  
-photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
-else 
-photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_ 
-end 
-tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
-if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-return false  end
-if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
-end
-end, nil) 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-end   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
-return false  
-end 
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  
-end 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
-return false   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false
-end
-if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
-local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false 
-end
-end 
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id..'Pir3te:UsersBot')  
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:UsersBot")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-
---------------------------------------------------------------------------------------------------------------
-if text and not Vips(msg) then  
-local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
-return false
-end
-end
-if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
-return false
-end 
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
-return false
-end
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if Chat_Type == 'GroupBot' then
-if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
-return false
-end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
-end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
-return false
-end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
-end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
-return false
-end 
-
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
-return false
-end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
-end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
-database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
-database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
-database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
-end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
-end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
-end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
-end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -3749,5663 +2010,13 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
-else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø¯Ø±Ø§Ø¡"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
-local ch = msg.chat_id_
-local type = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") 
-Is_Not_Spam(msg,type)  
-end
-database:setex(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
-local edit_id = data.text_ or "nil"  
-Num_Msg_Max = 5
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") 
-end
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") 
-end 
-end 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) and not Vips(msg) then       
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
-return false     
-end     
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
-end
-if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-local mem_id = msg.content_.members_  
-for i=0,#mem_id do  
-Kick_Group(msg.chat_id_,mem_id[i].id_)
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-return false  
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if not Vips(msg) then 
-if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.entities_ then 
-if msg.content_.entities_[0] then 
-if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
-if not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end  
-end 
-end
-end 
-
-if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end 
-
-
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.text_ and not Vips(msg) then  
-local _nl, ctrl_ = string.gsub(text, "%c", "")  
-local _nl, real_ = string.gsub(text, "%d", "")   
-sens = 400  
-if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then
-if msg.content_.ID == "MessageChatJoinByLink" then
-tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
-if GetWelcomeGroup then 
-t = GetWelcomeGroup
-else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
-end 
-t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
-send(msg.chat_id_, msg.id_,t)
-end,nil) 
-end 
-end 
--------------------------------------------------------
-if msg.content_.ID == "MessagePinMessage" then
-if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
-else
-local Msg_Pin = database:get(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then
-PinMessage(msg.chat_id_,Msg_Pin)
-end
-end
-end
-------------------------------------------------------
-if msg.content_.photo_ then  
-if database:get(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
-if msg.content_.photo_.sizes_[3] then  
-photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
-else 
-photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_ 
-end 
-tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
-if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-return false  end
-if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
-end
-end, nil) 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-end   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
-return false  
-end 
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  
-end 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
-return false   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false
-end
-if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
-local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false 
-end
-end 
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id..'Pir3te:UsersBot')  
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:UsersBot")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-
---------------------------------------------------------------------------------------------------------------
-if text and not Vips(msg) then  
-local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
-return false
-end
-end
-if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
-return false
-end 
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
-return false
-end
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if Chat_Type == 'GroupBot' then
-if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
-return false
-end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
-end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
-return false
-end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
-end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
-return false
-end 
-
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
-return false
-end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
-end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
-database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
-database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
-database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
-end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
-end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
-end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
-end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
-else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
-local ch = msg.chat_id_
-local type = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") 
-Is_Not_Spam(msg,type)  
-end
-database:setex(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
-local edit_id = data.text_ or "nil"  
-Num_Msg_Max = 5
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") 
-end
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") 
-end 
-end 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) and not Vips(msg) then       
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
-return false     
-end     
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
-end
-if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-local mem_id = msg.content_.members_  
-for i=0,#mem_id do  
-Kick_Group(msg.chat_id_,mem_id[i].id_)
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-return false  
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if not Vips(msg) then 
-if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.entities_ then 
-if msg.content_.entities_[0] then 
-if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
-if not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end  
-end 
-end
-end 
-
-if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end 
-
-
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.text_ and not Vips(msg) then  
-local _nl, ctrl_ = string.gsub(text, "%c", "")  
-local _nl, real_ = string.gsub(text, "%d", "")   
-sens = 400  
-if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then
-if msg.content_.ID == "MessageChatJoinByLink" then
-tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
-if GetWelcomeGroup then 
-t = GetWelcomeGroup
-else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
-end 
-t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
-send(msg.chat_id_, msg.id_,t)
-end,nil) 
-end 
-end 
--------------------------------------------------------
-if msg.content_.ID == "MessagePinMessage" then
-if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
-else
-local Msg_Pin = database:get(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then
-PinMessage(msg.chat_id_,Msg_Pin)
-end
-end
-end
-------------------------------------------------------
-if msg.content_.photo_ then  
-if database:get(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
-if msg.content_.photo_.sizes_[3] then  
-photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
-else 
-photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_ 
-end 
-tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
-if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-return false  end
-if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
-end
-end, nil) 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-end   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
-return false  
-end 
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  
-end 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
-return false   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false
-end
-if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
-local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false 
-end
-end 
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id..'Pir3te:UsersBot')  
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:UsersBot")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-
---------------------------------------------------------------------------------------------------------------
-if text and not Vips(msg) then  
-local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
-return false
-end
-end
-if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
-return false
-end 
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
-return false
-end
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if Chat_Type == 'GroupBot' then
-if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
-return false
-end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
-end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
-return false
-end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
-end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
-return false
-end 
-
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
-return false
-end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
-end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
-database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
-database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
-database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
-end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
-end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
-end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
-end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
-else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
-local ch = msg.chat_id_
-local type = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") 
-Is_Not_Spam(msg,type)  
-end
-database:setex(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
-local edit_id = data.text_ or "nil"  
-Num_Msg_Max = 5
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") 
-end
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") 
-end 
-end 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) and not Vips(msg) then       
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
-return false     
-end     
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
-end
-if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-local mem_id = msg.content_.members_  
-for i=0,#mem_id do  
-Kick_Group(msg.chat_id_,mem_id[i].id_)
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-return false  
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if not Vips(msg) then 
-if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.entities_ then 
-if msg.content_.entities_[0] then 
-if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
-if not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end  
-end 
-end
-end 
-
-if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end 
-
-
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.text_ and not Vips(msg) then  
-local _nl, ctrl_ = string.gsub(text, "%c", "")  
-local _nl, real_ = string.gsub(text, "%d", "")   
-sens = 400  
-if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then
-if msg.content_.ID == "MessageChatJoinByLink" then
-tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
-if GetWelcomeGroup then 
-t = GetWelcomeGroup
-else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
-end 
-t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
-send(msg.chat_id_, msg.id_,t)
-end,nil) 
-end 
-end 
--------------------------------------------------------
-if msg.content_.ID == "MessagePinMessage" then
-if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
-else
-local Msg_Pin = database:get(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then
-PinMessage(msg.chat_id_,Msg_Pin)
-end
-end
-end
-------------------------------------------------------
-if msg.content_.photo_ then  
-if database:get(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
-if msg.content_.photo_.sizes_[3] then  
-photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
-else 
-photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_ 
-end 
-tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
-if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-return false  end
-if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
-end
-end, nil) 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-end   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
-return false  
-end 
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  
-end 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
-return false   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false
-end
-if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
-local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false 
-end
-end 
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id..'Pir3te:UsersBot')  
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:UsersBot")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-
---------------------------------------------------------------------------------------------------------------
-if text and not Vips(msg) then  
-local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
-return false
-end
-end
-if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
-return false
-end 
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
-return false
-end
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if Chat_Type == 'GroupBot' then
-if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
-return false
-end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
-end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
-return false
-end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
-end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
-return false
-end 
-
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
-return false
-end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
-end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
-database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
-database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
-database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
-end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
-end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
-end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
-end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
-else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or "")) 
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.animation_.animation_.persistent_id_)
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-database:set(bot_id..'Pir3te:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-
-if not Vips(msg) and msg.content_.ID ~= "MessageChatAddMembers" and database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") then 
-floods = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") or "nil"
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 5
-local post_count = tonumber(database:get(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_) or 0)
-if post_count > tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 5) then 
-local ch = msg.chat_id_
-local type = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") 
-Is_Not_Spam(msg,type)  
-end
-database:setex(bot_id.."Pir3te:floodc:"..msg.sender_user_id_..":"..msg.chat_id_, tonumber(database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") or 3), post_count+1) 
-local edit_id = data.text_ or "nil"  
-Num_Msg_Max = 5
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") then
-Num_Msg_Max = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") 
-end
-if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") then
-Time_Spam = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodtime") 
-end 
-end 
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) and not Vips(msg) then       
-DeleteMessage(msg.chat_id_,{[0] = msg.id_})   
-return false     
-end     
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatAddMembers" then 
-database:incr(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) 
-end
-if msg.content_.ID == "MessageChatAddMembers" and not Vips(msg) then   
-if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-local mem_id = msg.content_.members_  
-for i=0,#mem_id do  
-Kick_Group(msg.chat_id_,mem_id[i].id_)
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatJoinByLink" and not Vips(msg) then 
-if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-return false  
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("@[%a%d_]+") or msg.content_.caption_:match("@(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("@[%a%d_]+") or text and text:match("@(.+)") then    
-if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("#[%a%d_]+") or msg.content_.caption_:match("#(.+)") then 
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("#[%a%d_]+") or text and text:match("#(.+)") then
-if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if msg.content_.caption_:match("/[%a%d_]+") or msg.content_.caption_:match("/(.+)") then  
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("/[%a%d_]+") or text and text:match("/(.+)") then
-if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" and not Vips(msg) then    
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" and not Vips(msg) then    
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" and not Vips(msg) then    
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" and not Vips(msg) then    
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.caption_ then 
-if not Vips(msg) then 
-if msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp][Ss]://") or msg.content_.caption_:match("[Hh][Tt][Tt][Pp]://") or msg.content_.caption_:match("[Ww][Ww][Ww].") or msg.content_.caption_:match(".[Cc][Oo][Mm]") or msg.content_.caption_:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or msg.content_.caption_:match(".[Pp][Ee]") or msg.content_.caption_:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or msg.content_.caption_:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or msg.content_.caption_:match("[Tt].[Mm][Ee]/") then 
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
-end
-end
---------------------------------------------------------------------------------------------------------------
-if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") or text and text:match("[Hh][Tt][Tt][Pp][Ss]://") or text and text:match("[Hh][Tt][Tt][Pp]://") or text and text:match("[Ww][Ww][Ww].") or text and text:match(".[Cc][Oo][Mm]") or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") or text and text:match(".[Pp][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]/") or text and text:match("[Jj][Oo][Ii][Nn][Cc][Hh][Aa][Tt]/") or text and text:match("[Tt].[Mm][Ee]/") and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" and not Vips(msg) then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" and not Vips(msg) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" and not Vips(msg) then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" and not Vips(msg) then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessagePhoto" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVideo" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAnimation" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.game_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageAudio" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageVoice" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.reply_markup_ and msg.reply_markup_.ID == "ReplyMarkupInlineKeyboard" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageSticker" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.forward_info_ and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-return false
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageDocument" and not Vips(msg) then     
-if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageUnsupported" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.entities_ then 
-if msg.content_.entities_[0] then 
-if msg.content_.entities_[0] and msg.content_.entities_[0].ID == "MessageEntityUrl" or msg.content_.entities_[0].ID == "MessageEntityTextUrl" then      
-if not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end  
-end 
-end
-end 
-
-if tonumber(msg.via_bot_user_id_) ~= 0 and not Vips(msg) then
-if database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end 
-
-
---------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageContact" and not Vips(msg) then      
-if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-if msg.content_.text_ and not Vips(msg) then  
-local _nl, ctrl_ = string.gsub(text, "%c", "")  
-local _nl, real_ = string.gsub(text, "%d", "")   
-sens = 400  
-if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-RestrictChat(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-Kick_Group(msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" and string.len(msg.content_.text_) > (sens) or ctrl_ > (sens) or real_ > (sens) then 
-database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_,msg.sender_user_id_)
-DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
-end
-end
---------------------------------------------------------------------------------------------------------------
-local status_welcome = database:get(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_)
-if status_welcome and not database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then
-if msg.content_.ID == "MessageChatJoinByLink" then
-tdcli_function({ID = "GetUser",user_id_=msg.sender_user_id_},function(extra,result) 
-local GetWelcomeGroup = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
-if GetWelcomeGroup then 
-t = GetWelcomeGroup
-else  
-t = "\n• äæÑÊ ÍÈí \n•  name \n• user" 
-end 
-t = t:gsub("name",result.first_name_) 
-t = t:gsub("user",("@"..result.username_ or "áÇ íæÌÏ")) 
-send(msg.chat_id_, msg.id_,t)
-end,nil) 
-end 
-end 
--------------------------------------------------------
-if msg.content_.ID == "MessagePinMessage" then
-if Constructor(msg) or tonumber(msg.sender_user_id_) == tonumber(bot_id) then 
-database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.content_.message_id_)
-else
-local Msg_Pin = database:get(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
-if Msg_Pin and database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then
-PinMessage(msg.chat_id_,Msg_Pin)
-end
-end
-end
-------------------------------------------------------
-if msg.content_.photo_ then  
-if database:get(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) then 
-if msg.content_.photo_.sizes_[3] then  
-photo_id = msg.content_.photo_.sizes_[3].photo_.persistent_id_ 
-else 
-photo_id = msg.content_.photo_.sizes_[0].photo_.persistent_id_ 
-end 
-tdcli_function ({ID = "ChangeChatPhoto",chat_id_ = msg.chat_id_,photo_ = getInputFile(photo_id) }, function(arg,data)   
-if data.code_ == 3 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí æÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-return false  end
-if data.message_ == "CHAT_ADMIN_REQUIRED" then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÊÛííÑ ãÚáæãÇÊ ÇáãÌãæÚå íÑÌì ÇáãÍÇæáå áÇÍŞÇ") 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-else
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ ÕæÑÉ ÇáãÌãæÚå") 
-end
-end, nil) 
-database:del(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_) 
-end   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ æÖÚ ÇáæÕİ") 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-https.request("https://api.telegram.org/bot"..token.."/setChatDescription?chat_id="..msg.chat_id_.."&description="..text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÛííÑ æÕİ ÇáãÌãæÚå")   
-return false  
-end 
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÊÑÍíÈ") 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-return false  
-end 
-database:del(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
-database:set(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÊÑÍíÈ ÇáãÌãæÚå")   
-return false   
-end
---------------------------------------------------------------------------------------------------------------
-if database:get(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) then
-if text == "ÇáÛÇÁ" then
-send(msg.chat_id_,msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ÇáÑÇÈØ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false
-end
-if text and text:match("(https://telegram.me/joinchat/%S+)") or text and text:match("(https://t.me/joinchat/%S+)") then     
-local Link = text:match("(https://telegram.me/joinchat/%S+)") or text:match("(https://t.me/joinchat/%S+)")   
-database:set(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_,Link)
-send(msg.chat_id_,msg.id_,"?? ? Êã ÍİÙ ÇáÑÇÈØ ÈäÌÇÍ")       
-database:del(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_) 
-return false 
-end
-end 
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå ááÎÇÕ") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id..'Pir3te:UsersBot')  
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups") 
-if msg.content_.text_ then
-for k,v in pairs(list) do 
-send(v, 0,"["..msg.content_.text_.."]")  
-end
-elseif msg.content_.photo_ then
-if msg.content_.photo_.sizes_[0] then
-photo = msg.content_.photo_.sizes_[0].photo_.persistent_id_
-elseif msg.content_.photo_.sizes_[1] then
-photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
-end
-for k,v in pairs(list) do 
-sendPhoto(v, 0, photo,(msg.content_.caption_ or ""))
-end 
-elseif msg.content_.animation_ then
-for k,v in pairs(list) do 
-sendDocument(v, 0, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ""))    
-end 
-elseif msg.content_.sticker_ then
-for k,v in pairs(list) do 
-sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
-end 
-end
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false
-end
-
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:Chek:Groups")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÌãæÚå ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-if database:get(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÇáÇĞÇÚå") 
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-return false  
-end 
-if msg.forward_info_ then 
-local list = database:smembers(bot_id.."Pir3te:UsersBot")   
-for k,v in pairs(list) do  
-tdcli_function({ID="ForwardMessages",
-chat_id_ = v,
-from_chat_id_ = msg.chat_id_,
-message_ids_ = {[0] = msg.id_},
-disable_notification_ = 0,
-from_background_ = 1},function(a,t) end,nil) 
-end   
-send(msg.chat_id_, msg.id_,"?? ? ÊãÊ ÇáÇĞÇÚå Çáì *~ "..#list.." ~* ãÔÊÑß İí ÇáÎÇÕ ")     
-database:del(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
-end 
-return false
-end
-
---------------------------------------------------------------------------------------------------------------
-if text and not Vips(msg) then  
-local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)   
-if Pir3te_Msg then    
-Reply_Status(msg,msg.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
-DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
-return false
-end
-end
-if database:get(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" or text == "ÇáÛÇÁ ?" then   
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÍİÙ ÇÓã ÇáÈæÊ") 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-return false  
-end 
-database:del(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_) 
-database:set(bot_id.."Pir3te:Name:Bot",text) 
-send(msg.chat_id_, msg.id_, "?? ?  Êã ÍİÙ ÇÓã ÇáÈæÊ")  
-return false
-end 
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_) == "true" then
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáÌÏíÏ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_,"true1") 
-return false
-end
-if text and database:get(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_) == "true1" then
-local NewCmd = database:get(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
-database:set(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text,NewCmd)
-database:sadd(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÇãÑ")  
-database:del(bot_id.."Pir3te:Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
-return false
-end
---------------------------------------------------------------------------------------------------------------
-if Chat_Type == 'GroupBot' then
-if ChekAdd(msg.chat_id_) == true then
-if text == "Şİá ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:set(bot_id.."Pir3te:Lock:text"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÏÑÏÔå")  
-return false
-end 
-if text == "Şİá ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Join"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÈæÊÇÊ ÈÇáØÑÏ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:set(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_,true)  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:lockpin"..msg.chat_id_, true) 
-database:sadd(bot_id.."Pir3te:Lock:pin",msg.chat_id_) 
-tdcli_function ({ ID = "GetChannelFull",  channel_id_ = msg.chat_id_:gsub("-100","") }, function(arg,data)  database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,data.pinned_message_id_)  end,nil)
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "Şİá ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá ÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:set(bot_id.."Pir3te:Lock:edit"..msg.chat_id_,true) 
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÊÚÏíá")  
-return false
-end 
-if text == "Şİá Çáßá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-database:set(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_,true)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:set(bot_id..'Pir3te:'..lock..msg.chat_id_,"del")    
-end
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "İÊÍ ÇáÇÖÇİå" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇÖÇİÉ ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÏÑÏÔå" and msg.reply_to_message_id_ == 0 and Owner(msg) then 
-database:del(bot_id.."Pir3te:Lock:text"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÏÑÏÔå")  
-return false
-end 
-if text == "İÊÍ ÇáÏÎæá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Join"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÏÎæá ÇáÇÚÖÇÁ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÈæÊÇÊ " and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??\n??? ? Êã İÜÊÍ ÇáÈæÊÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÇÔÚÇÑÇÊ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then  
-database:del(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÇÔÚÇÑÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:lockpin"..msg.chat_id_)  
-database:srem(bot_id.."Pir3te:Lock:pin",msg.chat_id_)
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÇáÊËÈíÊ åäÇ")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ ÇáÊÚÏíá ÇáãíÏíÇ" and msg.reply_to_message_id_ == 0 and Constructor(msg) then 
-database:del(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) 
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÊÚÏíá")  
-return false
-end 
-if text == "İÊÍ Çáßá" and msg.reply_to_message_id_ == 0 and Addictive(msg) then 
-database:del(bot_id.."Pir3te:Lock:tagservrbot"..msg.chat_id_)   
-list ={"Lock:Bot:kick","Lock:User:Name","Lock:hashtak","Lock:Cmd","Lock:Link","Lock:forward","Lock:Keyboard","Lock:geam","Lock:Photo","Lock:Animation","Lock:Video","Lock:Audio","Lock:vico","Lock:Sticker","Lock:Document","Lock:Unsupported","Lock:Markdaun","Lock:Contact","Lock:Spam"}
-for i,lock in pairs(list) do 
-database:del(bot_id..'Pir3te:'..lock..msg.chat_id_)    
-end
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÜÊÍ ÌãíÚ ÇáÇæÇãÑ")  
-return false
-end 
---------------------------------------------------------------------------------------------------------------
-if text == "Şİá ÇáÑæÇÈØ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáÑæÇÈØ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Link"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÑæÇÈØ")  
-return false
-end 
-if text == "İÊÍ ÇáÑæÇÈØ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Link"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÑæÇÈØ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãÚÑİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãÚÑİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÚÑİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊÇß" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÊÇß ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊÇß")  
-return false
-end 
-if text == "İÊÍ ÇáÊÇß" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊÇß")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÔÇÑÍå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÔÇÑÍå")  
-return false
-end 
-if text == "İÊÍ ÇáÔÇÑÍå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÔÇÑÍå")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ"and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáÕæÑ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÑ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÑ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÑ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáİíÏíæ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Video"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáİíÏíæ")  
-return false
-end 
-if text == "İÊÍ ÇáİíÏíæ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Video"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáİíÏíæ")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáãÊÍÑßå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÊÍÑßå")  
-return false
-end 
-if text == "İÊÍ ÇáãÊÍÑßå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÊÍÑßå")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇáÚÇÈ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:geam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "İÊÍ ÇáÇáÚÇÈ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:geam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇáÚÇÈ")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÇÛÇäí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇÛÇäí")  
-return false
-end 
-if text == "İÊÍ ÇáÇÛÇäí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Audio"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇÛÇäí")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáÕæÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:vico"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÕæÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÕæÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:vico"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÕæÊ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáßíÈæÑÏ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "İÊÍ ÇáßíÈæÑÏ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßíÈæÑÏ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáÕŞÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáÕŞÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáÕŞÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáÊæÌíå ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:forward"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÊæÌíå")  
-return false
-end 
-if text == "İÊÍ ÇáÊæÌíå" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:forward"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊæÌíå")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáãáİÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Document"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãáİÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáãáİÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Document"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãáİÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáÓíáİí ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÓíáİí")  
-return false
-end 
-if text == "İÊÍ ÇáÓíáİí" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÓíáİí")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáãÇÑßÏÇæä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "İÊÍ ÇáãÇÑßÏÇæä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáãÇÑßÏÇæä")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáÌåÇÊ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÌåÇÊ")  
-return false
-end 
-if text == "İÊÍ ÇáÌåÇÊ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÌåÇÊ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáßáÇíÔ ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáßáÇíÔ")  
-return false
-end 
-if text == "İÊÍ ÇáßáÇíÔ" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáßáÇíÔ")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáÊŞíÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáßÊã" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÇäáÇíä ÈÇáØÑÏ" and Addictive(msg) then
-database:set(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã ŞİÜá ÇáÇäáÇíä")  
-return false
-end 
-if text == "İÊÍ ÇáÇäáÇíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Lock:Inlen"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÇäáÇíä")  
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáØÑÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","??? ? Êã Şİá ÇáÊßÑÇÑ ÈÇáÍĞİ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáÊŞíÏ" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","keed")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "Şİá ÇáÊßÑÇÑ ÈÇáßÊã" and Addictive(msg) then 
-database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood","mute")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","??? ? Êã Şİá ÇáÊßÑÇÑ")
-return false
-end 
-if text == "İÊÍ ÇáÊßÑÇÑ" and Addictive(msg) then 
-database:hdel(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"flood")  
-Reply_Status(msg,msg.sender_user_id_,"unlock","??? ? Êã İÊÍ ÇáÊßÑÇÑ")
-return false
-end 
-
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
-return false
-end
-if text == ("ãÓÍ ÇáãØæÑíä") and DevPir3te(msg) then
-database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
-end
-if text == "ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-database:del(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓííä"
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãäÔÆíä" and BasicConstructor(msg) then
-database:del(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãäÔÆíä "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáãÏÑÇÁ" and Constructor(msg) then
-database:del(bot_id.."Pir3te:Manager"..msg.chat_id_)
-texts = "? ?  Êã ãÓÍ ÇáãÏÑÇÁ "
-send(msg.chat_id_, msg.id_, texts)
-end
-if text == "ãÓÍ ÇáÇÏãäíå" and Owner(msg) then
-database:del(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÏãäíÉ  ")
-end
-if text == "ãÓÍ ÇáããíÒíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ  ŞÇÆãÉ ÇáÇÚÖÇÁ ÇáããíÒíä  ")
-end
-if text == "ãÓÍ ÇáãßÊæãíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "?? ?  Êã ãÓÍ ŞÇÆãå ÇáãßÊæãíä ")
-end
-if text == "ãÓÍ ÇáãÍÙæÑíä" and Addictive(msg) then
-database:del(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ÇáãÍÙæÑíä")
-end
-if text == ("ŞÇÆãå ÇáÚÇã") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n?? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãØæÑíä") and DevPir3te(msg) then
-local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n??????  ?  ŞÇÆãå ÇáãØæÑíä   ¡\n????? ? ? ?????\n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t.."|"..k.."|~? ([@"..username.."])\n"
-else
-t = t.."|"..k.."|~? (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == "ÇáãäÔÆíä ÇáÇÓÇÓíä" and DevBot(msg) then
-local list = database:smembers(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä ÇáÇÓÇÓíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä ÇÓÇÓííä"
-end
-send(msg.chat_id_, msg.id_, t)
-return false
-end
-if text == ("ÇáãäÔÆíä") and BasicConstructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Constructor"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãäÔÆíä \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãäÔÆíä"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáãÏÑÇÁ") and Constructor(msg) then
-local list = database:smembers(bot_id.."Pir3te:Manager"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãÏÑÇÁ \n? ? ? ? ? ? ? ? ? \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."Pir3te:User:Name" .. v)
-if username then
-t = t..""..k.."- ([@"..username.."])\n"
-else
-t = t..""..k.."- (`"..v.."`)\n"
-end
-end
-if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÏÑÇÁ"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-if text == ("ÇáÇÏãäíå") and Owner(msg) then
+if text == ("Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡") and Owner(msg) then
 local list = database:smembers(bot_id.."Pir3te:Mod:User"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáÇÏãäíå \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -9415,13 +2026,13 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ÇÏãäíå"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø§Ø¯Ù…Ù†ÙŠÙ‡"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("ÇáããíÒíä") and Addictive(msg) then
+if text == ("Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†") and Addictive(msg) then
 local list = database:smembers(bot_id.."Pir3te:Special:User"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ããíÒíä ÇáãÌãæÚå \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ù…Ù…ÙŠØ²ÙŠÙ† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -9431,13 +2042,13 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ããíÒíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ù…ÙŠØ²ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("ÇáãßÊæãíä") and Addictive(msg) then
+if text == ("Ø§Ù„Ù…ÙƒØªÙˆÙ…ÙŠÙ†") and Addictive(msg) then
 local list = database:smembers(bot_id.."Pir3te:Muted:User"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ÇáãßÊæãíä \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…ÙƒØªÙˆÙ…ÙŠÙ† \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -9447,14 +2058,14 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãßÊæãíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…ÙƒØªÙˆÙ…ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("ÇáãÍÙæÑíä") then
+if text == ("Ø§Ù„Ù…Ø­Ø¸ÙˆØ±ÙŠÙ†") then
 local list = database:smembers(bot_id.."Pir3te:Ban:User"..msg.chat_id_)
-t = "\n? ? ŞÇÆãÉ ãÍÙæÑíä ÇáãÌãæÚå \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ù…Ø­Ø¸ÙˆØ±ÙŠÙ† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -9464,577 +2075,577 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø­Ø¸ÙˆØ±ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("ÍÙÑ ÚÇã") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
+if text == ("Ø­Ø¸Ø± Ø¹Ø§Ù…") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
 function Function_Pir3te(extra, result, success)
 if result.sender_user_id_ == tonumber(SUDO) then
-send(msg.chat_id_, msg.id_, "?? ? áÇ íãßäß ÍÙÑ ÇáãØæÑ ÇáÇÓÇÓí \n")
+send(msg.chat_id_, msg.id_, "ğŸ“® â”‡ Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø­Ø¸Ø± Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then  
-send(msg.chat_id_, msg.id_, "?? ? áÇ ÊÓØíÚ ÍÙÑ ÇáÈæÊ ÚÇã")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ØªØ³Ø·ÙŠØ¹ Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª Ø¹Ø§Ù…")
 return false 
 end
 database:sadd(bot_id.."Pir3te:GBan:User", result.sender_user_id_)
 Kick_Group(result.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÍÙÑ ÚÇã @(.*)$")  and DevPir3te(msg) then
-local username = text:match("^ÍÙÑ ÚÇã @(.*)$") 
+if text and text:match("^Ø­Ø¸Ø± Ø¹Ø§Ù… @(.*)$")  and DevPir3te(msg) then
+local username = text:match("^Ø­Ø¸Ø± Ø¹Ø§Ù… @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 if tonumber(result.id_) == tonumber(bot_id) then  
-send(msg.chat_id_, msg.id_, "?? ? áÇ ÊÓØíÚ ÍÙÑ ÇáÈæÊ ÚÇã")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ØªØ³Ø·ÙŠØ¹ Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª Ø¹Ø§Ù…")
 return false 
 end
 if result.id_ == tonumber(SUDO) then
-send(msg.chat_id_, msg.id_, "?? ? áÇ íãßäß ÍÙÑ ÇáãØæÑ ÇáÇÓÇÓí \n")
+send(msg.chat_id_, msg.id_, "ğŸ“® â”‡ Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø­Ø¸Ø± Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ \n")
 return false 
 end
 database:sadd(bot_id.."Pir3te:GBan:User", result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÍÙÑ ÚÇã (%d+)$") and DevPir3te(msg) then
-local userid = text:match("^ÍÙÑ ÚÇã (%d+)$")
+if text and text:match("^Ø­Ø¸Ø± Ø¹Ø§Ù… (%d+)$") and DevPir3te(msg) then
+local userid = text:match("^Ø­Ø¸Ø± Ø¹Ø§Ù… (%d+)$")
 if userid == tonumber(SUDO) then
-send(msg.chat_id_, msg.id_, "?? ? áÇ íãßäß ÍÙÑ ÇáãØæÑ ÇáÇÓÇÓí \n")
+send(msg.chat_id_, msg.id_, "ğŸ“® â”‡ Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø­Ø¸Ø± Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ \n")
 return false 
 end
 if tonumber(userid) == tonumber(bot_id) then  
-send(msg.chat_id_, msg.id_, "?? ? áÇ ÊÓØíÚ ÍÙÑ ÇáÈæÊ ÚÇã")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ØªØ³Ø·ÙŠØ¹ Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª Ø¹Ø§Ù…")
 return false 
 end
 database:sadd(bot_id.."Pir3te:GBan:User", userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 return false
 end
-if text == ("ÇáÛÇÁ ÇáÚÇã") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
+if text == ("Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø¹Ø§Ù…") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:GBan:User", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÇáÛÇÁ ÇáÚÇã @(.*)$") and DevPir3te(msg) then
-local username = text:match("^ÇáÛÇÁ ÇáÚÇã @(.*)$") 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø¹Ø§Ù… @(.*)$") and DevPir3te(msg) then
+local username = text:match("^Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø¹Ø§Ù… @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 database:srem(bot_id.."Pir3te:GBan:User", result.id_)
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÇáÛÇÁ ÇáÚÇã (%d+)$") and DevPir3te(msg) then
-local userid = text:match("^ÇáÛÇÁ ÇáÚÇã (%d+)$")
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø¹Ø§Ù… (%d+)$") and DevPir3te(msg) then
+local userid = text:match("^Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø¹Ø§Ù… (%d+)$")
 database:srem(bot_id.."Pir3te:GBan:User", userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ÚÇã ãä ÇáãÌãæÚÇÊ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ø¹Ø§Ù… Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª")  
 return false
 end
 
-if text == ("ÇÖİ ãØæÑ") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
+if text == ("Ø§Ø¶Ù Ù…Ø·ÙˆØ±") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Sudo:User", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ãØæÑ İí ÇáÈæÊ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø·ÙˆØ± ÙÙŠ Ø§Ù„Ø¨ÙˆØª")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false 
 end
-if text and text:match("^ÇÖİ ãØæÑ @(.*)$") and DevPir3te(msg) then
-local username = text:match("^ÇÖİ ãØæÑ @(.*)$")
+if text and text:match("^Ø§Ø¶Ù Ù…Ø·ÙˆØ± @(.*)$") and DevPir3te(msg) then
+local username = text:match("^Ø§Ø¶Ù Ù…Ø·ÙˆØ± @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Sudo:User", result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ãØæÑ İí ÇáÈæÊ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø·ÙˆØ± ÙÙŠ Ø§Ù„Ø¨ÙˆØª")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false 
 end
-if text and text:match("^ÇÖİ ãØæÑ (%d+)$") and DevPir3te(msg) then
-local userid = text:match("^ÇÖİ ãØæÑ (%d+)$")
+if text and text:match("^Ø§Ø¶Ù Ù…Ø·ÙˆØ± (%d+)$") and DevPir3te(msg) then
+local userid = text:match("^Ø§Ø¶Ù Ù…Ø·ÙˆØ± (%d+)$")
 database:sadd(bot_id.."Pir3te:Sudo:User", userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ãØæÑ İí ÇáÈæÊ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø·ÙˆØ± ÙÙŠ Ø§Ù„Ø¨ÙˆØª")  
 return false 
 end
-if text == ("ÍĞİ ãØæÑ") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
+if text == ("Ø­Ø°Ù Ù…Ø·ÙˆØ±") and tonumber(msg.reply_to_message_id_) ~= 0 and DevPir3te(msg) then
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Sudo:User", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãØæÑíä")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false 
 end
-if text and text:match("^ÍĞİ ãØæÑ @(.*)$") and DevPir3te(msg) then
-local username = text:match("^ÍĞİ ãØæÑ @(.*)$")
+if text and text:match("^Ø­Ø°Ù Ù…Ø·ÙˆØ± @(.*)$") and DevPir3te(msg) then
+local username = text:match("^Ø­Ø°Ù Ù…Ø·ÙˆØ± @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Sudo:User", result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãØæÑíä")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end  
-if text and text:match("^ÍĞİ ãØæÑ (%d+)$") and DevPir3te(msg) then
-local userid = text:match("^ÍĞİ ãØæÑ (%d+)$")
+if text and text:match("^Ø­Ø°Ù Ù…Ø·ÙˆØ± (%d+)$") and DevPir3te(msg) then
+local userid = text:match("^Ø­Ø°Ù Ù…Ø·ÙˆØ± (%d+)$")
 database:srem(bot_id.."Pir3te:Sudo:User", userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇáãØæÑíä")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†")  
 return false 
 end
 
-if text == ("ÑİÚ ãäÔÆ ÇÓÇÓí") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
+if text == ("Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ ÇÓÇÓí")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÑİÚ ãäÔÆ ÇÓÇÓí @(.*)$") and DevBot(msg) then 
-local username = text:match("^ÑİÚ ãäÔÆ ÇÓÇÓí @(.*)$")
+if text and text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ @(.*)$") and DevBot(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ ÇÓÇÓí")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÑİÚ ãäÔÆ ÇÓÇÓí (%d+)$") and DevBot(msg) then 
-local userid = text:match("^ÑİÚ ãäÔÆ ÇÓÇÓí (%d+)$") 
+if text and text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ (%d+)$") and DevBot(msg) then 
+local userid = text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ (%d+)$") 
 database:sadd(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ ÇÓÇÓí")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ")  
 return false
 end
-if text == ("ÊäÒíá ãäÔÆ ÇÓÇÓí") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
+if text == ("ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ãäÔÆ ÇÓÇÓí @(.*)$") and DevBot(msg) then 
-local username = text:match("^ÊäÒíá ãäÔÆ ÇÓÇÓí @(.*)$")
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ @(.*)$") and DevBot(msg) then 
+local username = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, result.id_)
 
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ãäÔÆ ÇÓÇÓí (%d+)$") and DevBot(msg) then 
-local userid = text:match("^ÊäÒíá ãäÔÆ ÇÓÇÓí (%d+)$") 
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ (%d+)$") and DevBot(msg) then 
+local userid = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ (%d+)$") 
 database:srem(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 return false
 end
 
-if text == "ÑİÚ ãäÔÆ" and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then 
+if text == "Ø±ÙØ¹ Ù…Ù†Ø´Ø¦" and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then 
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Constructor"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ İí ÇáãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 end
-if text and text:match("^ÑİÚ ãäÔÆ @(.*)$") and BasicConstructor(msg) then 
-local username = text:match("^ÑİÚ ãäÔÆ @(.*)$")
+if text and text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ @(.*)$") and BasicConstructor(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Constructor"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ İí ÇáãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÑİÚ ãäÔÆ (%d+)$") and BasicConstructor(msg) then 
-local userid = text:match("^ÑİÚ ãäÔÆ (%d+)$")
+if text and text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ (%d+)$") and BasicConstructor(msg) then 
+local userid = text:match("^Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ (%d+)$")
 database:sadd(bot_id.."Pir3te:Constructor"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ãäÔÆ İí ÇáãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù†Ø´Ø¦ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
-if text and text:match("^ÊäÒíá ãäÔÆ$") and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦$") and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Constructor"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÊäÒíá ãäÔÆ @(.*)$") and BasicConstructor(msg) then 
-local username = text:match("^ÊäÒíá ãäÔÆ @(.*)$")
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ @(.*)$") and BasicConstructor(msg) then 
+local username = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Constructor"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÊäÒíá ãäÔÆ (%d+)$") and BasicConstructor(msg) then 
-local userid = text:match("^ÊäÒíá ãäÔÆ (%d+)$")
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ (%d+)$") and BasicConstructor(msg) then 
+local userid = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ (%d+)$")
 database:srem(bot_id.."Pir3te:Constructor"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇáãäÔÆíä")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 end
 
-if text == ("ÑİÚ ãÏíÑ") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
+if text == ("Ø±ÙØ¹ Ù…Ø¯ÙŠØ±") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Manager"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ãÏíÑ ÇáãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø¯ÙŠØ± Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end  
-if text and text:match("^ÑİÚ ãÏíÑ @(.*)$") and Constructor(msg) then 
-local username = text:match("^ÑİÚ ãÏíÑ @(.*)$") 
+if text and text:match("^Ø±ÙØ¹ Ù…Ø¯ÙŠØ± @(.*)$") and Constructor(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ù…Ø¯ÙŠØ± @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Manager"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ãÏíÑ ÇáãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø¯ÙŠØ± Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end 
 
-if text and text:match("^ÑİÚ ãÏíÑ (%d+)$") and Constructor(msg) then 
-local userid = text:match("^ÑİÚ ãÏíÑ (%d+)$") 
+if text and text:match("^Ø±ÙØ¹ Ù…Ø¯ÙŠØ± (%d+)$") and Constructor(msg) then 
+local userid = text:match("^Ø±ÙØ¹ Ù…Ø¯ÙŠØ± (%d+)$") 
 database:sadd(bot_id.."Pir3te:Manager"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ãÏíÑ ÇáãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ø¯ÙŠØ± Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 return false
 end  
-if text == ("ÊäÒíá ãÏíÑ") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
+if text == ("ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ±") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Manager"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãÏÑÇÁ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end  
-if text and text:match("^ÊäÒíá ãÏíÑ @(.*)$") and Constructor(msg) then 
-local username = text:match("^ÊäÒíá ãÏíÑ @(.*)$")
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ± @(.*)$") and Constructor(msg) then 
+local username = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ± @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Manager"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáãÏÑÇÁ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end  
-if text and text:match("^ÊäÒíá ãÏíÑ (%d+)$") and Constructor(msg) then 
-local userid = text:match("^ÊäÒíá ãÏíÑ (%d+)$") 
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ± (%d+)$") and Constructor(msg) then 
+local userid = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ± (%d+)$") 
 database:srem(bot_id.."Pir3te:Manager"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇáãÏÑÇÁ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡")  
 return false
 end
 
-if text == ("ÑİÚ ÇÏãä") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
+if text == ("Ø±ÙØ¹ Ø§Ø¯Ù…Ù†") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Mod:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ÇÏãä ááãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ø§Ø¯Ù…Ù† Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÑİÚ ÇÏãä @(.*)$") and Owner(msg) then 
-local username = text:match("^ÑİÚ ÇÏãä @(.*)$")
+if text and text:match("^Ø±ÙØ¹ Ø§Ø¯Ù…Ù† @(.*)$") and Owner(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ø§Ø¯Ù…Ù† @(.*)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Mod:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ÇÏãä ááãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ø§Ø¯Ù…Ù† Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÑİÚ ÇÏãä (%d+)$") and Owner(msg) then 
-local userid = text:match("^ÑİÚ ÇÏãä (%d+)$")
+if text and text:match("^Ø±ÙØ¹ Ø§Ø¯Ù…Ù† (%d+)$") and Owner(msg) then 
+local userid = text:match("^Ø±ÙØ¹ Ø§Ø¯Ù…Ù† (%d+)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 database:sadd(bot_id.."Pir3te:Mod:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ÇÏãä ááãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ø§Ø¯Ù…Ù† Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 return false
 end
-if text == ("ÊäÒíá ÇÏãä") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
+if text == ("ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù†") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇÏãäíå ÇáãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ø¯Ù…Ù†ÙŠÙ‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ÇÏãä @(.*)$") and Owner(msg) then 
-local username = text:match("^ÊäÒíá ÇÏãä @(.*)$") 
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù† @(.*)$") and Owner(msg) then 
+local username = text:match("^ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù† @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇÏãäíå ÇáãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ø¯Ù…Ù†ÙŠÙ‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ÇÏãä (%d+)$") and Owner(msg) then 
-local userid = text:match("^ÊäÒíá ÇÏãä (%d+)$")
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù† (%d+)$") and Owner(msg) then 
+local userid = text:match("^ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù† (%d+)$")
 database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇÏãäíå ÇáãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ø¯Ù…Ù†ÙŠÙ‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 return false
 end
 
-if text == ("ÑİÚ ããíÒ") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
+if text == ("Ø±ÙØ¹ Ù…Ù…ÙŠØ²") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 database:sadd(bot_id.."Pir3te:Special:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊÑŞíÊå ããíÒ ááãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù…ÙŠØ² Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÑİÚ ããíÒ @(.*)$") and Addictive(msg) then 
-local username = text:match("^ÑİÚ ããíÒ @(.*)$") 
+if text and text:match("^Ø±ÙØ¹ Ù…Ù…ÙŠØ² @(.*)$") and Addictive(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ù…Ù…ÙŠØ² @(.*)$") 
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Special:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊÑŞíÊå ããíÒ ááãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù…ÙŠØ² Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 
-if text and text:match("^ÑİÚ ããíÒ (%d+)$") and Addictive(msg) then 
-local userid = text:match("^ÑİÚ ããíÒ (%d+)$")
+if text and text:match("^Ø±ÙØ¹ Ù…Ù…ÙŠØ² (%d+)$") and Addictive(msg) then 
+local userid = text:match("^Ø±ÙØ¹ Ù…Ù…ÙŠØ² (%d+)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'? ? áÇ ÊÓÊØíÚ ÑİÚ ÇÍÏ æĞÇáß áÇä Êã ÊÚØíá ÇáÑİÚ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'âœ– â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø±ÙØ¹ Ø§Ø­Ø¯ ÙˆØ°Ø§Ù„Ùƒ Ù„Ø§Ù† ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 database:sadd(bot_id.."Pir3te:Special:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊÑŞíÊå ããíÒ ááãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØªÙ‡ Ù…Ù…ÙŠØ² Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 return false
 end
 
-if (text == ("ÊäÒíá ããíÒ")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
+if (text == ("ØªÙ†Ø²ÙŠÙ„ Ù…Ù…ÙŠØ²")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Special:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáããíÒíä")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ããíÒ @(.*)$") and Addictive(msg) then 
-local username = text:match("^ÊäÒíá ããíÒ @(.*)$") 
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù…ÙŠØ² @(.*)$") and Addictive(msg) then 
+local username = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù…ÙŠØ² @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Special:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊäÒíáå ãä ÇáããíÒíä")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÊäÒíá ããíÒ (%d+)$") and Addictive(msg) then 
-local userid = text:match("^ÊäÒíá ããíÒ (%d+)$") 
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù…ÙŠØ² (%d+)$") and Addictive(msg) then 
+local userid = text:match("^ØªÙ†Ø²ÙŠÙ„ Ù…Ù…ÙŠØ² (%d+)$") 
 database:srem(bot_id.."Pir3te:Special:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊäÒíáå ãä ÇáããíÒíä")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†")  
 return false
 end  
-if text and text:match("ÑİÚ (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local RTPA = text:match("ÑİÚ (.*)")
+if text and text:match("Ø±ÙØ¹ (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
+local RTPA = text:match("Ø±ÙØ¹ (.*)")
 if database:sismember(bot_id.."Pir3te:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Pir3tert = database:get(bot_id.."Pir3te:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
-if Pir3tert == "ããíÒ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..RTPA.." åäÇ\n")   
+if Pir3tert == "Ù…Ù…ÙŠØ²" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..RTPA.." Ù‡Ù†Ø§\n")   
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."Pir3te:Special:User"..msg.chat_id_,result.sender_user_id_)  
-elseif Pir3tert == "ÇÏãä" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ø§Ø¯Ù…Ù†" and Owner(msg) then 
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..RTPA.." Ù‡Ù†Ø§\n")   
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."Pir3te:Mod:User"..msg.chat_id_,result.sender_user_id_)  
-elseif Pir3tert == "ãÏíÑ" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ù…Ø¯ÙŠØ±" and Constructor(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..RTPA.." Ù‡Ù†Ø§\n")   
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."Pir3te:Manager"..msg.chat_id_,result.sender_user_id_)  
-elseif Pir3tert == "ÚÖæ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ø¹Ø¶Ùˆ" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..RTPA.." Ù‡Ù†Ø§\n")   
 end
 end,nil)   
 end   
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text and text:match("ÊäÒíá (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local RTPA = text:match("ÊäÒíá (.*)")
+if text and text:match("ØªÙ†Ø²ÙŠÙ„ (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
+local RTPA = text:match("ØªÙ†Ø²ÙŠÙ„ (.*)")
 if database:sismember(bot_id.."Pir3te:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Pir3tert = database:get(bot_id.."Pir3te:Comd:New:rt:bot:"..RTPA..msg.chat_id_)
-if Pir3tert == "ããíÒ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÊäÒíáå ãä "..RTPA.." åäÇ\n")   
+if Pir3tert == "Ù…Ù…ÙŠØ²" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† "..RTPA.." Ù‡Ù†Ø§\n")   
 database:srem(bot_id.."Pir3te:Special:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Pir3tert == "ÇÏãä" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÊäÒíáå ãä "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ø§Ø¯Ù…Ù†" and Owner(msg) then 
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† "..RTPA.." Ù‡Ù†Ø§\n")   
 database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Pir3tert == "ãÏíÑ" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÊäÒíáå ãä "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ù…Ø¯ÙŠØ±" and Constructor(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† "..RTPA.." Ù‡Ù†Ø§\n")   
 database:srem(bot_id.."Pir3te:Manager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
-elseif Pir3tert == "ÚÖæ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\n?? ? Êã ÊäÒíáå ãä "..RTPA.." åäÇ\n")   
+elseif Pir3tert == "Ø¹Ø¶Ùˆ" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ Ù…Ù† "..RTPA.." Ù‡Ù†Ø§\n")   
 end
 end,nil)   
 end   
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text and text:match("^ÑİÚ (.*) @(.*)") and Addictive(msg) then 
-local text1 = {string.match(text, "^(ÑİÚ) (.*) @(.*)$")}
+if text and text:match("^Ø±ÙØ¹ (.*) @(.*)") and Addictive(msg) then 
+local text1 = {string.match(text, "^(Ø±ÙØ¹) (.*) @(.*)$")}
 if database:sismember(bot_id.."Pir3te:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
 if result.id_ then
 local Pir3tert = database:get(bot_id.."Pir3te:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
-if Pir3tert == "ããíÒ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..text1[2].." åäÇ")   
+if Pir3tert == "Ù…Ù…ÙŠØ²" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..text1[2].." Ù‡Ù†Ø§")   
 database:sadd(bot_id.."Pir3te:Special:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Pir3tert == "ÇÏãä" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ø§Ø¯Ù…Ù†" and Owner(msg) then 
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..text1[2].." Ù‡Ù†Ø§")   
 database:sadd(bot_id.."Pir3te:Mod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Pir3tert == "ãÏíÑ" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ù…Ø¯ÙŠØ±" and Constructor(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..text1[2].." Ù‡Ù†Ø§")   
 database:sadd(bot_id.."Pir3te:Manager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
-elseif Pir3tert == "ÚÖæ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÑİÚå "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ø¹Ø¶Ùˆ" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ“¬ â”‡ ØªÙ… Ø±ÙØ¹Ù‡ "..text1[2].." Ù‡Ù†Ø§")   
 end
 else
-info = "?? ? ÇáãÚÑİ ÛáØ"
+info = "ğŸ“Œ â”‡ Ø§Ù„Ù…Ø¹Ø±Ù ØºÙ„Ø·"
 send(msg.chat_id_, msg.id_,info)
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil) 
 end 
 end
-if text and text:match("^ÊäÒíá (.*) @(.*)") and Addictive(msg) then 
-local text1 = {string.match(text, "^(ÊäÒíá) (.*) @(.*)$")}
+if text and text:match("^ØªÙ†Ø²ÙŠÙ„ (.*) @(.*)") and Addictive(msg) then 
+local text1 = {string.match(text, "^(ØªÙ†Ø²ÙŠÙ„) (.*) @(.*)$")}
 if database:sismember(bot_id.."Pir3te:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
 if result.id_ then
 local Pir3tert = database:get(bot_id.."Pir3te:Comd:New:rt:bot:"..text1[2]..msg.chat_id_)
-if Pir3tert == "ããíÒ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÊäÑíáå ãä "..text1[2].." åäÇ")   
+if Pir3tert == "Ù…Ù…ÙŠØ²" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ”° â”‡ ØªÙ… ØªÙ†Ø±ÙŠÙ„Ù‡ Ù…Ù† "..text1[2].." Ù‡Ù†Ø§")   
 database:srem(bot_id.."Pir3te:Special:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Pir3tert == "ÇÏãä" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÊäÑíáå ãä "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ø§Ø¯Ù…Ù†" and Owner(msg) then 
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ”° â”‡ ØªÙ… ØªÙ†Ø±ÙŠÙ„Ù‡ Ù…Ù† "..text1[2].." Ù‡Ù†Ø§")   
 database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Pir3tert == "ãÏíÑ" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÊäÑíáå ãä "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ù…Ø¯ÙŠØ±" and Constructor(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ”° â”‡ ØªÙ… ØªÙ†Ø±ÙŠÙ„Ù‡ Ù…Ù† "..text1[2].." Ù‡Ù†Ø§")   
 database:srem(bot_id.."Pir3te:Manager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."Pir3te:Comd:New:rt:User:"..msg.chat_id_..result.id_)
-elseif Pir3tert == "ÚÖæ" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"\n?? ? ÇáÚÖæ » ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\n?? ? Êã ÊäÑíáå ãä "..text1[2].." åäÇ")   
+elseif Pir3tert == "Ø¹Ø¶Ùˆ" and Addictive(msg) then
+send(msg.chat_id_, msg.id_,"\nğŸ‘¤ â”‡ Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(text1[3] or "BOBBW")..")".."\nğŸ”° â”‡ ØªÙ… ØªÙ†Ø±ÙŠÙ„Ù‡ Ù…Ù† "..text1[2].." Ù‡Ù†Ø§")   
 end
 else
-info = "?? ? ÇáãÚÑİ ÛáØ"
+info = "ğŸ“Œ â”‡ Ø§Ù„Ù…Ø¹Ø±Ù ØºÙ„Ø·"
 send(msg.chat_id_, msg.id_,info)
 end
 end
@@ -10042,27 +2653,27 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil)
 end  
 end
 
-if text == ("ÍÙÑ") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == ("Ø­Ø¸Ø±") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.sender_user_id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 database:sadd(bot_id.."Pir3te:Ban:User"..msg.chat_id_, result.sender_user_id_)
 Kick_Group(result.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÍÙÑå ãä ÇáãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end,nil)   
 end
 end
@@ -10070,557 +2681,557 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 
-if text and text:match("^ÍÙÑ @(.*)$") and Addictive(msg) then
-local username = text:match("^ÍÙÑ @(.*)$")
+if text and text:match("^Ø­Ø¸Ø± @(.*)$") and Addictive(msg) then
+local username = text:match("^Ø­Ø¸Ø± @(.*)$")
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if Rank_Checking(result.id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 database:sadd(bot_id.."Pir3te:Ban:User"..msg.chat_id_, result.id_)
 Kick_Group(msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÍÙÑå ãä ÇáãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end,nil)   
 end
 else
-send(msg.chat_id_, msg.id_, "?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 
-if text and text:match("^ÍÙÑ (%d+)$") and Addictive(msg) then
-local userid = text:match("^ÍÙÑ (%d+)$") 
+if text and text:match("^Ø­Ø¸Ø± (%d+)$") and Addictive(msg) then
+local userid = text:match("^Ø­Ø¸Ø± (%d+)$") 
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 if Rank_Checking(userid, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(userid,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(userid,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = userid, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 database:sadd(bot_id.."Pir3te:Ban:User"..msg.chat_id_, userid)
 Kick_Group(msg.chat_id_, userid)  
-Reply_Status(msg,userid,"reply","?? ? Êã ÍÙÑå ãä ÇáãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø­Ø¸Ø±Ù‡ Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end,nil)   
 end
 return false
 end
-if text == ("ÇáÛÇÁ ÍÙÑ") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+if text == ("Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
 function Function_Pir3te(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then
-send(msg.chat_id_, msg.id_, "?? ? ÇäÇ áÓÊ ãÍÙæÑÇ \n") 
+send(msg.chat_id_, msg.id_, "â˜‘ï¸ â”‡ Ø§Ù†Ø§ Ù„Ø³Øª Ù…Ø­Ø¸ÙˆØ±Ø§ \n") 
 return false 
 end
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.sender_user_id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ãä åäÇ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
  
-if text and text:match("^ÇáÛÇÁ ÍÙÑ @(.*)$") and Addictive(msg) then
-local username = text:match("^ÇáÛÇÁ ÍÙÑ @(.*)$") 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø± @(.*)$") and Addictive(msg) then
+local username = text:match("^Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø± @(.*)$") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if tonumber(result.id_) == tonumber(bot_id) then
-send(msg.chat_id_, msg.id_, "?? ? ÇäÇ áÓÊ ãÍÙæÑÇ \n") 
+send(msg.chat_id_, msg.id_, "â˜‘ï¸ â”‡ Ø§Ù†Ø§ Ù„Ø³Øª Ù…Ø­Ø¸ÙˆØ±Ø§ \n") 
 return false 
 end
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_, result.id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ãä åäÇ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 else
-send(msg.chat_id_, msg.id_, "?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 
-if text and text:match("^ÇáÛÇÁ ÍÙÑ (%d+)$") and Addictive(msg) then
-local userid = text:match("^ÇáÛÇÁ ÍÙÑ (%d+)$") 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø± (%d+)$") and Addictive(msg) then
+local userid = text:match("^Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø± (%d+)$") 
 if tonumber(userid) == tonumber(bot_id) then
-send(msg.chat_id_, msg.id_, "?? ? ÇäÇ áÓÊ ãÍÙæÑÇ \n") 
+send(msg.chat_id_, msg.id_, "â˜‘ï¸ â”‡ Ø§Ù†Ø§ Ù„Ø³Øª Ù…Ø­Ø¸ÙˆØ±Ø§ \n") 
 return false 
 end
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_, userid)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = userid, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-Reply_Status(msg,userid,"reply","?? ? Êã ÇáÛÇÁ ÍÙÑå ãä åäÇ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 return false
 end
 
-if text == ("ßÊã") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
+if text == ("ÙƒØªÙ…") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 function Function_Pir3te(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 return false 
 end     
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ßÊãå ãä åäÇ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ßÊã @(.*)$") and Addictive(msg) then
-local username = text:match("^ßÊã @(.*)$")
+if text and text:match("^ÙƒØªÙ… @(.*)$") and Addictive(msg) then
+local username = text:match("^ÙƒØªÙ… @(.*)$")
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if Rank_Checking(result.id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
 return false 
 end     
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ßÊãå ãä åäÇ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 else
-send(msg.chat_id_, msg.id_, "?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ßÊã (%d+)$") and Addictive(msg) then
-local userid = text:match("^ßÊã (%d+)$")
+if text and text:match("^ÙƒØªÙ… (%d+)$") and Addictive(msg) then
+local userid = text:match("^ÙƒØªÙ… (%d+)$")
 if Rank_Checking(userid, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(userid,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(userid,msg.chat_id_).." )")
 else
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 database:sadd(bot_id.."Pir3te:Muted:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ßÊãå ãä åäÇ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end
 return false
 end
-if text == ("ÇáÛÇÁ ßÊã") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+if text == ("Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ…") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
 function Function_Pir3te(extra, result, success)
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÇáÛÇÁ ßÊãå ãä åäÇ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
-if text and text:match("^ÇáÛÇÁ ßÊã @(.*)$") and Addictive(msg) then
-local username = text:match("^ÇáÛÇÁ ßÊã @(.*)$")
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ… @(.*)$") and Addictive(msg) then
+local username = text:match("^Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ… @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÇáÛÇÁ ßÊãå ãä åäÇ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 
-if text and text:match("^ÇáÛÇÁ ßÊã (%d+)$") and Addictive(msg) then
-local userid = text:match("^ÇáÛÇÁ ßÊã (%d+)$") 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ… (%d+)$") and Addictive(msg) then
+local userid = text:match("^Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ… (%d+)$") 
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÇáÛÇÁ ßÊãå ãä åäÇ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ…Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 return false
 end
 
-if text == ("ÊŞíÏ") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+if text == ("ØªÙ‚ÙŠØ¯") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
 function Function_Pir3te(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 else
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÊŞííÏå İí ÇáãÌãæÚå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ‚ÙŠÙŠØ¯Ù‡ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÊŞíÏ @(.*)$") and Addictive(msg) then
-local username = text:match("^ÊŞíÏ @(.*)$")
+if text and text:match("^ØªÙ‚ÙŠØ¯ @(.*)$") and Addictive(msg) then
+local username = text:match("^ØªÙ‚ÙŠØ¯ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 if Rank_Checking(result.id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
 return false 
 end      
 https.request("https://api.telegram.org/bot"..token.."/restrictChatMember?chat_id="..msg.chat_id_.."&user_id="..result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÊŞííÏå İí ÇáãÌãæÚå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ‚ÙŠÙŠØ¯Ù‡ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÊŞíÏ (%d+)$") and Addictive(msg) then
-local userid = text:match("^ÊŞíÏ (%d+)$")
+if text and text:match("^ØªÙ‚ÙŠØ¯ (%d+)$") and Addictive(msg) then
+local userid = text:match("^ØªÙ‚ÙŠØ¯ (%d+)$")
 if Rank_Checking(userid, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(userid,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(userid,msg.chat_id_).." )")
 else
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ÊŞííÏå İí ÇáãÌãæÚå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… ØªÙ‚ÙŠÙŠØ¯Ù‡ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 end
 return false
 end
 ------------------------------------------------------------------------
-if text == ("ÇáÛÇÁ ÊŞíÏ") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+if text == ("Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠØ¯") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
 function Function_Pir3te(extra, result, success)
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.sender_user_id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ÇáÛÇÁ ÊŞííÏå")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠÙŠØ¯Ù‡")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÇáÛÇÁ ÊŞíÏ @(.*)$") and Addictive(msg) then
-local username = text:match("^ÇáÛÇÁ ÊŞíÏ @(.*)$")
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠØ¯ @(.*)$") and Addictive(msg) then
+local username = text:match("^Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠØ¯ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-Reply_Status(msg,result.id_,"reply","?? ? Êã ÇáÛÇÁ ÊŞííÏå")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠÙŠØ¯Ù‡")  
 else
-send(msg.chat_id_, msg.id_, "?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
 ------------------------------------------------------------------------
-if text and text:match("^ÇáÛÇÁ ÊŞíÏ (%d+)$") and Addictive(msg) then
-local userid = text:match("^ÇáÛÇÁ ÊŞíÏ (%d+)$")
+if text and text:match("^Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠØ¯ (%d+)$") and Addictive(msg) then
+local userid = text:match("^Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠØ¯ (%d+)$")
 https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..userid.. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-Reply_Status(msg,userid,"reply","?? ? Êã ÇáÛÇÁ ÊŞííÏå")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ØªÙ‚ÙŠÙŠØ¯Ù‡")  
 return false
 end
-if text == ("ØÑÏ") and msg.reply_to_message_id_ ~=0 and Addictive(msg) then
+if text == ("Ø·Ø±Ø¯") and msg.reply_to_message_id_ ~=0 and Addictive(msg) then
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.sender_user_id_,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 Kick_Group(result.chat_id_, result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","?? ? Êã ØÑÏå ãä åäÇ")  
+Reply_Status(msg,result.sender_user_id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø·Ø±Ø¯Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end,nil)
 end
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end  
-if text and text:match("^ØÑÏ @(.*)$") and Addictive(msg) then 
-local username = text:match("^ØÑÏ @(.*)$")
+if text and text:match("^Ø·Ø±Ø¯ @(.*)$") and Addictive(msg) then 
+local username = text:match("^Ø·Ø±Ø¯ @(.*)$")
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if Rank_Checking(result.id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(result.id_,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"?? ? ÚĞÑÇ ÚÒíÒí ÇáãÓÊÎÏã åÇĞÇ ãÚÑİ ŞäÇÉ íÑÌì ÇÓÊÎÏÇã ÇáÇãÑ ÈÕæÑå ÕÍíÍå !")   
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… Ù‡Ø§Ø°Ø§ Ù…Ø¹Ø±Ù Ù‚Ù†Ø§Ø© ÙŠØ±Ø¬Ù‰ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„Ø§Ù…Ø± Ø¨ØµÙˆØ±Ù‡ ØµØ­ÙŠØ­Ù‡ !")   
 return false 
 end      
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 Kick_Group(msg.chat_id_, result.id_)
-Reply_Status(msg,result.id_,"reply","?? ? Êã ØÑÏå ãä åäÇ")  
+Reply_Status(msg,result.id_,"reply","ğŸ’¢ â”‡ ØªÙ… Ø·Ø±Ø¯Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end,nil)   
 end
 else
-send(msg.chat_id_, msg.id_, "?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ")
+send(msg.chat_id_, msg.id_, "ğŸ’¢ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end  
 
-if text and text:match("^ØÑÏ (%d+)$") and Addictive(msg) then 
-local userid = text:match("^ØÑÏ (%d+)$") 
+if text and text:match("^Ø·Ø±Ø¯ (%d+)$") and Addictive(msg) then 
+local userid = text:match("^Ø·Ø±Ø¯ (%d+)$") 
 if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'?? ? áŞÏ Êã ÊÚØíá ÇáÍÙÑ æ ÇáØÑÏ ãä ŞÈá ÇáãäÔÆíä')
+send(msg.chat_id_, msg.id_,'ğŸ’¢ â”‡ Ù„Ù‚Ø¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø± Ùˆ Ø§Ù„Ø·Ø±Ø¯ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†')
 return false
 end
 if Rank_Checking(userid, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ? ÚĞÑÇ áÇ ÊÓÊØíÚ ØÑÏ Çæ ÍÙÑ Çæ ßÊã Çæ ÊŞííÏ ( "..Get_Rank(userid,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ùˆ Ø­Ø¸Ø± Ø§Ùˆ ÙƒØªÙ… Ø§Ùˆ ØªÙ‚ÙŠÙŠØ¯ ( "..Get_Rank(userid,msg.chat_id_).." )")
 else
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = userid, status_ = { ID = "ChatMemberStatusKicked" },},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ? áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 Kick_Group(msg.chat_id_, userid)
-Reply_Status(msg,userid,"reply","?? ? Êã ØÑÏå ãä åäÇ")  
+Reply_Status(msg,userid,"reply","ğŸ’¢ â”‡ ØªÙ… Ø·Ø±Ø¯Ù‡ Ù…Ù† Ù‡Ù†Ø§")  
 end,nil)   
 end
 return false
 end
 
-if text == "ÊÚØíá ÇáØÑÏ" or text == "ÊÚØíá ÇáÍÙÑ" then
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø·Ø±Ø¯" or text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø±" then
 if Constructor(msg) then
 database:set(bot_id.."Ban:Cheking"..msg.chat_id_,"true")
-send(msg.chat_id_, msg.id_, '?? ? Êã ÊÚØíá » ÇáÍÙÑ ~ æÇáØÑÏ ')
+send(msg.chat_id_, msg.id_, 'ğŸ” â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Â» Ø§Ù„Ø­Ø¸Ø± ~ ÙˆØ§Ù„Ø·Ø±Ø¯ ')
 return false
 end
 end
-if text == "ÊİÚíá ÇáØÑÏ" or text == "ÊİÚíá ÇáÍÙÑ" then
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø·Ø±Ø¯" or text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø±" then
 if Constructor(msg) then
 database:del(bot_id.."Ban:Cheking"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, '? ? Êã ÊİÚíá » ÇáÍÙÑ ~ æÇáØÑÏ ')
+send(msg.chat_id_, msg.id_, 'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Â» Ø§Ù„Ø­Ø¸Ø± ~ ÙˆØ§Ù„Ø·Ø±Ø¯ ')
 return false
 end
 end
-if text == "ÊÚØíá ÇáÑİÚ" or text == "ÊÚØíá ÇáÊÑŞíå" then
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹" or text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªØ±Ù‚ÙŠÙ‡" then
 if Constructor(msg) then
 database:set(bot_id.."Add:Group:Cheking"..msg.chat_id_,"true")
-send(msg.chat_id_, msg.id_, '?? ? Êã ÊÚØíá ÑİÚ » ÇáÇÏãä ~ ÇáããíÒ ')
+send(msg.chat_id_, msg.id_, 'ğŸ” â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø±ÙØ¹ Â» Ø§Ù„Ø§Ø¯Ù…Ù† ~ Ø§Ù„Ù…Ù…ÙŠØ² ')
 return false
 end
 end
-if text == "ÊİÚíá ÇáÑİÚ" or text == "ÊİÚíá ÇáÊÑŞíå" then
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø±ÙØ¹" or text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªØ±Ù‚ÙŠÙ‡" then
 if Constructor(msg) then
 database:del(bot_id.."Add:Group:Cheking"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, '? ? Êã ÊİÚíá ÑİÚ » ÇáÇÏãä ~ ÇáããíÒ ')
+send(msg.chat_id_, msg.id_, 'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø±ÙØ¹ Â» Ø§Ù„Ø§Ø¯Ù…Ù† ~ Ø§Ù„Ù…Ù…ÙŠØ² ')
 return false
 end
 end
-if text ==("ÊËÈíÊ") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then  
+if text ==("ØªØ«Ø¨ÙŠØª") and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then  
 if database:sismember(bot_id.."Pir3te:Lock:pin",msg.chat_id_) and not Constructor(msg) then
-send(msg.chat_id_,msg.id_,"?? ? ÇáÊËÈíÊ æÇáÛÇÁ ÇáÊËÈíÊ Êã Şİáå ãä ŞÈá ÇáãäÔÆíä")  
+send(msg.chat_id_,msg.id_,"ğŸ“¬ â”‡ Ø§Ù„ØªØ«Ø¨ÙŠØª ÙˆØ§Ù„ØºØ§Ø¡ Ø§Ù„ØªØ«Ø¨ÙŠØª ØªÙ… Ù‚ÙÙ„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 return false  
 end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊËÈíÊ ÇáÑÓÇáå")   
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ ØªÙ… ØªØ«Ø¨ÙŠØª Ø§Ù„Ø±Ø³Ø§Ù„Ù‡")   
 database:set(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_,msg.reply_to_message_id_)
 elseif data.code_ == 6 then
-send(msg.chat_id_,msg.id_,"?? ? ÇäÇ áÓÊ ÇÏãä åäÇ íÑÌì ÊÑŞíÊí ÇÏãä Ëã ÇÚÏ ÇáãÍÇæáå")  
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø§Ù†Ø§ Ù„Ø³Øª Ø§Ø¯Ù…Ù† Ù‡Ù†Ø§ ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ Ø§Ø¯Ù…Ù† Ø«Ù… Ø§Ø¹Ø¯ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ù‡")  
 elseif data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"?? ? áíÓÊ áÏí ÕáÇÍíÉ ÇáÊËÈíÊ íÑÌì ÇáÊÍŞŞ ãä ÇáÕáÇÍíÇÊ")  
+send(msg.chat_id_,msg.id_,"ğŸ“« â”‡ Ù„ÙŠØ³Øª Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø§Ù„ØªØ«Ø¨ÙŠØª ÙŠØ±Ø¬Ù‰ Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª")  
 end
 end,nil) 
 end
-if text == "ÇáÛÇÁ ÇáÊËÈíÊ" and Addictive(msg) then  
+if text == "Ø§Ù„ØºØ§Ø¡ Ø§Ù„ØªØ«Ø¨ÙŠØª" and Addictive(msg) then  
 if database:sismember(bot_id.."Pir3te:Lock:pin",msg.chat_id_) and not Constructor(msg) then
-send(msg.chat_id_,msg.id_,"?? ? ÇáÊËÈíÊ æÇáÛÇÁ ÇáÊËÈíÊ Êã Şİáå ãä ŞÈá ÇáãäÔÆíä")  
+send(msg.chat_id_,msg.id_,"ğŸ“¬ â”‡ Ø§Ù„ØªØ«Ø¨ÙŠØª ÙˆØ§Ù„ØºØ§Ø¡ Ø§Ù„ØªØ«Ø¨ÙŠØª ØªÙ… Ù‚ÙÙ„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†")  
 return false  
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÊËÈíÊ ÇáÑÓÇáå")   
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ØªØ«Ø¨ÙŠØª Ø§Ù„Ø±Ø³Ø§Ù„Ù‡")   
 database:del(bot_id.."Pir3te:Pin:Id:Msg"..msg.chat_id_)
 elseif data.code_ == 6 then
-send(msg.chat_id_,msg.id_,"?? ? ÇäÇ áÓÊ ÇÏãä åäÇ íÑÌì ÊÑŞíÊí ÇÏãä Ëã ÇÚÏ ÇáãÍÇæáå")  
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡ Ø§Ù†Ø§ Ù„Ø³Øª Ø§Ø¯Ù…Ù† Ù‡Ù†Ø§ ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ Ø§Ø¯Ù…Ù† Ø«Ù… Ø§Ø¹Ø¯ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ù‡")  
 elseif data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"?? ? áíÓÊ áÏí ÕáÇÍíÉ ÇáÊËÈíÊ íÑÌì ÇáÊÍŞŞ ãä ÇáÕáÇÍíÇÊ")  
+send(msg.chat_id_,msg.id_,"ğŸ“« â”‡ Ù„ÙŠØ³Øª Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø§Ù„ØªØ«Ø¨ÙŠØª ÙŠØ±Ø¬Ù‰ Ø§Ù„ØªØ­Ù‚Ù‚ Ù…Ù† Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª")  
 end
 end,nil)
 end
 
-if text and text:match("^æÖÚ ÊßÑÇÑ (%d+)$") and Addictive(msg) then   
-local Num = text:match("æÖÚ ÊßÑÇÑ (.*)")
+if text and text:match("^ÙˆØ¶Ø¹ ØªÙƒØ±Ø§Ø± (%d+)$") and Addictive(msg) then   
+local Num = text:match("ÙˆØ¶Ø¹ ØªÙƒØ±Ø§Ø± (.*)")
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"floodmax" ,Num) 
-send(msg.chat_id_, msg.id_,"?? ? Êã æÖÚ ÚÏÏ ÇáÊßÑÇÑ ("..Num..")")  
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ ØªÙ… ÙˆØ¶Ø¹ Ø¹Ø¯Ø¯ Ø§Ù„ØªÙƒØ±Ø§Ø± ("..Num..")")  
 end 
-if text and text:match("^æÖÚ Òãä ÇáÊßÑÇÑ (%d+)$") and Addictive(msg) then   
-local Num = text:match("^æÖÚ Òãä ÇáÊßÑÇÑ (%d+)$")
+if text and text:match("^ÙˆØ¶Ø¹ Ø²Ù…Ù† Ø§Ù„ØªÙƒØ±Ø§Ø± (%d+)$") and Addictive(msg) then   
+local Num = text:match("^ÙˆØ¶Ø¹ Ø²Ù…Ù† Ø§Ù„ØªÙƒØ±Ø§Ø± (%d+)$")
 database:hset(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_ ,"floodtime" ,Num) 
-send(msg.chat_id_, msg.id_,"?? ? Êã æÖÚ Òãä ÇáÊßÑÇÑ ("..Num..")") 
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… ÙˆØ¶Ø¹ Ø²Ù…Ù† Ø§Ù„ØªÙƒØ±Ø§Ø± ("..Num..")") 
 end
-if text == "ÖÚ ÑÇÈØ" or text == "æÖÚ ÑÇÈØ" then
+if text == "Ø¶Ø¹ Ø±Ø§Ø¨Ø·" or text == "ÙˆØ¶Ø¹ Ø±Ø§Ø¨Ø·" then
 if msg.reply_to_message_id_ == 0  and Addictive(msg) then  
-send(msg.chat_id_,msg.id_,"?? ? ÇÑÓá ÑÇÈØ ÇáãÌãæÚå Çæ ÑÇÈØ ŞäÇÉ ÇáãÌãæÚå")
+send(msg.chat_id_,msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø§Ùˆ Ø±Ø§Ø¨Ø· Ù‚Ù†Ø§Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")
 database:setex(bot_id.."Pir3te:Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_user_id_,120,true) 
 return false
 end
 end
-if text == "ÊİÚíá ÌáÈ ÇáÑÇÈØ" or text == 'ÊİÚíá ÇáÑÇÈØ' then
+if text == "ØªÙØ¹ÙŠÙ„ Ø¬Ù„Ø¨ Ø§Ù„Ø±Ø§Ø¨Ø·" or text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø±Ø§Ø¨Ø·' then
 if Addictive(msg) then  
 database:set(bot_id.."Pir3te:Link_Group"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊİÚíá ÌáÈ ÇáÑÇÈØ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø¬Ù„Ø¨ Ø§Ù„Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 return false  
 end
 end
-if text == "ÊÚØíá ÌáÈ ÇáÑÇÈØ" or text == 'ÊÚØíá ÇáÑÇÈØ' then
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø¬Ù„Ø¨ Ø§Ù„Ø±Ø§Ø¨Ø·" or text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±Ø§Ø¨Ø·' then
 if Addictive(msg) then  
 database:del(bot_id.."Pir3te:Link_Group"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"? ? Êã ÊÚØíá ÌáÈ ÑÇÈØ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø¬Ù„Ø¨ Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 return false end
 end
-if text == "ÇáÑÇÈØ" then 
+if text == "Ø§Ù„Ø±Ø§Ø¨Ø·" then 
 local status_Link = database:get(bot_id.."Pir3te:Link_Group"..msg.chat_id_)
 if not status_Link then
-send(msg.chat_id_, msg.id_,"? ? ÌáÈ ÇáÑÇÈØ ãÚØá") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ Ø¬Ù„Ø¨ Ø§Ù„Ø±Ø§Ø¨Ø· Ù…Ø¹Ø·Ù„") 
 return false  
 end
 local link = database:get(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_)            
 if link then                              
-send(msg.chat_id_,msg.id_,"*?? ?  Group Link ~*\n ["..link.."]")                          
+send(msg.chat_id_,msg.id_,"*ğŸ“® â”‡  Group Link ~*\n ["..link.."]")                          
 else                
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÑÇÈØ ÇÑÓá ÖÚ ÑÇÈØ")              
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø±Ø§Ø¨Ø· Ø§Ø±Ø³Ù„ Ø¶Ø¹ Ø±Ø§Ø¨Ø·")              
 end            
 end
-if text == "ãÓÍ ÇáÑÇÈØ" or text == "ÍĞİ ÇáÑÇÈØ" then
+if text == "Ù…Ø³Ø­ Ø§Ù„Ø±Ø§Ø¨Ø·" or text == "Ø­Ø°Ù Ø§Ù„Ø±Ø§Ø¨Ø·" then
 if Addictive(msg) then     
-send(msg.chat_id_,msg.id_,"? ? Êã ãÓÍ ÇáÑÇÈØ ")           
+send(msg.chat_id_,msg.id_,"â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ø§Ù„Ø±Ø§Ø¨Ø· ")           
 database:del(bot_id.."Pir3te:Private:Group:Link"..msg.chat_id_) 
 return false      
 end
 return false  
 end
-if text and text:match("^ÖÚ ÕæÑå") and Addictive(msg) and msg.reply_to_message_id_ == 0 or text and text:match("^æÖÚ ÕæÑå") and Addictive(msg) and msg.reply_to_message_id_ == 0 then  
+if text and text:match("^Ø¶Ø¹ ØµÙˆØ±Ù‡") and Addictive(msg) and msg.reply_to_message_id_ == 0 or text and text:match("^ÙˆØ¶Ø¹ ØµÙˆØ±Ù‡") and Addictive(msg) and msg.reply_to_message_id_ == 0 then  
 database:set(bot_id.."Pir3te:Change:Chat:Photo"..msg.chat_id_..":"..msg.sender_user_id_,true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÇáÕæÑå") 
+send(msg.chat_id_, msg.id_,"ğŸ‡ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØµÙˆØ±Ù‡") 
 return false
 end
-if text == "ÍĞİ ÇáÕæÑå" or text == "ãÓÍ ÇáÕæÑå" then 
+if text == "Ø­Ø°Ù Ø§Ù„ØµÙˆØ±Ù‡" or text == "Ù…Ø³Ø­ Ø§Ù„ØµÙˆØ±Ù‡" then 
 if Addictive(msg) then
 https.request("https://api.telegram.org/bot"..token.."/deleteChatPhoto?chat_id="..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"? ? Êã ÇÒÇáÉ ÕæÑÉ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© ØµÙˆØ±Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 end
 return false  
 end
-if text == "ÖÚ æÕİ" or text == "æÖÚ æÕİ" then  
+if text == "Ø¶Ø¹ ÙˆØµÙ" or text == "ÙˆØ¶Ø¹ ÙˆØµÙ" then  
 if Addictive(msg) then
 database:setex(bot_id.."Pir3te:Set:Description" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇä ÇáæÕİ")
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù† Ø§Ù„ÙˆØµÙ")
 end
 return false  
 end
-if text == "ÖÚ ÊÑÍíÈ" or text == "æÖÚ ÊÑÍíÈ" then  
+if text == "Ø¶Ø¹ ØªØ±Ø­ÙŠØ¨" or text == "ÙˆØ¶Ø¹ ØªØ±Ø­ÙŠØ¨" then  
 if Addictive(msg) then
 database:setex(bot_id.."Pir3te:Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
-t  = "?? ? ÇÑÓá áí ÇáÊÑÍíÈ ÇáÇä"
-tt = "\n?? ? ÊÓÊØíÚ ÇÖÇİÉ ãÇíáí !\n?? ? ÏÇáÉ ÚÑÖ ÇáÇÓã »{`name`}\n?? ? ÏÇáÉ ÚÑÖ ÇáãÚÑİ »{`user`}"
+t  = "ğŸ”– â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ø§Ù†"
+tt = "\nğŸ“« â”‡ ØªØ³ØªØ·ÙŠØ¹ Ø§Ø¶Ø§ÙØ© Ù…Ø§ÙŠÙ„ÙŠ !\nğŸ‘¤ â”‡ Ø¯Ø§Ù„Ø© Ø¹Ø±Ø¶ Ø§Ù„Ø§Ø³Ù… Â»{`name`}\nğŸ“Œ â”‡ Ø¯Ø§Ù„Ø© Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø¹Ø±Ù Â»{`user`}"
 send(msg.chat_id_, msg.id_,t..tt) 
 end
 return false  
 end
-if text == "ÇáÊÑÍíÈ" and Addictive(msg) then 
+if text == "Ø§Ù„ØªØ±Ø­ÙŠØ¨" and Addictive(msg) then 
 if database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)   then 
 Welcome = database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_)  
 else 
-Welcome = "? ? áã íÊã ÊÚííä ÊÑÍíÈ ááãÌãæÚå"
+Welcome = "â›” â”‡ Ù„Ù… ÙŠØªÙ… ØªØ¹ÙŠÙŠÙ† ØªØ±Ø­ÙŠØ¨ Ù„Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡"
 end 
 send(msg.chat_id_, msg.id_,"["..Welcome.."]") 
 return false  
 end
-if text == "ÊİÚíá ÇáÊÑÍíÈ" and Addictive(msg) then  
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªØ±Ø­ÙŠØ¨" and Addictive(msg) then  
 database:set(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"? ? Êã ÊİÚíá ÊÑÍíÈ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 return false  
 end
-if text == "ÊÚØíá ÇáÊÑÍíÈ" and Addictive(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªØ±Ø­ÙŠØ¨" and Addictive(msg) then  
 database:del(bot_id.."Pir3te:Chek:Welcome"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"? ? Êã ÊÚØíá ÊÑÍíÈ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 return false  
 end
-if text == "ãÓÍ ÇáÊÑÍíÈ" or text == "ÍĞİ ÇáÊÑÍíÈ" then 
+if text == "Ù…Ø³Ø­ Ø§Ù„ØªØ±Ø­ÙŠØ¨" or text == "Ø­Ø°Ù Ø§Ù„ØªØ±Ø­ÙŠØ¨" then 
 if Addictive(msg) then
 database:del(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"? ? Êã ÇÒÇáÉ ÊÑÍíÈ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 end
 return false  
 end
 
-if text == "ãÓÍ ŞÇÆãå ÇáãäÚ" and Addictive(msg) then   
+if text == "Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ù†Ø¹" and Addictive(msg) then   
 local list = database:smembers(bot_id.."Pir3te:List:Filter"..msg.chat_id_)  
 for k,v in pairs(list) do  
 database:del(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 database:del(bot_id.."Pir3te:Add:Filter:Rp2"..v..msg.chat_id_)  
 database:srem(bot_id.."Pir3te:List:Filter"..msg.chat_id_,v)  
 end  
-send(msg.chat_id_, msg.id_,"? ? Êã ãÓÍ ŞÇÆãå ÇáãäÚ")  
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ù†Ø¹")  
 end
 
-if text == "ŞÇÆãå ÇáãäÚ" and Addictive(msg) then   
+if text == "Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ù†Ø¹" and Addictive(msg) then   
 local list = database:smembers(bot_id.."Pir3te:List:Filter"..msg.chat_id_)  
-t = "\n? ? ŞÇÆãÉ ÇáãäÚ \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø¹ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do  
 local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..v..msg.chat_id_)   
-t = t..""..k.."- "..v.." » {"..Pir3te_Msg.."}\n"    
+t = t..""..k.."- "..v.." Â» {"..Pir3te_Msg.."}\n"    
 end  
 if #list == 0 then  
-t = "?? ? áÇ íæÌÏ ßáãÇÊ ããäæÚå"  
+t = "ğŸ“¬ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ ÙƒÙ„Ù…Ø§Øª Ù…Ù…Ù†ÙˆØ¹Ù‡"  
 end  
 send(msg.chat_id_, msg.id_,t)  
 end  
-if text and text == "ãäÚ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then       
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá Çáßáãå áãäÚåÇ")  
+if text and text == "Ù…Ù†Ø¹" and msg.reply_to_message_id_ == 0 and Addictive(msg) then       
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ù„Ù…Ù†Ø¹Ù‡Ø§")  
 database:set(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"rep")  
 return false  
 end    
 if text then   
 local tsssst = database:get(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if tsssst == "rep" then   
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÊÍĞíÑ ÚäÏ ÇÑÓÇá Çáßáãå")  
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„ØªØ­Ø°ÙŠØ± Ø¹Ù†Ø¯ Ø§Ø±Ø³Ø§Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡")  
 database:set(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"repp")  
 database:set(bot_id.."Pir3te:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_, text)  
 database:sadd(bot_id.."Pir3te:List:Filter"..msg.chat_id_,text)  
@@ -10629,7 +3240,7 @@ end
 if text then  
 local test = database:get(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if test == "repp" then  
-send(msg.chat_id_, msg.id_,"?? ? Êã ãäÚ Çáßáãå ãÚ ÇáÊÍĞíÑ")  
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ ØªÙ… Ù…Ù†Ø¹ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ù…Ø¹ Ø§Ù„ØªØ­Ø°ÙŠØ±")  
 database:del(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 local test = database:get(bot_id.."Pir3te:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_id_)  
 if text then   
@@ -10639,21 +3250,21 @@ database:del(bot_id.."Pir3te:filtr1:add:reply2"..msg.sender_user_id_..msg.chat_i
 return false  end  
 end
 
-if text == "ÇáÛÇÁ ãäÚ" and msg.reply_to_message_id_ == 0 and Addictive(msg) then    
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá Çáßáãå ÇáÇä")  
+if text == "Ø§Ù„ØºØ§Ø¡ Ù…Ù†Ø¹" and msg.reply_to_message_id_ == 0 and Addictive(msg) then    
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„Ø§Ù†")  
 database:set(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_,"reppp")  
 return false  end
 if text then 
 local test = database:get(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 if test and test == "reppp" then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ãäÚåÇ ")  
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ù…Ù†Ø¹Ù‡Ø§ ")  
 database:del(bot_id.."Pir3te:Add:Filter:Rp1"..msg.sender_user_id_..msg.chat_id_)  
 database:del(bot_id.."Pir3te:Add:Filter:Rp2"..text..msg.chat_id_)  
 database:srem(bot_id.."Pir3te:List:Filter"..msg.chat_id_,text)  
 return false  end  
 end
 
-if text == "ãÓÍ ÇáÈæÊÇÊ" and Addictive(msg) then 
+if text == "Ù…Ø³Ø­ Ø§Ù„Ø¨ÙˆØªØ§Øª" and Addictive(msg) then 
 tdcli_function ({ ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah)  
 local admins = tah.members_  
 local x = 0
@@ -10668,17 +3279,17 @@ end
 c = c + 1
 end     
 if (c - x) == 0 then
-send(msg.chat_id_, msg.id_, "?? ? áÇ ÊæÌÏ ÈæÊÇÊ İí ÇáãÌãæÚå")
+send(msg.chat_id_, msg.id_, "ğŸ“Œ â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙˆØªØ§Øª ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")
 else
-local t = "?? ? ÚÏÏ ÇáÈæÊÇÊ åäÇ >> {"..c.."}\n?? ? ÚÏÏ ÇáÈæÊÇÊ ÇáÊí åí ÇÏãä >> {"..x.."}\n?? ? Êã ØÑÏ >> {"..(c - x).."} ãä ÇáÈæÊÇÊ"
+local t = "ğŸ“® â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ø¨ÙˆØªØ§Øª Ù‡Ù†Ø§ >> {"..c.."}\nğŸ“¬ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ø¨ÙˆØªØ§Øª Ø§Ù„ØªÙŠ Ù‡ÙŠ Ø§Ø¯Ù…Ù† >> {"..x.."}\nğŸ”– â”‡ ØªÙ… Ø·Ø±Ø¯ >> {"..(c - x).."} Ù…Ù† Ø§Ù„Ø¨ÙˆØªØ§Øª"
 send(msg.chat_id_, msg.id_,t) 
 end 
 end,nil)  
 end   
-if text == ("ßÔİ ÇáÈæÊÇÊ") and Addictive(msg) then  
+if text == ("ÙƒØ´Ù Ø§Ù„Ø¨ÙˆØªØ§Øª") and Addictive(msg) then  
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n? ? ŞÇÆãÉ ÇáÈæÊÇÊ ÇáãæÌæÏå \n? ? ? ? ? ? ? ? ? \n"
+text = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø¨ÙˆØªØ§Øª Ø§Ù„Ù…ÙˆØ¬ÙˆØ¯Ù‡ \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -10689,16 +3300,16 @@ if result.members_[i].status_.ID == "ChatMemberStatusMember" then
 tr = ""
 elseif result.members_[i].status_.ID == "ChatMemberStatusEditor" then  
 t = t + 1
-tr = " {?}"
+tr = "Â {âœ¯}"
 end
-text = text..">> [@"..ta.username_.."]"..tr.."\n"
+text = text..">>Â [@"..ta.username_.."]"..tr.."\n"
 if #admins == 0 then
-send(msg.chat_id_, msg.id_, "?? ? áÇ ÊæÌÏ ÈæÊÇÊ İí ÇáãÌãæÚå")
+send(msg.chat_id_, msg.id_, "ğŸ“Œ â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ø¨ÙˆØªØ§Øª ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")
 return false 
 end
 if #admins == i then 
-local a = "\n? ? ? ? ? ? ? ? ? \n?? ? ÚÏÏ ÇáÈæÊÇÊ ÇáÊí åäÇ >> {"..n.."} ÈæÊ\n"
-local f = "?? ? ÚÏÏ ÇáÈæÊÇÊ ÇáÊí åí ÇÏãä >> {"..t.."}\n?? ? ãáÇÍÖå ÚáÇãÉ Çá (?) ÊÚäí Çä ÇáÈæÊ ÇÏãä \n??"
+local a = "\nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \nğŸ“® â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ø¨ÙˆØªØ§Øª Ø§Ù„ØªÙŠ Ù‡Ù†Ø§ >> {"..n.."} Ø¨ÙˆØª\n"
+local f = "ğŸ”– â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ø¨ÙˆØªØ§Øª Ø§Ù„ØªÙŠ Ù‡ÙŠ Ø§Ø¯Ù…Ù† >> {"..t.."}\nğŸ’¢ â”‡ Ù…Ù„Ø§Ø­Ø¶Ù‡ Ø¹Ù„Ø§Ù…Ø© Ø§Ù„ (âœ¯) ØªØ¹Ù†ÙŠ Ø§Ù† Ø§Ù„Ø¨ÙˆØª Ø§Ø¯Ù…Ù† \nğŸ’¥"
 send(msg.chat_id_, msg.id_, text..a..f)
 end
 end,nil)
@@ -10707,40 +3318,40 @@ end,nil)
 end
 
 if database:get(bot_id.."Pir3te:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "ÇáÛÇÁ" then 
-send(msg.chat_id_, msg.id_, "?? ? Êã ÇáÛÇÁ ÍİÙ ÇáŞæÇäíä") 
+if text == "Ø§Ù„ØºØ§Ø¡" then 
+send(msg.chat_id_, msg.id_, "ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†") 
 database:del(bot_id.."Pir3te:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 return false  
 end 
 database:set(bot_id.."Pir3te:Set:Rules:Group" .. msg.chat_id_,text) 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ŞæÇäíä ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ ØªÙ… Ø­ÙØ¸ Ù‚ÙˆØ§Ù†ÙŠÙ† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 database:del(bot_id.."Pir3te:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end  
 
-if text == "ÖÚ ŞæÇäíä" or text == "æÖÚ ŞæÇäíä" then 
+if text == "Ø¶Ø¹ Ù‚ÙˆØ§Ù†ÙŠÙ†" or text == "ÙˆØ¶Ø¹ Ù‚ÙˆØ§Ù†ÙŠÙ†" then 
 if Addictive(msg) then
 database:setex(bot_id.."Pir3te:Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_,msg.id_,"?? ? ÇÑÓá áí ÇáŞæÇäíä ÇáÇä")  
+send(msg.chat_id_,msg.id_,"ğŸ”– â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ† Ø§Ù„Ø§Ù†")  
 end
 end
-if text == "ãÓÍ ÇáŞæÇäíä" or text == "ÍĞİ ÇáŞæÇäíä" then  
+if text == "Ù…Ø³Ø­ Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†" or text == "Ø­Ø°Ù Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†" then  
 if Addictive(msg) then
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇÒÇáÉ ŞæÇäíä ÇáãÌãæÚå")  
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© Ù‚ÙˆØ§Ù†ÙŠÙ† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 database:del(bot_id.."Pir3te:Set:Rules:Group"..msg.chat_id_) 
 end
 end
-if text == "ÇáŞæÇäíä" then 
+if text == "Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†" then 
 local Set_Rules = database:get(bot_id.."Pir3te:Set:Rules:Group" .. msg.chat_id_)   
 if Set_Rules then     
 send(msg.chat_id_,msg.id_, Set_Rules)   
 else      
-send(msg.chat_id_, msg.id_,"?? ? áÇ ÊæÌÏ ŞæÇäíä åäÇ")   
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ù‚ÙˆØ§Ù†ÙŠÙ† Ù‡Ù†Ø§")   
 end    
 end
 
-if text == "ÇáÇæÇãÑ ÇáãÖÇİå" and Constructor(msg) then
+if text == "Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡" and Constructor(msg) then
 local list = database:smembers(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_.."")
-t = "?? ? ŞÇÆãå ÇáÇæÇãÑ ÇáãÖÇİå  \n? ? ? ? ? ? ? ? ? \n"
+t = "ğŸ”° â”‡ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡  \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -10750,40 +3361,40 @@ t = t..""..k.."- ("..v..") \n"
 end
 end
 if #list == 0 then
-t = "?? ? áÇ ÊæÌÏ ÇæÇãÑ ÇÖÇİíå"
+t = "ğŸ”° â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ø§ÙˆØ§Ù…Ø± Ø§Ø¶Ø§ÙÙŠÙ‡"
 end
 send(msg.chat_id_, msg.id_,"["..t.."]")
 end
-if text == "ÍĞİ ÇáÇæÇãÑ ÇáãÖÇİå" or text == "ãÓÍ ÇáÇæÇãÑ ÇáãÖÇİå" then
+if text == "Ø­Ø°Ù Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡" or text == "Ù…Ø³Ø­ Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡" then
 if Constructor(msg) then 
 local list = database:smembers(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_)
 for k,v in pairs(list) do
 database:del(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 database:del(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_)
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ãÓÍ ÌãíÚ ÇáÇæÇãÑ ÇáÊí Êã ÇÖÇİÊåÇ")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªÙŠ ØªÙ… Ø§Ø¶Ø§ÙØªÙ‡Ø§")  
 end
 end
-if text == "ÇÖİ ÇãÑ" and Constructor(msg) then
+if text == "Ø§Ø¶Ù Ø§Ù…Ø±" and Constructor(msg) then
 database:set(bot_id.."Pir3te:Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇä ÇÑÓá áí ÇáÇãÑ ÇáŞÏíã ..")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ù„Ø§Ù† Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„Ø§Ù…Ø± Ø§Ù„Ù‚Ø¯ÙŠÙ… ..")  
 return false
 end
-if text == "ÍĞİ ÇãÑ" or text == "ãÓÍ ÇãÑ" then 
+if text == "Ø­Ø°Ù Ø§Ù…Ø±" or text == "Ù…Ø³Ø­ Ø§Ù…Ø±" then 
 if Constructor(msg) then
 database:set(bot_id.."Pir3te:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá ÇáÇãÑ ÇáĞí Şã ÈæÖÚå ÈÏáÇ Úä ÇáŞÏíã")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù…Ø± Ø§Ù„Ø°ÙŠ Ù‚Ù… Ø¨ÙˆØ¶Ø¹Ù‡ Ø¨Ø¯Ù„Ø§ Ø¹Ù† Ø§Ù„Ù‚Ø¯ÙŠÙ…")  
 return false
 end
 end
 
-if text == "ÇáÕáÇÍíÇÊ" and Addictive(msg) then 
+if text == "Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª" and Addictive(msg) then 
 local list = database:smembers(bot_id.."Pir3te:Coomds"..msg.chat_id_)
 if #list == 0 then
-send(msg.chat_id_, msg.id_,"?? ? áÇ ÊæÌÏ ÕáÇÍíÇÊ ãÖÇİå")
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ ØµÙ„Ø§Ø­ÙŠØ§Øª Ù…Ø¶Ø§ÙÙ‡")
 return false
 end
-t = "\n? ? ŞÇÆãÉ ÇáÕáÇÍíÇÊ ÇáãÖÇİå \n?????????????\n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª Ø§Ù„Ù…Ø¶Ø§ÙÙ‡ \nâ”â”â”â”â”â”â”â”â”â”â”â”â”\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Pir3te:Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -10794,97 +3405,97 @@ end
 end
 send(msg.chat_id_, msg.id_,t)
 end
-if text == "ãÓÍ ÇáÕáÇÍíÇÊ" then
+if text == "Ù…Ø³Ø­ Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª" then
 local list = database:smembers(bot_id.."Pir3te:Coomds"..msg.chat_id_)
 for k,v in pairs(list) do
 database:del(bot_id.."Pir3te:Comd:New:rt:bot:"..v..msg.chat_id_)
 database:del(bot_id.."Pir3te:Coomds"..msg.chat_id_)
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ãÓÍ ÇáÕáÇÍíÇÊ")
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ ØªÙ… Ù…Ø³Ø­ Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª")
 end
-if text and text:match("^ÇÖİ ÕáÇÍíå (.*)$") and Addictive(msg) then 
-ComdNew = text:match("^ÇÖİ ÕáÇÍíå (.*)$")
+if text and text:match("^Ø§Ø¶Ù ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$") and Addictive(msg) then 
+ComdNew = text:match("^Ø§Ø¶Ù ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$")
 database:set(bot_id.."Pir3te:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
 database:sadd(bot_id.."Pir3te:Coomds"..msg.chat_id_,ComdNew)  
 database:setex(bot_id.."Pir3te:Comd:New"..msg.chat_id_..""..msg.sender_user_id_,200,true)  
-send(msg.chat_id_, msg.id_, "?? ? ÇÑÓá äæÚ ÇáÕáÇÍíå ??\n?? ? (ÚÖæ ~ ããíÒ  ~ ÇÏãä  ~ ãÏíÑ )") 
+send(msg.chat_id_, msg.id_, "ğŸ– â”‡ Ø§Ø±Ø³Ù„ Ù†ÙˆØ¹ Ø§Ù„ØµÙ„Ø§Ø­ÙŠÙ‡ âšœï¸\nğŸ“Š â”‡ (Ø¹Ø¶Ùˆ ~ Ù…Ù…ÙŠØ²  ~ Ø§Ø¯Ù…Ù†  ~ Ù…Ø¯ÙŠØ± )") 
 end
-if text and text:match("^ãÓÍ ÕáÇÍíå (.*)$") and Addictive(msg) or text and text:match("^ÍĞİ ÕáÇÍíå (.*)$") and Addictive(msg) then 
-ComdNew = text:match("^ãÓÍ ÕáÇÍíå (.*)$") or text:match("^ÍĞİ ÕáÇÍíå (.*)$")
+if text and text:match("^Ù…Ø³Ø­ ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$") and Addictive(msg) or text and text:match("^Ø­Ø°Ù ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$") and Addictive(msg) then 
+ComdNew = text:match("^Ù…Ø³Ø­ ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$") or text:match("^Ø­Ø°Ù ØµÙ„Ø§Ø­ÙŠÙ‡ (.*)$")
 database:del(bot_id.."Pir3te:Comd:New:rt:bot:"..ComdNew..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "? ? Êã ãÓÍ ÇáÕáÇÍíå ") 
+send(msg.chat_id_, msg.id_, "â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ø§Ù„ØµÙ„Ø§Ø­ÙŠÙ‡ ") 
 end
 if database:get(bot_id.."Pir3te:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) then 
-if text and text:match("^ÇáÛÇÁ$") then 
-send(msg.chat_id_, msg.id_,"? ? Êã ÇáÛÇÁ ÇáÇãÑ ") 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡$") then 
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ù…Ø± ") 
 database:del(bot_id.."Pir3te:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
-if text == "ãÏíÑ" then
+if text == "Ù…Ø¯ÙŠØ±" then
 if not Constructor(msg) then
-send(msg.chat_id_, msg.id_"?? ? ÇÑÓá äæÚ ÇáÕáÇÍíå ãÑå ÇÎÑ\n?? ? ÊÓÊØíÚ ÇÖÇİÉ ÕáÇÍíå (ÚÖæ ~ ããíÒ  ~ ÇÏãä )") 
+send(msg.chat_id_, msg.id_"ğŸ– â”‡ Ø§Ø±Ø³Ù„ Ù†ÙˆØ¹ Ø§Ù„ØµÙ„Ø§Ø­ÙŠÙ‡ Ù…Ø±Ù‡ Ø§Ø®Ø±\nğŸ“Š â”‡ ØªØ³ØªØ·ÙŠØ¹ Ø§Ø¶Ø§ÙØ© ØµÙ„Ø§Ø­ÙŠÙ‡ (Ø¹Ø¶Ùˆ ~ Ù…Ù…ÙŠØ²  ~ Ø§Ø¯Ù…Ù† )") 
 return false
 end
 end
-if text == "ÇÏãä" then
+if text == "Ø§Ø¯Ù…Ù†" then
 if not Owner(msg) then 
-send(msg.chat_id_, msg.id_"?? ? ÇÑÓá äæÚ ÇáÕáÇÍíå ãÑå ÇÎÑ\n?? ? ÊÓÊØíÚ ÇÖÇİÉ ÕáÇÍíå ( ÚÖæ ~ ããíÒ )") 
+send(msg.chat_id_, msg.id_"ğŸ– â”‡ Ø§Ø±Ø³Ù„ Ù†ÙˆØ¹ Ø§Ù„ØµÙ„Ø§Ø­ÙŠÙ‡ Ù…Ø±Ù‡ Ø§Ø®Ø±\nğŸ“Š â”‡ ØªØ³ØªØ·ÙŠØ¹ Ø§Ø¶Ø§ÙØ© ØµÙ„Ø§Ø­ÙŠÙ‡ ( Ø¹Ø¶Ùˆ ~ Ù…Ù…ÙŠØ² )") 
 return false
 end
 end
-if text == "ããíÒ" then
+if text == "Ù…Ù…ÙŠØ²" then
 if not Addictive(msg) then
-send(msg.chat_id_, msg.id_"?? ? ÇÑÓá äæÚ ÇáÕáÇÍíå ãÑå ÇÎÑ\n?? ? ÊÓÊØíÚ ÇÖÇİÉ ÕáÇÍíå ( ÚÖæ )") 
+send(msg.chat_id_, msg.id_"ğŸ– â”‡ Ø§Ø±Ø³Ù„ Ù†ÙˆØ¹ Ø§Ù„ØµÙ„Ø§Ø­ÙŠÙ‡ Ù…Ø±Ù‡ Ø§Ø®Ø±\nğŸ“Š â”‡ ØªØ³ØªØ·ÙŠØ¹ Ø§Ø¶Ø§ÙØ© ØµÙ„Ø§Ø­ÙŠÙ‡ ( Ø¹Ø¶Ùˆ )") 
 return false
 end
 end
-if text == "ãÏíÑ" or text == "ÇÏãä" or text == "ããíÒ" or text == "ÚÖæ" then
+if text == "Ù…Ø¯ÙŠØ±" or text == "Ø§Ø¯Ù…Ù†" or text == "Ù…Ù…ÙŠØ²" or text == "Ø¹Ø¶Ùˆ" then
 local textn = database:get(bot_id.."Pir3te:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_)  
 database:set(bot_id.."Pir3te:Comd:New:rt:bot:"..textn..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_, "?? ? Êã ÇÖÇİÉ ÕáÇÍíÉ ") 
+send(msg.chat_id_, msg.id_, "ğŸ“Š â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© ØµÙ„Ø§Ø­ÙŠØ© ") 
 database:del(bot_id.."Pir3te:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
 end
 
-if text and text:match("^ÊÛíÑ ÑÏ ÇáãØæÑ (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáãØæÑ (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø·ÙˆØ± (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø·ÙˆØ± (.*)$") 
 database:set(bot_id.."Pir3te:Sudo:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáãØæÑ Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáãäÔÆ ÇáÇÓÇÓí (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáãäÔÆ ÇáÇÓÇÓí (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ (.*)$") 
 database:set(bot_id.."Pir3te:BasicConstructor:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáãäÔÆ ÇáÇÓÇÓí Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáãäÔÆ (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáãäÔÆ (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ (.*)$") 
 database:set(bot_id.."Pir3te:Constructor:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáãäÔÆ Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáãÏíÑ (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáãÏíÑ (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø¯ÙŠØ± (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø¯ÙŠØ± (.*)$") 
 database:set(bot_id.."Pir3te:Manager:Rd"..msg.chat_id_,Teext) 
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáãÏíÑ Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø¯ÙŠØ± Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáÇÏãä (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáÇÏãä (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø§Ø¯Ù…Ù† (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø§Ø¯Ù…Ù† (.*)$") 
 database:set(bot_id.."Pir3te:Mod:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáÇÏãä Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø§Ø¯Ù…Ù† Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáããíÒ (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáããíÒ (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù…ÙŠØ² (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù…ÙŠØ² (.*)$") 
 database:set(bot_id.."Pir3te:Special:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáããíÒ Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù…ÙŠØ² Ø§Ù„Ù‰ Â» "..Teext)
 end
-if text and text:match("^ÊÛíÑ ÑÏ ÇáÚÖæ (.*)$") and Owner(msg) then
-local Teext = text:match("^ÊÛíÑ ÑÏ ÇáÚÖæ (.*)$") 
+if text and text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø¹Ø¶Ùˆ (.*)$") and Owner(msg) then
+local Teext = text:match("^ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø¹Ø¶Ùˆ (.*)$") 
 database:set(bot_id.."Pir3te:Memp:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÊÛíÑ ÑÏ ÇáÚÖæ Çáì » "..Teext)
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡  ØªÙ… ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø¹Ø¶Ùˆ Ø§Ù„Ù‰ Â» "..Teext)
 end
 
 
-if text == ("ãÓÍ ÑÏæÏ ÇáãÏíÑ") and Owner(msg) then
+if text == ("Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±") and Owner(msg) then
 local list = database:smembers(bot_id.."Pir3te:List:Manager"..msg.chat_id_.."")
 for k,v in pairs(list) do
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Gif"..v..msg.chat_id_)   
@@ -10897,33 +3508,33 @@ database:del(bot_id.."Pir3te:Add:Rd:Manager:File"..v..msg.chat_id_)
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Audio"..v..msg.chat_id_)
 database:del(bot_id.."Pir3te:List:Manager"..msg.chat_id_)
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ãÓÍ ÑÏæÏ ÇáãÏíÑ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±")
 end
-if text == ("ÑÏæÏ ÇáãÏíÑ") and Owner(msg) then
+if text == ("Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±") and Owner(msg) then
 local list = database:smembers(bot_id.."Pir3te:List:Manager"..msg.chat_id_.."")
-text = "?? ? ŞÇÆãå ÑÏæÏ ÇáãÏíÑ \n? ? ? ? ? ? ? ? ?\n"
+text = "ğŸ“‘ â”‡ Ù‚Ø§Ø¦Ù…Ù‡ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ± \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Pir3te:Add:Rd:Manager:Gif"..v..msg.chat_id_) then
-db = "ãÊÍÑßå ??"
+db = "Ù…ØªØ­Ø±ÙƒÙ‡ ğŸ­"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Vico"..v..msg.chat_id_) then
-db = "ÈÕãå ??"
+db = "Ø¨ØµÙ…Ù‡ ğŸ“¢"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Stekrs"..v..msg.chat_id_) then
-db = "ãáÕŞ ??"
+db = "Ù…Ù„ØµÙ‚ ğŸƒ"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Text"..v..msg.chat_id_) then
-db = "ÑÓÇáå ?"
+db = "Ø±Ø³Ø§Ù„Ù‡ âœ‰"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Photo"..v..msg.chat_id_) then
-db = "ÕæÑå ??"
+db = "ØµÙˆØ±Ù‡ ğŸ‡"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Video"..v..msg.chat_id_) then
-db = "İíÏíæ ??"
+db = "ÙÙŠØ¯ÙŠÙˆ ğŸ“¹"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:File"..v..msg.chat_id_) then
-db = "ãáİ ??"
+db = "Ù…Ù„Ù ğŸ“"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Manager:Audio"..v..msg.chat_id_) then
-db = "ÇÛäíå ??"
+db = "Ø§ØºÙ†ÙŠÙ‡ ğŸµ"
 end
-text = text..""..k..">> ("..v..") » {"..db.."}\n"
+text = text..""..k..">> ("..v..") Â» {"..db.."}\n"
 end
 if #list == 0 then
-text = "?? ? áÇ íæÌÏ ÑÏæÏ ááãÏíÑ"
+text = "ğŸ“« â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø±Ø¯ÙˆØ¯ Ù„Ù„Ù…Ø¯ÙŠØ±"
 end
 send(msg.chat_id_, msg.id_,"["..text.."]")
 end
@@ -10971,23 +3582,23 @@ photo_in_group = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
 database:set(bot_id.."Pir3te:Add:Rd:Manager:Photo"..test..msg.chat_id_, photo_in_group)  
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÑÏ ÈäÌÇÍ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø±Ø¯ Ø¨Ù†Ø¬Ø§Ø­")
 return false  
 end  
 end
-if text == "ÇÖİ ÑÏ" and Owner(msg) then
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá Çáßáãå ÇáÊÑí ÊÑíÏ ÇÖÇİÊåÇ")
+if text == "Ø§Ø¶Ù Ø±Ø¯" and Owner(msg) then
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ØªØ±ÙŠ ØªØ±ÙŠØ¯ Ø§Ø¶Ø§ÙØªÙ‡Ø§")
 database:set(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
-if text == "ÍĞİ ÑÏ" and Owner(msg) then
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá Çáßáãå ÇáÊÑí ÊÑíÏ ÍĞİåÇ")
+if text == "Ø­Ø°Ù Ø±Ø¯" and Owner(msg) then
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ØªØ±ÙŠ ØªØ±ÙŠØ¯ Ø­Ø°ÙÙ‡Ø§")
 database:set(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true2")
 return false 
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '?? ? ÇáÇä ÇÑÓá ÇáÑÏ ÇáĞí ÊÑíÏ ÇÖÇİÊå \n?? ?  ŞÏ íßæä (ãáİ - İÏíæ - äÕ - ãáÕŞ - ÈÕãå - ãÊÍÑßå )\n? ?  íãßäß ÇÖÇİå Çáì ÇáäÕ :\n- `#username` > ÇÓã ÇáãÓÊÎÏã\n- `#msgs` > ÚÏÏ ÑÓÇÆá ÇáãÓÊÎÏã\n- `#name` > ÇÓã ÇáãÓÊÎÏã\n- `#id` > ÇíÏí ÇáãÓÊÎÏã\n- `#stast` > ãæŞÚ ÇáãÓÊÎÏã \n- `#edit` > ÚÏÏ ÇáÓÍßÇÊ ')
+send(msg.chat_id_, msg.id_, 'ğŸ“¥ â”‡ Ø§Ù„Ø§Ù† Ø§Ø±Ø³Ù„ Ø§Ù„Ø±Ø¯ Ø§Ù„Ø°ÙŠ ØªØ±ÙŠØ¯ Ø§Ø¶Ø§ÙØªÙ‡ \nğŸ“¥ â”‡  Ù‚Ø¯ ÙŠÙƒÙˆÙ† (Ù…Ù„Ù - ÙØ¯ÙŠÙˆ - Ù†Øµ - Ù…Ù„ØµÙ‚ - Ø¨ØµÙ…Ù‡ - Ù…ØªØ­Ø±ÙƒÙ‡ )\nâ˜‘ â”‡  ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø¶Ø§ÙÙ‡ Ø§Ù„Ù‰ Ø§Ù„Ù†Øµ :\n- `#username` > Ø§Ø³Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#msgs` > Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#name` > Ø§Ø³Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#id` > Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#stast` > Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… \n- `#edit` > Ø¹Ø¯Ø¯ Ø§Ù„Ø³Ø­ÙƒØ§Øª ')
 database:set(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true1")
 database:set(bot_id.."Pir3te:Text:Manager"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
@@ -11003,7 +3614,7 @@ return false end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_.."") == "true2" then
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇÒÇáÉ ÇáÑÏ ãä ŞÇÆãå ÇáÑÏæÏ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© Ø§Ù„Ø±Ø¯ Ù…Ù† Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø±Ø¯ÙˆØ¯")
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Gif"..text..msg.chat_id_)   
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Vico"..text..msg.chat_id_)   
 database:del(bot_id.."Pir3te:Add:Rd:Manager:Stekrs"..text..msg.chat_id_)     
@@ -11033,7 +3644,7 @@ local NumMsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(msg.sender_user_id_,msg.chat_id_)
 local message_edit = database:get(bot_id..'Pir3te:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
-local Text = Text:gsub('#username',(data.username_ or 'áÇ íæÌÏ')) 
+local Text = Text:gsub('#username',(data.username_ or 'Ù„Ø§ ÙŠÙˆØ¬Ø¯')) 
 local Text = Text:gsub('#name',data.first_name_)
 local Text = Text:gsub('#id',msg.sender_user_id_)
 local Text = Text:gsub('#edit',message_edit)
@@ -11074,7 +3685,7 @@ end
 end
 end
 ------------------------------------------------------------------------
-if text == ("ãÓÍ ÑÏæÏ ÇáãØæÑ") and DevPir3te(msg) then 
+if text == ("Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±") and DevPir3te(msg) then 
 local list = database:smembers(bot_id.."Pir3te:List:Rd:Sudo")
 for k,v in pairs(list) do
 database:del(bot_id.."Pir3te:Add:Rd:Sudo:Gif"..v)   
@@ -11087,33 +3698,33 @@ database:del(bot_id.."Pir3te:Add:Rd:Sudo:File"..v)
 database:del(bot_id.."Pir3te:Add:Rd:Sudo:Audio"..v)
 database:del(bot_id.."Pir3te:List:Rd:Sudo")
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ãÓÍ ÑÏæÏ ÇáãØæÑ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±")
 end
-if text == ("ÑÏæÏ ÇáãØæÑ") and DevPir3te(msg) then 
+if text == ("Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±") and DevPir3te(msg) then 
 local list = database:smembers(bot_id.."Pir3te:List:Rd:Sudo")
-text = "\n? ? ŞÇÆãÉ ÑÏæÏ ÇáãØæÑ \n? ? ? ? ? ? ? ? ?\n"
+text = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ± \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Pir3te:Add:Rd:Sudo:Gif"..v) then
-db = "ãÊÍÑßå ??"
+db = "Ù…ØªØ­Ø±ÙƒÙ‡ ğŸ­"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:vico"..v) then
-db = "ÈÕãå ??"
+db = "Ø¨ØµÙ…Ù‡ ğŸ“¢"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:stekr"..v) then
-db = "ãáÕŞ ??"
+db = "Ù…Ù„ØµÙ‚ ğŸƒ"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:Text"..v) then
-db = "ÑÓÇáå ?"
+db = "Ø±Ø³Ø§Ù„Ù‡ âœ‰"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:Photo"..v) then
-db = "ÕæÑå ??"
+db = "ØµÙˆØ±Ù‡ ğŸ‡"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:Video"..v) then
-db = "İíÏíæ ??"
+db = "ÙÙŠØ¯ÙŠÙˆ ğŸ“¹"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:File"..v) then
-db = "ãáİ ??"
+db = "Ù…Ù„Ù ğŸ“"
 elseif database:get(bot_id.."Pir3te:Add:Rd:Sudo:Audio"..v) then
-db = "ÇÛäíå ??"
+db = "Ø§ØºÙ†ÙŠÙ‡ ğŸµ"
 end
-text = text..""..k.." >> ("..v..") » {"..db.."}\n"
+text = text..""..k.." >> ("..v..") Â» {"..db.."}\n"
 end
 if #list == 0 then
-text = "?? ? áÇ íæÌÏ ÑÏæÏ ááãØæÑ"
+text = "ğŸ“« â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø±Ø¯ÙˆØ¯ Ù„Ù„Ù…Ø·ÙˆØ±"
 end
 send(msg.chat_id_, msg.id_,"["..text.."]")
 end
@@ -11161,24 +3772,24 @@ photo_in_group = msg.content_.photo_.sizes_[3].photo_.persistent_id_
 end
 database:set(bot_id.."Pir3te:Add:Rd:Sudo:Photo"..test, photo_in_group)  
 end
-send(msg.chat_id_, msg.id_,"?? ? Êã ÍİÙ ÇáÑÏ ÈäÌÇÍ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø±Ø¯ Ø¨Ù†Ø¬Ø§Ø­")
 return false  
 end  
 end
 
-if text == "ÇÖİ ÑÏ ááßá" and DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ?  ÇÑÓá Çáßáãå ÇáÊÑí ÊÑíÏ ÇÖÇİÊåÇ")
+if text == "Ø§Ø¶Ù Ø±Ø¯ Ù„Ù„ÙƒÙ„" and DevPir3te(msg) then 
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡  Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ØªØ±ÙŠ ØªØ±ÙŠØ¯ Ø§Ø¶Ø§ÙØªÙ‡Ø§")
 database:set(bot_id.."Pir3te:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
-if text == "ÍĞİ ÑÏ ááßá" and DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ?  ÇÑÓá Çáßáãå ÇáÊÑí ÊÑíÏ ÍĞİåÇ")
+if text == "Ø­Ø°Ù Ø±Ø¯ Ù„Ù„ÙƒÙ„" and DevPir3te(msg) then 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ØªØ±ÙŠ ØªØ±ÙŠØ¯ Ø­Ø°ÙÙ‡Ø§")
 database:set(bot_id.."Pir3te:Set:On"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Pir3te:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_, '?? ? ÇáÇä ÇÑÓá ÇáÑÏ ÇáĞí ÊÑíÏ ÇÖÇİÊå \n?? ?  ŞÏ íßæä (ãáİ - İÏíæ - äÕ - ãáÕŞ - ÈÕãå - ãÊÍÑßå )\n? ?  íãßäß ÇÖÇİå Çáì ÇáäÕ :\n- `#username` > ÇÓã ÇáãÓÊÎÏã\n- `#msgs` > ÚÏÏ ÑÓÇÆá ÇáãÓÊÎÏã\n- `#name` > ÇÓã ÇáãÓÊÎÏã\n- `#id` > ÇíÏí ÇáãÓÊÎÏã\n- `#stast` > ãæŞÚ ÇáãÓÊÎÏã \n- `#edit` > ÚÏÏ ÇáÓÍßÇÊ ')
+send(msg.chat_id_, msg.id_, 'ğŸ“¥ â”‡ Ø§Ù„Ø§Ù† Ø§Ø±Ø³Ù„ Ø§Ù„Ø±Ø¯ Ø§Ù„Ø°ÙŠ ØªØ±ÙŠØ¯ Ø§Ø¶Ø§ÙØªÙ‡ \nğŸ“¥ â”‡  Ù‚Ø¯ ÙŠÙƒÙˆÙ† (Ù…Ù„Ù - ÙØ¯ÙŠÙˆ - Ù†Øµ - Ù…Ù„ØµÙ‚ - Ø¨ØµÙ…Ù‡ - Ù…ØªØ­Ø±ÙƒÙ‡ )\nâ˜‘ â”‡  ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø¶Ø§ÙÙ‡ Ø§Ù„Ù‰ Ø§Ù„Ù†Øµ :\n- `#username` > Ø§Ø³Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#msgs` > Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#name` > Ø§Ø³Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#id` > Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…\n- `#stast` > Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… \n- `#edit` > Ø¹Ø¯Ø¯ Ø§Ù„Ø³Ø­ÙƒØ§Øª ')
 database:set(bot_id.."Pir3te:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_, "true1")
 database:set(bot_id.."Pir3te:Text:Sudo:Bot"..msg.sender_user_id_..":"..msg.chat_id_, text)
 database:sadd(bot_id.."Pir3te:List:Rd:Sudo", text)
@@ -11186,7 +3797,7 @@ return false end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id.."Pir3te:Set:On"..msg.sender_user_id_..":"..msg.chat_id_) == "true" then
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇÒÇáÉ ÇáÑÏ ãä ŞÇÆãå ÑÏæÏ ÇáãØæÑ")
+send(msg.chat_id_, msg.id_,"ğŸ“Œ â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© Ø§Ù„Ø±Ø¯ Ù…Ù† Ù‚Ø§Ø¦Ù…Ù‡ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±")
 list = {"Add:Rd:Sudo:Audio","Add:Rd:Sudo:File","Add:Rd:Sudo:Video","Add:Rd:Sudo:Photo","Add:Rd:Sudo:Text","Add:Rd:Sudo:stekr","Add:Rd:Sudo:vico","Add:Rd:Sudo:Gif"}
 for k,v in pairs(list) do
 database:del(bot_id..'Pir3te:'..v..text)
@@ -11214,7 +3825,7 @@ local NumMsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg
 local TotalMsg = Total_message(NumMsg)
 local Status_Gps = Get_Rank(msg.sender_user_id_,msg.chat_id_)
 local message_edit = database:get(bot_id..'Pir3te:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
-local Text = Text:gsub('#username',(data.username_ or 'áÇ íæÌÏ')) 
+local Text = Text:gsub('#username',(data.username_ or 'Ù„Ø§ ÙŠÙˆØ¬Ø¯')) 
 local Text = Text:gsub('#name',data.first_name_)
 local Text = Text:gsub('#id',msg.sender_user_id_)
 local Text = Text:gsub('#edit',message_edit)
@@ -11254,7 +3865,7 @@ database:sadd(bot_id.."Pir3te:Spam:Group"..msg.sender_user_id_,text)
 end  
 end
 end
-if text == 'ØÑÏ ÇáãÍĞæİíä' or text == 'ãÓÍ ÇáãÍĞæİíä' then  
+if text == 'Ø·Ø±Ø¯ Ø§Ù„Ù…Ø­Ø°ÙˆÙÙŠÙ†' or text == 'Ù…Ø³Ø­ Ø§Ù„Ù…Ø­Ø°ÙˆÙÙŠÙ†' then  
 if Addictive(msg) then    
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),offset_ = 0,limit_ = 1000}, function(arg,del)
 for k, v in pairs(del.members_) do
@@ -11264,51 +3875,51 @@ Kick_Group(msg.chat_id_, data.id_)
 end
 end,nil)
 end
-send(msg.chat_id_, msg.id_,'? ? Êã ØÑÏ ÇáÍÓÇÈÇÊ ÇáãÍĞæİå')
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… Ø·Ø±Ø¯ Ø§Ù„Ø­Ø³Ø§Ø¨Ø§Øª Ø§Ù„Ù…Ø­Ø°ÙˆÙÙ‡')
 end,nil)
 end
 end
 
-if text == "ÊİÚíá ÑÏæÏ ÇáãÏíÑ" and Owner(msg) then   
+if text == "ØªÙØ¹ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±" and Owner(msg) then   
 database:del(bot_id.."Pir3te:Reply:Manager"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊİÚíá ÑÏæÏ ÇáãÏíÑ") 
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±") 
 end
-if text == "ÊÚØíá ÑÏæÏ ÇáãÏíÑ" and Owner(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±" and Owner(msg) then  
 database:set(bot_id.."Pir3te:Reply:Manager"..msg.chat_id_,true)  
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÚØíá ÑÏæÏ ÇáãÏíÑ" ) 
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±" ) 
 end
-if text == "ÊİÚíá ÑÏæÏ ÇáãØæÑ" and Owner(msg) then   
+if text == "ØªÙØ¹ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±" and Owner(msg) then   
 database:del(bot_id.."Pir3te:Reply:Sudo"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊİÚíá ÑÏæÏ ÇáãØæÑ" ) 
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±" ) 
 end
-if text == "ÊÚØíá ÑÏæÏ ÇáãØæÑ" and Owner(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±" and Owner(msg) then  
 database:set(bot_id.."Pir3te:Reply:Sudo"..msg.chat_id_,true)   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÚØíá ÑÏæÏ ÇáãØæÑ" ) 
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±" ) 
 end
 
-if text == ("ÊäÒíá Çáßá") and msg.reply_to_message_id_ ~= 0 and Owner(msg) then
+if text == ("ØªÙ†Ø²ÙŠÙ„ Ø§Ù„ÙƒÙ„") and msg.reply_to_message_id_ ~= 0 and Owner(msg) then
 function Function_Pir3te(extra, result, success)
 if tonumber(SUDO) == tonumber(result.sender_user_id_) then
-send(msg.chat_id_, msg.id_,"?? ?  áÇ ÊÓÊØíÚ ÊäÒíá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ ØªÙ†Ø²ÙŠÙ„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false 
 end
 if database:sismember(bot_id.."Pir3te:Sudo:User",result.sender_user_id_) then
-dev = "ÇáãØæÑ ¡" else dev = "" end
+dev = "Ø§Ù„Ù…Ø·ÙˆØ± ØŒ" else dev = "" end
 if database:sismember(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_, result.sender_user_id_) then
-crr = "ãäÔÆ ÇÓÇÓí ¡" else crr = "" end
+crr = "Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ ØŒ" else crr = "" end
 if database:sismember(bot_id.."Pir3te:Constructor"..msg.chat_id_, result.sender_user_id_) then
-cr = "ãäÔÆ ¡" else cr = "" end
+cr = "Ù…Ù†Ø´Ø¦ ØŒ" else cr = "" end
 if database:sismember(bot_id.."Pir3te:Manager"..msg.chat_id_, result.sender_user_id_) then
-own = "ãÏíÑ ¡" else own = "" end
+own = "Ù…Ø¯ÙŠØ± ØŒ" else own = "" end
 if database:sismember(bot_id.."Pir3te:Mod:User"..msg.chat_id_, result.sender_user_id_) then
-mod = "ÇÏãä ¡" else mod = "" end
+mod = "Ø§Ø¯Ù…Ù† ØŒ" else mod = "" end
 if database:sismember(bot_id.."Pir3te:Special:User"..msg.chat_id_, result.sender_user_id_) then
-vip = "ããíÒ ¡" else vip = ""
+vip = "Ù…Ù…ÙŠØ² ØŒ" else vip = ""
 end
 if Rank_Checking(result.sender_user_id_,msg.chat_id_) ~= false then
-send(msg.chat_id_, msg.id_,"\n?? ? Êã ÊäÒíá ÇáÔÎÕ ãä ÇáÑÊÈ ÇáÊÇáíå \n?? ?  { "..dev..""..crr..""..cr..""..own..""..mod..""..vip.." } \n")
+send(msg.chat_id_, msg.id_,"\nğŸ”– â”‡ ØªÙ… ØªÙ†Ø²ÙŠÙ„ Ø§Ù„Ø´Ø®Øµ Ù…Ù† Ø§Ù„Ø±ØªØ¨ Ø§Ù„ØªØ§Ù„ÙŠÙ‡ \nğŸ“¥ â”‡  { "..dev..""..crr..""..cr..""..own..""..mod..""..vip.." } \n")
 else
-send(msg.chat_id_, msg.id_,"\n?? ? áíÓ áÏíå ÑÊÈ ÍÊì ÇÓÊØíÚ ÊäÒíáå \n")
+send(msg.chat_id_, msg.id_,"\nğŸš¸ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠÙ‡ Ø±ØªØ¨ Ø­ØªÙ‰ Ø§Ø³ØªØ·ÙŠØ¹ ØªÙ†Ø²ÙŠÙ„Ù‡ \n")
 end
 if tonumber(Id_Sudo) == tonumber(msg.sender_user_id_) then
 database:srem(bot_id.."Pir3te:Sudo:User", result.sender_user_id_)
@@ -11339,207 +3950,207 @@ end
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 end
-if text == "ÊÇß ááßá" and Addictive(msg) then
+if text == "ØªØ§Ùƒ Ù„Ù„ÙƒÙ„" and Addictive(msg) then
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,Mohmad)
-local t = "\n??????  ?  ŞÇÆãå ÇáÇÚÖÇÁ   ¡\n????? ? ? ????? \n"
+local t = "\nğŸ‘¨â€ğŸ‘§â€ğŸ‘¦  â”‡  Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡   ØŒ\nê”¹â”‰â™¦ï¸â”‰ â”‰ â”‰ â”‰â™¦ï¸â”‰ê”¹ \n"
 x = 0
 local list = Mohmad.members_
 for k, v in pairs(list) do
 x = x + 1
 if database:get(bot_id.."Pir3te:User:Name"..v.user_id_) then
-t = t.."|"..x.."|~? {[@"..database:get(bot_id.."Pir3te:User:Name"..v.user_id_).."]}\n"
+t = t.."|"..x.."|~âª¼ {[@"..database:get(bot_id.."Pir3te:User:Name"..v.user_id_).."]}\n"
 else
-t = t.."|"..x.."|~? {"..v.user_id_.."}\n"
+t = t.."|"..x.."|~âª¼ {"..v.user_id_.."}\n"
 end
 end
 send(msg.chat_id_,msg.id_,t)
 end,nil)
 end
 
-if text == "ÑÊÈÊí" then
+if text == "Ø±ØªØ¨ØªÙŠ" then
 local rtp = Get_Rank(msg.sender_user_id_,msg.chat_id_)
-send(msg.chat_id_, msg.id_,"?? ?  ÑÊÈÊß İí ÇáÈæÊ » "..rtp)
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ø±ØªØ¨ØªÙƒ ÙÙŠ Ø§Ù„Ø¨ÙˆØª Â» "..rtp)
 end
-if text == "ÇÓãí"  then 
+if text == "Ø§Ø³Ù…ÙŠ"  then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.first_name_  then
-first_name = "?? ?  ÇÓãß ÇáÇæá ? {`"..(result.first_name_).."`}"
+first_name = "ğŸš« â”‡  Ø§Ø³Ù…Ùƒ Ø§Ù„Ø§ÙˆÙ„ â† {`"..(result.first_name_).."`}"
 else
 first_name = ""
 end   
 if result.last_name_ then 
-last_name = "?? ?  ÇÓãß ÇáËÇäí ? {`"..result.last_name_.."`}" 
+last_name = "ğŸ”˜ â”‡  Ø§Ø³Ù…Ùƒ Ø§Ù„Ø«Ø§Ù†ÙŠ â† {`"..result.last_name_.."`}" 
 else
 last_name = ""
 end      
 send(msg.chat_id_, msg.id_,first_name.."\n"..last_name) 
 end,nil)
 end 
-if text==("ÚÏÏ ÇáßÑæÈ") and Addictive(msg) then  
+if text==("Ø¹Ø¯Ø¯ Ø§Ù„ÙƒØ±ÙˆØ¨") and Addictive(msg) then  
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_,msg.id_,"?? ?  ÇáÈæÊ áíÓ ÇÏãä åäÇ \n") 
+send(msg.chat_id_,msg.id_,"ğŸ’¢ â”‡  Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† Ù‡Ù†Ø§ \n") 
 return false  
 end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-local Mohmad = "?? ?  ÚÏÏ ÇáÇÏãäíå : "..data.administrator_count_..
-"\n\n?? ?  ÚÏÏ ÇáãØÑæÏíä : "..data.kicked_count_..
-"\n\n?? ?  ÚÏÏ ÇáÇÚÖÇÁ : "..data.member_count_..
-"\n\n?? ?  ÚÏÏ ÑÓÇÆá ÇáßÑæÈ : "..(msg.id_/2097152/0.5)..
-"\n\n?? ?  ÇÓã ÇáãÌãæÚå : ["..ta.title_.."]"
+local Mohmad = "ğŸ‘¤ â”‡  Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡ : "..data.administrator_count_..
+"\n\nğŸš· â”‡  Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø·Ø±ÙˆØ¯ÙŠÙ† : "..data.kicked_count_..
+"\n\nğŸ‘¥ â”‡  Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ : "..data.member_count_..
+"\n\nğŸ“¨ â”‡  Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„ÙƒØ±ÙˆØ¨ : "..(msg.id_/2097152/0.5)..
+"\n\nğŸ“¯ â”‡  Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ : ["..ta.title_.."]"
 send(msg.chat_id_, msg.id_, Mohmad) 
 end,nil)
 end,nil)
 end 
-if text == "ÇØÑÏäí" or text == "ØÑÏäí" then
+if text == "Ø§Ø·Ø±Ø¯Ù†ÙŠ" or text == "Ø·Ø±Ø¯Ù†ÙŠ" then
 if not database:get(bot_id.."Pir3te:Kick:Me"..msg.chat_id_) then
 if Rank_Checking(msg.sender_user_id_, msg.chat_id_) == true then
-send(msg.chat_id_, msg.id_, "\n?? ?  ÚĞÑÇ áÇ ÇÓÊØíÚ ØÑÏ ( "..Get_Rank(msg.sender_user_id_,msg.chat_id_).." )")
+send(msg.chat_id_, msg.id_, "\nğŸ’¢ â”‡  Ø¹Ø°Ø±Ø§ Ù„Ø§ Ø§Ø³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ ( "..Get_Rank(msg.sender_user_id_,msg.chat_id_).." )")
 return false
 end
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=msg.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-send(msg.chat_id_, msg.id_,"?? ?  áíÓ áÏí ÕáÇÍíÉ ÍÙÑ ÇáãÓÊÎÏãíä íÑÌì ÊİÚíáåÇ !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† ÙŠØ±Ø¬Ù‰ ØªÙØ¹ÙŠÙ„Ù‡Ø§ !") 
 return false  
 end
 if (data and data.code_ and data.code_ == 3) then 
-send(msg.chat_id_, msg.id_,"?? ?  ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !") 
 return false  
 end
 if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
-send(msg.chat_id_, msg.id_,"?? ?  ÚĞÑÇ áÇ ÇÓÊØíÚ ØÑÏ ÇÏãäíÉ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ø¹Ø°Ø±Ø§ Ù„Ø§ Ø§Ø³ØªØ·ÙŠØ¹ Ø·Ø±Ø¯ Ø§Ø¯Ù…Ù†ÙŠØ© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 return false  
 end
 if data and data.ID and data.ID == "Ok" then
-send(msg.chat_id_, msg.id_,"?? ?  Êã ØÑÏß ãä ÇáãÌãæÚå ") 
+send(msg.chat_id_, msg.id_,"ğŸš· â”‡  ØªÙ… Ø·Ø±Ø¯Ùƒ Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ") 
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = msg.sender_user_id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
 return false
 end
 end,nil)   
 else
-send(msg.chat_id_, msg.id_,"?? ?  ÇãÑ ÇØÑÏäí Êã ÊÚØíáå ãä ŞÈá ÇáãÏÑÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ’¢ â”‡  Ø§Ù…Ø± Ø§Ø·Ø±Ø¯Ù†ÙŠ ØªÙ… ØªØ¹Ø·ÙŠÙ„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡ ") 
 end
 end
 
-if text == "ÊİÚíá ÇØÑÏäí" and Owner(msg) then   
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ø·Ø±Ø¯Ù†ÙŠ" and Owner(msg) then   
 database:del(bot_id.."Pir3te:Kick:Me"..msg.chat_id_)  
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == "ÊÚØíá ÇØÑÏäí" and Owner(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ø·Ø±Ø¯Ù†ÙŠ" and Owner(msg) then  
 database:set(bot_id.."Pir3te:Kick:Me"..msg.chat_id_,true)  
-Text = "\n?? ? Êã ÊÚØíá ÇãÑ ÇØÑÏäí"
+Text = "\nğŸ“« â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù…Ø± Ø§Ø·Ø±Ø¯Ù†ÙŠ"
 send(msg.chat_id_, msg.id_,Text) 
 end
 
-if text and text:match("^ÑİÚ ÇáŞíæÏ @(.*)") and Owner(msg) then 
-local username = text:match("^ÑİÚ ÇáŞíæÏ @(.*)") 
+if text and text:match("^Ø±ÙØ¹ Ø§Ù„Ù‚ÙŠÙˆØ¯ @(.*)") and Owner(msg) then 
+local username = text:match("^Ø±ÙØ¹ Ø§Ù„Ù‚ÙŠÙˆØ¯ @(.*)") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if DevPir3te(msg) then
 database:srem(bot_id.."Pir3te:GBan:User",result.id_)
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.id_)
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.id_)
-usertext = "\n?? ?  ÇáÚÖæ » ["..result.title_.."](t.me/"..(username or "kenwa")..")"
-status  = "\n?? ?  Êã ÇáÛÇÁ ÇáŞíæÏ Úäå"
+usertext = "\nğŸ‘¤ â”‡  Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..result.title_.."](t.me/"..(username or "kenwa")..")"
+status  = "\nğŸ“« â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ù‚ÙŠÙˆØ¯ Ø¹Ù†Ù‡"
 texts = usertext..status
 send(msg.chat_id_, msg.id_,texts)
 else
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.id_)
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.id_)
-Reply_Status(msg,result.id_,"reply","\n?? ?  Êã ÇáÛÇÁ ÇáŞíæÏ Úäå")  
+Reply_Status(msg,result.id_,"reply","\nğŸ“« â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ù‚ÙŠÙˆØ¯ Ø¹Ù†Ù‡")  
 end
 else
-Text = "?? ?  ÇáãÚÑİ ÛáØ"
+Text = "ğŸ“« â”‡  Ø§Ù„Ù…Ø¹Ø±Ù ØºÙ„Ø·"
 send(msg.chat_id_, msg.id_,Text)
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 end
-if text == "ÑİÚ ÇáŞíæÏ" and Owner(msg) then
+if text == "Ø±ÙØ¹ Ø§Ù„Ù‚ÙŠÙˆØ¯" and Owner(msg) then
 function Function_Pir3te(extra, result, success)
 if DevPir3te(msg) then
 database:srem(bot_id.."Pir3te:GBan:User",result.sender_user_id_)
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.sender_user_id_)
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","\n?? ?  Êã ÇáÛÇÁ ÇáŞíæÏ Úäå")  
+Reply_Status(msg,result.sender_user_id_,"reply","\nğŸ“« â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ù‚ÙŠÙˆØ¯ Ø¹Ù†Ù‡")  
 else
 database:srem(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.sender_user_id_)
 database:srem(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = "\n?? ?  ÇáÚÖæ » ["..data.first_name_.."](t.me/"..(data.username_ or "kenwa")..")"
-status  = "\n?? ?  Êã ÇáÛÇÁ ÇáŞíæÏ Úäå"
+usertext = "\nğŸ‘¤ â”‡  Ø§Ù„Ø¹Ø¶Ùˆ Â» ["..data.first_name_.."](t.me/"..(data.username_ or "kenwa")..")"
+status  = "\nğŸ“« â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ù‚ÙŠÙˆØ¯ Ø¹Ù†Ù‡"
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 end
-if text and text:match("^ßÔİ ÇáŞíæÏ @(.*)") and Owner(msg) then 
-local username = text:match("^ßÔİ ÇáŞíæÏ @(.*)") 
+if text and text:match("^ÙƒØ´Ù Ø§Ù„Ù‚ÙŠÙˆØ¯ @(.*)") and Owner(msg) then 
+local username = text:match("^ÙƒØ´Ù Ø§Ù„Ù‚ÙŠÙˆØ¯ @(.*)") 
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 if database:sismember(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.id_) then
-Muted = "ãßÊæã"
+Muted = "Ù…ÙƒØªÙˆÙ…"
 else
-Muted = "ÛíÑ ãßÊæã"
+Muted = "ØºÙŠØ± Ù…ÙƒØªÙˆÙ…"
 end
 if database:sismember(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.id_) then
-Ban = "ãÍÙæÑ"
+Ban = "Ù…Ø­Ø¸ÙˆØ±"
 else
-Ban = "ÛíÑ ãÍÙæÑ"
+Ban = "ØºÙŠØ± Ù…Ø­Ø¸ÙˆØ±"
 end
 if database:sismember(bot_id.."Pir3te:GBan:User",result.id_) then
-GBan = "ãÍÙæÑ ÚÇã"
+GBan = "Ù…Ø­Ø¸ÙˆØ± Ø¹Ø§Ù…"
 else
-GBan = "ÛíÑ ãÍÙæÑ ÚÇã"
+GBan = "ØºÙŠØ± Ù…Ø­Ø¸ÙˆØ± Ø¹Ø§Ù…"
 end
-send(msg.chat_id_, msg.id_,"?? ?  ÇáÍÙÑ ÇáÚÇã » "..GBan.."\n?? ?  ÇáÍÙÑ » "..Ban.."\n?? ?  ÇáßÊã » "..Muted)
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  Ø§Ù„Ø­Ø¸Ø± Ø§Ù„Ø¹Ø§Ù… Â» "..GBan.."\nğŸš« â”‡  Ø§Ù„Ø­Ø¸Ø± Â» "..Ban.."\nğŸ“® â”‡  Ø§Ù„ÙƒØªÙ… Â» "..Muted)
 else
-send(msg.chat_id_, msg.id_,"?? ?  ÇáãÚÑİ ÛáØ")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  Ø§Ù„Ù…Ø¹Ø±Ù ØºÙ„Ø·")
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 end
 
-if text == "ßÔİ ÇáŞíæÏ" and Owner(msg) then 
+if text == "ÙƒØ´Ù Ø§Ù„Ù‚ÙŠÙˆØ¯" and Owner(msg) then 
 function Function_Pir3te(extra, result, success)
 if database:sismember(bot_id.."Pir3te:Muted:User"..msg.chat_id_,result.sender_user_id_) then
-Muted = "ãßÊæã"
+Muted = "Ù…ÙƒØªÙˆÙ…"
 else
-Muted = "ÛíÑ ãßÊæã"
+Muted = "ØºÙŠØ± Ù…ÙƒØªÙˆÙ…"
 end
 if database:sismember(bot_id.."Pir3te:Ban:User"..msg.chat_id_,result.sender_user_id_) then
-Ban = "ãÍÙæÑ"
+Ban = "Ù…Ø­Ø¸ÙˆØ±"
 else
-Ban = "ÛíÑ ãÍÙæÑ"
+Ban = "ØºÙŠØ± Ù…Ø­Ø¸ÙˆØ±"
 end
 if database:sismember(bot_id.."Pir3te:GBan:User",result.sender_user_id_) then
-GBan = "ãÍÙæÑ ÚÇã"
+GBan = "Ù…Ø­Ø¸ÙˆØ± Ø¹Ø§Ù…"
 else
-GBan = "ÛíÑ ãÍÙæÑ ÚÇã"
+GBan = "ØºÙŠØ± Ù…Ø­Ø¸ÙˆØ± Ø¹Ø§Ù…"
 end
-Textt = "?? ?  ÇáÍÙÑ ÇáÚÇã » "..GBan.."\n?? ?  ÇáÍÙÑ » "..Ban.."\n?? ?  ÇáßÊã » "..Muted..""
+Textt = "ğŸ“« â”‡  Ø§Ù„Ø­Ø¸Ø± Ø§Ù„Ø¹Ø§Ù… Â» "..GBan.."\nğŸš« â”‡  Ø§Ù„Ø­Ø¸Ø± Â» "..Ban.."\nğŸ“® â”‡  Ø§Ù„ÙƒØªÙ… Â» "..Muted..""
 send(msg.chat_id_, msg.id_,Textt)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 end
 
-if text and text:match("^ÖÚ ÇÓã (.*)") and Owner(msg) or text and text:match("^æÖÚ ÇÓã (.*)") and Owner(msg) then 
-local Name = text:match("^ÖÚ ÇÓã (.*)") or text:match("^æÖÚ ÇÓã (.*)") 
+if text and text:match("^Ø¶Ø¹ Ø§Ø³Ù… (.*)") and Owner(msg) or text and text:match("^ÙˆØ¶Ø¹ Ø§Ø³Ù… (.*)") and Owner(msg) then 
+local Name = text:match("^Ø¶Ø¹ Ø§Ø³Ù… (.*)") or text:match("^ÙˆØ¶Ø¹ Ø§Ø³Ù… (.*)") 
 tdcli_function ({ ID = "ChangeChatTitle",chat_id_ = msg.chat_id_,title_ = Name },function(arg,data) 
 if data.message_ == "Channel chat title can be changed by administrators only" then
-send(msg.chat_id_,msg.id_,"?? ?  ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !")  
+send(msg.chat_id_,msg.id_,"ğŸ”˜ â”‡  Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !")  
 return false  
 end 
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
-send(msg.chat_id_,msg.id_,"?? ?  áíÓÊ áÏí ÕáÇÍíÉ ÊÛíÑ ÇÓã ÇáãÌãæÚå")  
+send(msg.chat_id_,msg.id_,"ğŸ”˜ â”‡  Ù„ÙŠØ³Øª Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© ØªØºÙŠØ± Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_,msg.id_,"?? ?  Êã ÊÛííÑ ÇÓã ÇáãÌãæÚå Çáì {["..Name.."]}")  
+send(msg.chat_id_,msg.id_,"ğŸ”˜ â”‡  ØªÙ… ØªØºÙŠÙŠØ± Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø§Ù„Ù‰ {["..Name.."]}")  
 end
 end,nil) 
 end
 
-if text ==("ÑİÚ ÇáÇÏãäíå") and Owner(msg) then
+if text ==("Ø±ÙØ¹ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡") and Owner(msg) then
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local num2 = 0
 local admins = data.members_
@@ -11559,13 +4170,13 @@ database:srem(bot_id.."Pir3te:Mod:User"..msg.chat_id_, admins[i].user_id_)
 end
 end
 if num2 == 0 then
-send(msg.chat_id_, msg.id_,"?? ?  áÇ ÊæÌÏ ÇÏãäíÉ áíÊã ÑİÚåã") 
+send(msg.chat_id_, msg.id_,"ğŸ’¥ â”‡  Ù„Ø§ ØªÙˆØ¬Ø¯ Ø§Ø¯Ù…Ù†ÙŠØ© Ù„ÙŠØªÙ… Ø±ÙØ¹Ù‡Ù…") 
 else
-send(msg.chat_id_, msg.id_,"?? ?  ÊãÊ ÊÑŞíÉ { "..num2.." } ãä ÇÏãäíÉ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡  ØªÙ…Øª ØªØ±Ù‚ÙŠØ© { "..num2.." } Ù…Ù† Ø§Ø¯Ù…Ù†ÙŠØ© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 end
 end,nil)   
 end
-if text ==("ÇáãäÔÆ") then
+if text ==("Ø§Ù„Ù…Ù†Ø´Ø¦") then
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local admins = data.members_
 for i=0 , #admins do
@@ -11573,17 +4184,17 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_,"?? ?  ÍÓÇÈ ÇáãäÔÆ ãÍĞæİ")
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡  Ø­Ø³Ø§Ø¨ Ø§Ù„Ù…Ù†Ø´Ø¦ Ù…Ø­Ø°ÙˆÙ")
 return false  
 end
 local UserName = (b.username_ or "PIRATE_TE3M")
-send(msg.chat_id_, msg.id_,"?? ? ãäÔÆ ÇáãÌãæÚå ~ ["..b.first_name_.."](T.me/"..UserName..")")  
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ Ù…Ù†Ø´Ø¦ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
 end
 end,nil)   
 end
-if text ==("ÑİÚ ÇáãäÔÆ") and DevBot(msg) then 
+if text ==("Ø±ÙØ¹ Ø§Ù„Ù…Ù†Ø´Ø¦") and DevBot(msg) then 
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local admins = data.members_
 for i=0 , #admins do
@@ -11593,84 +4204,84 @@ end
 end
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_,"?? ? ÍÓÇÈ ÇáãäÔÆ ãÍĞæİ")
+send(msg.chat_id_, msg.id_,"ğŸ“¬ â”‡ Ø­Ø³Ø§Ø¨ Ø§Ù„Ù…Ù†Ø´Ø¦ Ù…Ø­Ø°ÙˆÙ")
 return false  
 end
 local UserName = (b.username_ or "PIRATE_TE3M")
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊÑŞíÉ ãäÔÆ ÇáãÌãæÚå ~ ["..b.first_name_.."](T.me/"..UserName..")")  
+send(msg.chat_id_, msg.id_,"ğŸš¸ â”‡ ØªÙ… ØªØ±Ù‚ÙŠØ© Ù…Ù†Ø´Ø¦ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."Pir3te:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
 end,nil)   
 end
 
-if text == "ÛÇÏÑ" then 
+if text == "ØºØ§Ø¯Ø±" then 
 if DevBot(msg) and not database:get(bot_id.."Pir3te:Left:Bot"..msg.chat_id_) then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
-send(msg.chat_id_, msg.id_,"?? ?  Êã ãÛÇÏÑÉ ÇáãÌãæÚå") 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  ØªÙ… Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
 database:srem(bot_id.."Pir3te:Chek:Groups",msg.chat_id_)  
 end
 return false  
 end
-if text and text:match("^ÛÇÏÑ (-%d+)$") then
-local GP_ID = {string.match(text, "^(ÛÇÏÑ) (-%d+)$")}
+if text and text:match("^ØºØ§Ø¯Ø± (-%d+)$") then
+local GP_ID = {string.match(text, "^(ØºØ§Ø¯Ø±) (-%d+)$")}
 if DevBot(msg) and not database:get(bot_id.."Pir3te:Left:Bot"..msg.chat_id_) then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=GP_ID[2],user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
-send(msg.chat_id_, msg.id_,"?? ?  Êã ãÛÇÏÑÉ ÇáãÌãæÚå") 
-send(GP_ID[2], 0,"?? ?  Êã ãÛÇÏÑÉ ÇáãÌãæÚå ÈÇãÑ ãä ãØæÑ ÇáÈæÊ") 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  ØªÙ… Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡") 
+send(GP_ID[2], 0,"ğŸ“« â”‡  ØªÙ… Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø¨Ø§Ù…Ø± Ù…Ù† Ù…Ø·ÙˆØ± Ø§Ù„Ø¨ÙˆØª") 
 database:srem(bot_id.."Pir3te:Chek:Groups",GP_ID[2])  
 return false 
 end
 end
-if text == "ÊİÚíá ÇáãÛÇÏÑå" and DevPir3te(msg) then   
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ù‡" and DevPir3te(msg) then   
 database:del(bot_id.."Pir3te:Left:Bot"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊİÚíá ãÛÇÏÑÉ ÇáÈæÊ") 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ø¨ÙˆØª") 
 return false 
 end
-if text == "ÊÚØíá ÇáãÛÇÏÑå" and DevPir3te(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ù‡" and DevPir3te(msg) then  
 database:set(bot_id.."Pir3te:Left:Bot"..msg.chat_id_,true)   
-send(msg.chat_id_, msg.id_, "?? ? Êã ÊÚØíá ãÛÇÏÑÉ ÇáÈæÊ") 
+send(msg.chat_id_, msg.id_, "ğŸ“« â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ø¨ÙˆØª") 
 return false 
 end
-if text == (database:get(bot_id.."Pir3te:Name:Bot") or "ŞÑÕÇä") then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "ŞÑÕÇä")
+if text == (database:get(bot_id.."Pir3te:Name:Bot") or "Ù‚Ø±ØµØ§Ù†") then
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "Ù‚Ø±ØµØ§Ù†")
 local namebot = {
-"íÑæÍí İÏÇß "..Namebot.. " ÇÇãÑäíí?? ",
-"ßæá ÍÍÈíÈÈí Çäííí?? "..Namebot,
-'åÇ ÍÈí æíÇß ãßÊÈ ÆáÓíÏ ÇáŞííÏ .',
-'ßáÈÈíí ?? ',
-'åÇ íÛææÍí ??',
-'íÕÕÇßß ßæá',
-'ÚãÑí ÇáæÕÎ',
-'ÏÇÕíÏ ÒæÇÍİ æÎÑÑ??',
-'ÇÇÚĞÑäíí ãÔÛæá ??',
-'áÍÍ  áÍÍ',
-" åÇíÚãÑ  "..Namebot,
+"ÙŠØ±ÙˆØ­ÙŠ ÙØ¯Ø§Ùƒ "..Namebot.. " Ø§Ø§Ù…Ø±Ù†ÙŠÙŠğŸ˜° ",
+"ÙƒÙˆÙ„ Ø­Ø­Ø¨ÙŠØ¨Ø¨ÙŠ Ø§Ù†ÙŠÙŠÙŠğŸ™Š "..Namebot,
+'Ù‡Ø§ Ø­Ø¨ÙŠ ÙˆÙŠØ§Ùƒ Ù…ÙƒØªØ¨ Ø¦Ù„Ø³ÙŠØ¯ Ø§Ù„Ù‚ÙŠÙŠØ¯ .',
+'ÙƒÙ„Ø¨Ø¨ÙŠÙŠ ğŸ™ ',
+'Ù‡Ø§ ÙŠØºÙˆÙˆØ­ÙŠ ğŸ’˜',
+'ÙŠØµØµØ§ÙƒÙƒ ÙƒÙˆÙ„',
+'Ø¹Ù…Ø±ÙŠ Ø§Ù„ÙˆØµØ®',
+'Ø¯Ø§ØµÙŠØ¯ Ø²ÙˆØ§Ø­Ù ÙˆØ®Ø±Ø±ğŸ¦',
+'Ø§Ø§Ø¹Ø°Ø±Ù†ÙŠÙŠ Ù…Ø´ØºÙˆÙ„ ğŸŒš',
+'Ù„Ø­Ø­  Ù„Ø­Ø­',
+" Ù‡Ø§ÙŠØ¹Ù…Ø±  "..Namebot,
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
 return false 
 end
 
-if text == "ÈæÊ" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "ŞÑÕÇä")
-send(msg.chat_id_, msg.id_,"ÇÓãí ["..Namebot.."] ")
+if text == "Ø¨ÙˆØª" then
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "Ù‚Ø±ØµØ§Ù†")
+send(msg.chat_id_, msg.id_,"Ø§Ø³Ù…ÙŠ ["..Namebot.."] ")
 end
-if text == "ÔÓãß" then
-Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "ŞÑÕÇä")
-send(msg.chat_id_, msg.id_,"ÁáßíæÊ ["..Namebot.."] ")
+if text == "Ø´Ø³Ù…Ùƒ" then
+Namebot = (database:get(bot_id.."Pir3te:Name:Bot") or "Ù‚Ø±ØµØ§Ù†")
+send(msg.chat_id_, msg.id_,"Ø¡Ù„ÙƒÙŠÙˆØª ["..Namebot.."] ")
 end
-if text == "ÊÛíÑ ÇÓã ÇáÈæÊ" or text == "ÊÛííÑ ÇÓã ÇáÈæÊ" then 
+if text == "ØªØºÙŠØ± Ø§Ø³Ù… Ø§Ù„Ø¨ÙˆØª" or text == "ØªØºÙŠÙŠØ± Ø§Ø³Ù… Ø§Ù„Ø¨ÙˆØª" then 
 if DevPir3te(msg) then
 database:setex(bot_id.."Pir3te:Set:Name:Bot"..msg.sender_user_id_,300,true) 
-send(msg.chat_id_, msg.id_,"?? ?  ÇÑÓá áí ÇáÇÓã ÇáÇä ")  
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡  Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„Ø§Ø³Ù… Ø§Ù„Ø§Ù† ")  
 end
 return false
 end
 
-if text ==("ãÓÍ ÇáãØÑæÏíä") and Addictive(msg) then    
+if text ==("Ù…Ø³Ø­ Ø§Ù„Ù…Ø·Ø±ÙˆØ¯ÙŠÙ†") and Addictive(msg) then    
 local function delbans(extra, result)  
 if not msg.can_be_deleted_ == true then  
-send(msg.chat_id_, msg.id_, "?? ?  íÑÌì ÊÑŞíÊí ÇÏãä åäÇ") 
+send(msg.chat_id_, msg.id_, "ğŸ‘¤ â”‡  ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ Ø§Ø¯Ù…Ù† Ù‡Ù†Ø§") 
 return false
 end  
 local num = 0 
@@ -11678,459 +4289,459 @@ for k,y in pairs(result.members_) do
 num = num + 1  
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = y.user_id_, status_ = { ID = "ChatMemberStatusLeft"}, }, dl_cb, nil)  
 end  
-send(msg.chat_id_, msg.id_,"?? ?  Êã ÇáÛÇÁ ÇáÍÙÑ Úä *~ "..num.." ~* ÇÔÎÇÕ ") 
+send(msg.chat_id_, msg.id_,"ğŸ‘¥ â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø­Ø¸Ø± Ø¹Ù† *~ "..num.." ~* Ø§Ø´Ø®Ø§Øµ ") 
 end    
 tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersKicked"},offset_ = 0,limit_ = 200}, delbans, {chat_id_ = msg.chat_id_, msg_id_ = msg.id_})    
 end
-if text=="ÇĞÇÚå ÎÇÕ" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø®Ø§Øµ" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÓæÇÁ ~ { ãáÕŞ, ãÊÍÑßå, ÕæÑå, ÑÓÇáå }\n?? ? ááÎÑæÌ ÇÑÓá ÇáÛÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø³ÙˆØ§Ø¡ ~ { Ù…Ù„ØµÙ‚, Ù…ØªØ­Ø±ÙƒÙ‡, ØµÙˆØ±Ù‡, Ø±Ø³Ø§Ù„Ù‡ }\nğŸ“« â”‡ Ù„Ù„Ø®Ø±ÙˆØ¬ Ø§Ø±Ø³Ù„ Ø§Ù„ØºØ§Ø¡ ") 
 return false
 end 
-if text=="ÇĞÇÚå" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="Ø§Ø°Ø§Ø¹Ù‡" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÓæÇÁ ~ { ãáÕŞ, ãÊÍÑßå, ÕæÑå, ÑÓÇáå }\n?? ? ááÎÑæÌ ÇÑÓá ÇáÛÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø³ÙˆØ§Ø¡ ~ { Ù…Ù„ØµÙ‚, Ù…ØªØ­Ø±ÙƒÙ‡, ØµÙˆØ±Ù‡, Ø±Ø³Ø§Ù„Ù‡ }\nğŸ“« â”‡ Ù„Ù„Ø®Ø±ÙˆØ¬ Ø§Ø±Ø³Ù„ Ø§Ù„ØºØ§Ø¡ ") 
 return false
 end  
-if text=="ÇĞÇÚå ÈÇáÊËÈíÊ" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªØ«Ø¨ÙŠØª" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÓæÇÁ ~ { ãáÕŞ, ãÊÍÑßå, ÕæÑå, ÑÓÇáå }\n?? ? ááÎÑæÌ ÇÑÓá ÇáÛÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø³ÙˆØ§Ø¡ ~ { Ù…Ù„ØµÙ‚, Ù…ØªØ­Ø±ÙƒÙ‡, ØµÙˆØ±Ù‡, Ø±Ø³Ø§Ù„Ù‡ }\nğŸ“« â”‡ Ù„Ù„Ø®Ø±ÙˆØ¬ Ø§Ø±Ø³Ù„ Ø§Ù„ØºØ§Ø¡ ") 
 return false
 end  
-if text=="ÇĞÇÚå ÈÇáÊæÌíå" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÇáÊæÌíå ÇáÇä") 
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø§Ù„Ø§Ù†") 
 return false
 end 
-if text=="ÇĞÇÚå ÈÇáÊæÌíå ÎÇÕ" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø®Ø§Øµ" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÇáÊæÌíå ÇáÇä") 
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø§Ù„Ø§Ù†") 
 return false
 end 
 
-if text == "ÊİÚíá ÇáÇĞÇÚå" and DevPir3te(msg) then  
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡" and DevPir3te(msg) then  
 database:del(bot_id.."Pir3te:Status:Bc") 
-send(msg.chat_id_, msg.id_,"\n?? ? Êã ÊİÚíá ÇáÇĞÇÚå " ) 
+send(msg.chat_id_, msg.id_,"\nğŸ“« â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ " ) 
 return false
 end 
-if text == "ÊÚØíá ÇáÇĞÇÚå" and DevPir3te(msg) then  
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡" and DevPir3te(msg) then  
 database:set(bot_id.."Pir3te:Status:Bc",true) 
-send(msg.chat_id_, msg.id_,"\n?? ? Êã ÊÚØíá ÇáÇĞÇÚå") 
+send(msg.chat_id_, msg.id_,"\nğŸ“« â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 return false
 end 
 
-if text == "ÇáÇÚÏÇÏÇÊ" and Addictive(msg) then    
+if text == "Ø§Ù„Ø§Ø¹Ø¯Ø§Ø¯Ø§Øª" and Addictive(msg) then    
 if database:get(bot_id.."Pir3te:lockpin"..msg.chat_id_) then    
-lock_pin = "?"
+lock_pin = "âœ“"
 else 
-lock_pin = "?"    
+lock_pin = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:tagservr"..msg.chat_id_) then    
-lock_tagservr = "?"
+lock_tagservr = "âœ“"
 else 
-lock_tagservr = "?"    
+lock_tagservr = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:text"..msg.chat_id_) then    
-lock_text = "?"
+lock_text = "âœ“"
 else 
-lock_text = "?"    
+lock_text = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:AddMempar"..msg.chat_id_) == "kick" then
-lock_add = "?"
+lock_add = "âœ“"
 else 
-lock_add = "?"    
+lock_add = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:Join"..msg.chat_id_) == "kick" then
-lock_join = "?"
+lock_join = "âœ“"
 else 
-lock_join = "?"    
+lock_join = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) then    
-lock_edit = "?"
+lock_edit = "âœ“"
 else 
-lock_edit = "?"    
+lock_edit = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Get:Welcome:Group"..msg.chat_id_) then
-welcome = "?"
+welcome = "âœ“"
 else 
-welcome = "?"    
+welcome = "âœ˜"    
 end
 if database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_, "flood") == "kick" then     
-flood = "ÈÇáØÑÏ"     
+flood = "Ø¨Ø§Ù„Ø·Ø±Ø¯"     
 elseif database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") == "keed" then     
-flood = "ÈÇáÊŞíÏ"     
+flood = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"     
 elseif database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") == "mute" then     
-flood = "ÈÇáßÊã"           
+flood = "Ø¨Ø§Ù„ÙƒØªÙ…"           
 elseif database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"flood") == "del" then     
-flood = "ÈÇáãÓÍ"           
+flood = "Ø¨Ø§Ù„Ù…Ø³Ø­"           
 else     
-flood = "?"     
+flood = "âœ˜"     
 end
 if database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "del" then
-lock_photo = "?" 
+lock_photo = "âœ“" 
 elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ked" then 
-lock_photo = "ÈÇáÊŞíÏ"   
+lock_photo = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"   
 elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "ktm" then 
-lock_photo = "ÈÇáßÊã"    
+lock_photo = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Photo"..msg.chat_id_) == "kick" then 
-lock_photo = "ÈÇáØÑÏ"   
+lock_photo = "Ø¨Ø§Ù„Ø·Ø±Ø¯"   
 else
-lock_photo = "?"   
+lock_photo = "âœ˜"   
 end    
 if database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "del" then
-lock_phon = "?" 
+lock_phon = "âœ“" 
 elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ked" then 
-lock_phon = "ÈÇáÊŞíÏ"    
+lock_phon = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "ktm" then 
-lock_phon = "ÈÇáßÊã"    
+lock_phon = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Contact"..msg.chat_id_) == "kick" then 
-lock_phon = "ÈÇáØÑÏ"    
+lock_phon = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_phon = "?"    
+lock_phon = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "del" then
-lock_links = "?"
+lock_links = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ked" then
-lock_links = "ÈÇáÊŞíÏ"    
+lock_links = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "ktm" then
-lock_links = "ÈÇáßÊã"    
+lock_links = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Link"..msg.chat_id_) == "kick" then
-lock_links = "ÈÇáØÑÏ"    
+lock_links = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_links = "?"    
+lock_links = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "del" then
-lock_cmds = "?"
+lock_cmds = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ked" then
-lock_cmds = "ÈÇáÊŞíÏ"    
+lock_cmds = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "ktm" then
-lock_cmds = "ÈÇáßÊã"   
+lock_cmds = "Ø¨Ø§Ù„ÙƒØªÙ…"   
 elseif database:get(bot_id.."Pir3te:Lock:Cmd"..msg.chat_id_) == "kick" then
-lock_cmds = "ÈÇáØÑÏ"    
+lock_cmds = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_cmds = "?"    
+lock_cmds = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "del" then
-lock_user = "?"
+lock_user = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ked" then
-lock_user = "ÈÇáÊŞíÏ"    
+lock_user = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "ktm" then
-lock_user = "ÈÇáßÊã"    
+lock_user = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:User:Name"..msg.chat_id_) == "kick" then
-lock_user = "ÈÇáØÑÏ"    
+lock_user = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_user = "?"    
+lock_user = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "del" then
-lock_hash = "?"
+lock_hash = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ked" then 
-lock_hash = "ÈÇáÊŞíÏ"    
+lock_hash = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "ktm" then 
-lock_hash = "ÈÇáßÊã"    
+lock_hash = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:hashtak"..msg.chat_id_) == "kick" then 
-lock_hash = "ÈÇáØÑÏ"    
+lock_hash = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_hash = "?"    
+lock_hash = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-lock_muse = "?"
+lock_muse = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then 
-lock_muse = "ÈÇáÊŞíÏ"    
+lock_muse = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then 
-lock_muse = "ÈÇáßÊã"    
+lock_muse = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then 
-lock_muse = "ÈÇáØÑÏ"    
+lock_muse = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_muse = "?"    
+lock_muse = "âœ˜"    
 end 
 if database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "del" then
-lock_ved = "?"
+lock_ved = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ked" then 
-lock_ved = "ÈÇáÊŞíÏ"    
+lock_ved = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "ktm" then 
-lock_ved = "ÈÇáßÊã"    
+lock_ved = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Video"..msg.chat_id_) == "kick" then 
-lock_ved = "ÈÇáØÑÏ"    
+lock_ved = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_ved = "?"    
+lock_ved = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "del" then
-lock_gif = "?"
+lock_gif = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ked" then 
-lock_gif = "ÈÇáÊŞíÏ"    
+lock_gif = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "ktm" then 
-lock_gif = "ÈÇáßÊã"    
+lock_gif = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Animation"..msg.chat_id_) == "kick" then 
-lock_gif = "ÈÇáØÑÏ"    
+lock_gif = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_gif = "?"    
+lock_gif = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "del" then
-lock_ste = "?"
+lock_ste = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ked" then 
-lock_ste = "ÈÇáÊŞíÏ "    
+lock_ste = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯ "    
 elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "ktm" then 
-lock_ste = "ÈÇáßÊã "    
+lock_ste = "Ø¨Ø§Ù„ÙƒØªÙ… "    
 elseif database:get(bot_id.."Pir3te:Lock:Sticker"..msg.chat_id_) == "kick" then 
-lock_ste = "ÈÇáØÑÏ"    
+lock_ste = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_ste = "?"    
+lock_ste = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "del" then
-lock_geam = "?"
+lock_geam = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ked" then 
-lock_geam = "ÈÇáÊŞíÏ"    
+lock_geam = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "ktm" then 
-lock_geam = "ÈÇáßÊã"    
+lock_geam = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:geam"..msg.chat_id_) == "kick" then 
-lock_geam = "ÈÇáØÑÏ"    
+lock_geam = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_geam = "?"    
+lock_geam = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "del" then
-lock_vico = "?"
+lock_vico = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ked" then 
-lock_vico = "ÈÇáÊŞíÏ"    
+lock_vico = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "ktm" then 
-lock_vico = "ÈÇáßÊã"    
+lock_vico = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:vico"..msg.chat_id_) == "kick" then 
-lock_vico = "ÈÇáØÑÏ"    
+lock_vico = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_vico = "?"    
+lock_vico = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "del" then
-lock_inlin = "?"
+lock_inlin = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ked" then 
-lock_inlin = "ÈÇáÊŞíÏ"
+lock_inlin = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"
 elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "ktm" then 
-lock_inlin = "ÈÇáßÊã"    
+lock_inlin = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Keyboard"..msg.chat_id_) == "kick" then 
-lock_inlin = "ÈÇáØÑÏ"
+lock_inlin = "Ø¨Ø§Ù„Ø·Ø±Ø¯"
 else
-lock_inlin = "?"
+lock_inlin = "âœ˜"
 end
 if database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "del" then
-lock_fwd = "?"
+lock_fwd = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ked" then 
-lock_fwd = "ÈÇáÊŞíÏ"    
+lock_fwd = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "ktm" then 
-lock_fwd = "ÈÇáßÊã"    
+lock_fwd = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:forward"..msg.chat_id_) == "kick" then 
-lock_fwd = "ÈÇáØÑÏ"    
+lock_fwd = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_fwd = "?"    
+lock_fwd = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "del" then
-lock_file = "?"
+lock_file = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ked" then 
-lock_file = "ÈÇáÊŞíÏ"    
+lock_file = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "ktm" then 
-lock_file = "ÈÇáßÊã"    
+lock_file = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Document"..msg.chat_id_) == "kick" then 
-lock_file = "ÈÇáØÑÏ"    
+lock_file = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_file = "?"    
+lock_file = "âœ˜"    
 end    
 if database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "del" then
-lock_self = "?"
+lock_self = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ked" then 
-lock_self = "ÈÇáÊŞíÏ"    
+lock_self = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "ktm" then 
-lock_self = "ÈÇáßÊã"    
+lock_self = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Unsupported"..msg.chat_id_) == "kick" then 
-lock_self = "ÈÇáØÑÏ"    
+lock_self = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_self = "?"    
+lock_self = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_) == "del" then
-lock_bots = "?"
+lock_bots = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_) == "ked" then
-lock_bots = "ÈÇáÊŞíÏ"   
+lock_bots = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"   
 elseif database:get(bot_id.."Pir3te:Lock:Bot:kick"..msg.chat_id_) == "kick" then
-lock_bots = "ÈÇáØÑÏ"    
+lock_bots = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_bots = "?"    
+lock_bots = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "del" then
-lock_mark = "?"
+lock_mark = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ked" then 
-lock_mark = "ÈÇáÊŞíÏ"    
+lock_mark = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "ktm" then 
-lock_mark = "ÈÇáßÊã"    
+lock_mark = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Markdaun"..msg.chat_id_) == "kick" then 
-lock_mark = "ÈÇáØÑÏ"    
+lock_mark = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_mark = "?"    
+lock_mark = "âœ˜"    
 end
 if database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "del" then    
-lock_spam = "?"
+lock_spam = "âœ“"
 elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ked" then 
-lock_spam = "ÈÇáÊŞíÏ"    
+lock_spam = "Ø¨Ø§Ù„ØªÙ‚ÙŠØ¯"    
 elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "ktm" then 
-lock_spam = "ÈÇáßÊã"    
+lock_spam = "Ø¨Ø§Ù„ÙƒØªÙ…"    
 elseif database:get(bot_id.."Pir3te:Lock:Spam"..msg.chat_id_) == "kick" then 
-lock_spam = "ÈÇáØÑÏ"    
+lock_spam = "Ø¨Ø§Ù„Ø·Ø±Ø¯"    
 else
-lock_spam = "?"    
+lock_spam = "âœ˜"    
 end        
 if not database:get(bot_id.."Pir3te:Reply:Manager"..msg.chat_id_) then
-rdmder = "?"
+rdmder = "âœ“"
 else
-rdmder = "?"
+rdmder = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Reply:Sudo"..msg.chat_id_) then
-rdsudo = "?"
+rdsudo = "âœ“"
 else
-rdsudo = "?"
+rdsudo = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Lock:ID:Bot"..msg.chat_id_)  then
-idgp = "?"
+idgp = "âœ“"
 else
-idgp = "?"
+idgp = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Lock:ID:Bot:Photo"..msg.chat_id_) then
-idph = "?"
+idph = "âœ“"
 else
-idph = "?"
+idph = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Lock:kick"..msg.chat_id_)  then
-setadd = "?"
+setadd = "âœ“"
 else
-setadd = "?"
+setadd = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Lock:Add:Bot"..msg.chat_id_)  then
-banm = "?"
+banm = "âœ“"
 else
-banm = "?"
+banm = "âœ˜"
 end
 if not database:get(bot_id.."Pir3te:Kick:Me"..msg.chat_id_) then
-kickme = "?"
+kickme = "âœ“"
 else
-kickme = "?"
+kickme = "âœ˜"
 end
 Num_Flood = database:hget(bot_id.."Pir3te:flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-"*\n?? ? ÇÇÚÏÇÏÇÊ ÇáãÌãæÚå "..
-"\n? ? ? ? ? ? ? ? ? "..
-"\n?? ? ÚáÇãÉ Çá {?} ÊÚäí ãİÚá"..
-"\n?? ? ÚáÇãÉ Çá {?} ÊÚäí ãÚØá"..
-"\n? ? ? ? ? ? ? ? ? "..
-"\n?? ? ÇáÑæÇÈØ » "..lock_links..
-"\n".."?? ? ÇáãÚÑİÇÊ » "..lock_user..
-"\n".."?? ? ÇáÊÇß » "..lock_hash..
-"\n".."?? ? ÇáÈæÊÇÊ » "..lock_bots..
-"\n".."?? ? ÇáÊæÌíå » "..lock_fwd..
-"\n".."?? ? ÇáÊËÈíÊ » "..lock_pin..
-"\n".."?? ? ÇáÇÔÚÇÑÇÊ » "..lock_tagservr..
-"\n".."?? ? ÇáãÇÑßÏæä » "..lock_mark..
-"\n".."?? ? ÇáÊÚÏíá » "..lock_edit..
-"\n? ? ? ? ? ? ? ? ? "..
-"\n".."?? ? ÇáßáÇíÔ » "..lock_spam..
-"\n".."?? ? ÇáßíÈæÑÏ » "..lock_inlin..
-"\n".."?? ? ÇáÇÛÇäí » "..lock_vico..
-"\n".."?? ? ÇáãÊÍÑßå » "..lock_gif..
-"\n".."?? ? ÇáãáİÇÊ » "..lock_file..
-"\n".."?? ? ÇáÏÑÏÔå » "..lock_text..
-"\n".."?? ? ÇáİíÏíæ » "..lock_ved..
-"\n".."?? ? ÇáÕæÑ » "..lock_photo..
-"\n? ? ? ? ? ? ? ? ? "..
-"\n".."?? ? ÇáÕæÊ » "..lock_muse..
-"\n".."?? ? ÇáãáÕŞÇÊ » "..lock_ste..
-"\n".."?? ? ÇáÌåÇÊ » "..lock_phon..
-"\n".."?? ? ÇáÏÎæá » "..lock_join..
-"\n".."?? ? ÇáÇÖÇİå » "..lock_add..
-"\n".."?? ? ÇáÓíáİí » "..lock_self..
-"\n".."?? ? ÇáÇáÚÇÈ » "..lock_geam..
-"\n".."?? ? ÇáÊßÑÇÑ » "..flood..
-"\n".."?? ? ÇáÊÑÍíÈ » "..welcome..
-"\n".."?? ? ÚÏÏ ÇáÊßÑÇÑ » "..Num_Flood..
+"*\nğŸ”° â”‡ Ø§Ø§Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ "..
+"\nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ "..
+"\nğŸ” â”‡ Ø¹Ù„Ø§Ù…Ø© Ø§Ù„ {âœ“} ØªØ¹Ù†ÙŠ Ù…ÙØ¹Ù„"..
+"\nğŸ”“ â”‡ Ø¹Ù„Ø§Ù…Ø© Ø§Ù„ {âœ˜} ØªØ¹Ù†ÙŠ Ù…Ø¹Ø·Ù„"..
+"\nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ "..
+"\nğŸ“Œ â”‡ Ø§Ù„Ø±ÙˆØ§Ø¨Ø· Â» "..lock_links..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ù…Ø¹Ø±ÙØ§Øª Â» "..lock_user..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªØ§Ùƒ Â» "..lock_hash..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø¨ÙˆØªØ§Øª Â» "..lock_bots..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Â» "..lock_fwd..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªØ«Ø¨ÙŠØª Â» "..lock_pin..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª Â» "..lock_tagservr..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ù…Ø§Ø±ÙƒØ¯ÙˆÙ† Â» "..lock_mark..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Â» "..lock_edit..
+"\nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ "..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ÙƒÙ„Ø§ÙŠØ´ Â» "..lock_spam..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ÙƒÙŠØ¨ÙˆØ±Ø¯ Â» "..lock_inlin..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø§ØºØ§Ù†ÙŠ Â» "..lock_vico..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡ Â» "..lock_gif..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ù…Ù„ÙØ§Øª Â» "..lock_file..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡ Â» "..lock_text..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Â» "..lock_ved..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØµÙˆØ± Â» "..lock_photo..
+"\nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ "..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØµÙˆØª Â» "..lock_muse..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª Â» "..lock_ste..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø¬Ù‡Ø§Øª Â» "..lock_phon..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø¯Ø®ÙˆÙ„ Â» "..lock_join..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø§Ø¶Ø§ÙÙ‡ Â» "..lock_add..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø³ÙŠÙ„ÙÙŠ Â» "..lock_self..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Â» "..lock_geam..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªÙƒØ±Ø§Ø± Â» "..flood..
+"\n".."ğŸ“Œ â”‡ Ø§Ù„ØªØ±Ø­ÙŠØ¨ Â» "..welcome..
+"\n".."ğŸ“Œ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„ØªÙƒØ±Ø§Ø± Â» "..Num_Flood..
 "\n\n.*"
 send(msg.chat_id_, msg.id_,text)     
 end    
-if text == "ÊÚØíá ÇæÇãÑ ÇáÊÍÔíÔ" and Owner(msg) then    
-send(msg.chat_id_, msg.id_, '? ? Êã ÊÚØíá ÇæÇãÑ ÇáÊÍÔíÔ')
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´" and Owner(msg) then    
+send(msg.chat_id_, msg.id_, 'â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´')
 database:set(bot_id.."Pir3te:Fun_Bots"..msg.chat_id_,"true")
 end
-if text == "ÊİÚíá ÇæÇãÑ ÇáÊÍÔíÔ" and Owner(msg) then    
-send(msg.chat_id_, msg.id_,'? ? Êã ÊİÚíá ÇæÇãÑ ÇáÊÍÔíÔ')
+if text == "ØªÙØ¹ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´" and Owner(msg) then    
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´')
 database:del(bot_id.."Pir3te:Fun_Bots"..msg.chat_id_)
 end
 
-if text == 'ÊİÚíá ÇáÇíÏí' and Owner(msg) then   
+if text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ' and Owner(msg) then   
 database:del(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊİÚíá ÇáÇíÏí') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ') 
 end
-if text == 'ÊÚØíá ÇáÇíÏí' and Owner(msg) then  
+if text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ' and Owner(msg) then  
 database:set(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊÚØíá ÇáÇíÏí') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ') 
 end
-if text == 'ÊİÚíá ÇáÇíÏí ÈÇáÕæÑå' and Owner(msg) then   
+if text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡' and Owner(msg) then   
 database:del(bot_id..'Pir3te:Lock:ID:Bot:Photo'..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊİÚíá ÇáÇíÏí ÈÇáÕæÑå') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡') 
 end
-if text == 'ÊÚØíá ÇáÇíÏí ÈÇáÕæÑå' and Owner(msg) then  
+if text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡' and Owner(msg) then  
 database:set(bot_id..'Pir3te:Lock:ID:Bot:Photo'..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊÚØíá ÇáÇíÏí ÈÇáÕæÑå') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡') 
 end
-if text == 'ÊÚíä ÇáÇíÏí' and Owner(msg) then
+if text == 'ØªØ¹ÙŠÙ† Ø§Ù„Ø§ÙŠØ¯ÙŠ' and Owner(msg) then
 database:setex(bot_id.."Pir3te:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-?? ?  ÇÑÓá ÇáÇä ÇáäÕ
-?? ?  íãßäß ÇÖÇİå :
-- `#username` > ÇÓã ÇáãÓÊÎÏã
-- `#msgs` > ÚÏÏ ÑÓÇÆá ÇáãÓÊÎÏã
-- `#photos` > ÚÏÏ ÕæÑ ÇáãÓÊÎÏã
-- `#id` > ÇíÏí ÇáãÓÊÎÏã
-- `#auto` > ÊİÇÚá ÇáãÓÊÎÏã
-- `#stast` > ãæŞÚ ÇáãÓÊÎÏã 
-- `#edit` > ÚÏÏ ÇáÓÍßÇÊ
-- `#game` > ÇáãÌæåÑÇÊ
-- `#AddMem` > ÚÏÏ ÇáÌåÇÊ
-- `#Description` > ÊÚáíŞ ÇáÕæÑå
+ğŸ“® â”‡  Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù† Ø§Ù„Ù†Øµ
+ğŸ“® â”‡  ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø¶Ø§ÙÙ‡ :
+- `#username` > Ø§Ø³Ù… Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…
+- `#msgs` > Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…
+- `#photos` > Ø¹Ø¯Ø¯ ØµÙˆØ± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…
+- `#id` > Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…
+- `#auto` > ØªÙØ§Ø¹Ù„ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…
+- `#stast` > Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù… 
+- `#edit` > Ø¹Ø¯Ø¯ Ø§Ù„Ø³Ø­ÙƒØ§Øª
+- `#game` > Ø§Ù„Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª
+- `#AddMem` > Ø¹Ø¯Ø¯ Ø§Ù„Ø¬Ù‡Ø§Øª
+- `#Description` > ØªØ¹Ù„ÙŠÙ‚ Ø§Ù„ØµÙˆØ±Ù‡
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false  
 end 
-if text == 'ÍĞİ ÇáÇíÏí' or text == 'ãÓÍ ÇáÇíÏí' then
+if text == 'Ø­Ø°Ù Ø§Ù„Ø§ÙŠØ¯ÙŠ' or text == 'Ù…Ø³Ø­ Ø§Ù„Ø§ÙŠØ¯ÙŠ' then
 if Owner(msg) then
 database:del(bot_id.."Pir3te:Klesh:Id:Bot"..msg.chat_id_)
-send(msg.chat_id_, msg.id_, '?? ? Êã ÇÒÇáÉ ßáíÔÉ ÇáÇíÏí ')
+send(msg.chat_id_, msg.id_, 'ğŸ“Œ â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© ÙƒÙ„ÙŠØ´Ø© Ø§Ù„Ø§ÙŠØ¯ÙŠ ')
 end
 return false  
 end 
 
 if database:get(bot_id.."Pir3te:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) then 
-if text == 'ÇáÛÇÁ' then 
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÊÚíä ÇáÇíÏí") 
+if text == 'Ø§Ù„ØºØ§Ø¡' then 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ ØªØ¹ÙŠÙ† Ø§Ù„Ø§ÙŠØ¯ÙŠ") 
 database:del(bot_id.."Pir3te:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
 return false  
 end 
 database:del(bot_id.."Pir3te:Set:Id:Gp"..msg.chat_id_..""..msg.sender_user_id_) 
 database:set(bot_id.."Pir3te:Klesh:Id:Bot"..msg.chat_id_,text:match("(.*)"))
-send(msg.chat_id_, msg.id_,'?? ? Êã ÊÚíä ÇáÇíÏí')    
+send(msg.chat_id_, msg.id_,'ğŸ“Œ â”‡ ØªÙ… ØªØ¹ÙŠÙ† Ø§Ù„Ø§ÙŠØ¯ÙŠ')    
 end
 
-if text == 'ÇíÏí' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
+if text == 'Ø§ÙŠØ¯ÙŠ' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
 if not database:sismember(bot_id..'Pir3te:Spam:Group'..msg.sender_user_id_,text) then
 database:sadd(bot_id.."Pir3te:Spam:Group"..msg.sender_user_id_,text) 
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,Mohmad,success) 
@@ -12138,7 +4749,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 if data.username_ then
 UserName_User = '@'..data.username_
 else
-UserName_User = 'áÇ íæÌÏ'
+UserName_User = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
 local Id = msg.sender_user_id_
 local NumMsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
@@ -12149,14 +4760,14 @@ local Num_Games = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender
 local Add_Mem = database:get(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
 local Total_Photp = (Mohmad.total_count_ or 0)
 local Texting = {
-'íÚäí Çáæß ÇáÒíäå ????????',
-"ÕÇÑáß ÔßÏ ãÎáíå ",
-"İİæİ ŞÔØå ????",
-"ÊÎáíäí??",
-"æİÇááå ????",
-"ßÔÎå ÈÑÈ ????",
-"ÏÛíÑå ÔÈí åĞ ??",
-"ÚãÑí ÇáÍáæíä ??",
+'ÙŠØ¹Ù†ÙŠ Ø§Ù„ÙˆÙƒ Ø§Ù„Ø²ÙŠÙ†Ù‡ ğŸ‘¨ğŸ»â€ğŸš’â¤ï¸',
+"ØµØ§Ø±Ù„Ùƒ Ø´ÙƒØ¯ Ù…Ø®Ù„ÙŠÙ‡ ",
+"ÙÙÙˆÙ Ù‚Ø´Ø·Ù‡ ğŸ™ˆğŸ’˜",
+"ØªØ®Ù„ÙŠÙ†ÙŠâ™¥ï¸",
+"ÙˆÙØ§Ù„Ù„Ù‡ ğŸ˜”ğŸ’˜",
+"ÙƒØ´Ø®Ù‡ Ø¨Ø±Ø¨ ğŸ˜‰ğŸ’˜",
+"Ø¯ØºÙŠØ±Ù‡ Ø´Ø¨ÙŠ Ù‡Ø° ğŸ˜’",
+"Ø¹Ù…Ø±ÙŠ Ø§Ù„Ø­Ù„ÙˆÙŠÙ† ğŸ’˜",
 }
 local Description = Texting[math.random(#Texting)]
 local get_id = database:get(bot_id.."Pir3te:Klesh:Id:Bot"..msg.chat_id_)
@@ -12175,10 +4786,10 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'?? '..Description..'\n?? ÇíÏíß -  '..Id..'\n?? ãÚÑİÜß -'..UserName_User..'\n?? ÑÊÜÈÜÜÊß -'..Status_Gps..'\n?? ÑÓÇÆáß - '..NumMsg..'\n?? ÊÚÏíáÇÊß - '..message_edit..' \n?? ÊİÇÚáÜß - '..TotalMsg..'\n?? ãÌæåÑÇÊß -'..Num_Games)
+sendPhoto(msg.chat_id_,msg.id_,Mohmad.photos_[0].sizes_[1].photo_.persistent_id_,'âŒ”ï¸™ '..Description..'\nâŒ”ï¸™ Ø§ÙŠØ¯ÙŠÙƒ -  '..Id..'\nâŒ”ï¸™ Ù…Ø¹Ø±ÙÙ€Ùƒ -'..UserName_User..'\nâŒ”ï¸™ Ø±ØªÙ€Ø¨Ù€Ù€ØªÙƒ -'..Status_Gps..'\nâŒ”ï¸™ Ø±Ø³Ø§Ø¦Ù„Ùƒ - '..NumMsg..'\nâŒ”ï¸™ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ - '..message_edit..' \nâŒ”ï¸™ ØªÙØ§Ø¹Ù„Ù€Ùƒ - '..TotalMsg..'\nâŒ”ï¸™ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ -'..Num_Games)
 end
 else
-send(msg.chat_id_, msg.id_,'?? áíÓ áÏíß ÕæÑå ?? ¿'..'\n*?? ÇíÏíß - '..Id..'\n?? ? ãÚÑİÜß -* ['..UserName_User..']*\n??ÑÊÜÈÜÜÊß -'..Status_Gps..'\n?? ÑÓÇÆáß - '..NumMsg..'\n?? ÊÚÏíáÇÊß - '..message_edit..' \n?? ÊİÇÚáÜß - '..TotalMsg..'\n?? ãÌæåÑÇÊß -'..Num_Games..'*') 
+send(msg.chat_id_, msg.id_,'âŒ”ï¸™ Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ ØµÙˆØ±Ù‡ ğŸ™ ØŸ'..'\n*âŒ”ï¸™ Ø§ÙŠØ¯ÙŠÙƒ - '..Id..'\nğŸ“Œ â”‡ Ù…Ø¹Ø±ÙÙ€Ùƒ -* ['..UserName_User..']*\nâŒ”ï¸™Ø±ØªÙ€Ø¨Ù€Ù€ØªÙƒ -'..Status_Gps..'\nâŒ”ï¸™ Ø±Ø³Ø§Ø¦Ù„Ùƒ - '..NumMsg..'\nâŒ”ï¸™ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ - '..message_edit..' \nâŒ”ï¸™ ØªÙØ§Ø¹Ù„Ù€Ùƒ - '..TotalMsg..'\nâŒ”ï¸™ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ -'..Num_Games..'*') 
 end
 else
 if get_id then
@@ -12194,17 +4805,17 @@ local get_id = get_id:gsub('#game',Num_Games)
 local get_id = get_id:gsub('#photos',Total_Photp) 
 send(msg.chat_id_, msg.id_,'['..get_id..']') 
 else
-send(msg.chat_id_, msg.id_,'\n*?? ÇíÏíß - '..Id..'\n?? ãÚÑİÜß -* ['..UserName_User..']*\n?? ÑÊÜÈÜÜÊß -'..Status_Gps..'\n?? ÑÓÇÆáß - '..NumMsg..'\n?? ÊÚÏíáÇÊß -  '..message_edit..' \n?? ÊİÇÚáÜß - '..TotalMsg..'\n?? ãÌæåÑÇÊß -'..Num_Games..'*')
+send(msg.chat_id_, msg.id_,'\n*âŒ”ï¸™ Ø§ÙŠØ¯ÙŠÙƒ - '..Id..'\nâŒ”ï¸™ Ù…Ø¹Ø±ÙÙ€Ùƒ -* ['..UserName_User..']*\nâŒ”ï¸™ Ø±ØªÙ€Ø¨Ù€Ù€ØªÙƒ -'..Status_Gps..'\nâŒ”ï¸™ Ø±Ø³Ø§Ø¦Ù„Ùƒ - '..NumMsg..'\nâŒ”ï¸™ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ -  '..message_edit..' \nâŒ”ï¸™ ØªÙØ§Ø¹Ù„Ù€Ùƒ - '..TotalMsg..'\nâŒ”ï¸™ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ -'..Num_Games..'*')
 end
 end
 end,nil)   
 end,nil)   
 end
 end
-if text and text:match('^ÊäÙíİ (%d+)$') and Addictive(msg) then    
-local Number = tonumber(text:match('^ÊäÙíİ (%d+)$')) 
+if text and text:match('^ØªÙ†Ø¸ÙŠÙ (%d+)$') and Addictive(msg) then    
+local Number = tonumber(text:match('^ØªÙ†Ø¸ÙŠÙ (%d+)$')) 
 if Number > 1000 then 
-send(msg.chat_id_, msg.id_,'?? ? áÇ ÊÓÊØíÚ ÊäÖíİ ÇßËÑ ãä *~ 1000* ÑÓÇáå') 
+send(msg.chat_id_, msg.id_,'ğŸ“® â”‡ Ù„Ø§ ØªØ³ØªØ·ÙŠØ¹ ØªÙ†Ø¶ÙŠÙ Ø§ÙƒØ«Ø± Ù…Ù† *~ 1000* Ø±Ø³Ø§Ù„Ù‡') 
 return false  
 end  
 local Message = msg.id_
@@ -12212,20 +4823,20 @@ for i=1,tonumber(Number) do
 DeleteMessage(msg.chat_id_,{[0]=Message})
 Message = Message - 1048576
 end
-send(msg.chat_id_, msg.id_,'?? ? Êã ÊäÙíİ *~ '..Number..'* ÑÓÇáå .')  
+send(msg.chat_id_, msg.id_,'ğŸ”° â”‡ ØªÙ… ØªÙ†Ø¸ÙŠÙ *~ '..Number..'* Ø±Ø³Ø§Ù„Ù‡ .')  
 end
 
-if text == 'ÇíÏí' and tonumber(msg.reply_to_message_id_) > 0 and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
+if text == 'Ø§ÙŠØ¯ÙŠ' and tonumber(msg.reply_to_message_id_) > 0 and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
 function Function_Pir3te(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 if data.first_name_ == false then
-send(msg.chat_id_, msg.id_,'?? ?  ÇáÍÓÇÈ ãÍĞæİ áÇ ÊæÌÏ ãÚáæãÇÊå ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¤ â”‡  Ø§Ù„Ø­Ø³Ø§Ø¨ Ù…Ø­Ø°ÙˆÙ Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¹Ù„ÙˆÙ…Ø§ØªÙ‡ ')
 return false
 end
 if data.username_ then
 UserName_User = '@'..data.username_
 else
-UserName_User = 'áÇ íæÌÏ'
+UserName_User = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
 local Id = data.id_
 local NumMsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..data.id_) or 0
@@ -12234,22 +4845,22 @@ local Status_Gps = Get_Rank(Id,msg.chat_id_)
 local message_edit = database:get(bot_id..'Pir3te:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
 local Add_Mem = database:get(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
-send(msg.chat_id_, msg.id_,'*?? ? ÇíÏíå - '..Id..'\n?? ? ÑÓÇÆáå - '..NumMsg..'\n?? ? ãÚÑİå - *['..UserName_User..']*\n?? ? ÊİÇÚáå - '..TotalMsg..'\n?? ? ÑÊÈÊå - '..Status_Gps..'\n? ? ÊÚÏíáÇÊå - '..message_edit..'\n?? ? ÌåÇÊå - '..Add_Mem..'*') 
+send(msg.chat_id_, msg.id_,'*ğŸ”˜ â”‡ Ø§ÙŠØ¯ÙŠÙ‡ - '..Id..'\nğŸ“¨ â”‡ Ø±Ø³Ø§Ø¦Ù„Ù‡ - '..NumMsg..'\nğŸ“Œ â”‡ Ù…Ø¹Ø±ÙÙ‡ - *['..UserName_User..']*\nğŸ“ˆ â”‡ ØªÙØ§Ø¹Ù„Ù‡ - '..TotalMsg..'\nğŸš¸ â”‡ Ø±ØªØ¨ØªÙ‡ - '..Status_Gps..'\nâš¡ â”‡ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙ‡ - '..message_edit..'\nğŸ’  â”‡ Ø¬Ù‡Ø§ØªÙ‡ - '..Add_Mem..'*') 
 end,nil)   
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Pir3te, nil)
 return false
 end
 
-if text and text:match("^ÇíÏí @(.*)$") and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
-local username = text:match("^ÇíÏí @(.*)$")
+if text and text:match("^Ø§ÙŠØ¯ÙŠ @(.*)$") and not database:get(bot_id..'Pir3te:Lock:ID:Bot'..msg.chat_id_) then
+local username = text:match("^Ø§ÙŠØ¯ÙŠ @(.*)$")
 function Function_Pir3te(extra, result, success)
 if result.id_ then
 tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(arg,data) 
 if data.username_ then
 UserName_User = '@'..data.username_
 else
-UserName_User = 'áÇ íæÌÏ'
+UserName_User = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
 local Id = data.id_
 local NumMsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..data.id_) or 0
@@ -12258,222 +4869,222 @@ local Status_Gps = Get_Rank(Id,msg.chat_id_)
 local message_edit = database:get(bot_id..'Pir3te:message_edit'..msg.chat_id_..data.id_) or 0
 local Num_Games = database:get(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..data.id_) or 0
 local Add_Mem = database:get(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..data.id_) or 0
-send(msg.chat_id_, msg.id_,'*?? ÇíÏíå - '..Id..'\n?? ÑÓÇÆáå - '..NumMsg..'\n?? ãÚÑİå - *['..UserName_User..']*\n?? ÊİÇÚáå - '..TotalMsg..'\n?? ÑÊÈÊå - '..Status_Gps..'\n?? ÊÚÏíáÇÊå - '..message_edit..'\n?? ÌåÇÊå - '..Add_Mem..'*') 
+send(msg.chat_id_, msg.id_,'*âŒ”ï¸™ Ø§ÙŠØ¯ÙŠÙ‡ - '..Id..'\nâŒ”ï¸™ Ø±Ø³Ø§Ø¦Ù„Ù‡ - '..NumMsg..'\nâŒ”ï¸™ Ù…Ø¹Ø±ÙÙ‡ - *['..UserName_User..']*\nâŒ”ï¸™ ØªÙØ§Ø¹Ù„Ù‡ - '..TotalMsg..'\nâŒ”ï¸™ Ø±ØªØ¨ØªÙ‡ - '..Status_Gps..'\nâŒ”ï¸™ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙ‡ - '..message_edit..'\nâŒ”ï¸™ Ø¬Ù‡Ø§ØªÙ‡ - '..Add_Mem..'*') 
 end,nil)   
 else
-send(msg.chat_id_, msg.id_,'?? ? áÇ íæÌÏ ÍÓÇÈ ÈåÇĞÇ ÇáãÚÑİ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¤ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø­Ø³Ø§Ø¨ Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ù…Ø¹Ø±Ù')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Pir3te, nil)
 return false
 end
-if text == "ÓãÇíáÇÊ" or text == "ÓãÇíá" then
+if text == "Ø³Ù…Ø§ÙŠÙ„Ø§Øª" or text == "Ø³Ù…Ø§ÙŠÙ„" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 database:del(bot_id.."Tshak:Set:Sma"..msg.chat_id_)
-Random = {"??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","??","????","?","??","??","??","??","??","??","??","??","??","??","??","??","??","??","?","??","??","??","??"}
+Random = {"ğŸ","ğŸ","ğŸ","ğŸŠ","ğŸ‹","ğŸ‰","ğŸ‡","ğŸ“","ğŸˆ","ğŸ’","ğŸ‘","ğŸ","ğŸ¥¥","ğŸ¥","ğŸ…","ğŸ†","ğŸ¥‘","ğŸ¥¦","ğŸ¥’","ğŸŒ¶","ğŸŒ½","ğŸ¥•","ğŸ¥”","ğŸ¥–","ğŸ¥","ğŸ","ğŸ¥¨","ğŸŸ","ğŸ§€","ğŸ¥š","ğŸ³","ğŸ¥“","ğŸ¥©","ğŸ—","ğŸ–","ğŸŒ­","ğŸ”","ğŸ ","ğŸ•","ğŸ¥ª","ğŸ¥™","â˜•ï¸","ğŸµ","ğŸ¥¤","ğŸ¶","ğŸº","ğŸ»","ğŸ€","âš½ï¸","ğŸˆ","âš¾ï¸","ğŸ¾","ğŸ","ğŸ‰","ğŸ±","ğŸ“","ğŸ¸","ğŸ¥…","ğŸ°","ğŸ®","ğŸ³","ğŸ¯","ğŸ²","ğŸ»","ğŸ¸","ğŸº","ğŸ¥","ğŸ¹","ğŸ¼","ğŸ§","ğŸ¤","ğŸ¬","ğŸ¨","ğŸ­","ğŸª","ğŸŸ","ğŸ«","ğŸ—","ğŸµ","ğŸ–","ğŸ†","ğŸ¥Œ","ğŸ›·","ğŸš—","ğŸšŒ","ğŸ","ğŸš“","ğŸš‘","ğŸšš","ğŸš›","ğŸšœ","ğŸ‡®ğŸ‡¶","âš”","ğŸ›¡","ğŸ”®","ğŸŒ¡","ğŸ’£","ğŸ“Œ","ğŸ“","ğŸ““","ğŸ“—","ğŸ“‚","ğŸ“…","ğŸ“ª","ğŸ“«","ğŸ“¬","ğŸ“­","â°","ğŸ“º","ğŸš","â˜ï¸","ğŸ“¡"}
 SM = Random[math.random(#Random)]
 database:set(bot_id.."Tshak:Random:Sm"..msg.chat_id_,SM)
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÏÒ åÇĞÇ ÇáÓãÇíá ? ~ {`"..SM.."`}")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ù‡Ø§Ø°Ø§ Ø§Ù„Ø³Ù…Ø§ÙŠÙ„ ? ~ {`"..SM.."`}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Random:Sm"..msg.chat_id_) or "").."" and not database:get(bot_id.."Tshak:Set:Sma"..msg.chat_id_) then
 if not database:get(bot_id.."Tshak:Set:Sma"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÓãÇíá , ÓãÇíáÇÊ }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø³Ù…Ø§ÙŠÙ„ , Ø³Ù…Ø§ÙŠÙ„Ø§Øª }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Sma"..msg.chat_id_,true)
 return false
 end 
-if text == "ÇáÇÓÑÚ" or tect == "ÊÑÊíÈ" then
+if text == "Ø§Ù„Ø§Ø³Ø±Ø¹" or tect == "ØªØ±ØªÙŠØ¨" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 database:del(bot_id.."Tshak:Speed:Tr"..msg.chat_id_)
-KlamSpeed = {"ÓÍæÑ","ÓíÇÑå","ÇÓÊŞÈÇá","Şäİå","Çíİæä","ÈÒæäå","ãØÈÎ","ßÑÓÊíÇäæ","ÏÌÇÌå","ãÏÑÓå","ÇáæÇä","ÛÑİå","ËáÇÌå","ßåæå","Óİíäå","ÇáÚÑÇŞ","ãÍØå","ØíÇÑå","ÑÇÏÇÑ","ãäÒá","ãÓÊÔİì","ßåÑÈÇÁ","ÊİÇÍå","ÇÎØÈæØ","Óáãæä","İÑäÓÇ","ÈÑÊŞÇáå","ÊİÇÍ","ãØÑŞå","ÈÊíÊå","áåÇäå","ÔÈÇß","ÈÇÕ","Óãßå","ĞÈÇÈ","ÊáİÇÒ","ÍÇÓæÈ","ÇäÊÑäíÊ","ÓÇÍå","ÌÓÑ"};
+KlamSpeed = {"Ø³Ø­ÙˆØ±","Ø³ÙŠØ§Ø±Ù‡","Ø§Ø³ØªÙ‚Ø¨Ø§Ù„","Ù‚Ù†ÙÙ‡","Ø§ÙŠÙÙˆÙ†","Ø¨Ø²ÙˆÙ†Ù‡","Ù…Ø·Ø¨Ø®","ÙƒØ±Ø³ØªÙŠØ§Ù†Ùˆ","Ø¯Ø¬Ø§Ø¬Ù‡","Ù…Ø¯Ø±Ø³Ù‡","Ø§Ù„ÙˆØ§Ù†","ØºØ±ÙÙ‡","Ø«Ù„Ø§Ø¬Ù‡","ÙƒÙ‡ÙˆÙ‡","Ø³ÙÙŠÙ†Ù‡","Ø§Ù„Ø¹Ø±Ø§Ù‚","Ù…Ø­Ø·Ù‡","Ø·ÙŠØ§Ø±Ù‡","Ø±Ø§Ø¯Ø§Ø±","Ù…Ù†Ø²Ù„","Ù…Ø³ØªØ´ÙÙ‰","ÙƒÙ‡Ø±Ø¨Ø§Ø¡","ØªÙØ§Ø­Ù‡","Ø§Ø®Ø·Ø¨ÙˆØ·","Ø³Ù„Ù…ÙˆÙ†","ÙØ±Ù†Ø³Ø§","Ø¨Ø±ØªÙ‚Ø§Ù„Ù‡","ØªÙØ§Ø­","Ù…Ø·Ø±Ù‚Ù‡","Ø¨ØªÙŠØªÙ‡","Ù„Ù‡Ø§Ù†Ù‡","Ø´Ø¨Ø§Ùƒ","Ø¨Ø§Øµ","Ø³Ù…ÙƒÙ‡","Ø°Ø¨Ø§Ø¨","ØªÙ„ÙØ§Ø²","Ø­Ø§Ø³ÙˆØ¨","Ø§Ù†ØªØ±Ù†ÙŠØª","Ø³Ø§Ø­Ù‡","Ø¬Ø³Ø±"};
 name = KlamSpeed[math.random(#KlamSpeed)]
 database:set(bot_id.."Tshak:Klam:Speed"..msg.chat_id_,name)
-name = string.gsub(name,"ÓÍæÑ","Ó Ñ æ Í")
-name = string.gsub(name,"ÓíÇÑå","å Ñ Ó í Ç")
-name = string.gsub(name,"ÇÓÊŞÈÇá","á È Ç Ê Ş Ó Ç")
-name = string.gsub(name,"Şäİå","å Ş ä İ")
-name = string.gsub(name,"Çíİæä","æ ä İ Ç")
-name = string.gsub(name,"ÈÒæäå","Ò æ å ä")
-name = string.gsub(name,"ãØÈÎ","Î È Ø ã")
-name = string.gsub(name,"ßÑÓÊíÇäæ","Ó Ê Ç ä æ ß Ñ í")
-name = string.gsub(name,"ÏÌÇÌå","Ì Ì Ç Ï å")
-name = string.gsub(name,"ãÏÑÓå","å ã Ï Ñ Ó")
-name = string.gsub(name,"ÇáæÇä","ä Ç æ Ç á")
-name = string.gsub(name,"ÛÑİå","Û å Ñ İ")
-name = string.gsub(name,"ËáÇÌå","Ì å Ê á Ç")
-name = string.gsub(name,"ßåæå","å ß å æ")
-name = string.gsub(name,"Óİíäå","å ä İ í Ó")
-name = string.gsub(name,"ÇáÚÑÇŞ","Ş Ú Ç á Ñ Ç")
-name = string.gsub(name,"ãÍØå","å Ø ã Í")
-name = string.gsub(name,"ØíÇÑå","Ñ Ç Ø í å")
-name = string.gsub(name,"ÑÇÏÇÑ","Ñ Ç Ñ Ç Ï")
-name = string.gsub(name,"ãäÒá","ä Ò ã á")
-name = string.gsub(name,"ãÓÊÔİì","ì Ô Ó İ Ê ã")
-name = string.gsub(name,"ßåÑÈÇÁ","Ñ È ß å Ç Á")
-name = string.gsub(name,"ÊİÇÍå","Í å Ç Ê İ")
-name = string.gsub(name,"ÇÎØÈæØ","Ø È æ Ç Î Ø")
-name = string.gsub(name,"Óáãæä","ä ã æ á Ó")
-name = string.gsub(name,"İÑäÓÇ","ä İ Ñ Ó Ç")
-name = string.gsub(name,"ÈÑÊŞÇáå","Ñ Ê Ş È Ç å á")
-name = string.gsub(name,"ÊİÇÍ","Í İ Ç Ê")
-name = string.gsub(name,"ãØÑŞå","å Ø ã Ñ Ş")
-name = string.gsub(name,"ÈÊíÊå","È Ê Ê í å")
-name = string.gsub(name,"áåÇäå","å ä á å á")
-name = string.gsub(name,"ÔÈÇß","È Ô Ç ß")
-name = string.gsub(name,"ÈÇÕ","Õ Ç È")
-name = string.gsub(name,"Óãßå","ß Ó ã å")
-name = string.gsub(name,"ĞÈÇÈ","È Ç È Ğ")
-name = string.gsub(name,"ÊáİÇÒ","Ê İ á Ò Ç")
-name = string.gsub(name,"ÍÇÓæÈ","Ó Ç Í æ È")
-name = string.gsub(name,"ÇäÊÑäíÊ","Ç Ê ä Ñ ä í Ê")
-name = string.gsub(name,"ÓÇÍå","Í Ç å Ó")
-name = string.gsub(name,"ÌÓÑ","Ñ Ì Ó")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÑÊÈåÇ ~ {"..name.."}")
+name = string.gsub(name,"Ø³Ø­ÙˆØ±","Ø³ Ø± Ùˆ Ø­")
+name = string.gsub(name,"Ø³ÙŠØ§Ø±Ù‡","Ù‡ Ø± Ø³ ÙŠ Ø§")
+name = string.gsub(name,"Ø§Ø³ØªÙ‚Ø¨Ø§Ù„","Ù„ Ø¨ Ø§ Øª Ù‚ Ø³ Ø§")
+name = string.gsub(name,"Ù‚Ù†ÙÙ‡","Ù‡ Ù‚ Ù† Ù")
+name = string.gsub(name,"Ø§ÙŠÙÙˆÙ†","Ùˆ Ù† Ù Ø§")
+name = string.gsub(name,"Ø¨Ø²ÙˆÙ†Ù‡","Ø² Ùˆ Ù‡ Ù†")
+name = string.gsub(name,"Ù…Ø·Ø¨Ø®","Ø® Ø¨ Ø· Ù…")
+name = string.gsub(name,"ÙƒØ±Ø³ØªÙŠØ§Ù†Ùˆ","Ø³ Øª Ø§ Ù† Ùˆ Ùƒ Ø± ÙŠ")
+name = string.gsub(name,"Ø¯Ø¬Ø§Ø¬Ù‡","Ø¬ Ø¬ Ø§ Ø¯ Ù‡")
+name = string.gsub(name,"Ù…Ø¯Ø±Ø³Ù‡","Ù‡ Ù… Ø¯ Ø± Ø³")
+name = string.gsub(name,"Ø§Ù„ÙˆØ§Ù†","Ù† Ø§ Ùˆ Ø§ Ù„")
+name = string.gsub(name,"ØºØ±ÙÙ‡","Øº Ù‡ Ø± Ù")
+name = string.gsub(name,"Ø«Ù„Ø§Ø¬Ù‡","Ø¬ Ù‡ Øª Ù„ Ø§")
+name = string.gsub(name,"ÙƒÙ‡ÙˆÙ‡","Ù‡ Ùƒ Ù‡ Ùˆ")
+name = string.gsub(name,"Ø³ÙÙŠÙ†Ù‡","Ù‡ Ù† Ù ÙŠ Ø³")
+name = string.gsub(name,"Ø§Ù„Ø¹Ø±Ø§Ù‚","Ù‚ Ø¹ Ø§ Ù„ Ø± Ø§")
+name = string.gsub(name,"Ù…Ø­Ø·Ù‡","Ù‡ Ø· Ù… Ø­")
+name = string.gsub(name,"Ø·ÙŠØ§Ø±Ù‡","Ø± Ø§ Ø· ÙŠ Ù‡")
+name = string.gsub(name,"Ø±Ø§Ø¯Ø§Ø±","Ø± Ø§ Ø± Ø§ Ø¯")
+name = string.gsub(name,"Ù…Ù†Ø²Ù„","Ù† Ø² Ù… Ù„")
+name = string.gsub(name,"Ù…Ø³ØªØ´ÙÙ‰","Ù‰ Ø´ Ø³ Ù Øª Ù…")
+name = string.gsub(name,"ÙƒÙ‡Ø±Ø¨Ø§Ø¡","Ø± Ø¨ Ùƒ Ù‡ Ø§ Ø¡")
+name = string.gsub(name,"ØªÙØ§Ø­Ù‡","Ø­ Ù‡ Ø§ Øª Ù")
+name = string.gsub(name,"Ø§Ø®Ø·Ø¨ÙˆØ·","Ø· Ø¨ Ùˆ Ø§ Ø® Ø·")
+name = string.gsub(name,"Ø³Ù„Ù…ÙˆÙ†","Ù† Ù… Ùˆ Ù„ Ø³")
+name = string.gsub(name,"ÙØ±Ù†Ø³Ø§","Ù† Ù Ø± Ø³ Ø§")
+name = string.gsub(name,"Ø¨Ø±ØªÙ‚Ø§Ù„Ù‡","Ø± Øª Ù‚ Ø¨ Ø§ Ù‡ Ù„")
+name = string.gsub(name,"ØªÙØ§Ø­","Ø­ Ù Ø§ Øª")
+name = string.gsub(name,"Ù…Ø·Ø±Ù‚Ù‡","Ù‡ Ø· Ù… Ø± Ù‚")
+name = string.gsub(name,"Ø¨ØªÙŠØªÙ‡","Ø¨ Øª Øª ÙŠ Ù‡")
+name = string.gsub(name,"Ù„Ù‡Ø§Ù†Ù‡","Ù‡ Ù† Ù„ Ù‡ Ù„")
+name = string.gsub(name,"Ø´Ø¨Ø§Ùƒ","Ø¨ Ø´ Ø§ Ùƒ")
+name = string.gsub(name,"Ø¨Ø§Øµ","Øµ Ø§ Ø¨")
+name = string.gsub(name,"Ø³Ù…ÙƒÙ‡","Ùƒ Ø³ Ù… Ù‡")
+name = string.gsub(name,"Ø°Ø¨Ø§Ø¨","Ø¨ Ø§ Ø¨ Ø°")
+name = string.gsub(name,"ØªÙ„ÙØ§Ø²","Øª Ù Ù„ Ø² Ø§")
+name = string.gsub(name,"Ø­Ø§Ø³ÙˆØ¨","Ø³ Ø§ Ø­ Ùˆ Ø¨")
+name = string.gsub(name,"Ø§Ù†ØªØ±Ù†ÙŠØª","Ø§ Øª Ù† Ø± Ù† ÙŠ Øª")
+name = string.gsub(name,"Ø³Ø§Ø­Ù‡","Ø­ Ø§ Ù‡ Ø³")
+name = string.gsub(name,"Ø¬Ø³Ø±","Ø± Ø¬ Ø³")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ±ØªØ¨Ù‡Ø§ ~ {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Klam:Speed"..msg.chat_id_) or "").."" and not database:get(bot_id.."Tshak:Speed:Tr"..msg.chat_id_) then
 if not database:get(bot_id.."Tshak:Speed:Tr"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÇáÇÓÑÚ , ÊÑÊíÈ }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø§Ù„Ø§Ø³Ø±Ø¹ , ØªØ±ØªÙŠØ¨ }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Speed:Tr"..msg.chat_id_,true)
 end 
 
-if text == "ÍÒæÑå" then
+if text == "Ø­Ø²ÙˆØ±Ù‡" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 database:del(bot_id.."Tshak:Set:Hzora"..msg.chat_id_)
-Hzora = {"ÇáÌÑÓ","ÚŞÑÈ ÇáÓÇÚå","ÇáÓãß","ÇáãØÑ","5","ÇáßÊÇÈ","ÇáÈÓãÇÑ","7","ÇáßÚÈå","ÈíÊ ÇáÔÚÑ","áåÇäå","ÇäÇ","Çãí","ÇáÇÈÑå","ÇáÓÇÚå","22","ÛáØ","ßã ÇáÓÇÚå","ÇáÈíÊäÌÇä","ÇáÈíÖ","ÇáãÑÇíå","ÇáÖæÁ","ÇáåæÇÁ","ÇáÖá","ÇáÚãÑ","ÇáŞáã","ÇáãÔØ","ÇáÍİÑå","ÇáÈÍÑ","ÇáËáÌ","ÇáÇÓİäÌ","ÇáÕæÊ","Èáã"};
+Hzora = {"Ø§Ù„Ø¬Ø±Ø³","Ø¹Ù‚Ø±Ø¨ Ø§Ù„Ø³Ø§Ø¹Ù‡","Ø§Ù„Ø³Ù…Ùƒ","Ø§Ù„Ù…Ø·Ø±","5","Ø§Ù„ÙƒØªØ§Ø¨","Ø§Ù„Ø¨Ø³Ù…Ø§Ø±","7","Ø§Ù„ÙƒØ¹Ø¨Ù‡","Ø¨ÙŠØª Ø§Ù„Ø´Ø¹Ø±","Ù„Ù‡Ø§Ù†Ù‡","Ø§Ù†Ø§","Ø§Ù…ÙŠ","Ø§Ù„Ø§Ø¨Ø±Ù‡","Ø§Ù„Ø³Ø§Ø¹Ù‡","22","ØºÙ„Ø·","ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ù‡","Ø§Ù„Ø¨ÙŠØªÙ†Ø¬Ø§Ù†","Ø§Ù„Ø¨ÙŠØ¶","Ø§Ù„Ù…Ø±Ø§ÙŠÙ‡","Ø§Ù„Ø¶ÙˆØ¡","Ø§Ù„Ù‡ÙˆØ§Ø¡","Ø§Ù„Ø¶Ù„","Ø§Ù„Ø¹Ù…Ø±","Ø§Ù„Ù‚Ù„Ù…","Ø§Ù„Ù…Ø´Ø·","Ø§Ù„Ø­ÙØ±Ù‡","Ø§Ù„Ø¨Ø­Ø±","Ø§Ù„Ø«Ù„Ø¬","Ø§Ù„Ø§Ø³ÙÙ†Ø¬","Ø§Ù„ØµÙˆØª","Ø¨Ù„Ù…"};
 name = Hzora[math.random(#Hzora)]
 database:set(bot_id.."Tshak:Klam:Hzor"..msg.chat_id_,name)
-name = string.gsub(name,"ÇáÌÑÓ","ÔíÆ ÇĞÇ áãÓÊå ÕÑÎ ãÇ åæå ¿")
-name = string.gsub(name,"ÚŞÑÈ ÇáÓÇÚå","ÇÎæÇä áÇ íÓÊØíÚÇä ÊãÖíå ÇßËÑ ãä ÏŞíŞå ãÚÇ İãÇ åãÇ ¿")
-name = string.gsub(name,"ÇáÓãß","ãÇ åæ ÇáÍíæÇä ÇáĞí áã íÕÚÏ Çáì ÓİíäÉ äæÍ Úáíå ÇáÓáÇã ¿")
-name = string.gsub(name,"ÇáãØÑ","ÔíÆ íÓŞØ Úáì ÑÃÓß ãä ÇáÇÚáì æáÇ íÌÑÍß İãÇ åæ ¿")
-name = string.gsub(name,"5","ãÇ ÇáÚÏÏ ÇáĞí ÇĞÇ ÖÑÈÊå ÈäİÓå æÇÖİÊ Úáíå 5 íÕÈÍ ËáÇËíä ")
-name = string.gsub(name,"ÇáßÊÇÈ","ãÇ ÇáÔíÆ ÇáĞí áå ÇæÑÇŞ æáíÓ áå ÌĞæÑ ¿")
-name = string.gsub(name,"ÇáÈÓãÇÑ","ãÇ åæ ÇáÔíÆ ÇáĞí áÇ íãÔí ÇáÇ ÈÇáÖÑÈ ¿")
-name = string.gsub(name,"7","ÚÇÆáå ãÄáİå ãä 6 ÈäÇÊ æÇÎ áßá ãäåä .İßã ÚÏÏ ÇİÑÇÏ ÇáÚÇÆáå ")
-name = string.gsub(name,"ÇáßÚÈå","ãÇ åæ ÇáÔíÆ ÇáãæÌæÏ æÓØ ãßÉ ¿")
-name = string.gsub(name,"ÈíÊ ÇáÔÚÑ","ãÇ åæ ÇáÈíÊ ÇáĞí áíÓ İíå ÇÈæÇÈ æáÇ äæÇİĞ ¿ ")
-name = string.gsub(name,"áåÇäå","æÍÏå Íáæå æãÛÑæÑå ÊáÈÓ ãíÉ ÊäæÑå .ãä åíå ¿ ")
-name = string.gsub(name,"ÇäÇ","ÇÈä Çãß æÇÈä ÇÈíß æáíÓ ÈÇÎÊß æáÇ ÈÇÎíß İãä íßæä ¿")
-name = string.gsub(name,"Çãí","ÇÎÊ ÎÇáß æáíÓÊ ÎÇáÊß ãä Êßæä ¿ ")
-name = string.gsub(name,"ÇáÇÈÑå","ãÇ åæ ÇáÔíÆ ÇáĞí ßáãÇ ÎØÇ ÎØæå İŞÏ ÔíÆÇ ãä Ğíáå ¿ ")
-name = string.gsub(name,"ÇáÓÇÚå","ãÇ åæ ÇáÔíÆ ÇáĞí íŞæá ÇáÕÏŞ æáßäå ÇĞÇ ÌÇÚ ßĞÈ ¿")
-name = string.gsub(name,"22","ßã ãÑå íäØÈŞ ÚŞÑÈÇ ÇáÓÇÚå Úáì ÈÚÖåãÇ İí Çáíæã ÇáæÇÍÏ ")
-name = string.gsub(name,"ÛáØ","ãÇ åí Çáßáãå ÇáæÍíÏå ÇáÊí ÊáİÖ ÛáØ ÏÇÆãÇ ¿ ")
-name = string.gsub(name,"ßã ÇáÓÇÚå","ãÇ åæ ÇáÓÄÇá ÇáĞí ÊÎÊáİ ÇÌÇÈÊå ÏÇÆãÇ ¿")
-name = string.gsub(name,"ÇáÈíÊäÌÇä","ÌÓã ÇÓæÏ æŞáÈ ÇÈíÖ æÑÇÓ ÇÎÙÑ İãÇ åæ ¿")
-name = string.gsub(name,"ÇáÈíÖ","ãÇåæ ÇáÔíÆ ÇáĞí ÇÓãå Úáì áæäå ¿")
-name = string.gsub(name,"ÇáãÑÇíå","ÇÑì ßá ÔíÆ ãä Ïæä Úíæä ãä Çßæä ¿ ")
-name = string.gsub(name,"ÇáÖæÁ","ãÇ åæ ÇáÔíÆ ÇáĞí íÎÊÑŞ ÇáÒÌÇÌ æáÇ íßÓÑå ¿")
-name = string.gsub(name,"ÇáåæÇÁ","ãÇ åæ ÇáÔíÆ ÇáĞí íÓíÑ ÇãÇãß æáÇ ÊÑÇå ¿")
-name = string.gsub(name,"ÇáÖá","ãÇ åæ ÇáÔíÆ ÇáĞí íáÇÍŞß ÇíäãÇ ÊĞåÈ ¿ ")
-name = string.gsub(name,"ÇáÚãÑ","ãÇ åæ ÇáÔíÁ ÇáĞí ßáãÇ ØÇá ŞÕÑ ¿ ")
-name = string.gsub(name,"ÇáŞáã","ãÇ åæ ÇáÔíÆ ÇáĞí íßÊÈ æáÇ íŞÑÃ ¿")
-name = string.gsub(name,"ÇáãÔØ","áå ÃÓäÇä æáÇ íÚÖ ãÇ åæ ¿ ")
-name = string.gsub(name,"ÇáÍİÑå","ãÇ åæ ÇáÔíÆ ÇĞÇ ÃÎĞäÇ ãäå ÇÒÏÇÏ æßÈÑ ¿")
-name = string.gsub(name,"ÇáÈÍÑ","ãÇ åæ ÇáÔíÆ ÇáĞí íÑİÚ ÇËŞÇá æáÇ íŞÏÑ íÑİÚ ãÓãÇÑ ¿")
-name = string.gsub(name,"ÇáËáÌ","ÇäÇ ÇÈä ÇáãÇÁ İÇä ÊÑßæäí İí ÇáãÇÁ ãÊ İãä ÇäÇ ¿")
-name = string.gsub(name,"ÇáÇÓİäÌ","ßáí ËŞæÈ æãÚ ĞÇáß ÇÍİÖ ÇáãÇÁ İãä Çßæä ¿")
-name = string.gsub(name,"ÇáÕæÊ","ÇÓíÑ ÈáÇ ÑÌáíä æáÇ ÇÏÎá ÇáÇ ÈÇáÇĞäíä İãä ÇäÇ ¿")
-name = string.gsub(name,"Èáã","ÍÇãá æãÍãæá äÕİ äÇÔİ æäÕİ ãÈáæá İãä Çßæä ¿ ")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÍá ÇáÍÒæÑå ?\n {"..name.."}")
+name = string.gsub(name,"Ø§Ù„Ø¬Ø±Ø³","Ø´ÙŠØ¦ Ø§Ø°Ø§ Ù„Ù…Ø³ØªÙ‡ ØµØ±Ø® Ù…Ø§ Ù‡ÙˆÙ‡ ØŸ")
+name = string.gsub(name,"Ø¹Ù‚Ø±Ø¨ Ø§Ù„Ø³Ø§Ø¹Ù‡","Ø§Ø®ÙˆØ§Ù† Ù„Ø§ ÙŠØ³ØªØ·ÙŠØ¹Ø§Ù† ØªÙ…Ø¶ÙŠÙ‡ Ø§ÙƒØ«Ø± Ù…Ù† Ø¯Ù‚ÙŠÙ‚Ù‡ Ù…Ø¹Ø§ ÙÙ…Ø§ Ù‡Ù…Ø§ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø³Ù…Ùƒ","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø­ÙŠÙˆØ§Ù† Ø§Ù„Ø°ÙŠ Ù„Ù… ÙŠØµØ¹Ø¯ Ø§Ù„Ù‰ Ø³ÙÙŠÙ†Ø© Ù†ÙˆØ­ Ø¹Ù„ÙŠÙ‡ Ø§Ù„Ø³Ù„Ø§Ù… ØŸ")
+name = string.gsub(name,"Ø§Ù„Ù…Ø·Ø±","Ø´ÙŠØ¦ ÙŠØ³Ù‚Ø· Ø¹Ù„Ù‰ Ø±Ø£Ø³Ùƒ Ù…Ù† Ø§Ù„Ø§Ø¹Ù„Ù‰ ÙˆÙ„Ø§ ÙŠØ¬Ø±Ø­Ùƒ ÙÙ…Ø§ Ù‡Ùˆ ØŸ")
+name = string.gsub(name,"5","Ù…Ø§ Ø§Ù„Ø¹Ø¯Ø¯ Ø§Ù„Ø°ÙŠ Ø§Ø°Ø§ Ø¶Ø±Ø¨ØªÙ‡ Ø¨Ù†ÙØ³Ù‡ ÙˆØ§Ø¶ÙØª Ø¹Ù„ÙŠÙ‡ 5 ÙŠØµØ¨Ø­ Ø«Ù„Ø§Ø«ÙŠÙ† ")
+name = string.gsub(name,"Ø§Ù„ÙƒØªØ§Ø¨","Ù…Ø§ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ù„Ù‡ Ø§ÙˆØ±Ø§Ù‚ ÙˆÙ„ÙŠØ³ Ù„Ù‡ Ø¬Ø°ÙˆØ± ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø¨Ø³Ù…Ø§Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ù„Ø§ ÙŠÙ…Ø´ÙŠ Ø§Ù„Ø§ Ø¨Ø§Ù„Ø¶Ø±Ø¨ ØŸ")
+name = string.gsub(name,"7","Ø¹Ø§Ø¦Ù„Ù‡ Ù…Ø¤Ù„ÙÙ‡ Ù…Ù† 6 Ø¨Ù†Ø§Øª ÙˆØ§Ø® Ù„ÙƒÙ„ Ù…Ù†Ù‡Ù† .ÙÙƒÙ… Ø¹Ø¯Ø¯ Ø§ÙØ±Ø§Ø¯ Ø§Ù„Ø¹Ø§Ø¦Ù„Ù‡ ")
+name = string.gsub(name,"Ø§Ù„ÙƒØ¹Ø¨Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ù…ÙˆØ¬ÙˆØ¯ ÙˆØ³Ø· Ù…ÙƒØ© ØŸ")
+name = string.gsub(name,"Ø¨ÙŠØª Ø§Ù„Ø´Ø¹Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø¨ÙŠØª Ø§Ù„Ø°ÙŠ Ù„ÙŠØ³ ÙÙŠÙ‡ Ø§Ø¨ÙˆØ§Ø¨ ÙˆÙ„Ø§ Ù†ÙˆØ§ÙØ° ØŸ ")
+name = string.gsub(name,"Ù„Ù‡Ø§Ù†Ù‡","ÙˆØ­Ø¯Ù‡ Ø­Ù„ÙˆÙ‡ ÙˆÙ…ØºØ±ÙˆØ±Ù‡ ØªÙ„Ø¨Ø³ Ù…ÙŠØ© ØªÙ†ÙˆØ±Ù‡ .Ù…Ù† Ù‡ÙŠÙ‡ ØŸ ")
+name = string.gsub(name,"Ø§Ù†Ø§","Ø§Ø¨Ù† Ø§Ù…Ùƒ ÙˆØ§Ø¨Ù† Ø§Ø¨ÙŠÙƒ ÙˆÙ„ÙŠØ³ Ø¨Ø§Ø®ØªÙƒ ÙˆÙ„Ø§ Ø¨Ø§Ø®ÙŠÙƒ ÙÙ…Ù† ÙŠÙƒÙˆÙ† ØŸ")
+name = string.gsub(name,"Ø§Ù…ÙŠ","Ø§Ø®Øª Ø®Ø§Ù„Ùƒ ÙˆÙ„ÙŠØ³Øª Ø®Ø§Ù„ØªÙƒ Ù…Ù† ØªÙƒÙˆÙ† ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ø§Ø¨Ø±Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙƒÙ„Ù…Ø§ Ø®Ø·Ø§ Ø®Ø·ÙˆÙ‡ ÙÙ‚Ø¯ Ø´ÙŠØ¦Ø§ Ù…Ù† Ø°ÙŠÙ„Ù‡ ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ø³Ø§Ø¹Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙ‚ÙˆÙ„ Ø§Ù„ØµØ¯Ù‚ ÙˆÙ„ÙƒÙ†Ù‡ Ø§Ø°Ø§ Ø¬Ø§Ø¹ ÙƒØ°Ø¨ ØŸ")
+name = string.gsub(name,"22","ÙƒÙ… Ù…Ø±Ù‡ ÙŠÙ†Ø·Ø¨Ù‚ Ø¹Ù‚Ø±Ø¨Ø§ Ø§Ù„Ø³Ø§Ø¹Ù‡ Ø¹Ù„Ù‰ Ø¨Ø¹Ø¶Ù‡Ù…Ø§ ÙÙŠ Ø§Ù„ÙŠÙˆÙ… Ø§Ù„ÙˆØ§Ø­Ø¯ ")
+name = string.gsub(name,"ØºÙ„Ø·","Ù…Ø§ Ù‡ÙŠ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ÙˆØ­ÙŠØ¯Ù‡ Ø§Ù„ØªÙŠ ØªÙ„ÙØ¶ ØºÙ„Ø· Ø¯Ø§Ø¦Ù…Ø§ ØŸ ")
+name = string.gsub(name,"ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø³Ø¤Ø§Ù„ Ø§Ù„Ø°ÙŠ ØªØ®ØªÙ„Ù Ø§Ø¬Ø§Ø¨ØªÙ‡ Ø¯Ø§Ø¦Ù…Ø§ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø¨ÙŠØªÙ†Ø¬Ø§Ù†","Ø¬Ø³Ù… Ø§Ø³ÙˆØ¯ ÙˆÙ‚Ù„Ø¨ Ø§Ø¨ÙŠØ¶ ÙˆØ±Ø§Ø³ Ø§Ø®Ø¸Ø± ÙÙ…Ø§ Ù‡Ùˆ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø¨ÙŠØ¶","Ù…Ø§Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ø§Ø³Ù…Ù‡ Ø¹Ù„Ù‰ Ù„ÙˆÙ†Ù‡ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ù…Ø±Ø§ÙŠÙ‡","Ø§Ø±Ù‰ ÙƒÙ„ Ø´ÙŠØ¦ Ù…Ù† Ø¯ÙˆÙ† Ø¹ÙŠÙˆÙ† Ù…Ù† Ø§ÙƒÙˆÙ† ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ø¶ÙˆØ¡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ®ØªØ±Ù‚ Ø§Ù„Ø²Ø¬Ø§Ø¬ ÙˆÙ„Ø§ ÙŠÙƒØ³Ø±Ù‡ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ù‡ÙˆØ§Ø¡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ³ÙŠØ± Ø§Ù…Ø§Ù…Ùƒ ÙˆÙ„Ø§ ØªØ±Ø§Ù‡ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø¶Ù„","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙ„Ø§Ø­Ù‚Ùƒ Ø§ÙŠÙ†Ù…Ø§ ØªØ°Ù‡Ø¨ ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ø¹Ù…Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¡ Ø§Ù„Ø°ÙŠ ÙƒÙ„Ù…Ø§ Ø·Ø§Ù„ Ù‚ØµØ± ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ù‚Ù„Ù…","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙƒØªØ¨ ÙˆÙ„Ø§ ÙŠÙ‚Ø±Ø£ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ù…Ø´Ø·","Ù„Ù‡ Ø£Ø³Ù†Ø§Ù† ÙˆÙ„Ø§ ÙŠØ¹Ø¶ Ù…Ø§ Ù‡Ùˆ ØŸ ")
+name = string.gsub(name,"Ø§Ù„Ø­ÙØ±Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ø°Ø§ Ø£Ø®Ø°Ù†Ø§ Ù…Ù†Ù‡ Ø§Ø²Ø¯Ø§Ø¯ ÙˆÙƒØ¨Ø± ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø¨Ø­Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ±ÙØ¹ Ø§Ø«Ù‚Ø§Ù„ ÙˆÙ„Ø§ ÙŠÙ‚Ø¯Ø± ÙŠØ±ÙØ¹ Ù…Ø³Ù…Ø§Ø± ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø«Ù„Ø¬","Ø§Ù†Ø§ Ø§Ø¨Ù† Ø§Ù„Ù…Ø§Ø¡ ÙØ§Ù† ØªØ±ÙƒÙˆÙ†ÙŠ ÙÙŠ Ø§Ù„Ù…Ø§Ø¡ Ù…Øª ÙÙ…Ù† Ø§Ù†Ø§ ØŸ")
+name = string.gsub(name,"Ø§Ù„Ø§Ø³ÙÙ†Ø¬","ÙƒÙ„ÙŠ Ø«Ù‚ÙˆØ¨ ÙˆÙ…Ø¹ Ø°Ø§Ù„Ùƒ Ø§Ø­ÙØ¶ Ø§Ù„Ù…Ø§Ø¡ ÙÙ…Ù† Ø§ÙƒÙˆÙ† ØŸ")
+name = string.gsub(name,"Ø§Ù„ØµÙˆØª","Ø§Ø³ÙŠØ± Ø¨Ù„Ø§ Ø±Ø¬Ù„ÙŠÙ† ÙˆÙ„Ø§ Ø§Ø¯Ø®Ù„ Ø§Ù„Ø§ Ø¨Ø§Ù„Ø§Ø°Ù†ÙŠÙ† ÙÙ…Ù† Ø§Ù†Ø§ ØŸ")
+name = string.gsub(name,"Ø¨Ù„Ù…","Ø­Ø§Ù…Ù„ ÙˆÙ…Ø­Ù…ÙˆÙ„ Ù†ØµÙ Ù†Ø§Ø´Ù ÙˆÙ†ØµÙ Ù…Ø¨Ù„ÙˆÙ„ ÙÙ…Ù† Ø§ÙƒÙˆÙ† ØŸ ")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ­Ù„ Ø§Ù„Ø­Ø²ÙˆØ±Ù‡ â†“\n {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Klam:Hzor"..msg.chat_id_) or "").."" and not database:get(bot_id.."Tshak:Set:Hzora"..msg.chat_id_) then
 if not database:get(bot_id.."Tshak:Set:Hzora"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÍÒæÑå }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø­Ø²ÙˆØ±Ù‡ }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Hzora"..msg.chat_id_,true)
 end 
 
-if text == "ãÚÇäí" then
+if text == "Ù…Ø¹Ø§Ù†ÙŠ" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 database:del(bot_id.."Tshak:Set:Maany"..msg.chat_id_)
-Maany_Rand = {"ŞÑÏ","ÏÌÇÌå","ÈØÑíŞ","ÖİÏÚ","Èæãå","äÍáå","Ïíß","Ìãá","ÈŞÑå","Ïæáİíä","ÊãÓÇÍ","ŞÑÔ","äãÑ","ÇÎØÈæØ","Óãßå","ÎİÇÔ","ÇÓÏ","İÃÑ","ĞÆÈ","İÑÇÔå","ÚŞÑÈ","ÒÑÇİå","ŞäİĞ","ÊİÇÍå","ÈÇĞäÌÇä"}
+Maany_Rand = {"Ù‚Ø±Ø¯","Ø¯Ø¬Ø§Ø¬Ù‡","Ø¨Ø·Ø±ÙŠÙ‚","Ø¶ÙØ¯Ø¹","Ø¨ÙˆÙ…Ù‡","Ù†Ø­Ù„Ù‡","Ø¯ÙŠÙƒ","Ø¬Ù…Ù„","Ø¨Ù‚Ø±Ù‡","Ø¯ÙˆÙ„ÙÙŠÙ†","ØªÙ…Ø³Ø§Ø­","Ù‚Ø±Ø´","Ù†Ù…Ø±","Ø§Ø®Ø·Ø¨ÙˆØ·","Ø³Ù…ÙƒÙ‡","Ø®ÙØ§Ø´","Ø§Ø³Ø¯","ÙØ£Ø±","Ø°Ø¦Ø¨","ÙØ±Ø§Ø´Ù‡","Ø¹Ù‚Ø±Ø¨","Ø²Ø±Ø§ÙÙ‡","Ù‚Ù†ÙØ°","ØªÙØ§Ø­Ù‡","Ø¨Ø§Ø°Ù†Ø¬Ø§Ù†"}
 name = Maany_Rand[math.random(#Maany_Rand)]
 database:set(bot_id.."Tshak:Maany"..msg.chat_id_,name)
-name = string.gsub(name,"ŞÑÏ","??")
-name = string.gsub(name,"ÏÌÇÌå","??")
-name = string.gsub(name,"ÈØÑíŞ","??")
-name = string.gsub(name,"ÖİÏÚ","??")
-name = string.gsub(name,"Èæãå","??")
-name = string.gsub(name,"äÍáå","??")
-name = string.gsub(name,"Ïíß","??")
-name = string.gsub(name,"Ìãá","??")
-name = string.gsub(name,"ÈŞÑå","??")
-name = string.gsub(name,"Ïæáİíä","??")
-name = string.gsub(name,"ÊãÓÇÍ","??")
-name = string.gsub(name,"ŞÑÔ","??")
-name = string.gsub(name,"äãÑ","??")
-name = string.gsub(name,"ÇÎØÈæØ","??")
-name = string.gsub(name,"Óãßå","??")
-name = string.gsub(name,"ÎİÇÔ","??")
-name = string.gsub(name,"ÇÓÏ","??")
-name = string.gsub(name,"İÃÑ","??")
-name = string.gsub(name,"ĞÆÈ","??")
-name = string.gsub(name,"İÑÇÔå","??")
-name = string.gsub(name,"ÚŞÑÈ","??")
-name = string.gsub(name,"ÒÑÇİå","??")
-name = string.gsub(name,"ŞäİĞ","??")
-name = string.gsub(name,"ÊİÇÍå","??")
-name = string.gsub(name,"ÈÇĞäÌÇä","??")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÏÒ ãÚäì ÇáÓãÇíá ~ {"..name.."}")
+name = string.gsub(name,"Ù‚Ø±Ø¯","ğŸ’")
+name = string.gsub(name,"Ø¯Ø¬Ø§Ø¬Ù‡","ğŸ”")
+name = string.gsub(name,"Ø¨Ø·Ø±ÙŠÙ‚","ğŸ§")
+name = string.gsub(name,"Ø¶ÙØ¯Ø¹","ğŸ¸")
+name = string.gsub(name,"Ø¨ÙˆÙ…Ù‡","ğŸ¦‰")
+name = string.gsub(name,"Ù†Ø­Ù„Ù‡","ğŸ")
+name = string.gsub(name,"Ø¯ÙŠÙƒ","ğŸ“")
+name = string.gsub(name,"Ø¬Ù…Ù„","ğŸ«")
+name = string.gsub(name,"Ø¨Ù‚Ø±Ù‡","ğŸ„")
+name = string.gsub(name,"Ø¯ÙˆÙ„ÙÙŠÙ†","ğŸ¬")
+name = string.gsub(name,"ØªÙ…Ø³Ø§Ø­","ğŸŠ")
+name = string.gsub(name,"Ù‚Ø±Ø´","ğŸ¦ˆ")
+name = string.gsub(name,"Ù†Ù…Ø±","ğŸ…")
+name = string.gsub(name,"Ø§Ø®Ø·Ø¨ÙˆØ·","ğŸ™")
+name = string.gsub(name,"Ø³Ù…ÙƒÙ‡","ğŸŸ")
+name = string.gsub(name,"Ø®ÙØ§Ø´","ğŸ¦‡")
+name = string.gsub(name,"Ø§Ø³Ø¯","ğŸ¦")
+name = string.gsub(name,"ÙØ£Ø±","ğŸ­")
+name = string.gsub(name,"Ø°Ø¦Ø¨","ğŸº")
+name = string.gsub(name,"ÙØ±Ø§Ø´Ù‡","ğŸ¦‹")
+name = string.gsub(name,"Ø¹Ù‚Ø±Ø¨","ğŸ¦‚")
+name = string.gsub(name,"Ø²Ø±Ø§ÙÙ‡","ğŸ¦’")
+name = string.gsub(name,"Ù‚Ù†ÙØ°","ğŸ¦”")
+name = string.gsub(name,"ØªÙØ§Ø­Ù‡","ğŸ")
+name = string.gsub(name,"Ø¨Ø§Ø°Ù†Ø¬Ø§Ù†","ğŸ†")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ù…Ø¹Ù†Ù‰ Ø§Ù„Ø³Ù…Ø§ÙŠÙ„ ~ {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Maany"..msg.chat_id_) or "").."" and not database:get(bot_id.."Tshak:Set:Maany"..msg.chat_id_) then
 if not database:get(bot_id.."Tshak:Set:Maany"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ãÚÇäí }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ù…Ø¹Ø§Ù†ÙŠ }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Maany"..msg.chat_id_,true)
 end 
-if text == "ÇáÚßÓ" then
+if text == "Ø§Ù„Ø¹ÙƒØ³" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 database:del(bot_id.."Tshak:Set:Aks"..msg.chat_id_)
-katu = {"ÈÇí","İåãÊ","ãæÒíä","ÇÓãÚß","ÇÍÈß","ãæÍáæ","äÖíİ","ÍÇÑå","äÇÕí","Ìæå","ÓÑíÚ","æäÓå","Øæíá","Óãíä","ÖÚíİ","ÔÑíİ","ÔÌÇÚ","ÑÍÊ","ÚÏá","äÔíØ","ÔÈÚÇä","ãæÚØÔÇä","ÎæÔ æáÏ","Çäí","åÇÏÆ"}
+katu = {"Ø¨Ø§ÙŠ","ÙÙ‡Ù…Øª","Ù…ÙˆØ²ÙŠÙ†","Ø§Ø³Ù…Ø¹Ùƒ","Ø§Ø­Ø¨Ùƒ","Ù…ÙˆØ­Ù„Ùˆ","Ù†Ø¶ÙŠÙ","Ø­Ø§Ø±Ù‡","Ù†Ø§ØµÙŠ","Ø¬ÙˆÙ‡","Ø³Ø±ÙŠØ¹","ÙˆÙ†Ø³Ù‡","Ø·ÙˆÙŠÙ„","Ø³Ù…ÙŠÙ†","Ø¶Ø¹ÙŠÙ","Ø´Ø±ÙŠÙ","Ø´Ø¬Ø§Ø¹","Ø±Ø­Øª","Ø¹Ø¯Ù„","Ù†Ø´ÙŠØ·","Ø´Ø¨Ø¹Ø§Ù†","Ù…ÙˆØ¹Ø·Ø´Ø§Ù†","Ø®ÙˆØ´ ÙˆÙ„Ø¯","Ø§Ù†ÙŠ","Ù‡Ø§Ø¯Ø¦"}
 name = katu[math.random(#katu)]
 database:set(bot_id.."Tshak:Set:Aks:Game"..msg.chat_id_,name)
-name = string.gsub(name,"ÈÇí","åáæ")
-name = string.gsub(name,"İåãÊ","ãÇİåãÊ")
-name = string.gsub(name,"ãæÒíä","Òíä")
-name = string.gsub(name,"ÇÓãÚß","ãÇÓãÚß")
-name = string.gsub(name,"ÇÍÈß","ãÇÍÈß")
-name = string.gsub(name,"ãæÍáæ","Íáæ")
-name = string.gsub(name,"äÖíİ","æÕÎ")
-name = string.gsub(name,"ÍÇÑå","ÈÇÑÏå")
-name = string.gsub(name,"äÇÕí","ÚÇáí")
-name = string.gsub(name,"Ìæå","İæß")
-name = string.gsub(name,"ÓÑíÚ","ÈØíÁ")
-name = string.gsub(name,"æäÓå","ÖæÌå")
-name = string.gsub(name,"Øæíá","ŞÒã")
-name = string.gsub(name,"Óãíä","ÖÚíİ")
-name = string.gsub(name,"ÖÚíİ","Şæí")
-name = string.gsub(name,"ÔÑíİ","ßæÇÏ")
-name = string.gsub(name,"ÔÌÇÚ","ÌÈÇä")
-name = string.gsub(name,"ÑÍÊ","ÇÌíÊ")
-name = string.gsub(name,"ÚÏá","ãíÊ")
-name = string.gsub(name,"äÔíØ","ßÓæá")
-name = string.gsub(name,"ÔÈÚÇä","ÌæÚÇä")
-name = string.gsub(name,"ãæÚØÔÇä","ÚØÔÇä")
-name = string.gsub(name,"ÎæÔ æáÏ","ãæÎæÔ æáÏ")
-name = string.gsub(name,"Çäí","ãØí")
-name = string.gsub(name,"åÇÏÆ","ÚÕÈí")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÏÒ ÇáÚßÓ ~ {"..name.."}")
+name = string.gsub(name,"Ø¨Ø§ÙŠ","Ù‡Ù„Ùˆ")
+name = string.gsub(name,"ÙÙ‡Ù…Øª","Ù…Ø§ÙÙ‡Ù…Øª")
+name = string.gsub(name,"Ù…ÙˆØ²ÙŠÙ†","Ø²ÙŠÙ†")
+name = string.gsub(name,"Ø§Ø³Ù…Ø¹Ùƒ","Ù…Ø§Ø³Ù…Ø¹Ùƒ")
+name = string.gsub(name,"Ø§Ø­Ø¨Ùƒ","Ù…Ø§Ø­Ø¨Ùƒ")
+name = string.gsub(name,"Ù…ÙˆØ­Ù„Ùˆ","Ø­Ù„Ùˆ")
+name = string.gsub(name,"Ù†Ø¶ÙŠÙ","ÙˆØµØ®")
+name = string.gsub(name,"Ø­Ø§Ø±Ù‡","Ø¨Ø§Ø±Ø¯Ù‡")
+name = string.gsub(name,"Ù†Ø§ØµÙŠ","Ø¹Ø§Ù„ÙŠ")
+name = string.gsub(name,"Ø¬ÙˆÙ‡","ÙÙˆÙƒ")
+name = string.gsub(name,"Ø³Ø±ÙŠØ¹","Ø¨Ø·ÙŠØ¡")
+name = string.gsub(name,"ÙˆÙ†Ø³Ù‡","Ø¶ÙˆØ¬Ù‡")
+name = string.gsub(name,"Ø·ÙˆÙŠÙ„","Ù‚Ø²Ù…")
+name = string.gsub(name,"Ø³Ù…ÙŠÙ†","Ø¶Ø¹ÙŠÙ")
+name = string.gsub(name,"Ø¶Ø¹ÙŠÙ","Ù‚ÙˆÙŠ")
+name = string.gsub(name,"Ø´Ø±ÙŠÙ","ÙƒÙˆØ§Ø¯")
+name = string.gsub(name,"Ø´Ø¬Ø§Ø¹","Ø¬Ø¨Ø§Ù†")
+name = string.gsub(name,"Ø±Ø­Øª","Ø§Ø¬ÙŠØª")
+name = string.gsub(name,"Ø¹Ø¯Ù„","Ù…ÙŠØª")
+name = string.gsub(name,"Ù†Ø´ÙŠØ·","ÙƒØ³ÙˆÙ„")
+name = string.gsub(name,"Ø´Ø¨Ø¹Ø§Ù†","Ø¬ÙˆØ¹Ø§Ù†")
+name = string.gsub(name,"Ù…ÙˆØ¹Ø·Ø´Ø§Ù†","Ø¹Ø·Ø´Ø§Ù†")
+name = string.gsub(name,"Ø®ÙˆØ´ ÙˆÙ„Ø¯","Ù…ÙˆØ®ÙˆØ´ ÙˆÙ„Ø¯")
+name = string.gsub(name,"Ø§Ù†ÙŠ","Ù…Ø·ÙŠ")
+name = string.gsub(name,"Ù‡Ø§Ø¯Ø¦","Ø¹ØµØ¨ÙŠ")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ø§Ù„Ø¹ÙƒØ³ ~ {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Set:Aks:Game"..msg.chat_id_) or "").."" and not database:get(bot_id.."Tshak:Set:Aks"..msg.chat_id_) then
 if not database:get(bot_id.."Tshak:Set:Aks"..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÇáÚßÓ }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø§Ù„Ø¹ÙƒØ³ }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Aks"..msg.chat_id_,true)
@@ -12483,31 +5094,31 @@ if database:get(bot_id.."Tshak:GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_u
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
 if tonumber(NUM) > 20 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÂ áÇ íãßäß ÊÎãíä ÚÏÏ ÇßÈÑ ãä Çá { 20 } Îãä ÑŞã ãÇ Èíä Çá{ 1 æ 20 }\n")
+send(msg.chat_id_, msg.id_,"ğŸ“¬ â”‡ Ø¹Ø°Ø±Ø¢ Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ ØªØ®Ù…ÙŠÙ† Ø¹Ø¯Ø¯ Ø§ÙƒØ¨Ø± Ù…Ù† Ø§Ù„ { 20 } Ø®Ù…Ù† Ø±Ù‚Ù… Ù…Ø§ Ø¨ÙŠÙ† Ø§Ù„{ 1 Ùˆ 20 }\n")
 return false  end 
 local GETNUM = database:get(bot_id.."Tshak:GAMES:NUM"..msg.chat_id_)
 if tonumber(NUM) == tonumber(GETNUM) then
 database:del(bot_id.."Tshak:SADD:NUM"..msg.chat_id_..msg.sender_user_id_)
 database:del(bot_id.."Tshak:GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_,5)  
-send(msg.chat_id_, msg.id_,"?? ? ãÈÑæß İÒÊ æíÇäå æÎãäÊ ÇáÑŞã ÇáÕÍíÍ\n?? ? Êã ÇÖÇİÉ { 5 } ãä ÇáäŞÇØ \n")
+send(msg.chat_id_, msg.id_,"ğŸ”– â”‡ Ù…Ø¨Ø±ÙˆÙƒ ÙØ²Øª ÙˆÙŠØ§Ù†Ù‡ ÙˆØ®Ù…Ù†Øª Ø§Ù„Ø±Ù‚Ù… Ø§Ù„ØµØ­ÙŠØ­\nğŸš¸ â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© { 5 } Ù…Ù† Ø§Ù„Ù†Ù‚Ø§Ø· \n")
 elseif tonumber(NUM) ~= tonumber(GETNUM) then
 database:incrby(bot_id.."Tshak:SADD:NUM"..msg.chat_id_..msg.sender_user_id_,1)
 if tonumber(database:get(bot_id.."Tshak:SADD:NUM"..msg.chat_id_..msg.sender_user_id_)) >= 3 then
 database:del(bot_id.."Tshak:SADD:NUM"..msg.chat_id_..msg.sender_user_id_)
 database:del(bot_id.."Tshak:GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-send(msg.chat_id_, msg.id_,"?? ? ÇæÈÓ áŞÏ ÎÓÑÊ İí ÇááÚÈå \n?? ? ÍÙÂ ÇæİÑ İí ÇáãÑå ÇáŞÇÏãå \n?? ? ßÇä ÇáÑŞã ÇáĞí Êã ÊÎãíäå { "..GETNUM.." }")
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ Ø§ÙˆØ¨Ø³ Ù„Ù‚Ø¯ Ø®Ø³Ø±Øª ÙÙŠ Ø§Ù„Ù„Ø¹Ø¨Ù‡ \nğŸ“¬ â”‡ Ø­Ø¸Ø¢ Ø§ÙˆÙØ± ÙÙŠ Ø§Ù„Ù…Ø±Ù‡ Ø§Ù„Ù‚Ø§Ø¯Ù…Ù‡ \nğŸ”° â”‡ ÙƒØ§Ù† Ø§Ù„Ø±Ù‚Ù… Ø§Ù„Ø°ÙŠ ØªÙ… ØªØ®Ù…ÙŠÙ†Ù‡ { "..GETNUM.." }")
 else
-send(msg.chat_id_, msg.id_,"?? ? ÇæÈÓ ÊÎãíäß ÛáØ \n?? ? ÇÑÓá ÑŞã ÊÎãäå ãÑå ÇÎÑì ")
+send(msg.chat_id_, msg.id_,"ğŸ“› â”‡ Ø§ÙˆØ¨Ø³ ØªØ®Ù…ÙŠÙ†Ùƒ ØºÙ„Ø· \nğŸ“Œ â”‡ Ø§Ø±Ø³Ù„ Ø±Ù‚Ù… ØªØ®Ù…Ù†Ù‡ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‰ ")
 end
 end
 end
 end
-if text == "Îãä" or text == "ÊÎãíä" then   
+if text == "Ø®Ù…Ù†" or text == "ØªØ®Ù…ÙŠÙ†" then   
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
 Num = math.random(1,20)
 database:set(bot_id.."Tshak:GAMES:NUM"..msg.chat_id_,Num) 
-send(msg.chat_id_, msg.id_,"\n?? ? ÇåáÇ Èß ÚÒíÒí İí áÚÈÉ ÇáÊÎãíä :\n???????????\n".."?? ? ãáÇÍÙå áÏíß { 3 } ãÍÇæáÇÊ İŞØ İßÑ ŞÈá ÇÑÓÇá ÊÎãíäß \n\n".."?? ? ÓíÊã ÊÎãíä ÚÏÏ ãÇ Èíä Çá {1 æ 20} ÇĞÇ ÊÚÊŞÏ Çäß ÊÓÊØíÚ ÇáİæÒ ÌÑÈ æÇááÚÈ ÇáÇä ¿ ")
+send(msg.chat_id_, msg.id_,"\nğŸ“› â”‡ Ø§Ù‡Ù„Ø§ Ø¨Ùƒ Ø¹Ø²ÙŠØ²ÙŠ ÙÙŠ Ù„Ø¹Ø¨Ø© Ø§Ù„ØªØ®Ù…ÙŠÙ† :\nÙ´â”â”â”â”â”â”â”â”â”â”\n".."ğŸ’¢ â”‡ Ù…Ù„Ø§Ø­Ø¸Ù‡ Ù„Ø¯ÙŠÙƒ { 3 } Ù…Ø­Ø§ÙˆÙ„Ø§Øª ÙÙ‚Ø· ÙÙƒØ± Ù‚Ø¨Ù„ Ø§Ø±Ø³Ø§Ù„ ØªØ®Ù…ÙŠÙ†Ùƒ \n\n".."ğŸ”– â”‡ Ø³ÙŠØªÙ… ØªØ®Ù…ÙŠÙ† Ø¹Ø¯Ø¯ Ù…Ø§ Ø¨ÙŠÙ† Ø§Ù„ {1 Ùˆ 20} Ø§Ø°Ø§ ØªØ¹ØªÙ‚Ø¯ Ø§Ù†Ùƒ ØªØ³ØªØ·ÙŠØ¹ Ø§Ù„ÙÙˆØ² Ø¬Ø±Ø¨ ÙˆØ§Ù„Ù„Ø¹Ø¨ Ø§Ù„Ø§Ù† ØŸ ")
 database:setex(bot_id.."Tshak:GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 100, true)  
 return false  
 end
@@ -12517,30 +5128,30 @@ if database:get(bot_id.."Tshak:SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_use
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
 if tonumber(NUM) > 6 then
-send(msg.chat_id_, msg.id_,"?? ? ÚĞÑÇ áÇ íæÌÏ ÓæÇÁ { 6 } ÇÎÊíÇÑÇÊ İŞØ ÇÑÓá ÇÎÊíÇÑß ãÑå ÇÎÑì\n")
+send(msg.chat_id_, msg.id_,"ğŸ“¬ â”‡ Ø¹Ø°Ø±Ø§ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø³ÙˆØ§Ø¡ { 6 } Ø§Ø®ØªÙŠØ§Ø±Ø§Øª ÙÙ‚Ø· Ø§Ø±Ø³Ù„ Ø§Ø®ØªÙŠØ§Ø±Ùƒ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‰\n")
 return false  end 
 local GETNUM = database:get(bot_id.."Tshak:Games:Bat"..msg.chat_id_)
 if tonumber(NUM) == tonumber(GETNUM) then
 database:del(bot_id.."Tshak:SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-send(msg.chat_id_, msg.id_,"?? ? ãÈÑæß İÒÊ æØáÚÊ ÇáãÍíÈÓ Èá ÇíÏ ÑŞã { "..NUM.." }\n?? ? áŞÏ ÍÕáÊ Úáì { 3 }ãä äŞÇØ íãßäß ÇÓÊÈÏÇáåä ÈÑÓÇÆá ")
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ Ù…Ø¨Ø±ÙˆÙƒ ÙØ²Øª ÙˆØ·Ù„Ø¹Øª Ø§Ù„Ù…Ø­ÙŠØ¨Ø³ Ø¨Ù„ Ø§ÙŠØ¯ Ø±Ù‚Ù… { "..NUM.." }\nğŸŠ â”‡ Ù„Ù‚Ø¯ Ø­ØµÙ„Øª Ø¹Ù„Ù‰ { 3 }Ù…Ù† Ù†Ù‚Ø§Ø· ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø³ØªØ¨Ø¯Ø§Ù„Ù‡Ù† Ø¨Ø±Ø³Ø§Ø¦Ù„ ")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_,3)  
 elseif tonumber(NUM) ~= tonumber(GETNUM) then
 database:del(bot_id.."Tshak:SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-send(msg.chat_id_, msg.id_,"?? ? ááÇÓİ áŞÏ ÎÓÑÊ \n?? ? ÇáãÍíÈÓ Èá ÇíÏ ÑŞã { "..GETNUM.." }\n?? ? ÍÇæá ãÑå ÇÎÑì ááÚËæÑ Úáì ÇáãÍíÈÓ")
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡ Ù„Ù„Ø§Ø³Ù Ù„Ù‚Ø¯ Ø®Ø³Ø±Øª \nğŸ“¬ â”‡ Ø§Ù„Ù…Ø­ÙŠØ¨Ø³ Ø¨Ù„ Ø§ÙŠØ¯ Ø±Ù‚Ù… { "..GETNUM.." }\nğŸ’¥ â”‡ Ø­Ø§ÙˆÙ„ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‰ Ù„Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø­ÙŠØ¨Ø³")
 end
 end
 end
 
-if text == "ãÍíÈÓ" or text == "ÈÇÊ" then
+if text == "Ù…Ø­ÙŠØ¨Ø³" or text == "Ø¨Ø§Øª" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then   
 Num = math.random(1,6)
 database:set(bot_id.."Tshak:Games:Bat"..msg.chat_id_,Num) 
 TEST = [[
-*?       ?     ?      ?      ?     ?
-?      ?     ?      ?     ?     ?
-?? ‹› ?? ‹› ?? ‹› ?? ‹› ?? ‹› ??
-?? ? ÇÎÊÑ áÃÓÊÎÑÇÌ ÇáãÍíÈÓ ÇáÇíÏ ÇáÊí ÊÍãá ÇáãÍíÈÓ 
-?? ? ÇáİÇÆÒ íÍÕá Úáì { 3 } ãä ÇáäŞÇØ *
+*â€       â     â‚      âƒ      â„     â…
+â†“      â†“     â†“      â†“     â†“     â†“
+ğŸ‘Š â€¹â€º ğŸ‘Š â€¹â€º ğŸ‘Š â€¹â€º ğŸ‘Š â€¹â€º ğŸ‘Š â€¹â€º ğŸ‘Š
+ğŸ“® â”‡ Ø§Ø®ØªØ± Ù„Ø£Ø³ØªØ®Ø±Ø§Ø¬ Ø§Ù„Ù…Ø­ÙŠØ¨Ø³ Ø§Ù„Ø§ÙŠØ¯ Ø§Ù„ØªÙŠ ØªØ­Ù…Ù„ Ø§Ù„Ù…Ø­ÙŠØ¨Ø³ 
+ğŸ â”‡ Ø§Ù„ÙØ§Ø¦Ø² ÙŠØ­ØµÙ„ Ø¹Ù„Ù‰ { 3 } Ù…Ù† Ø§Ù„Ù†Ù‚Ø§Ø· *
 ]]
 send(msg.chat_id_, msg.id_,TEST)
 database:setex(bot_id.."Tshak:SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 100, true)  
@@ -12548,189 +5159,189 @@ return false
 end
 end
 
-if text == "ÇáãÎÊáİ" then
+if text == "Ø§Ù„Ù…Ø®ØªÙ„Ù" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
-mktlf = {"??","?","??","??","??","??","??","?","?","??","??","????","????","????","???","???","???","???","???","??","??","??","??","??",};
+mktlf = {"ğŸ˜¸","â˜ ","ğŸ¼","ğŸ‡","ğŸŒ‘","ğŸŒš","â­ï¸","âœ¨","â›ˆ","ğŸŒ¥","â›„ï¸","ğŸ‘¨â€ğŸ”¬","ğŸ‘¨â€ğŸ’»","ğŸ‘¨â€ğŸ”§","ğŸ§šâ€â™€","ğŸ§œâ€â™‚","ğŸ§â€â™‚","ğŸ™â€â™‚","ğŸ§–â€â™‚","ğŸ‘¬","ğŸ•’","ğŸ•¤","âŒ›ï¸","ğŸ“…",};
 name = mktlf[math.random(#mktlf)]
 database:del(bot_id.."Tshak:Set:Moktlf:Bot"..msg.chat_id_)
 database:set(bot_id.."Tshak::Set:Moktlf"..msg.chat_id_,name)
-name = string.gsub(name,"??","??????????????????????????")
-name = string.gsub(name,"?","?????????????????????????")
-name = string.gsub(name,"??","??????????????????????")
-name = string.gsub(name,"??","????????????????????")
-name = string.gsub(name,"??","??????????????????")
-name = string.gsub(name,"??","??????????????????")
-name = string.gsub(name,"??","????????????????????????")
-name = string.gsub(name,"?","???????????????????")
-name = string.gsub(name,"?","???????????????????")
-name = string.gsub(name,"??","??????????????????????")
-name = string.gsub(name,"??","????????????")
-name = string.gsub(name,"????","????????????????????????????????????????????????")
-name = string.gsub(name,"????","????????????????????????????????????")
-name = string.gsub(name,"????","????????????????????????????????")
-name = string.gsub(name,"????","????????????????????????????????????")
-name = string.gsub(name,"???","?????????????????????")
-name = string.gsub(name,"???","???????????????????????????")
-name = string.gsub(name,"???","???????????????????????????")
-name = string.gsub(name,"????","????????????????????????????????????")
-name = string.gsub(name,"????","????????????????????????????????????????")
-name = string.gsub(name,"??","??????????????????")
-name = string.gsub(name,"??????","??????????????????????????????????????????")
-name = string.gsub(name,"??","????????????????????")
-name = string.gsub(name,"??","??????????????????")
-name = string.gsub(name,"??","??????????")
-name = string.gsub(name,"??","??????????????????")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íÏÒ ÇáÇÎÊáÇİ ~ {"..name.."}")
+name = string.gsub(name,"ğŸ˜¸","ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¸ğŸ˜¹ğŸ˜¹ğŸ˜¹ğŸ˜¹")
+name = string.gsub(name,"â˜ ","ğŸ’€ğŸ’€ğŸ’€ğŸ’€ğŸ’€ğŸ’€ğŸ’€â˜ ğŸ’€ğŸ’€ğŸ’€ğŸ’€ğŸ’€")
+name = string.gsub(name,"ğŸ¼","ğŸ‘»ğŸ‘»ğŸ‘»ğŸ¼ğŸ‘»ğŸ‘»ğŸ‘»ğŸ‘»ğŸ‘»ğŸ‘»ğŸ‘»")
+name = string.gsub(name,"ğŸ‡","ğŸ•ŠğŸ•ŠğŸ•ŠğŸ•ŠğŸ•ŠğŸ‡ğŸ•ŠğŸ•ŠğŸ•ŠğŸ•Š")
+name = string.gsub(name,"ğŸŒ‘","ğŸŒšğŸŒšğŸŒšğŸŒšğŸŒšğŸŒ‘ğŸŒšğŸŒšğŸŒš")
+name = string.gsub(name,"ğŸŒš","ğŸŒ‘ğŸŒ‘ğŸŒ‘ğŸŒ‘ğŸŒ‘ğŸŒšğŸŒ‘ğŸŒ‘ğŸŒ‘")
+name = string.gsub(name,"â­ï¸","ğŸŒŸğŸŒŸğŸŒŸğŸŒŸğŸŒŸğŸŒŸğŸŒŸğŸŒŸâ­ï¸ğŸŒŸğŸŒŸğŸŒŸ")
+name = string.gsub(name,"âœ¨","ğŸ’«ğŸ’«ğŸ’«ğŸ’«ğŸ’«âœ¨ğŸ’«ğŸ’«ğŸ’«ğŸ’«")
+name = string.gsub(name,"â›ˆ","ğŸŒ¨ğŸŒ¨ğŸŒ¨ğŸŒ¨ğŸŒ¨â›ˆğŸŒ¨ğŸŒ¨ğŸŒ¨ğŸŒ¨")
+name = string.gsub(name,"ğŸŒ¥","â›…ï¸â›…ï¸â›…ï¸â›…ï¸â›…ï¸â›…ï¸ğŸŒ¥â›…ï¸â›…ï¸â›…ï¸â›…ï¸")
+name = string.gsub(name,"â›„ï¸","â˜ƒâ˜ƒâ˜ƒâ˜ƒâ˜ƒâ˜ƒâ›„ï¸â˜ƒâ˜ƒâ˜ƒâ˜ƒ")
+name = string.gsub(name,"ğŸ‘¨â€ğŸ”¬","ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘¨â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬ğŸ‘©â€ğŸ”¬")
+name = string.gsub(name,"ğŸ‘¨â€ğŸ’»","ğŸ‘©â€ğŸ’»ğŸ‘©â€ğŸ’»ğŸ‘©â€â€ğŸ’»ğŸ‘©â€â€ğŸ’»ğŸ‘©â€ğŸ’»ğŸ‘¨â€ğŸ’»ğŸ‘©â€ğŸ’»ğŸ‘©â€ğŸ’»ğŸ‘©â€ğŸ’»")
+name = string.gsub(name,"ğŸ‘¨â€ğŸ”§","ğŸ‘©â€ğŸ”§ğŸ‘©â€ğŸ”§ğŸ‘©â€ğŸ”§ğŸ‘©â€ğŸ”§ğŸ‘©â€ğŸ”§ğŸ‘©â€ğŸ”§ğŸ‘¨â€ğŸ”§ğŸ‘©â€ğŸ”§")
+name = string.gsub(name,"ğŸ‘©â€ğŸ³","ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘©â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³ğŸ‘¨â€ğŸ³")
+name = string.gsub(name,"ğŸ§šâ€â™€","ğŸ§šâ€â™‚ğŸ§šâ€â™‚ğŸ§šâ€â™‚ğŸ§šâ€â™‚ğŸ§šâ€â™€ğŸ§šâ€â™‚ğŸ§šâ€â™‚")
+name = string.gsub(name,"ğŸ§œâ€â™‚","ğŸ§œâ€â™€ğŸ§œâ€â™€ğŸ§œâ€â™€ğŸ§œâ€â™€ğŸ§œâ€â™€ğŸ§šâ€â™‚ğŸ§œâ€â™€ğŸ§œâ€â™€ğŸ§œâ€â™€")
+name = string.gsub(name,"ğŸ§â€â™‚","ğŸ§â€â™€ğŸ§â€â™€ğŸ§â€â™€ğŸ§â€â™€ğŸ§â€â™€ğŸ§â€â™‚ğŸ§â€â™€ğŸ§â€â™€ğŸ§â€â™€")
+name = string.gsub(name,"ğŸ™â€â™‚ï¸","ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸ğŸ™â€â™‚ï¸")
+name = string.gsub(name,"ğŸ§–â€â™‚ï¸","ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™‚ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸ğŸ§–â€â™€ï¸")
+name = string.gsub(name,"ğŸ‘¬","ğŸ‘­ğŸ‘­ğŸ‘­ğŸ‘­ğŸ‘­ğŸ‘¬ğŸ‘­ğŸ‘­ğŸ‘­")
+name = string.gsub(name,"ğŸ‘¨â€ğŸ‘¨â€ğŸ‘§","ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦ğŸ‘¨â€ğŸ‘¨â€ğŸ‘§ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦ğŸ‘¨â€ğŸ‘¨â€ğŸ‘¦")
+name = string.gsub(name,"ğŸ•’","ğŸ•’ğŸ•’ğŸ•’ğŸ•’ğŸ•’ğŸ•’ğŸ•“ğŸ•’ğŸ•’ğŸ•’")
+name = string.gsub(name,"ğŸ•¤","ğŸ•¥ğŸ•¥ğŸ•¥ğŸ•¥ğŸ•¥ğŸ•¤ğŸ•¥ğŸ•¥ğŸ•¥")
+name = string.gsub(name,"âŒ›ï¸","â³â³â³â³â³â³âŒ›ï¸â³â³")
+name = string.gsub(name,"ğŸ“…","ğŸ“†ğŸ“†ğŸ“†ğŸ“†ğŸ“†ğŸ“†ğŸ“…ğŸ“†ğŸ“†")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ø§Ù„Ø§Ø®ØªÙ„Ø§Ù ~ {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak::Set:Moktlf"..msg.chat_id_) or "").."" then 
 if not database:get(bot_id.."Tshak:Set:Moktlf:Bot"..msg.chat_id_) then 
 database:del(bot_id.."Tshak::Set:Moktlf"..msg.chat_id_)
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÇáãÎÊáİ }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø§Ù„Ù…Ø®ØªÙ„Ù }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Moktlf:Bot"..msg.chat_id_,true)
 end
-if text == "ÇãËáå" then
+if text == "Ø§Ù…Ø«Ù„Ù‡" then
 if database:get(bot_id.."Tshak:Lock:Games"..msg.chat_id_) then
-mthal = {"ÌæÒ","ÖÑÇØå","ÇáÍÈá","ÇáÍÇİí","ÔŞÑå","ÈíÏß","ÓáÇíå","ÇáäÎáå","ÇáÎíá","ÍÏÇÏ","ÇáãÈáá","íÑßÕ","ŞÑÏ","ÇáÚäÈ","ÇáÚãå","ÇáÎÈÒ","ÈÇáÍÕÇÏ","ÔåÑ","Ôßå","íßÍáå",};
+mthal = {"Ø¬ÙˆØ²","Ø¶Ø±Ø§Ø·Ù‡","Ø§Ù„Ø­Ø¨Ù„","Ø§Ù„Ø­Ø§ÙÙŠ","Ø´Ù‚Ø±Ù‡","Ø¨ÙŠØ¯Ùƒ","Ø³Ù„Ø§ÙŠÙ‡","Ø§Ù„Ù†Ø®Ù„Ù‡","Ø§Ù„Ø®ÙŠÙ„","Ø­Ø¯Ø§Ø¯","Ø§Ù„Ù…Ø¨Ù„Ù„","ÙŠØ±ÙƒØµ","Ù‚Ø±Ø¯","Ø§Ù„Ø¹Ù†Ø¨","Ø§Ù„Ø¹Ù…Ù‡","Ø§Ù„Ø®Ø¨Ø²","Ø¨Ø§Ù„Ø­ØµØ§Ø¯","Ø´Ù‡Ø±","Ø´ÙƒÙ‡","ÙŠÙƒØ­Ù„Ù‡",};
 name = mthal[math.random(#mthal)]
 database:set(bot_id.."Tshak:Set:Amth"..msg.chat_id_,name)
 database:del(bot_id.."Tshak:Set:Amth:Bot"..msg.chat_id_)
-name = string.gsub(name,"ÌæÒ","íäØí____ááãÇÚÏå Óäæä")
-name = string.gsub(name,"ÖÑÇØå","Çáí íÓæŞ ÇáãØí íÊÍãá___")
-name = string.gsub(name,"ÈíÏß","Çßá___ãÍÏ íİíÏß")
-name = string.gsub(name,"ÇáÍÇİí","ÊÌÏí ãä___äÚÇá")
-name = string.gsub(name,"ÔŞÑå","ãÚ ÇáÎíá íÇ___")
-name = string.gsub(name,"ÇáäÎáå","ÇáØæá Øæá___æÇáÚŞá ÚŞá ÇáÕÎáÉ")
-name = string.gsub(name,"ÓáÇíå","ÈÇáæÌå ÇãÑÇíÉ æÈÇáÙåÑ___")
-name = string.gsub(name,"ÇáÎíá","ãä ŞáÉ___ÔÏæ Úáì ÇááÇÈ ÓÑæÌ")
-name = string.gsub(name,"ÍÏÇÏ","ãæßá ãä ÕÎã æÌåå ßÇá Âäí___")
-name = string.gsub(name,"ÇáãÈáá","___ãÇ íÎÇİ ãä ÇáãØÑ")
-name = string.gsub(name,"ÇáÍÈá","Çááí ÊáÏÛÉ ÇáÍíÉ íÎÇİ ãä ÌÑÉ___")
-name = string.gsub(name,"íÑßÕ","ÇáãÇíÚÑİ___íßæá ÇáßÇÚ ÚæÌå")
-name = string.gsub(name,"ÇáÚäÈ","ÇáãÇíáæÍ___íßæá ÍÇãÖ")
-name = string.gsub(name,"ÇáÚãå","___ÅĞÇ ÍÈÊ ÇáäÉ ÇÈáíÓ íÏÎá ÇáÌäÉ")
-name = string.gsub(name,"ÇáÎÈÒ","ÇäØí___ááÎÈÇÒ ÍÊì áæ íÇßá äÕå")
-name = string.gsub(name,"ÈÇÍÕÇÏ","ÇÓãÉ___æãäÌáå ãßÓæÑ")
-name = string.gsub(name,"ÔåÑ","ÇãÔí__æáÇ ÊÚÈÑ äåÑ")
-name = string.gsub(name,"Ôßå","íÇãä ÊÚÈ íÇãä__íÇ ãä Úáì ÇáÍÇÖÑ áßÉ")
-name = string.gsub(name,"ÇáŞÑÏ","__ÈÚíä Çãå ÛÒÇá")
-name = string.gsub(name,"íßÍáå","ÇÌå___ÚãÇåÇ")
-send(msg.chat_id_, msg.id_,"?? ? ÇÓÑÚ æÇÍÏ íßãá ÇáãËá ~ {"..name.."}")
+name = string.gsub(name,"Ø¬ÙˆØ²","ÙŠÙ†Ø·ÙŠ____Ù„Ù„Ù…Ø§Ø¹Ø¯Ù‡ Ø³Ù†ÙˆÙ†")
+name = string.gsub(name,"Ø¶Ø±Ø§Ø·Ù‡","Ø§Ù„ÙŠ ÙŠØ³ÙˆÙ‚ Ø§Ù„Ù…Ø·ÙŠ ÙŠØªØ­Ù…Ù„___")
+name = string.gsub(name,"Ø¨ÙŠØ¯Ùƒ","Ø§ÙƒÙ„___Ù…Ø­Ø¯ ÙŠÙÙŠØ¯Ùƒ")
+name = string.gsub(name,"Ø§Ù„Ø­Ø§ÙÙŠ","ØªØ¬Ø¯ÙŠ Ù…Ù†___Ù†Ø¹Ø§Ù„")
+name = string.gsub(name,"Ø´Ù‚Ø±Ù‡","Ù…Ø¹ Ø§Ù„Ø®ÙŠÙ„ ÙŠØ§___")
+name = string.gsub(name,"Ø§Ù„Ù†Ø®Ù„Ù‡","Ø§Ù„Ø·ÙˆÙ„ Ø·ÙˆÙ„___ÙˆØ§Ù„Ø¹Ù‚Ù„ Ø¹Ù‚Ù„ Ø§Ù„ØµØ®Ù„Ø©")
+name = string.gsub(name,"Ø³Ù„Ø§ÙŠÙ‡","Ø¨Ø§Ù„ÙˆØ¬Ù‡ Ø§Ù…Ø±Ø§ÙŠØ© ÙˆØ¨Ø§Ù„Ø¸Ù‡Ø±___")
+name = string.gsub(name,"Ø§Ù„Ø®ÙŠÙ„","Ù…Ù† Ù‚Ù„Ø©___Ø´Ø¯Ùˆ Ø¹Ù„Ù‰ Ø§Ù„Ú†Ù„Ø§Ø¨ Ø³Ø±ÙˆØ¬")
+name = string.gsub(name,"Ø­Ø¯Ø§Ø¯","Ù…ÙˆÙƒÙ„ Ù…Ù† ØµØ®Ù… ÙˆØ¬Ù‡Ù‡ ÙƒØ§Ù„ Ø¢Ù†ÙŠ___")
+name = string.gsub(name,"Ø§Ù„Ù…Ø¨Ù„Ù„","___Ù…Ø§ ÙŠØ®Ø§Ù Ù…Ù† Ø§Ù„Ù…Ø·Ø±")
+name = string.gsub(name,"Ø§Ù„Ø­Ø¨Ù„","Ø§Ù„Ù„ÙŠ ØªÙ„Ø¯ØºØ© Ø§Ù„Ø­ÙŠØ© ÙŠØ®Ø§Ù Ù…Ù† Ø¬Ø±Ø©___")
+name = string.gsub(name,"ÙŠØ±ÙƒØµ","Ø§Ù„Ù…Ø§ÙŠØ¹Ø±Ù___ÙŠÙƒÙˆÙ„ Ø§Ù„ÙƒØ§Ø¹ Ø¹ÙˆØ¬Ù‡")
+name = string.gsub(name,"Ø§Ù„Ø¹Ù†Ø¨","Ø§Ù„Ù…Ø§ÙŠÙ„ÙˆØ­___ÙŠÙƒÙˆÙ„ Ø­Ø§Ù…Ø¶")
+name = string.gsub(name,"Ø§Ù„Ø¹Ù…Ù‡","___Ø¥Ø°Ø§ Ø­Ø¨Øª Ø§Ù„Ú†Ù†Ø© Ø§Ø¨Ù„ÙŠØ³ ÙŠØ¯Ø®Ù„ Ø§Ù„Ø¬Ù†Ø©")
+name = string.gsub(name,"Ø§Ù„Ø®Ø¨Ø²","Ø§Ù†Ø·ÙŠ___Ù„Ù„Ø®Ø¨Ø§Ø² Ø­ØªÙ‰ Ù„Ùˆ ÙŠØ§ÙƒÙ„ Ù†ØµÙ‡")
+name = string.gsub(name,"Ø¨Ø§Ø­ØµØ§Ø¯","Ø§Ø³Ù…Ø©___ÙˆÙ…Ù†Ø¬Ù„Ù‡ Ù…ÙƒØ³ÙˆØ±")
+name = string.gsub(name,"Ø´Ù‡Ø±","Ø§Ù…Ø´ÙŠ__ÙˆÙ„Ø§ ØªØ¹Ø¨Ø± Ù†Ù‡Ø±")
+name = string.gsub(name,"Ø´ÙƒÙ‡","ÙŠØ§Ù…Ù† ØªØ¹Ø¨ ÙŠØ§Ù…Ù†__ÙŠØ§ Ù…Ù† Ø¹Ù„Ù‰ Ø§Ù„Ø­Ø§Ø¶Ø± Ù„ÙƒØ©")
+name = string.gsub(name,"Ø§Ù„Ù‚Ø±Ø¯","__Ø¨Ø¹ÙŠÙ† Ø§Ù…Ù‡ ØºØ²Ø§Ù„")
+name = string.gsub(name,"ÙŠÙƒØ­Ù„Ù‡","Ø§Ø¬Ù‡___Ø¹Ù…Ø§Ù‡Ø§")
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠÙƒÙ…Ù„ Ø§Ù„Ù…Ø«Ù„ ~ {"..name.."}")
 return false
 end
 end
 if text == ""..(database:get(bot_id.."Tshak:Set:Amth"..msg.chat_id_) or "").."" then 
 if not database:get(bot_id.."Tshak:Set:Amth:Bot"..msg.chat_id_) then 
 database:del(bot_id.."Tshak:Set:Amth"..msg.chat_id_)
-send(msg.chat_id_, msg.id_,"?? ? Çáİ ãÈÑæß áŞÏ İÒÊ \n? ? ááÚÈ ãÑå ÇÎÑå ÇÑÓá ~{ ÇãËáå }")
+send(msg.chat_id_, msg.id_,"ğŸ â”‡ Ø§Ù„Ù Ù…Ø¨Ø±ÙˆÙƒ Ù„Ù‚Ø¯ ÙØ²Øª \nâ™» â”‡ Ù„Ù„Ø¹Ø¨ Ù…Ø±Ù‡ Ø§Ø®Ø±Ù‡ Ø§Ø±Ø³Ù„ ~{ Ø§Ù…Ø«Ù„Ù‡ }")
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id.."Tshak:Set:Amth:Bot"..msg.chat_id_,true)
 end
-if text == "ÊÚØíá ÇáÇáÚÇÈ" and Owner(msg) then   
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨" and Owner(msg) then   
 database:del(bot_id.."Tshak:Lock:Games"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"\n? ? Êã ÊÚØíá ÇáÇáÚÇÈ") 
+send(msg.chat_id_, msg.id_,"\nâ˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨") 
 end
-if text == "ÊİÚíá ÇáÇáÚÇÈ" and Owner(msg) then  
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨" and Owner(msg) then  
 database:set(bot_id.."Tshak:Lock:Games"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"\n? ? Êã ÊİÚíá ÇáÇáÚÇÈ") 
+send(msg.chat_id_, msg.id_,"\nâ˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨") 
 end
-if text == 'ÇáÇáÚÇÈ' then
+if text == 'Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨' then
 Teext = [[
-*??| ÇåáÇ Èß İí ÇáÇáÚÇÈ  
-? ? ? ? ? ? ? ? ?
-??| ŞÇÆãå ÇáÇáÚÇÈ áÏíß ?
-? ? ? ? ? ? ? ? ? 
-??|? ?ÊÑÊíÈ? áÊÑÊíÈ ÇáßáãÇÊ
-??|? ?ÇáÓãÇíáÇÊ? áÓãÇíáÇÊ ÇáßáãÇÊ
-????|? ?ÇáÇÓÑÚ? áÇÓÑÚ ÇÌÇÈå
-??|? ?ÇáÍÒæÑå? áÊÍÒÑ ÇáÌãáå
-??|? ?ÇáãÚÇäí? áãÚäÇ ÇáÓãÇíáÇÊ
-??|? ?ÇáÚßÓ? ÚßÓ ÇáßáÇã 
-??|? ?ÇáÈÇÊ? áÚÈå ÇáÈÇÊ Çæ ãÍíÈÓ
-??|? ?ÇáÎãä? ÊÎãíä Çáßáãå
-??|? ?ÇáÇãËáå? áÚÈå ÇáÇãËáå 
-??|? ?ÇáãÎÊáİ? áÚÈå ÇáãÎÊáİÇÊ
-? ? ? ? ? ? ? ? ?
-?? ? ãÌæåÑÇÊí » áÚÑÖ ÚÏÏ ÇáÇÑÈÇÍ
-?? ? ÈíÚ ãÌæåÑÇÊí + ÇáÚÏÏ » 
-?? ? áÓÊÈÏÇá ßá ãÌæåÑå ÈÜ(50) ÑÓÇáå*
-? ? ? ? ? ? ? ? ?
-?? ? Ch ~? @PIRATE_TE3M ??
+*ğŸ®| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨  
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¬| Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ù„Ø¯ÙŠÙƒ â†“
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸš¦|â†« â¨ØªØ±ØªÙŠØ¨â© Ù„ØªØ±ØªÙŠØ¨ Ø§Ù„ÙƒÙ„Ù…Ø§Øª
+ğŸŒ€|â†« â¨Ø§Ù„Ø³Ù…Ø§ÙŠÙ„Ø§Øªâ© Ù„Ø³Ù…Ø§ÙŠÙ„Ø§Øª Ø§Ù„ÙƒÙ„Ù…Ø§Øª
+â›¹ï¸â€â™‚ï¸|â†« â¨Ø§Ù„Ø§Ø³Ø±Ø¹â© Ù„Ø§Ø³Ø±Ø¹ Ø§Ø¬Ø§Ø¨Ù‡
+ğŸ°|â†« â¨Ø§Ù„Ø­Ø²ÙˆØ±Ù‡â© Ù„ØªØ­Ø²Ø± Ø§Ù„Ø¬Ù…Ù„Ù‡
+ğŸ§©|â†« â¨Ø§Ù„Ù…Ø¹Ø§Ù†ÙŠâ© Ù„Ù…Ø¹Ù†Ø§ Ø§Ù„Ø³Ù…Ø§ÙŠÙ„Ø§Øª
+âœ–ï¸|â†« â¨Ø§Ù„Ø¹ÙƒØ³â© Ø¹ÙƒØ³ Ø§Ù„ÙƒÙ„Ø§Ù… 
+ğŸ²|â†« â¨Ø§Ù„Ø¨Ø§Øªâ© Ù„Ø¹Ø¨Ù‡ Ø§Ù„Ø¨Ø§Øª Ø§Ùˆ Ù…Ø­ÙŠØ¨Ø³
+ğŸ¨|â†« â¨Ø§Ù„Ø®Ù…Ù†â© ØªØ®Ù…ÙŠÙ† Ø§Ù„ÙƒÙ„Ù…Ù‡
+ğŸ’­|â†« â¨Ø§Ù„Ø§Ù…Ø«Ù„Ù‡â© Ù„Ø¹Ø¨Ù‡ Ø§Ù„Ø§Ù…Ø«Ù„Ù‡ 
+ğŸ§²|â†« â¨Ø§Ù„Ù…Ø®ØªÙ„Ùâ© Ù„Ø¹Ø¨Ù‡ Ø§Ù„Ù…Ø®ØªÙ„ÙØ§Øª
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“Œ â”‡ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ Â» Ù„Ø¹Ø±Ø¶ Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø±Ø¨Ø§Ø­
+ğŸ â”‡ Ø¨ÙŠØ¹ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ + Ø§Ù„Ø¹Ø¯Ø¯ Â» 
+ğŸ”– â”‡ Ù„Ø³ØªØ¨Ø¯Ø§Ù„ ÙƒÙ„ Ù…Ø¬ÙˆÙ‡Ø±Ù‡ Ø¨Ù€(50) Ø±Ø³Ø§Ù„Ù‡*
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¡ â”‡ Ch ~âª¼ @PIRATE_TE3M ğŸƒ
 ]]
 send(msg.chat_id_, msg.id_,Teext) 
 end
-if text == 'ÑÓÇÆáí' then
+if text == 'Ø±Ø³Ø§Ø¦Ù„ÙŠ' then
 local nummsg = database:get(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 1
-local Text = '?? ? ÚÏÏ ÑÓÇÆáß åäÇ *~ '..nummsg..'*'
+local Text = 'ğŸ’Œ â”‡ Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„Ùƒ Ù‡Ù†Ø§ *~ '..nummsg..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'ãÓÍ ÑÓÇÆáí' then
+if text == 'Ù…Ø³Ø­ Ø±Ø³Ø§Ø¦Ù„ÙŠ' then
 database:del(bot_id..'Pir3te:messageUser'..msg.chat_id_..':'..msg.sender_user_id_)
-local Text = '? ? Êã ãÓÍ ÌãíÚ ÑÓÇÆáß '
+local Text = 'â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø±Ø³Ø§Ø¦Ù„Ùƒ '
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'ÓÍßÇÊí' or text == 'ÊÚÏíáÇÊí' then
+if text == 'Ø³Ø­ÙƒØ§ØªÙŠ' or text == 'ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' then
 local edit = database:get(bot_id..'Pir3te:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
-local Text = '? ? ÚÏÏ ÇáÊÚÏíáÇÊ åäÇ *~ '..edit..'*'
+local Text = 'âœ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§Øª Ù‡Ù†Ø§ *~ '..edit..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'ãÓÍ ÓÍßÇÊí' or text == 'ãÓÍ ÊÚÏíáÇÊí' then
+if text == 'Ù…Ø³Ø­ Ø³Ø­ÙƒØ§ØªÙŠ' or text == 'Ù…Ø³Ø­ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' then
 database:del(bot_id..'Pir3te:message_edit'..msg.chat_id_..':'..msg.sender_user_id_)
-local Text = '? ? Êã ãÓÍ ÌãíÚ ÊÚÏíáÇÊß '
+local Text = 'â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ '
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'ÌåÇÊí' then
+if text == 'Ø¬Ù‡Ø§ØªÙŠ' then
 local addmem = database:get(bot_id.."Pir3te:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
-local Text = '?? ? ÚÏÏ ÌåÇÊß ÇáãÖÇİå åäÇ *~ '..addmem..'*'
+local Text = 'ğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø¬Ù‡Ø§ØªÙƒ Ø§Ù„Ù…Ø¶Ø§ÙÙ‡ Ù‡Ù†Ø§ *~ '..addmem..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'ãÓÍ ÌåÇÊí' then
+if text == 'Ù…Ø³Ø­ Ø¬Ù‡Ø§ØªÙŠ' then
 database:del(bot_id..'Pir3te:Add:Memp'..msg.chat_id_..':'..msg.sender_user_id_)
-local Text = '? ? Êã ãÓÍ ÌãíÚ ÌåÇÊß ÇáãÖÇİå '
+local Text = 'â˜‘ â”‡ ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø¬Ù‡Ø§ØªÙƒ Ø§Ù„Ù…Ø¶Ø§ÙÙ‡ '
 send(msg.chat_id_, msg.id_,Text) 
 end
 
-if text == "ãÌæåÑÇÊí" then 
+if text == "Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ" then 
 local Num = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_) or 0
 if Num == 0 then 
-Text = "?? ? áã ÊáÚÈ Çí áÚÈå ááÍÕæá Úáì ÌæÇåÑ"
+Text = "ğŸ“« â”‡ Ù„Ù… ØªÙ„Ø¹Ø¨ Ø§ÙŠ Ù„Ø¹Ø¨Ù‡ Ù„Ù„Ø­ØµÙˆÙ„ Ø¹Ù„Ù‰ Ø¬ÙˆØ§Ù‡Ø±"
 else
-Text = "?? ? ÚÏÏ ÌæÇåÑ ÇáÊí ÑÍÈÊåÇ åí *~ { "..Num.." } ãÌæåÑå *"
+Text = "ğŸ“® â”‡ Ø¹Ø¯Ø¯ Ø¬ÙˆØ§Ù‡Ø± Ø§Ù„ØªÙŠ Ø±Ø­Ø¨ØªÙ‡Ø§ Ù‡ÙŠ *~ { "..Num.." } Ù…Ø¬ÙˆÙ‡Ø±Ù‡ *"
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text and text:match("^ÈíÚ ãÌæåÑÇÊí (%d+)$") then
-local NUMPY = text:match("^ÈíÚ ãÌæåÑÇÊí (%d+)$") 
+if text and text:match("^Ø¨ÙŠØ¹ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ (%d+)$") then
+local NUMPY = text:match("^Ø¨ÙŠØ¹ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ (%d+)$") 
 if tonumber(NUMPY) == tonumber(0) then
-send(msg.chat_id_,msg.id_,"\n*?? ? áÇ ÇÓÊØíÚ ÇáÈíÚ ÇŞá ãä 1 *") 
+send(msg.chat_id_,msg.id_,"\n*ğŸ“® â”‡ Ù„Ø§ Ø§Ø³ØªØ·ÙŠØ¹ Ø§Ù„Ø¨ÙŠØ¹ Ø§Ù‚Ù„ Ù…Ù† 1 *") 
 return false 
 end
 if tonumber(database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_)) == tonumber(0) then
-send(msg.chat_id_,msg.id_,"?? ? áíÓ áÏíß ÌæÇåÑ ãä ÇáÇáÚÇÈ \n?? ? ÇĞÇ ßäÊ ÊÑíÏ ÑÈÍ ÇáÌæÇåÑ \n?? ? ÇÑÓá ÇáÇáÚÇÈ æÇÈÏÃ ÇááÚÈ ! ") 
+send(msg.chat_id_,msg.id_,"ğŸ”– â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø¬ÙˆØ§Ù‡Ø± Ù…Ù† Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ \nğŸ“¬ â”‡ Ø§Ø°Ø§ ÙƒÙ†Øª ØªØ±ÙŠØ¯ Ø±Ø¨Ø­ Ø§Ù„Ø¬ÙˆØ§Ù‡Ø± \nğŸ“Œ â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ ÙˆØ§Ø¨Ø¯Ø£ Ø§Ù„Ù„Ø¹Ø¨ ! ") 
 else
 local NUM_GAMES = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_)
 if tonumber(NUMPY) > tonumber(NUM_GAMES) then
-send(msg.chat_id_,msg.id_,"\n?? ? áíÓ áÏíß ÌæÇåÑ ÈåÇĞÇ ÇáÚÏÏ \n?? ? áÒíÇÏÉ ãÌæåÑÇÊß İí ÇááÚÈå \n?? ? ÇÑÓá ÇáÇáÚÇÈ æÇÈÏÃ ÇááÚÈ !") 
+send(msg.chat_id_,msg.id_,"\nğŸ’¢ â”‡ Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø¬ÙˆØ§Ù‡Ø± Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ø¹Ø¯Ø¯ \nğŸ“¬ â”‡ Ù„Ø²ÙŠØ§Ø¯Ø© Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ ÙÙŠ Ø§Ù„Ù„Ø¹Ø¨Ù‡ \nğŸ“Œ â”‡ Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ ÙˆØ§Ø¨Ø¯Ø£ Ø§Ù„Ù„Ø¹Ø¨ !") 
 return false 
 end
 local NUMNKO = (NUMPY * 50)
 database:decrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_,NUMPY)  
 database:incrby(bot_id.."Pir3te:messageUser"..msg.chat_id_..":"..msg.sender_user_id_,NUMNKO)  
-send(msg.chat_id_,msg.id_,"? ? Êã ÎÕã *~ { "..NUMPY.." }* ãä ãÌæåÑÇÊß \n?? ? æÊã ÇÖÇİÉ* ~ { "..(NUMPY * 50).." } ÑÓÇáå Çáì ÑÓÇáß *")
+send(msg.chat_id_,msg.id_,"â˜‘ â”‡ ØªÙ… Ø®ØµÙ… *~ { "..NUMPY.." }* Ù…Ù† Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ \nğŸ“¨ â”‡ ÙˆØªÙ… Ø§Ø¶Ø§ÙØ©* ~ { "..(NUMPY * 50).." } Ø±Ø³Ø§Ù„Ù‡ Ø§Ù„Ù‰ Ø±Ø³Ø§Ù„Ùƒ *")
 end 
 return false 
 end
-if text ==("ãÓÍ") and Addictive(msg) and tonumber(msg.reply_to_message_id_) > 0 then
+if text ==("Ù…Ø³Ø­") and Addictive(msg) and tonumber(msg.reply_to_message_id_) > 0 then
 DeleteMessage(msg.chat_id_,{[0] = tonumber(msg.reply_to_message_id_),msg.id_})   
 end   
 if database:get(bot_id.."Tshak:numadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text and text:match("^ÇáÛÇÁ$") then 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡$") then 
 database:del(bot_id.."Tshak:id:user"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_, "?? ? Êã ÇáÛÇÁ ÇáÇãÑ ") 
+send(msg.chat_id_, msg.id_, "ğŸ“® â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ù…Ø± ") 
 database:del(bot_id.."Tshak:numadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 return false  
 end 
@@ -12739,12 +5350,12 @@ local numadded = string.match(text, "(%d+)")
 local iduserr = database:get(bot_id.."Tshak:id:user"..msg.chat_id_)  
 database:del(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..msg.sender_user_id_) 
 database:incrby(bot_id.."Pir3te:messageUser"..msg.chat_id_..":"..iduserr,numadded)  
-send(msg.chat_id_, msg.id_,"? ? Êã ÇÖÇİÉ áå {"..numadded.."} ãä ÇáÑÓÇÆá")  
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© Ù„Ù‡ {"..numadded.."} Ù…Ù† Ø§Ù„Ø±Ø³Ø§Ø¦Ù„")  
 end
 if database:get(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
-if text and text:match("^ÇáÛÇÁ$") then 
+if text and text:match("^Ø§Ù„ØºØ§Ø¡$") then 
 database:del(bot_id.."Tshak:idgem:user"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_, "? ? Êã ÇáÛÇÁ ÇáÇãÑ ") 
+send(msg.chat_id_, msg.id_, "â˜‘ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø§Ù…Ø± ") 
 database:del(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_)  
 return false  
 end 
@@ -12752,62 +5363,62 @@ database:del(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_use
 local numadded = string.match(text, "(%d+)") 
 local iduserr = database:get(bot_id.."Tshak:idgem:user"..msg.chat_id_)  
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..iduserr,numadded)  
-send(msg.chat_id_, msg.id_,"? ? Êã ÇÖÇİÉ áå {"..numadded.."} ãä ÇáãÌæåÑÇÊ")  
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© Ù„Ù‡ {"..numadded.."} Ù…Ù† Ø§Ù„Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª")  
 end
 ------------------------------------------------------------
-if text and text:match("^ÇÖİ ÑÓÇÆá (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
-Mohmad = text:match("^ÇÖİ ÑÓÇÆá (%d+)$")
+if text and text:match("^Ø§Ø¶Ù Ø±Ø³Ø§Ø¦Ù„ (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then    
+Mohmad = text:match("^Ø§Ø¶Ù Ø±Ø³Ø§Ø¦Ù„ (%d+)$")
 database:set(bot_id.."Tshak:id:user"..msg.chat_id_,Mohmad)  
 database:setex(bot_id.."Tshak:numadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
-send(msg.chat_id_, msg.id_, "? ? ÇÑÓá áí ÚÏÏ ÇáÑÓÇÆá ÇáÇä") 
+send(msg.chat_id_, msg.id_, "âœ‰ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø¹Ø¯Ø¯ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ Ø§Ù„Ø§Ù†") 
 return false
 end
-if text and text:match("^ÇÖİ ãÌæåÑÇÊ (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
-Mohmad = text:match("^ÇÖİ ãÌæåÑÇÊ (%d+)$")
+if text and text:match("^Ø§Ø¶Ù Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª (%d+)$") and msg.reply_to_message_id_ == 0 and Constructor(msg) then  
+Mohmad = text:match("^Ø§Ø¶Ù Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª (%d+)$")
 database:set(bot_id.."Tshak:idgem:user"..msg.chat_id_,Mohmad)  
 database:setex(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
-send(msg.chat_id_, msg.id_, "?? ? ÇÑÓá áí ÚÏÏ ÇáãÌæåÑÇÊ ÇáÇä") 
+send(msg.chat_id_, msg.id_, "ğŸ’  â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª Ø§Ù„Ø§Ù†") 
 return false
 end
-if text and text:match("^ÇÖİ ãÌæåÑÇÊ (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
-local Num = text:match("^ÇÖİ ãÌæåÑÇÊ (%d+)$")
+if text and text:match("^Ø§Ø¶Ù Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
+local Num = text:match("^Ø§Ø¶Ù Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª (%d+)$")
 function reply(extra, result, success)
 database:incrby(bot_id.."Tshak:Add:Num"..msg.chat_id_..result.sender_user_id_,Num)  
-send(msg.chat_id_, msg.id_,"? ? Êã ÇÖÇİÉ áå {"..Num.."} ãä ÇáãÌæåÑÇÊ")  
+send(msg.chat_id_, msg.id_,"â˜‘ â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© Ù„Ù‡ {"..Num.."} Ù…Ù† Ø§Ù„Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
-if text and text:match("^ÇÖİ ÑÓÇÆá (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
-local Num = text:match("^ÇÖİ ÑÓÇÆá (%d+)$")
+if text and text:match("^Ø§Ø¶Ù Ø±Ø³Ø§Ø¦Ù„ (%d+)$") and msg.reply_to_message_id_ ~= 0 and Constructor(msg) then
+local Num = text:match("^Ø§Ø¶Ù Ø±Ø³Ø§Ø¦Ù„ (%d+)$")
 function reply(extra, result, success)
 database:del(bot_id.."Tshak:Msg_User"..msg.chat_id_..":"..result.sender_user_id_) 
 database:incrby(bot_id.."Pir3te:messageUser"..msg.chat_id_..":"..result.sender_user_id_,Num)  
-send(msg.chat_id_, msg.id_, "\n? ? Êã ÇÖÇİÉ áå {"..Num.."} ãä ÇáÑÓÇÆá")  
+send(msg.chat_id_, msg.id_, "\nâ˜‘ â”‡ ØªÙ… Ø§Ø¶Ø§ÙØ© Ù„Ù‡ {"..Num.."} Ù…Ù† Ø§Ù„Ø±Ø³Ø§Ø¦Ù„")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_=msg.chat_id_,message_id_=tonumber(msg.reply_to_message_id_)},reply, nil)
 return false
 end
 
-if text == "ÊäÙíİ ÇáãÔÊÑßíä" and DevPir3te(msg) then
+if text == "ØªÙ†Ø¸ÙŠÙ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ†" and DevPir3te(msg) then
 local pv = database:smembers(bot_id..'Pir3te:UsersBot')  
 local sendok = 0
 for i = 1, #pv do
 tdcli_function({ID='GetChat',chat_id_ = pv[i]},function(arg,dataq)
 tdcli_function ({ ID = "SendChatAction",chat_id_ = pv[i], action_ = {  ID = "SendMessageTypingAction", progress_ = 100} },function(arg,data) 
 if data.ID and data.ID == "Ok"  then
-print('\27[30;33m»» THE USER IS SAVE ME ?\n»» '..pv[i]..'\n\27[1;37m')
+print('\27[30;33mÂ»Â» THE USER IS SAVE ME â†“\nÂ»Â» '..pv[i]..'\n\27[1;37m')
 else
-print('\27[30;31m»» THE USER IS BLOCK ME ?\n»» '..pv[i]..'\n\27[1;37m')
+print('\27[30;31mÂ»Â» THE USER IS BLOCK ME â†“\nÂ»Â» '..pv[i]..'\n\27[1;37m')
 database:srem(bot_id..'Pir3te:UsersBot',pv[i])  
 sendok = sendok + 1
 end
 if #pv == i then 
 if sendok == 0 then
-send(msg.chat_id_, msg.id_,'?? ? áÇ íæÌÏ ãÔÊÑßíä æåãííä')   
+send(msg.chat_id_, msg.id_,'ğŸ‘¤ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø´ØªØ±ÙƒÙŠÙ† ÙˆÙ‡Ù…ÙŠÙŠÙ†')   
 else
 local ok = #pv - sendok
-send(msg.chat_id_, msg.id_,'*?? ? ÚÏÏ ÇáãÔÊÑßíä ÇáÇä ~ '..#pv..'\n?? ? Êã ÇáÚËæÑ Úáì ~ '..sendok..' ãÔÊÑß ŞÇã ÈÍÙÑ ÇáÈæÊ\n? ? ÇÕÈÍ ÚÏÏ ÇáãÔÊÑßíä ÇáÇä ~ '..ok..' ãÔÊÑß *')   
+send(msg.chat_id_, msg.id_,'*ğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† Ø§Ù„Ø§Ù† ~ '..#pv..'\nğŸ’¢ â”‡ ØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ ~ '..sendok..' Ù…Ø´ØªØ±Ùƒ Ù‚Ø§Ù… Ø¨Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª\nâ˜‘ â”‡ Ø§ØµØ¨Ø­ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† Ø§Ù„Ø§Ù† ~ '..ok..' Ù…Ø´ØªØ±Ùƒ *')   
 end
 end
 end,nil)
@@ -12815,7 +5426,7 @@ end,nil)
 end
 return false
 end
-if text == "ÊäÙíİ ÇáßÑæÈÇÊ" and DevPir3te(msg) then
+if text == "ØªÙ†Ø¸ÙŠÙ Ø§Ù„ÙƒØ±ÙˆØ¨Ø§Øª" and DevPir3te(msg) then
 local group = database:smembers(bot_id..'Pir3te:Chek:Groups')  
 local w = 0
 local q = 0
@@ -12823,19 +5434,19 @@ for i = 1, #group do
 tdcli_function({ID='GetChat',chat_id_ = group[i]
 },function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
-print('\27[30;34m»» THE BOT IS NOT ADMIN ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;34mÂ»Â» THE BOT IS NOT ADMIN â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 w = w + 1
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 q = q + 1
-print('\27[30;35m»» THE BOT IS LEFT GROUP ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;35mÂ»Â» THE BOT IS LEFT GROUP â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 q = q + 1
-print('\27[30;36m»» THE BOT IS KICKED GROUP ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;36mÂ»Â» THE BOT IS KICKED GROUP â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 end
 if data and data.code_ and data.code_ == 400 then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
@@ -12843,29 +5454,29 @@ w = w + 1
 end
 if #group == i then 
 if (w + q) == 0 then
-send(msg.chat_id_, msg.id_,'?? ? áÇ ÊæÌÏ ãÌãæÚÇÊ æåãíå ')   
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¬Ù…ÙˆØ¹Ø§Øª ÙˆÙ‡Ù…ÙŠÙ‡ ')   
 else
 local Mohmad = (w + q)
 local sendok = #group - Mohmad
 if q == 0 then
 Mohmad = ''
 else
-Mohmad = '\n?? ?  Êã ÇÒÇáÉ ~ '..q..' ãÌãæÚÇÊ ãä ÇáÈæÊ'
+Mohmad = '\nğŸš¯ â”‡  ØªÙ… Ø§Ø²Ø§Ù„Ø© ~ '..q..' Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ù…Ù† Ø§Ù„Ø¨ÙˆØª'
 end
 if w == 0 then
 storm = ''
 else
-storm = '\n?? ?  Êã ÇÒÇáÉ ~'..w..' ãÌãæÚå áÇä ÇáÈæÊ ÚÖæ'
+storm = '\nğŸš¯ â”‡  ØªÙ… Ø§Ø²Ø§Ù„Ø© ~'..w..' Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ù„Ø§Ù† Ø§Ù„Ø¨ÙˆØª Ø¹Ø¶Ùˆ'
 end
-send(msg.chat_id_, msg.id_,'*?? ?  ÚÏÏ ÇáãÌãæÚÇÊ ÇáÇä ~ '..#group..' ãÌãæÚå '..storm..''..Mohmad..'\n?? ? ÇÕÈÍ ÚÏÏ ÇáãÌãæÚÇÊ ÇáÇä ~ '..sendok..' ãÌãæÚÇÊ*\n')   
+send(msg.chat_id_, msg.id_,'*ğŸ‘¥ â”‡  Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„Ø§Ù† ~ '..#group..' Ù…Ø¬Ù…ÙˆØ¹Ù‡ '..storm..''..Mohmad..'\nğŸ”˜ â”‡ Ø§ØµØ¨Ø­ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„Ø§Ù† ~ '..sendok..' Ù…Ø¬Ù…ÙˆØ¹Ø§Øª*\n')   
 end
 end
 end,nil)
 end
 return false
 end
-if text == ("ÊÍÏíË ÇáÓæÑÓ") and DevPir3te(msg) then  
-send(msg.chat_id_,msg.id_,'? ? Êã ÇáÊÍÏíË')
+if text == ("ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³") and DevPir3te(msg) then  
+send(msg.chat_id_,msg.id_,'â˜‘ â”‡ ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ«')
 os.execute('rm -rf Pir3te.lua')
 os.execute('rm -rf start.lua')
 os.execute('wget https://raw.githubusercontent.com/Pir3te/Pir3te/master/Pir3te.lua')
@@ -12875,25 +5486,25 @@ return false
 end
 
 
-if text == 'ÊİÚíá ÇáÈæÊ ÇáÎÏãí' and DevPir3te(msg) then  
+if text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ' and DevPir3te(msg) then  
 database:del(bot_id..'Pir3te:Free:Add:Bots') 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊİÚíá ÇáÈæÊ ÇáÎÏãí ') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ ') 
 end
-if text == 'ÊÚØíá ÇáÈæÊ ÇáÎÏãí' and DevPir3te(msg) then  
+if text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ' and DevPir3te(msg) then  
 database:set(bot_id..'Pir3te:Free:Add:Bots',true) 
-send(msg.chat_id_, msg.id_,'? ? Êã ÊÚØíá ÇáÈæÊ ÇáÎÏãí') 
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ') 
 end
-if text and text:match("^ÊÚíä ÚÏÏ ÇáÇÚÖÇÁ (%d+)$") and DevPir3te(msg) then
-local Num = text:match("ÊÚíä ÚÏÏ ÇáÇÚÖÇÁ (%d+)$") 
+if text and text:match("^ØªØ¹ÙŠÙ† Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ (%d+)$") and DevPir3te(msg) then
+local Num = text:match("ØªØ¹ÙŠÙ† Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ (%d+)$") 
 database:set(bot_id..'Pir3te:Num:Add:Bot',Num) 
-send(msg.chat_id_, msg.id_,'?? ?  Êã æÖÚ ÚÏÏ ÇáÇÚÖÇÁ *~'..Num..'* ÚÖæ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡  ØªÙ… ÙˆØ¶Ø¹ Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ *~'..Num..'* Ø¹Ø¶Ùˆ')
 end
-if text =='ÇáÇÍÕÇÆíÇÊ' and DevBot(msg) then
+if text =='Ø§Ù„Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª' and DevBot(msg) then
 local Groups = database:scard(bot_id..'Pir3te:Chek:Groups')  
 local Users = database:scard(bot_id..'Pir3te:UsersBot')  
-send(msg.chat_id_, msg.id_,'?? ? ÇÍÕÇÆíÇÊ ÇáÈæÊ \n\n?? ? ÚÏÏ ÇáãÌãæÚÇÊ *~ '..Groups..'\n?? ? ÚÏÏ ÇáãÔÊÑßíä ~ '..Users..'*')
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡ Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª Ø§Ù„Ø¨ÙˆØª \n\nğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª *~ '..Groups..'\nğŸ‘¤ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† ~ '..Users..'*')
 end
-if text == 'ÌáÈ äÓÎå ÇÍÊíÇØíå' and DevPir3te(msg) then
+if text == 'Ø¬Ù„Ø¨ Ù†Ø³Ø®Ù‡ Ø§Ø­ØªÙŠØ§Ø·ÙŠÙ‡' and DevPir3te(msg) then
 local list = database:smembers(bot_id..'Pir3te:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
@@ -12958,9 +5569,9 @@ t = t..'}}'
 local File = io.open('./File_Libs/'..bot_id..'.json', "w")
 File:write(t)
 File:close()
-sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '?? ?  ÚÏÏ ãÌãæÚÇÊ ÇáÊí İí ÇáÈæÊ { '..#list..'}')
+sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', 'ğŸ“® â”‡  Ø¹Ø¯Ø¯ Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„ØªÙŠ ÙÙŠ Ø§Ù„Ø¨ÙˆØª { '..#list..'}')
 end
-if text == 'ÇáãØæÑ' or text == 'ãØæÑ' or text == 'ÇáãØæÑíä' then
+if text == 'Ø§Ù„Ù…Ø·ÙˆØ±' or text == 'Ù…Ø·ÙˆØ±' or text == 'Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†' then
 local Text_Dev = database:get(bot_id..'Pir3te:Text_Dev')
 if Text_Dev then 
 send(msg.chat_id_, msg.id_,Text_Dev)
@@ -12971,8 +5582,8 @@ sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
 end
 end
-if text == 'ÇáãáİÇÊ' and DevPir3te(msg) then
-t = '? ? ÌãíÚ ÇáãáİÇÊ : \n ? ? ? ? ? ? ? ? ? \n'
+if text == 'Ø§Ù„Ù…Ù„ÙØ§Øª' and DevPir3te(msg) then
+t = 'â˜‘ â”‡ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ù…Ù„ÙØ§Øª : \n â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n'
 i = 0
 for v in io.popen('ls Pir3te_Files'):lines() do
 if v:match(".lua$") then
@@ -12982,45 +5593,45 @@ end
 end
 send(msg.chat_id_, msg.id_,t)
 end
-if text == "ãÊÌÑ ÇáãáİÇÊ" or text == 'ÇáãÊÌÑ' then
+if text == "Ù…ØªØ¬Ø± Ø§Ù„Ù…Ù„ÙØ§Øª" or text == 'Ø§Ù„Ù…ØªØ¬Ø±' then
 if DevPir3te(msg) then
 local Get_Files, res = https.request("https://raw.githubusercontent.com/Pir3te/FII/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n?? ? ÇåáÇ Èß İí ãÊÌÑ ãáİÇÊ ŞÑÕÇä \n?? ? ÇáãáİÇÊ ÇáãæÌæÏå ÍÇáíÇ \n?? ? ? ? ? ? ? ? ??\n\n"
-local TextE = "\n?? ? ? ? ? ? ? ? ??\n?? ? ÊÏá ÚáÇãÉ (?) Çáãáİ ãİÚá\n".."?? ? ÊÏá ÚáÇãÉ (?) Çáãáİ ãÚØá\n"
+local TextS = "\nğŸ“‚ â”‡ Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ù…ØªØ¬Ø± Ù…Ù„ÙØ§Øª Ù‚Ø±ØµØ§Ù† \nğŸ“® â”‡ Ø§Ù„Ù…Ù„ÙØ§Øª Ø§Ù„Ù…ÙˆØ¬ÙˆØ¯Ù‡ Ø­Ø§Ù„ÙŠØ§ \nê”¹â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ê”¹\n\n"
+local TextE = "\nê”¹â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ê”¹\nğŸ“Œ â”‡ ØªØ¯Ù„ Ø¹Ù„Ø§Ù…Ø© (âœ”) Ø§Ù„Ù…Ù„Ù Ù…ÙØ¹Ù„\n".."ğŸ“Œ â”‡ ØªØ¯Ù„ Ø¹Ù„Ø§Ù…Ø© (âœ–) Ø§Ù„Ù…Ù„Ù Ù…Ø¹Ø·Ù„\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("Pir3te_Files/"..name,"r")
 if Check_File_is_Found then
 io.close(Check_File_is_Found)
-CeckFile = "(?)"
+CeckFile = "(âœ”)"
 else
-CeckFile = "(?)"
+CeckFile = "(âœ–)"
 end
 NumFile = NumFile + 1
-TextS = TextS..'*'..NumFile.."~?* {`"..name..'`} » '..CeckFile..'\n[- ??~> LinK About files]('..Info..')\n'
+TextS = TextS..'*'..NumFile.."~âª¼* {`"..name..'`} Â» '..CeckFile..'\n[- ğŸ“®~> LinK About files]('..Info..')\n'
 end
 send(msg.chat_id_, msg.id_,TextS..TextE) 
 end
 else
-send(msg.chat_id_, msg.id_,"?? ?  áÇ íæÌÏ ÇÊÕÇá ãä Çá api \n") 
+send(msg.chat_id_, msg.id_,"ğŸ“® â”‡  Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø§ØªØµØ§Ù„ Ù…Ù† Ø§Ù„ api \n") 
 end
 return false
 end
 end
 
-if text and text:match("^(ÊÚØíá ãáİ) (.*)(.lua)$") and DevPir3te(msg) then
-local name_t = {string.match(text, "^(ÊÚØíá ãáİ) (.*)(.lua)$")}
+if text and text:match("^(ØªØ¹Ø·ÙŠÙ„ Ù…Ù„Ù) (.*)(.lua)$") and DevPir3te(msg) then
+local name_t = {string.match(text, "^(ØªØ¹Ø·ÙŠÙ„ Ù…Ù„Ù) (.*)(.lua)$")}
 local file = name_t[2]..'.lua'
 local file_bot = io.open("Pir3te_Files/"..file,"r")
 if file_bot then
 io.close(file_bot)
-t = "*?? ?  Çáãáİ » {"..file.."}\n?? ?  Êã ÊÚØíáå æÍĞİå ÈäÌÇÍ \n?*"
+t = "*ğŸ—‚ â”‡  Ø§Ù„Ù…Ù„Ù Â» {"..file.."}\nğŸ“¬ â”‡  ØªÙ… ØªØ¹Ø·ÙŠÙ„Ù‡ ÙˆØ­Ø°ÙÙ‡ Ø¨Ù†Ø¬Ø§Ø­ \nâœ“*"
 else
-t = "*?? ?  ÈÇáÊÇßíÏ Êã ÊÚØíá æÍĞİ ãáİ » {"..file.."} \n?*"
+t = "*ğŸ“¬ â”‡  Ø¨Ø§Ù„ØªØ§ÙƒÙŠØ¯ ØªÙ… ØªØ¹Ø·ÙŠÙ„ ÙˆØ­Ø°Ù Ù…Ù„Ù Â» {"..file.."} \nâœ“*"
 end
 local json_file, res = https.request("https://raw.githubusercontent.com/Pir3te/FII/master/Files_Pir3te/"..file)
 if res == 200 then
@@ -13028,19 +5639,19 @@ os.execute("rm -fr Pir3te_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
 dofile('Pir3te.lua')  
 else
-send(msg.chat_id_, msg.id_,"*?? ?  ÚĞÑÇ áÇ íæÌÏ åÇßĞÇ ãáİ İí ÇáãÊÌÑ *\n") 
+send(msg.chat_id_, msg.id_,"*ğŸ“® â”‡  Ø¹Ø°Ø±Ø§ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù‡Ø§ÙƒØ°Ø§ Ù…Ù„Ù ÙÙŠ Ø§Ù„Ù…ØªØ¬Ø± *\n") 
 end
 return false
 end
-if text and text:match("^(ÊİÚíá ãáİ) (.*)(.lua)$") and DevPir3te(msg) then
-local name_t = {string.match(text, "^(ÊİÚíá ãáİ) (.*)(.lua)$")}
+if text and text:match("^(ØªÙØ¹ÙŠÙ„ Ù…Ù„Ù) (.*)(.lua)$") and DevPir3te(msg) then
+local name_t = {string.match(text, "^(ØªÙØ¹ÙŠÙ„ Ù…Ù„Ù) (.*)(.lua)$")}
 local file = name_t[2]..'.lua'
 local file_bot = io.open("Pir3te_Files/"..file,"r")
 if file_bot then
 io.close(file_bot)
-t = "*?? ?  ÈÇáÊÇßíÏ Êã ÊäÒíá æÊİÚíá ãáİ » {"..file.."} \n?*"
+t = "*ğŸ“¬ â”‡  Ø¨Ø§Ù„ØªØ§ÙƒÙŠØ¯ ØªÙ… ØªÙ†Ø²ÙŠÙ„ ÙˆØªÙØ¹ÙŠÙ„ Ù…Ù„Ù Â» {"..file.."} \nâœ“*"
 else
-t = "*?? ?  Çáãáİ » {"..file.."}\n?? ?  Êã ÊäÒíáå æÊİÚíáå ÈäÌÇÍ \n??*"
+t = "*ğŸ—‚ â”‡  Ø§Ù„Ù…Ù„Ù Â» {"..file.."}\nğŸ“¬ â”‡  ØªÙ… ØªÙ†Ø²ÙŠÙ„Ù‡ ÙˆØªÙØ¹ÙŠÙ„Ù‡ Ø¨Ù†Ø¬Ø§Ø­ \nğŸ’¥*"
 end
 local json_file, res = https.request("https://raw.githubusercontent.com/Pir3te/FII/master/Files_Pir3te/"..file)
 if res == 200 then
@@ -13050,16 +5661,16 @@ chek:close()
 send(msg.chat_id_, msg.id_,t) 
 dofile('Pir3te.lua')  
 else
-send(msg.chat_id_, msg.id_,"*?? ?  ÚĞÑÇ áÇ íæÌÏ åÇßĞÇ ãáİ İí ÇáãÊÌÑ *\n") 
+send(msg.chat_id_, msg.id_,"*ğŸ“® â”‡  Ø¹Ø°Ø±Ø§ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù‡Ø§ÙƒØ°Ø§ Ù…Ù„Ù ÙÙŠ Ø§Ù„Ù…ØªØ¬Ø± *\n") 
 end
 return false
 end
-if text == "ãÓÍ ÌãíÚ ÇáãáİÇÊ" and DevPir3te(msg) then
+if text == "Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ù…Ù„ÙØ§Øª" and DevPir3te(msg) then
 os.execute("rm -fr Pir3te_Files/*")
-send(msg.chat_id_,msg.id_,"? ? Êã ÍĞİ ÌãíÚ ÇáãáİÇÊ")
+send(msg.chat_id_,msg.id_,"â˜‘ â”‡ ØªÙ… Ø­Ø°Ù Ø¬Ù…ÙŠØ¹ Ø§Ù„Ù…Ù„ÙØ§Øª")
 return false
 end
-if text == 'äŞá ÇáÇÍÕÇÆíÇÊ' and DevPir3te(msg) then
+if text == 'Ù†Ù‚Ù„ Ø§Ù„Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª' and DevPir3te(msg) then
 local Users = database:smembers('Pir3te:'..bot_id.."userss")
 local Groups = database:smembers('Pir3te:'..bot_id..'groups') 
 for i = 1, #Groups do
@@ -13089,29 +5700,29 @@ end
 for i = 1, #Users do
 database:sadd(bot_id..'Pir3te:UsersBot',Users[i])  
 end
-send(msg.chat_id_, msg.id_,'?? ? Êã äŞá : '..#Groups..' ßÑæÈ\n?? ? Êã äŞá : '..#Users..' ãÔÊÑß \n?? ? ãä ÇáÊÍÏíË ÇáŞÏíã Çáì ÇáÊÍÏíË ÇáÌÏíÏ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡ ØªÙ… Ù†Ù‚Ù„ : '..#Groups..' ÙƒØ±ÙˆØ¨\nğŸ‘¤ â”‡ ØªÙ… Ù†Ù‚Ù„ : '..#Users..' Ù…Ø´ØªØ±Ùƒ \nğŸ”˜ â”‡ Ù…Ù† Ø§Ù„ØªØ­Ø¯ÙŠØ« Ø§Ù„Ù‚Ø¯ÙŠÙ… Ø§Ù„Ù‰ Ø§Ù„ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø¬Ø¯ÙŠØ¯')
 end
-if text == 'ÍĞİ ßáíÔå ÇáãØæÑ' and DevPir3te(msg) then
+if text == 'Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±' and DevPir3te(msg) then
 database:del(bot_id..'Pir3te:Text_Dev')
-send(msg.chat_id_, msg.id_,'? ?  Êã ÍĞİ ßáíÔå ÇáãØæÑ')
+send(msg.chat_id_, msg.id_,'â˜‘ â”‡  ØªÙ… Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±')
 end
-if text == 'æÖÚ ßáíÔå ÇáãØæÑ' and DevPir3te(msg) then
+if text == 'ÙˆØ¶Ø¹ ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±' and DevPir3te(msg) then
 database:set(bot_id..'Pir3te:Set:Text_Dev'..msg.chat_id_..':'..msg.sender_user_id_,true)
-send(msg.chat_id_,msg.id_,'?? ?  ÇÑÓá ÇáßáíÔå ÇáÇä')
+send(msg.chat_id_,msg.id_,'ğŸ“« â”‡  Ø§Ø±Ø³Ù„ Ø§Ù„ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ø§Ù†')
 return false
 end
 if text and database:get(bot_id..'Pir3te:Set:Text_Dev'..msg.chat_id_..':'..msg.sender_user_id_) then
-if text == 'ÇáÛÇÁ' then 
+if text == 'Ø§Ù„ØºØ§Ø¡' then 
 database:del(bot_id..'Pir3te:Set:Text_Dev'..msg.chat_id_..':'..msg.sender_user_id_)
-send(msg.chat_id_,msg.id_,'?? ? Êã ÇáÛÇÁ ÍİÙ ßáíÔÉ ÇáãØæÑ')
+send(msg.chat_id_,msg.id_,'ğŸ”– â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ ÙƒÙ„ÙŠØ´Ø© Ø§Ù„Ù…Ø·ÙˆØ±')
 return false
 end
 database:set(bot_id..'Pir3te:Text_Dev',text)
 database:del(bot_id..'Pir3te:Set:Text_Dev'..msg.chat_id_..':'..msg.sender_user_id_)
-send(msg.chat_id_,msg.id_,'?? ? Êã ÍİÙ ßáíÔÉ ÇáãØæÑ')
+send(msg.chat_id_,msg.id_,'ğŸ”° â”‡ ØªÙ… Ø­ÙØ¸ ÙƒÙ„ÙŠØ´Ø© Ø§Ù„Ù…Ø·ÙˆØ±')
 return false
 end
-if text == 'ÑİÚ ÇáäÓÎå ÇáÇÍÊíÇØíå' and DevPir3te(msg) then   
+if text == 'Ø±ÙØ¹ Ø§Ù„Ù†Ø³Ø®Ù‡ Ø§Ù„Ø§Ø­ØªÙŠØ§Ø·ÙŠÙ‡' and DevPir3te(msg) then   
 if tonumber(msg.reply_to_message_id_) > 0 then
 function by_reply(extra, result, success)   
 if result.content_.document_ then 
@@ -13123,255 +5734,261 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil)
 end
 end
-if text == "ÊÍÏíË" and DevPir3te(msg) then
+if text == "ØªØ­Ø¯ÙŠØ«" and DevPir3te(msg) then
 dofile("Pir3te.lua")  
-send(msg.chat_id_, msg.id_, "? ? Êã ÇáÊÍÏíË")
+send(msg.chat_id_, msg.id_, "â˜‘ â”‡ ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ«")
 end
-if text == 'ÇáÓæÑÓ' or text == 'ÓæÑÓ' or text == 'íÇÓæÑÓ' or text == 'íÇ ÓæÑÓ' then
+if text == 'Ø§Ù„Ø³ÙˆØ±Ø³' or text == 'Ø³ÙˆØ±Ø³' or text == 'ÙŠØ§Ø³ÙˆØ±Ø³' or text == 'ÙŠØ§ Ø³ÙˆØ±Ø³' then
 Text = [[
-?? ÇåáÇ Èß İí ÓæÑÓ ÇáŞÑÕÇä   ??
-???Pirate TEAM 
-? ? ? ? ? ? ? ? ?
-??? [Source Channel](https://t.me/pirate_te3m)
-??? [Source  Files](https://t.me/pirate_te3m)
-??? [DEV Pirate](https://t.me/Alhassan_Talib)
+ğŸ”° Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø³ÙˆØ±Ø³ Ø§Ù„Ù‚Ø±ØµØ§Ù†   ğŸ”°
+
+ğŸŒâ”‡Pirate TEAM 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“Šâ”‡ [Source Channel](https://t.me/pirate_te3m)
+
+ğŸ“â”‡ [Source  Files](https://t.me/pirate_te3m)
+
+ğŸŒâ”‡ [DEV Pirate](https://t.me/Alhassan_Talib)
  
- ? ? ? ? ? ? ? ? 
-??? [TWS Pirate](https://t.me/PirateTe3mBot)
+ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸ“§â”‡ [TWS Pirate](https://t.me/PirateTe3mBot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ÇáÇæÇãÑ' or text == 'æíä ÇáÇæÇãÑ' or text == 'ãíÔÊÛáä ÇáÇæÇãÑØ' then
+if text == 'Ø§Ù„Ø§ÙˆØ§Ù…Ø±' or text == 'ÙˆÙŠÙ† Ø§Ù„Ø§ÙˆØ§Ù…Ø±' or text == 'Ù…ÙŠØ´ØªØºÙ„Ù† Ø§Ù„Ø§ÙˆØ§Ù…Ø±Ø·' then
 Text = [[
-• åäÇß  5 ÇæÇãÑ áÚÑÖåÇ ?
-???????????????
-- ã1 ~ áÚÑÖ ÇæÇãÑ ÇáÍãÇíå ??
-- ã2 ~ áÚÑÖ ÇæÇãÑ ÇáÇÏãäíå ??????
-- ã3 ~ áÚÑÖ ÇæÇãÑ ÇáãÏÑÇÁ ??????
-- ã4 ~ áÚÑÖ ÇæÇãÑ ÇáãäÔÆíä ??????
-- ã5 ~ áÚÑÖ ÇæÇãÑ ÇáãØæÑíä ??????
-???????????????
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+â€¢ Ù‡Ù†Ø§Ùƒ  5 Ø§ÙˆØ§Ù…Ø± Ù„Ø¹Ø±Ø¶Ù‡Ø§ âœ…
+â”â”â”â”â”â”â”â—‰â”â”â”â”â”â”â”
+- Ù…1 ~ Ù„Ø¹Ø±Ø¶ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø­Ù…Ø§ÙŠÙ‡ ğŸ› 
+- Ù…2 ~ Ù„Ø¹Ø±Ø¶ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡ ğŸ‘¨ğŸ»â€ğŸ­
+- Ù…3 ~ Ù„Ø¹Ø±Ø¶ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡ ğŸ‘¨ğŸ»â€ğŸ’¼
+- Ù…4 ~ Ù„Ø¹Ø±Ø¶ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† ğŸ‘¨ğŸ»â€ğŸ”§
+- Ù…5 ~ Ù„Ø¹Ø±Ø¶ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ† ğŸ‘¨ğŸ»â€ğŸ’»
+â”â”â”â”â”â”â”â—‰â”â”â”â”â”â”â”
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ã1' or text == 'ã1' or text == 'ÇæÇãÑ ÇáÍãÇíå' then
+if text == 'Ù…1' or text == 'Ù…Ù¡' or text == 'Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø­Ù…Ø§ÙŠÙ‡' then
 Text = [[
-??| ÇåáÇ Èß İí ÇæÇãÑ ÇáÍãÇíå  
-? ? ? ? ? ? ? ? ?
-??| íãßäß ãä ÎáÇá ÇáÇãÑ  İÊÍ/Şİá ãÇíáí  ? 
-? ? ? ? ? ? ? ? ? 
-??|? ÇáÊÇß
-??|? ÇáÕæÑ
-??|? ÇáãÚÑİ
-??|? ÇáãáİÇÊ
-??|? ÇáÑæÇÈØ
-??|? ÇáÊÚÏíá
-??|? ÇáÊËÈíÊ
-??|? ÇáİíÏíæ
-??|? ÇáÇäáÇíä
-??|? ÇáÏÑÏÔå
-??|? ÇáÊæÌíå
-??|? ÇáÇÛÇäí
-??|? ÇáÕæÊ
-??|? ÇáÌåÇÊ
-??|? ÇáÊßÑÇÑ
-??|? ÇáÈæÊÇÊ
-??|? ÇáÓíáİí
-??|? ÇáßáÇíÔ
-??|? ÇáãÊÍÑßå
-??|? ÇáÔæÇÑÍå
-??|? ÇáãáÕŞÇÊ
-??|? ÇáãÇÑßÏÇæä
-??|? ÇáÇÔÚÇÑÇÊ
-? ? ? ? ? ? ? ? ?
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+ğŸ›¡| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø­Ù…Ø§ÙŠÙ‡  
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¬| ÙŠÙ…ÙƒÙ†Ùƒ Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„Ø§Ù…Ø±  ÙØªØ­/Ù‚ÙÙ„ Ù…Ø§ÙŠÙ„ÙŠ  â†“ 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸ”±|â†« Ø§Ù„ØªØ§Ùƒ
+ğŸ”±|â†« Ø§Ù„ØµÙˆØ±
+ğŸ”±|â†« Ø§Ù„Ù…Ø¹Ø±Ù
+ğŸ”±|â†« Ø§Ù„Ù…Ù„ÙØ§Øª
+ğŸ”±|â†« Ø§Ù„Ø±ÙˆØ§Ø¨Ø·
+ğŸ”±|â†« Ø§Ù„ØªØ¹Ø¯ÙŠÙ„
+ğŸ”±|â†« Ø§Ù„ØªØ«Ø¨ÙŠØª
+ğŸ”±|â†« Ø§Ù„ÙÙŠØ¯ÙŠÙˆ
+ğŸ”±|â†« Ø§Ù„Ø§Ù†Ù„Ø§ÙŠÙ†
+ğŸ”±|â†« Ø§Ù„Ø¯Ø±Ø¯Ø´Ù‡
+ğŸ”±|â†« Ø§Ù„ØªÙˆØ¬ÙŠÙ‡
+ğŸ”±|â†« Ø§Ù„Ø§ØºØ§Ù†ÙŠ
+ğŸ”±|â†« Ø§Ù„ØµÙˆØª
+ğŸ”±|â†« Ø§Ù„Ø¬Ù‡Ø§Øª
+ğŸ”±|â†« Ø§Ù„ØªÙƒØ±Ø§Ø±
+ğŸ”±|â†« Ø§Ù„Ø¨ÙˆØªØ§Øª
+ğŸ”±|â†« Ø§Ù„Ø³ÙŠÙ„ÙÙŠ
+ğŸ”±|â†« Ø§Ù„ÙƒÙ„Ø§ÙŠØ´
+ğŸ”±|â†« Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡
+ğŸ”±|â†« Ø§Ù„Ø´ÙˆØ§Ø±Ø­Ù‡
+ğŸ”±|â†« Ø§Ù„Ù…Ù„ØµÙ‚Ø§Øª
+ğŸ”±|â†« Ø§Ù„Ù…Ø§Ø±ÙƒØ¯Ø§ÙˆÙ†
+ğŸ”±|â†« Ø§Ù„Ø§Ø´Ø¹Ø§Ø±Ø§Øª
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ã2' or text == 'ã2' or text == 'ÇæÇãÑ ÇáÇÏãä' then
+if text == 'Ù…Ù¢' or text == 'Ù…2' or text == 'Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø§Ø¯Ù…Ù†' then
 Text = [[
-??| ÇåáÇ Èß İí ÇæÇãÑ ÇáÇÏãä   
-? ? ? ? ? ? ? ? ?
-??| íãßä ááÇÏãä ÇáŞíÇã ÈãÇíáí  ? 
-? ? ? ? ? ? ? ? ? 
-??|? ÇáÊÇß ááßá
-??|? ãÓÍ ÇáÕáÇÍíÇÊ
-??|? ÚÏÏ ÇáßÑæÈ
-??|? ÑİÚ ããíÒ
-??|? ÇáããíÒíä
-??|? ãÓÍ ÇáããíÒíä
-??|? ÇáÕáÇÍíÇÊ
-??|? ÊËÈíÊ
-??|? ÇáÛÇÁ ÊËÈíÊ
-??|? ÇáÇÚÏÇÏÇÊ
-??|? ßÔİ ÇáÈæÊ
-??|? ßÊã
-??|? ãÓÍ ÇáãßÊæãíä
-??|? ÇáÛÇÁ ßÊã
-??|? ÍÙÑ
-??|? ãÓÍ ÇáãØÑæÏíä
-??|? ÇáÛÇÁ ÍÙÑ
-??|? ØÑÏ
-??|? ãÓÍ ÇáãØÑæÏíä
-??|? ãäÚ
-??|? ÇáÛÇÁ ãäÚ
-??|? ŞÇÆãå ÇáãäÚ
-??|?  ãÓÍ ŞÇÆãå ÇáãäÚ
-??|? ÇáÇÚÏÇÏÇÊ
-??|? ãÓÍ ÇáÕæÑå
-??|? ÊİÚíá ÇáÊÑÍíÈ
-??|? ãÓÍ ÇáÑÇÈØ
-??|? ÊÚØíá ÇáÊÑÍíÈ
-??|? ãÓÍ ÇáÈæÊÇÊ
-??|? ÇÖİ ÕáÇÍíå
-??|? ãÓÍ ÇáŞæÇäíä
-??|? ãÓÍ ÕáÇÍíå
-? ? ? ? ? ? ? ? ?
-??| æíãßä ááÇÏãä æÖÚ ÇáÇæÇãÑ ÇáÇÊíå
-? ? ? ? ? ? ? ? ?
-??|? æÖÚ ÇÓã
-??|? æÖÚ ÑÇÈØ
-??|? æÖÚ æÕİ
-??|? æÖÚ ŞæÇäíä
-??|? æÖÚ ÊÑÍíÈ
-? ? ? ? ? ? ? ? ?
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+ğŸ›¡| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø§Ø¯Ù…Ù†   
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¬| ÙŠÙ…ÙƒÙ† Ù„Ù„Ø§Ø¯Ù…Ù† Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨Ù…Ø§ÙŠÙ„ÙŠ  â†“ 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸ”†|â†« Ø§Ù„ØªØ§Ùƒ Ù„Ù„ÙƒÙ„
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª
+ğŸ”…|â†« Ø¹Ø¯Ø¯ Ø§Ù„ÙƒØ±ÙˆØ¨
+ğŸŸ|â†« Ø±ÙØ¹ Ù…Ù…ÙŠØ²
+ğŸ”…|â†« Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ù…Ù…ÙŠØ²ÙŠÙ†
+ğŸ”†|â†« Ø§Ù„ØµÙ„Ø§Ø­ÙŠØ§Øª
+ğŸŸ|â†« ØªØ«Ø¨ÙŠØª
+ğŸ”†|â†« Ø§Ù„ØºØ§Ø¡ ØªØ«Ø¨ÙŠØª
+ğŸŸ|â†« Ø§Ù„Ø§Ø¹Ø¯Ø§Ø¯Ø§Øª
+ğŸ”†|â†« ÙƒØ´Ù Ø§Ù„Ø¨ÙˆØª
+ğŸŸ|â†« ÙƒØªÙ…
+ğŸ”…|â†« Ù…Ø³Ø­ Ø§Ù„Ù…ÙƒØªÙˆÙ…ÙŠÙ†
+ğŸŸ|â†« Ø§Ù„ØºØ§Ø¡ ÙƒØªÙ…
+ğŸ”…|â†« Ø­Ø¸Ø±
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ù…Ø·Ø±ÙˆØ¯ÙŠÙ†
+ğŸ”†|â†« Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±
+ğŸŸ|â†« Ø·Ø±Ø¯
+ğŸ”…|â†« Ù…Ø³Ø­ Ø§Ù„Ù…Ø·Ø±ÙˆØ¯ÙŠÙ†
+ğŸŸ|â†« Ù…Ù†Ø¹
+ğŸ”…|â†« Ø§Ù„ØºØ§Ø¡ Ù…Ù†Ø¹
+ğŸŸ|â†« Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ù†Ø¹
+ğŸ”…|â†«  Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ù…Ù†Ø¹
+ğŸŸ|â†« Ø§Ù„Ø§Ø¹Ø¯Ø§Ø¯Ø§Øª
+ğŸ”…|â†« Ù…Ø³Ø­ Ø§Ù„ØµÙˆØ±Ù‡
+ğŸ”†|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªØ±Ø­ÙŠØ¨
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ø±Ø§Ø¨Ø·
+ğŸ”…|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªØ±Ø­ÙŠØ¨
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ø¨ÙˆØªØ§Øª
+ğŸ”†|â†« Ø§Ø¶Ù ØµÙ„Ø§Ø­ÙŠÙ‡
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†
+ğŸ”…|â†« Ù…Ø³Ø­ ØµÙ„Ø§Ø­ÙŠÙ‡
+
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+â‰ï¸| ÙˆÙŠÙ…ÙƒÙ† Ù„Ù„Ø§Ø¯Ù…Ù† ÙˆØ¶Ø¹ Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø§ØªÙŠÙ‡
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ”…|â†« ÙˆØ¶Ø¹ Ø§Ø³Ù…
+ğŸ”†|â†« ÙˆØ¶Ø¹ Ø±Ø§Ø¨Ø·
+ğŸ”…|â†« ÙˆØ¶Ø¹ ÙˆØµÙ
+ğŸ”†|â†« ÙˆØ¶Ø¹ Ù‚ÙˆØ§Ù†ÙŠÙ†
+ğŸ”…|â†« ÙˆØ¶Ø¹ ØªØ±Ø­ÙŠØ¨
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ã3' or text == 'ã3' or text == 'ÇæÇãÑ ÇáÏíÑ' then
+if text == 'Ù…3' or text == 'Ù…Ù£' or text == 'Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø¯ÙŠØ±' then
 Text = [[
-??| ÇåáÇ Èß İí ÇæÇãÑ ÇáãÏíÑ   
-? ? ? ? ? ? ? ? ?
-??| íãßä ááãÏíÑ ÇáŞíÇã ÈãÇíáí  ? 
-? ? ? ? ? ? ? ? ? 
-??|? ÊİÚíá ÇáÇíÏí ÈÇáÕæÑå
-??|? ÊÚØíá ÇáÇíÏí ÈÇáÕæÑå
-??|? ÊİÚíá ÇáÇíÏí
-??|? ÊÚØíá ÇáÇíÏí
-??|? ÊİÚíá ÑÏæÏ ÇáãØæÑ
-??|? ÊÚØíá ÑÏæÏ ÇáãØæÑ
-??|? ÊİÚíá ÇáÇáÚÇÈ
-??|? ÊÚØíá ÇáÇáÚÇÈ
-??|? ÊİÚíá ÇØÑÏäí
-??|? ÊÚØíá ÇØÑÏäí
-??|? ÊİÚíá ÇáÑİÚ
-??|? ÊÚØíá ÇáÑİÚ
-??|? ÊİÚíá ÇáØÑÏ 
-??|? ÊİÚíá ÇáÍÙÑ
-??|? ÊÚØíá ÇáØÑÏ 
-??|? ÊÚØíá ÇáÍÙÑ
-??|? ÊİÚíá ÌáÈ ÇáÑÇÈØ
-??|? ÊÚØíá ÇáÑÇÈØ
-??|? ÊİÚíá ÇæÇãÑ ÇáÊÍÔíÔ
-??|? ÊÚØíá ÇæÇãÑ ÇáÊÍÔíÔ
-??|? ÑİÚ ÇÏãä 
-??|? ÊäÒíá ÇÏãä
-??|? ÇÖİ ÑÏ 
-??|? ÍĞİ ÑÏ
-??|? ÇáÇÏãäíå
-??|? ÑİÚ ÇáÇÏãäíå
-??|? ÑÏæÏ ÇáãÏíÑ
-??|? ÊÚíä ÇáÇíÏí
-??|? ãÓÍ ÇáÇíÏí
-??|? ãÓÍ ÇáÇÏãäíå
-??|? ãÓÍ ÑÏæÏ ÇáãÏíÑ
-??|? ÊäÙíİ +ÚÏÏ áÇ íÊÌÇæÒ 1000 
- ? ? ? ? ? ? ? ? ?
-?? íãßä ááãÏíÑ ÊÛííÑ  ÑÊÈ ÇáÇÚÖÇÁ ÇáÙÇåÑå ÈÇáÇíÏí
-? ? ? ? ? ? ? ? ?
-??|? ÊÛíÑ ÑÏ ÇáãØæÑ + ÇáäÕ
-??|?ÊÛíÑ ÑÏ ÇáÚÖæ   + ÇáäÕ
-??|? ÊÛíÑ ÑÏ ÇáãäÔÆ + ÇáäÕ
-??|? ÊÛíÑ ÑÏ ÇáãÏíÑ   + ÇáäÕ
-??|? ÊÛíÑ ÑÏ ÇáÇÏãä   + ÇáäÕ
-??|? ÊÛíÑ ÑÏ ÇáããíÒ   + ÇáäÕ
-??|? ÊÛíÑ ÑÏ ÇáãäÔÆ ÇáÇÓÇÓí + ÇáäÕ
-? ? ? ? ? ? ? ? ?
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+ğŸ›¡| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¯ÙŠØ±   
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¬| ÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ø¯ÙŠØ± Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨Ù…Ø§ÙŠÙ„ÙŠ  â†“ 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø¨Ø§Ù„ØµÙˆØ±Ù‡
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§ÙŠØ¯ÙŠ
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ø·Ø±Ø¯Ù†ÙŠ
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ø·Ø±Ø¯Ù†ÙŠ
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø±ÙØ¹
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±ÙØ¹
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø·Ø±Ø¯ 
+ã€½ï¸|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø±
+ğŸ«|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø·Ø±Ø¯ 
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø­Ø¸Ø±
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø¬Ù„Ø¨ Ø§Ù„Ø±Ø§Ø¨Ø·
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø±Ø§Ø¨Ø·
+ğŸ«|â†« ØªÙØ¹ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´
+ã€½ï¸|â†« ØªØ¹Ø·ÙŠÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„ØªØ­Ø´ÙŠØ´
+ğŸ«|â†« Ø±ÙØ¹ Ø§Ø¯Ù…Ù† 
+ã€½ï¸|â†« ØªÙ†Ø²ÙŠÙ„ Ø§Ø¯Ù…Ù†
+ğŸ«|â†« Ø§Ø¶Ù Ø±Ø¯ 
+ã€½ï¸|â†« Ø­Ø°Ù Ø±Ø¯
+ğŸ«|â†« Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡
+ã€½ï¸|â†« Ø±ÙØ¹ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡
+ğŸ«|â†« Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±
+ã€½ï¸|â†« ØªØ¹ÙŠÙ† Ø§Ù„Ø§ÙŠØ¯ÙŠ
+ğŸ«|â†« Ù…Ø³Ø­ Ø§Ù„Ø§ÙŠØ¯ÙŠ
+ã€½ï¸|â†« Ù…Ø³Ø­ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡
+ğŸ«|â†« Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø¯ÙŠØ±
+ã€½ï¸|â†« ØªÙ†Ø¸ÙŠÙ +Ø¹Ø¯Ø¯ Ù„Ø§ ÙŠØªØ¬Ø§ÙˆØ² 1000 
+ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+âš ï¸ ÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ø¯ÙŠØ± ØªØºÙŠÙŠØ±  Ø±ØªØ¨ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ø¸Ø§Ù‡Ø±Ù‡ Ø¨Ø§Ù„Ø§ÙŠØ¯ÙŠ
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+
+ğŸ«|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø·ÙˆØ± + Ø§Ù„Ù†Øµ
+ã€½ï¸|â†«ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø¹Ø¶Ùˆ   + Ø§Ù„Ù†Øµ
+ğŸ«|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ + Ø§Ù„Ù†Øµ
+ã€½ï¸|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ø¯ÙŠØ±   + Ø§Ù„Ù†Øµ
+ğŸ«|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ø§Ø¯Ù…Ù†   + Ø§Ù„Ù†Øµ
+ã€½ï¸|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù…ÙŠØ²   + Ø§Ù„Ù†Øµ
+ğŸ«|â†« ØªØºÙŠØ± Ø±Ø¯ Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ + Ø§Ù„Ù†Øµ
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ã5' or text == 'ã5' or text == 'ÇæãÑ ÇáãäÔÆ' then
+if text == 'Ù…Ù¥' or text == 'Ù…5' or text == 'Ø§ÙˆÙ…Ø± Ø§Ù„Ù…Ù†Ø´Ø¦' then
 Text = [[
-??| ÇåáÇ Èß İí ÇæÇãÑ ÇáãäÔÆ ÇáÇÓÇÓí   
-? ? ? ? ? ? ? ? ?
-1? - íãßä ááãäÔÆ ÇáŞíÇã Èßá ãÇíŞíã Èå ÇáÇÏäì ÑÊÈå ãäå. 
-? ? ? ? ? ? ? ? ? 
-??| æíãßä ááãäÔÆ ÇáÇÓÇÓí ÇáŞíÇã Èãíáí? 
-? ? ? ? ? ? ? ? ?
-??|?ÑİÚ ãäÔÆ
-??|?ÊäÒíá ãäÔÆ
-??|?ãÓÍ ÇáãäÔÆíä
-? ? ? ? ? ? ? ? ?
-íãßä ááãäÔì ÇáŞíÇã ÈãÇíáí ?
-? ? ? ? ? ? ? ? ?
-??|?ÑİÚ ãÏíÑ
-??|?ÊäÒíá ãÏíÑ
-??|? ÇáãÏÑÇÁ
-??|?ãÓÍ ÇáãÏÑÇÁ
-??|?ÇÖİ ÇãÑ
-??|?ÇáÇæÇãÑ ÇáãÖÇİå
-??|?ãÓÍ ÇáÇæÇãÑ ÇáãÖÇİå
-??|?ÍĞİ ÇáÇæÇãÑ ÇáãÖÇİå
-??|?ÇÖİ ÑÓÇÆá + ÚÏÏ ÈÇáÑÏ
-??|?ÇÖİ ãÌæåÑÇÊ + ÚÏÏ ÈÇáÑÏ
-? ? ? ? ? ? ? ? ?
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+ğŸ›¡| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ   
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+1âƒ£ - ÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨ÙƒÙ„ Ù…Ø§ÙŠÙ‚ÙŠÙ… Ø¨Ù‡ Ø§Ù„Ø§Ø¯Ù†Ù‰ Ø±ØªØ¨Ù‡ Ù…Ù†Ù‡. 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸ“®| ÙˆÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ù†Ø´Ø¦ Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨Ù…ÙŠÙ„ÙŠâ†“ 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+
+ğŸ|â†«Ø±ÙØ¹ Ù…Ù†Ø´Ø¦
+ğŸ|â†«ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦
+ğŸ|â†«Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ†
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ù†Ø´Ù‰ Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨Ù…Ø§ÙŠÙ„ÙŠ â†“
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ|â†«Ø±ÙØ¹ Ù…Ø¯ÙŠØ±
+ğŸ|â†«ØªÙ†Ø²ÙŠÙ„ Ù…Ø¯ÙŠØ±
+ğŸ|â†« Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡
+ğŸ|â†«Ù…Ø³Ø­ Ø§Ù„Ù…Ø¯Ø±Ø§Ø¡
+ğŸ|â†«Ø§Ø¶Ù Ø§Ù…Ø±
+ğŸ|â†«Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡
+ğŸ|â†«Ù…Ø³Ø­ Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡
+ğŸ|â†«Ø­Ø°Ù Ø§Ù„Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø¶Ø§ÙÙ‡
+ğŸ|â†«Ø§Ø¶Ù Ø±Ø³Ø§Ø¦Ù„ + Ø¹Ø¯Ø¯ Ø¨Ø§Ù„Ø±Ø¯
+ğŸ|â†«Ø§Ø¶Ù Ù…Ø¬ÙˆÙ‡Ø±Ø§Øª + Ø¹Ø¯Ø¯ Ø¨Ø§Ù„Ø±Ø¯
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-if text == 'ã5' or text == 'ã5' or text == 'ÇæÇãÑ ÇáãØæÑ' then
+if text == 'Ù…5' or text == 'Ù…Ù¥' or text == 'Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø·ÙˆØ±' then
 Text = [[
-??| ÇåáÇ Èß İí ÇæÇãÑ ÇáãØæÑ ÇáÇÓÇÓí   
-? ? ? ? ? ? ? ? ?
-??| íãßä ááãØæÑ ÇáŞíÇã ÈãÇíáí  ? 
-? ? ? ? ? ? ? ? ? 
-??|? ÊİÚíá 
-?|? ÊÚØíá
-??|? ÍÙÑ ÚÇã
-?|? ÇáÛÇÁ ÚÇã
-??|? ÇÖİ ãØæÑ
-?|? ÍĞİ ãØæÑ
-??|? ãÓÍ ÇáãØæÑíä
-?|? ãÓÍ ŞÇÆãå ÇáÚÇã
-??|? ÑÏæÏ ÇáãØæÑ
-?|? ãÓÍ ÑÏæÏ ÇáãØæÑ
-??|? ÇÖİ ÑÏ ááßá
-?|? ÍĞİ ÑÏ ááßá
-??|? æÖÚ ßáíÔå ÇáãØæÑ
-?|? ÍĞİ ßáíÔå ÇáãØæÑ
-??|? ÊÍÏíË
-?|? ÊÍÏíË ÇáÓæÑÓ
-??|? ÊİÚíá ÇáÇĞÇÚå
-?|? ÊÚØíá ÇáÇĞÇÚå
-??|? ÊİÚíá ÇáãÛÇÏÑÉ
-?|? ÊÚØíá ÇáãÛÇÏÑÉ
-??|? ÊÚíä ÚÏÏ ÇáÇÚÖÇÁ + ÚÏÏ
-?|? ÊİÚíá ÇáÈæÊ ÇáÎÏãí
-??|? ÊÚØíá ÇáÈæÊ ÇáÎÏãí
-?|? ÊİÚíá + ÇÓã Çáãáİ
-??|? ÊÚØíá + ÇÓä Çáãáİ
-?|? ÇáãÊÌÑ
-??|? ÇáãáİÇÊ
-?|? ÇæÇãÑ ÇáãØæÑ
-??|? ãÓÍ ÌãíÚ ÇáãáİÇÊ
-?|? ÛÇÏÑ
-??|? ÇĞÇÚå
-?|? ÇĞÇÚå ÎÇÕ
-??|? ÇáÇÍÕÇÆíÇÊ 
-?|? ÛÇÏÑ + ÇíÏí ÇáãÌãæÚå
-??|? ÇĞÇÚå ÈÇáÊËÈíÊ 
-??|? ÇĞÇÚå ÈÇáÊæÌíå 
-?|? ÇáãäÔÆíä ÇáÇÓÇÓíä
-??|?ãÓÍ ÇáãäÔÆíä ÇáÇÓÇÓíä 
-?|? ÑİÚ ãäÔÆ ÇÓÇÓí
-??|? ÊİÚíá ÊäÒíá ãäÔÆ ÇÓÇÓí 
- ? ? ? ? ? ? ? ? ?
-?? ~ æíãßä ááãØæÑ ÇÓÊÎÏÇã ßá ÇæÇãÑ ÇáÈæÊ ÇíÖÇ
-? ? ? ? ? ? ? ? ?
-?? CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
+ğŸ›¡| Ø§Ù‡Ù„Ø§ Ø¨Ùƒ ÙÙŠ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ   
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ“¬| ÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ù‚ÙŠØ§Ù… Ø¨Ù…Ø§ÙŠÙ„ÙŠ  â†“ 
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ 
+ğŸŸ|â†« ØªÙØ¹ÙŠÙ„ 
+âœ¨|â†« ØªØ¹Ø·ÙŠÙ„
+ğŸŸ|â†« Ø­Ø¸Ø± Ø¹Ø§Ù…
+âœ¨|â†« Ø§Ù„ØºØ§Ø¡ Ø¹Ø§Ù…
+ğŸŸ|â†« Ø§Ø¶Ù Ù…Ø·ÙˆØ±
+âœ¨|â†« Ø­Ø°Ù Ù…Ø·ÙˆØ±
+ğŸŸ|â†« Ù…Ø³Ø­ Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†
+âœ¨|â†« Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù…
+ğŸŸ|â†« Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±
+âœ¨|â†« Ù…Ø³Ø­ Ø±Ø¯ÙˆØ¯ Ø§Ù„Ù…Ø·ÙˆØ±
+ğŸŸ|â†« Ø§Ø¶Ù Ø±Ø¯ Ù„Ù„ÙƒÙ„
+âœ¨|â†« Ø­Ø°Ù Ø±Ø¯ Ù„Ù„ÙƒÙ„
+ğŸŸ|â†« ÙˆØ¶Ø¹ ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±
+âœ¨|â†« Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ù…Ø·ÙˆØ±
+ğŸŸ|â†« ØªØ­Ø¯ÙŠØ«
+âœ¨|â†« ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³
+ğŸŸ|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡
+âœ¨|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡
+ğŸŸ|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ø©
+âœ¨|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ø©
+ğŸŸ|â†« ØªØ¹ÙŠÙ† Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ + Ø¹Ø¯Ø¯
+âœ¨|â†« ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ
+ğŸŸ|â†« ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ
+âœ¨|â†« ØªÙØ¹ÙŠÙ„ + Ø§Ø³Ù… Ø§Ù„Ù…Ù„Ù
+ğŸŸ|â†« ØªØ¹Ø·ÙŠÙ„ + Ø§Ø³Ù† Ø§Ù„Ù…Ù„Ù
+âœ¨|â†« Ø§Ù„Ù…ØªØ¬Ø±
+ğŸŸ|â†« Ø§Ù„Ù…Ù„ÙØ§Øª
+âœ¨|â†« Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ù…Ø·ÙˆØ±
+ğŸŸ|â†« Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø§Ù„Ù…Ù„ÙØ§Øª
+âœ¨|â†« ØºØ§Ø¯Ø±
+ğŸŸ|â†« Ø§Ø°Ø§Ø¹Ù‡
+âœ¨|â†« Ø§Ø°Ø§Ø¹Ù‡ Ø®Ø§Øµ
+ğŸŸ|â†« Ø§Ù„Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª 
+âœ¨|â†« ØºØ§Ø¯Ø± + Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡
+ğŸŸ|â†« Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªØ«Ø¨ÙŠØª 
+ğŸŸ|â†« Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ 
+âœ¨|â†« Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ†
+ğŸŸ|â†«Ù…Ø³Ø­ Ø§Ù„Ù…Ù†Ø´Ø¦ÙŠÙ† Ø§Ù„Ø§Ø³Ø§Ø³ÙŠÙ† 
+âœ¨|â†« Ø±ÙØ¹ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ
+ğŸŸ|â†« ØªÙØ¹ÙŠÙ„ ØªÙ†Ø²ÙŠÙ„ Ù…Ù†Ø´Ø¦ Ø§Ø³Ø§Ø³ÙŠ 
+ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+âš ï¸ ~ ÙˆÙŠÙ…ÙƒÙ† Ù„Ù„Ù…Ø·ÙˆØ± Ø§Ø³ØªØ®Ø¯Ø§Ù… ÙƒÙ„ Ø§ÙˆØ§Ù…Ø± Ø§Ù„Ø¨ÙˆØª Ø§ÙŠØ¶Ø§
+â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰
+ğŸ›  CH: [@PIRATE_TE3M](https://t.me/PIRATE_TE3M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -13379,22 +5996,22 @@ end
 end ---- Chat_Type = 'GroupBot' 
 end ---- Chat_Type = 'GroupBot' 
 
-if text == 'ÊİÚíá' and DevBot(msg) then 
+if text == 'ØªÙØ¹ÙŠÙ„' and DevBot(msg) then 
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,'?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !') 
+send(msg.chat_id_, msg.id_,'ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !') 
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0) and not DevPir3te(msg) then
-send(msg.chat_id_, msg.id_,'?? ? ÚÏÏ ÇÚÖÇÁ ÇáãÌãæÚå ÇŞá ãä *~ {'..(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0)..'* ÚÖæ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø§Ù‚Ù„ Ù…Ù† *~ {'..(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0)..'* Ø¹Ø¶Ùˆ')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if database:sismember(bot_id..'Pir3te:Chek:Groups',msg.chat_id_) then
-send(msg.chat_id_, msg.id_,'?? ? ÇáãÌãæÚå ãİÚáå ÓÇÈŞÇ ')
+send(msg.chat_id_, msg.id_,'?? â”‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ù…ÙØ¹Ù„Ù‡ Ø³Ø§Ø¨Ù‚Ø§ ')
 else
-Reply_Status(msg,result.id_,'reply_Add','? ? Êã ÊİÚíá ÇáãÌãæÚå ~ '..chat.title_..'')
+Reply_Status(msg,result.id_,'reply_Add','â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ '..chat.title_..'')
 database:sadd(bot_id..'Pir3te:Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -13410,14 +6027,14 @@ local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token.
 if linkgpp.ok == true then 
 LinkGp = linkgpp.result
 else
-LinkGp = 'áÇ íæÌÏ'
+LinkGp = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
-Text = '?? ? Êã ÊİÚíá ãÌãæÚå ÌÏíÏå\n'..
-'\n?? ? ÈæÇÓØÉ ~ '..Name..''..
-'\n?? ? ÇíÏí ÇáãÌãæÚå ~ `'..IdChat..'`'..
-'\n?? ? ÚÏÏ ÇÚÖÇÁ ÇáãÌãæÚå *~ '..NumMember..'*'..
-'\n?? ? ÇÓã ÇáãÌãæÚå ~ ['..NameChat..']'..
-'\n?? ? ÇáÑÇÈØ ~ ['..LinkGp..']'
+Text = 'ğŸ”– â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø¬Ø¯ÙŠØ¯Ù‡\n'..
+'\nğŸ‘¤ â”‡ Ø¨ÙˆØ§Ø³Ø·Ø© ~ '..Name..''..
+'\nğŸ“› â”‡ Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ `'..IdChat..'`'..
+'\nğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ *~ '..NumMember..'*'..
+'\nğŸ“¬ â”‡ Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ ['..NameChat..']'..
+'\nğŸ“¥ â”‡ Ø§Ù„Ø±Ø§Ø¨Ø· ~ ['..LinkGp..']'
 if not DevPir3te(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
@@ -13426,13 +6043,13 @@ end,nil)
 end,nil) 
 end,nil)
 end
-if text == 'ÊÚØíá' and DevBot(msg) then 
+if text == 'ØªØ¹Ø·ÙŠÙ„' and DevBot(msg) then 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if not database:sismember(bot_id..'Pir3te:Chek:Groups',msg.chat_id_) then
-send(msg.chat_id_, msg.id_,'?? ? ÇáãÌãæÚå ãÚØáå ÓÇÈŞÇ ')
+send(msg.chat_id_, msg.id_,'ğŸ“® â”‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ø³Ø§Ø¨Ù‚Ø§ ')
 else
-Reply_Status(msg,result.id_,'reply_Add','? ? Êã ÊÚØíá ÇáãÌãæÚå ~ '..chat.title_..'')
+Reply_Status(msg,result.id_,'reply_Add','â˜‘ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ '..chat.title_..'')
 database:srem(bot_id..'Pir3te:Chek:Groups',msg.chat_id_)  
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -13448,13 +6065,13 @@ local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token.
 if linkgpp.ok == true then 
 LinkGp = linkgpp.result
 else
-LinkGp = 'áÇ íæÌÏ'
+LinkGp = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
-Text = '?? ? Êã ÊÚØíá ãÌãæÚå ÌÏíÏå\n'..
-'\n?? ? ÈæÇÓØÉ ~ '..Name..''..
-'\n?? ? ÇíÏí ÇáãÌãæÚå ~ `'..IdChat..'`'..
-'\n?? ? ÇÓã ÇáãÌãæÚå ~ ['..NameChat..']'..
-'\n?? ? ÇáÑÇÈØ ~ ['..LinkGp..']'
+Text = 'ğŸ”– â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø¬Ø¯ÙŠØ¯Ù‡\n'..
+'\nğŸ”˜ â”‡ Ø¨ÙˆØ§Ø³Ø·Ø© ~ '..Name..''..
+'\nğŸ”§ â”‡ Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ `'..IdChat..'`'..
+'\nğŸ“¥ â”‡ Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ ['..NameChat..']'..
+'\nğŸ“® â”‡ Ø§Ù„Ø±Ø§Ø¨Ø· ~ ['..LinkGp..']'
 if not DevPir3te(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
@@ -13462,9 +6079,9 @@ end
 end,nil) 
 end,nil) 
 end
-if text == 'ÊİÚíá' and not DevBot(msg) and not database:get(bot_id..'Pir3te:Free:Add:Bots') then 
+if text == 'ØªÙØ¹ÙŠÙ„' and not DevBot(msg) and not database:get(bot_id..'Pir3te:Free:Add:Bots') then 
 if msg.can_be_deleted_ == false then 
-send(msg.chat_id_, msg.id_,'?? ? ÇáÈæÊ áíÓ ÇÏãä íÑÌì ÊÑŞíÊí !') 
+send(msg.chat_id_, msg.id_,'ğŸš¸ â”‡ Ø§Ù„Ø¨ÙˆØª Ù„ÙŠØ³ Ø§Ø¯Ù…Ù† ÙŠØ±Ø¬Ù‰ ØªØ±Ù‚ÙŠØªÙŠ !') 
 return false  
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
@@ -13474,20 +6091,20 @@ tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sen
 if da and da.status_.ID == "ChatMemberStatusEditor" or da and da.status_.ID == "ChatMemberStatusCreator" then
 if da and da.user_id_ == msg.sender_user_id_ then
 if da.status_.ID == "ChatMemberStatusCreator" then
-var = 'ÇáãäÔÆ'
+var = 'Ø§Ù„Ù…Ù†Ø´Ø¦'
 elseif da.status_.ID == "ChatMemberStatusEditor" then
-var = 'ÇáÇÏãä'
+var = 'Ø§Ù„Ø§Ø¯Ù…Ù†'
 else 
-var= 'ÚÖæ'
+var= 'Ø¹Ø¶Ùˆ'
 end
 if database:sismember(bot_id..'Pir3te:Chek:Groups',msg.chat_id_) then
-send(msg.chat_id_, msg.id_,'?? ? ÇáãÌãæÚå ãİÚáå ÓÇÈŞÇ ')
+send(msg.chat_id_, msg.id_,'ğŸ“® â”‡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ù…ÙØ¹Ù„Ù‡ Ø³Ø§Ø¨Ù‚Ø§ ')
 else
 if tonumber(data.member_count_) < tonumber(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0) and not DevPir3te(msg) then
-send(msg.chat_id_, msg.id_,'?? ? ÚÏÏ ÇÚÖÇÁ ÇáãÌãæÚå ÇŞá ãä *~ {'..(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0)..'* ÚÖæ')
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø§Ù‚Ù„ Ù…Ù† *~ {'..(database:get(bot_id..'Pir3te:Num:Add:Bot') or 0)..'* Ø¹Ø¶Ùˆ')
 return false
 end
-Reply_Status(msg,result.id_,'reply_Add','? ? Êã ÊİÚíá ÇáãÌãæÚå ~ '..chat.title_..'')
+Reply_Status(msg,result.id_,'reply_Add','â˜‘ â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ '..chat.title_..'')
 database:sadd(bot_id..'Pir3te:Chek:Groups',msg.chat_id_)  
 database:sadd(bot_id..'Pir3te:Basic:Constructor'..msg.chat_id_, msg.sender_user_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
@@ -13505,15 +6122,15 @@ local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token.
 if linkgpp.ok == true then 
 LinkGp = linkgpp.result
 else
-LinkGp = 'áÇ íæÌÏ'
+LinkGp = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
 end
-Text = '?? ? Êã ÊİÚíá ãÌãæÚå ÌÏíÏå\n'..
-'\n?? ? ÈæÇÓØÉ ~ '..Name..''..
-'\n?? ? ãæŞÚå İí ÇáãÌãæÚå ~ '..AddPy..'' ..
-'\n?? ? ÇíÏí ÇáãÌãæÚå ~ `'..IdChat..'`'..
-'\n?? ? ÚÏÏ ÇÚÖÇÁ ÇáãÌãæÚå *~ '..NumMember..'*'..
-'\n?? ? ÇÓã ÇáãÌãæÚå ~ ['..NameChat..']'..
-'\n?? ? ÇáÑÇÈØ ~ ['..LinkGp..']'
+Text = 'ğŸ”– â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ø¬Ø¯ÙŠØ¯Ù‡\n'..
+'\nğŸ‘¤ â”‡ Ø¨ÙˆØ§Ø³Ø·Ø© ~ '..Name..''..
+'\nğŸ“Œ â”‡ Ù…ÙˆÙ‚Ø¹Ù‡ ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ '..AddPy..'' ..
+'\nğŸ“› â”‡ Ø§ÙŠØ¯ÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ `'..IdChat..'`'..
+'\nğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ø¹Ø¶Ø§Ø¡ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ *~ '..NumMember..'*'..
+'\nğŸ“¬ â”‡ Ø§Ø³Ù… Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡ ~ ['..NameChat..']'..
+'\nğŸ“¥ â”‡ Ø§Ù„Ø±Ø§Ø¨Ø· ~ ['..LinkGp..']'
 if not DevPir3te(msg) then
 sendText(Id_Sudo,Text,0,'md')
 end
@@ -13529,21 +6146,21 @@ end
 if Chat_Type == 'UserBot' then
 if text == '/start' then  
 if DevPir3te(msg) then
-local Text = '*?? ? ãÑÍÈÇ ÚÒíÒí ÂáãÜØÜæÑ • ??????\n?? ? ÊÓÜÊØÜíÚş ÂáÊÍã Èá ÂáÂæÂãÜÑ • ??\n?? ? ÂáãÜãÜæÌæÏå ÈÂáíÈæÑÏ İí ÂáÇÓİÜá\n?? ? İŞØ ÂÖÜÛØ Ú ÂáÂãÜÑ ÂáĞí ÊÑíÏ ÊäİíĞåÀ\nÁ?? ? ? ? ? ? ? ? ??\n?? ? ãÚÑİ  ÇáãØæÑ~?  ['..UserName..']*'
+local Text = '*ğŸ“Œ â”‡ Ù…Ø±Ø­Ø¨Ø§ Ø¹Ø²ÙŠØ²ÙŠ Ø¢Ù„Ù…Ù€Ø·Ù€ÙˆØ± â€¢ ğŸ™‹ğŸ»â€â™‚ï¸\nğŸ“® â”‡ ØªØ³Ù€ØªØ·Ù€ÙŠØ¹â€Œâ€ Ø¢Ù„ØªØ­Ú¯Ù… Ø¨Ú¯Ù„ Ø¢Ù„Ø¢ÙˆØ¢Ù…Ù€Ø± â€¢ ğŸƒ\nğŸ“« â”‡ Ø¢Ù„Ù…Ù€Ù…Ù€ÙˆØ¬ÙˆØ¯Ù‡ Ø¨Ø¢Ù„Ú¯ÙŠØ¨ÙˆØ±Ø¯ ÙÙŠ Ø¢Ù„Ø§Ø³ÙÙ€Ù„\nğŸ”– â”‡ ÙÙ‚Ø· Ø¢Ø¶Ù€ØºØ· Ø¹ Ø¢Ù„Ø¢Ù…Ù€Ø± Ø¢Ù„Ø°ÙŠ ØªØ±ÙŠØ¯ ØªÙ†ÙÙŠØ°Ù‡Ûâ€Œ\nØ¡ê”¹â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ê”¹\nâ˜‘ï¸ â”‡ Ù…Ø¹Ø±Ù  Ø§Ù„Ù…Ø·ÙˆØ±~âª¼  ['..UserName..']*'
 local keyboard = {
-{'ÊİÚíá ÇáÈæÊ ÎÏãí ??','ÊÚØíá ÇáÈæÊ ÎÏãí ??'},
-{'ÊİÚíá ÇáÊæÇÕá ??','ÊÚØíá ÇáÊæÇÕá ??'},
-{'ÊäÙíİ ÇáßÑæÈÇÊ ??','ÊäÙíİ ÇáãÔÊÑßíä ??'},
-{'ÇáÇÍÕÇÆíÇÊ ??'},
-{'ÊİÚíá ÇáÇĞÇÚå ??','ÊÚØíá ÇáÇĞÇÚå ??'},
-{'ÇĞÇÚå ÈÇáÊæÌíå??','ÇĞÇÚå ÈÇáÊæÌíå ÎÇÕ ??'},
-{'ÇĞÇÚå ÎÇÕ ???','ÇĞÇÚå ??'},
-{'ÇáãØæÑíä ??','ãÓÍ ÇáãØæÑíä ??'},
-{'ãÓÍ ŞÇÆãå ÇáÚÇã ??','ŞÇÆãå ÇáÚÇã ??'},
-{'ÍĞİ ßáíÔå ÓÊÇÑÊ ??','ÖÚ ßáíÔå ÓÊÇÑÊ ??'},
-{'ÊÍÏíË ?','ÊÍÏíË ÇáÓæÑÓ ??'},
-{'ÌáÈ äÓÎå ÇÍÊíÇØíå ??'},
-{'ÇáÛÇÁ ?'}
+{'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø®Ø¯Ù…ÙŠ ğŸ”“','ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø®Ø¯Ù…ÙŠ ğŸ”'},
+{'ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ ğŸ”›','ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ âœ–ï¸'},
+{'ØªÙ†Ø¸ÙŠÙ Ø§Ù„ÙƒØ±ÙˆØ¨Ø§Øª ğŸ—‘','ØªÙ†Ø¸ÙŠÙ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† ğŸ‘¤'},
+{'Ø§Ù„Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª ğŸ“ˆ'},
+{'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ ğŸ””','ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ ğŸ”•'},
+{'Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ğŸ“«','Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø®Ø§Øµ ğŸ“¬'},
+{'Ø§Ø°Ø§Ø¹Ù‡ Ø®Ø§Øµ ğŸ—£ï¸','Ø§Ø°Ø§Ø¹Ù‡ ğŸ“¡'},
+{'Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ† ğŸ•¹','Ù…Ø³Ø­ Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ† ğŸš¸'},
+{'Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù… ğŸ“®','Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù… ğŸ“Œ'},
+{'Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª ğŸƒ','Ø¶Ø¹ ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª ğŸ“§'},
+{'ØªØ­Ø¯ÙŠØ« â™»','ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³ â˜‘ï¸'},
+{'Ø¬Ù„Ø¨ Ù†Ø³Ø®Ù‡ Ø§Ø­ØªÙŠØ§Ø·ÙŠÙ‡ ğŸ“'},
+{'Ø§Ù„ØºØ§Ø¡ âœ–'}
 }
 send_inline_key(msg.chat_id_,Text,keyboard)
 else
@@ -13552,7 +6169,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 Test = start
 else
-Test = '*?? ?  ãÑÍÈÇ ÚÒíÒí\n?? ?  ÂäÇ ÈæÊ ÍãÇíÉ ÂáãÌãæÚÇÊ\n?? ?  ÇÖİäí Âáì ãÌãæÚÊß\n?? ? Şã ÈÑİÚí ÂÏãä æÂÑÓá » { ÊİÚíá }\n?? ? ÓÆŞæã ÈÑİÚ ÂáãäÔÆ æÂ ÇáÇÏãäíå ÊáŞÇÆí\n?? ? ? ? ? ? ? ? ??\n? ? ãÚÑİ ÇáãØæÑ ['..UserName..']*'
+Test = '*ğŸ“Œ â”‡  Ù…Ø±Ø­Ø¨Ø§ Ø¹Ø²ÙŠØ²ÙŠ\nğŸ“® â”‡  Ø¢Ù†Ø§ Ø¨ÙˆØª Ø­Ù…Ø§ÙŠØ© Ø¢Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª\nğŸ“« â”‡  Ø§Ø¶ÙÙ†ÙŠ Ø¢Ù„Ù‰ Ù…Ø¬Ù…ÙˆØ¹ØªÙƒ\nğŸ“¥ â”‡ Ù‚Ù… Ø¨Ø±ÙØ¹ÙŠ Ø¢Ø¯Ù…Ù† ÙˆØ¢Ø±Ø³Ù„ Â» { ØªÙØ¹ÙŠÙ„ }\nğŸ”– â”‡ Ø³Ø¦Ù‚ÙˆÙ… Ø¨Ø±ÙØ¹ Ø¢Ù„Ù…Ù†Ø´Ø¦ ÙˆØ¢ Ø§Ù„Ø§Ø¯Ù…Ù†ÙŠÙ‡ ØªÙ„Ù‚Ø§Ø¦ÙŠ\nê”¹â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ê”¹\nâ˜‘ â”‡ Ù…Ø¹Ø±Ù Ø§Ù„Ù…Ø·ÙˆØ± ['..UserName..']*'
 end 
 send(msg.chat_id_, msg.id_, Test) 
 end
@@ -13561,14 +6178,14 @@ database:setex(bot_id..'Pir3te:Start:Time'..msg.sender_user_id_,60,true)
 return false
 end
 if not DevPir3te(msg) and not database:sismember(bot_id..'BaN:In:User',msg.sender_user_id_) and not database:get(bot_id..'Texting:In:Bv') then
-send(msg.sender_user_id_,msg.id_,'?? ? ÊãÊ ÇÑÓÇá ÑÓÇáÊß Çáì ~ ['..UserName..']')    
+send(msg.sender_user_id_,msg.id_,'ğŸ“§ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø±Ø³Ø§Ù„ØªÙƒ Ø§Ù„Ù‰ ~ ['..UserName..']')    
 tdcli_function({ID ="GetChat",chat_id_=Id_Sudo},function(arg,chat)  
 tdcli_function({ID ="GetChat",chat_id_=msg.sender_user_id_},function(arg,chat)  
 tdcli_function({ID="ForwardMessages",chat_id_=Id_Sudo,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,ta) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
 if data and data.messages_ and data.messages_[0].content_.sticker_ then
-sendText(Id_Sudo,'?? ? Êã ÇÑÓÇá ÇáãáÕŞ ãä ~ ['..string.sub(ta.first_name_,0, 40)..'](tg://user?id='..ta.id_..')',0,'md') 
+sendText(Id_Sudo,'ğŸ‘¤ â”‡ ØªÙ… Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù…Ù„ØµÙ‚ Ù…Ù† ~ ['..string.sub(ta.first_name_,0, 40)..'](tg://user?id='..ta.id_..')',0,'md') 
 return false
 end;end;end,nil);end,nil);end,nil);end,nil);end
 if DevPir3te(msg) and msg.reply_to_message_id_ ~= 0  then    
@@ -13577,73 +6194,73 @@ if result.forward_info_.sender_user_id_ then
 id_user = result.forward_info_.sender_user_id_    
 end     
 tdcli_function ({ID = "GetUser",user_id_ = id_user},function(arg,data) 
-if text == 'ÍÙÑ' then
-sendText(Id_Sudo,'?? ?  áÔÎÕ » ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n?? ?  Êã ÍÙÑå ãä ÇáÊæÇÕá ',msg.id_/2097152/0.5,'md')
+if text == 'Ø­Ø¸Ø±' then
+sendText(Id_Sudo,'ğŸ‘¤ â”‡  Ù„Ø´Ø®Øµ Â» ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\nğŸ’¢ â”‡  ØªÙ… Ø­Ø¸Ø±Ù‡ Ù…Ù† Ø§Ù„ØªÙˆØ§ØµÙ„ ',msg.id_/2097152/0.5,'md')
 database:sadd(bot_id..'BaN:In:User',data.id_)  
 return false  
 end 
-if text =='ÇáÛÇÁ ÇáÍÙÑ' then
-sendText(Id_Sudo,'?? ? ÇáÔÎÕ » ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\n?? ?  Êã ÇáÛÇÁ ÍÙÑå ãä ÇáÊæÇÕá ',msg.id_/2097152/0.5,'md')
+if text =='Ø§Ù„ØºØ§Ø¡ Ø§Ù„Ø­Ø¸Ø±' then
+sendText(Id_Sudo,'ğŸ‘¤ â”‡ Ø§Ù„Ø´Ø®Øµ Â» ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')'..'\nğŸ’¢ â”‡  ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­Ø¸Ø±Ù‡ Ù…Ù† Ø§Ù„ØªÙˆØ§ØµÙ„ ',msg.id_/2097152/0.5,'md')
 database:srem(bot_id..'BaN:In:User',data.id_)  
 return false  
 end 
 tdcli_function({ID='GetChat',chat_id_ = id_user},function(arg,dataq)
 tdcli_function ({ ID = "SendChatAction",chat_id_ = id_user, action_ = {  ID = "SendMessageTypingAction", progress_ = 100} },function(arg,ta) 
 if ta.code_ == 400 or ta.code_ == 5 then
-send(msg.chat_id_, msg.id_,'\n?? ?  İÔá ÇÑÓÇá ÑÓÇáÊß áÇä ÇáÚÖæ ŞÇã ÈÍÙÑ ÇáÈæÊ') 
+send(msg.chat_id_, msg.id_,'\nğŸ’¢ â”‡  ÙØ´Ù„ Ø§Ø±Ø³Ø§Ù„ Ø±Ø³Ø§Ù„ØªÙƒ Ù„Ø§Ù† Ø§Ù„Ø¹Ø¶Ùˆ Ù‚Ø§Ù… Ø¨Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª') 
 return false  
 end 
 if text then    
 send(id_user,msg.id_,text)    
-Text = '?? ? ÊãÊ ÇÑÓÇá ÇáÑÓÇáå Çáíå .. '
+Text = 'ğŸ“¨ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ø±Ø³Ø§Ù„Ù‡ Ø§Ù„ÙŠÙ‡ .. '
 elseif msg.content_.ID == 'MessageSticker' then    
 sendSticker(id_user, msg.id_, msg.content_.sticker_.sticker_.persistent_id_)   
-Text = '?? ? ÊãÊ ÇÑÓÇá ÇáãáÕŞ Çáíå .. '
+Text = 'ğŸ“¨ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù…Ù„ØµÙ‚ Ø§Ù„ÙŠÙ‡ .. '
 elseif msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_,msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
-Text = '?? ? ÊãÊ ÇÑÓÇá ÇáÕæÑå Çáíå .. '
+Text = 'ğŸ“¨ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø§Ù„ØµÙˆØ±Ù‡ Ø§Ù„ÙŠÙ‡ .. '
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, msg.content_.animation_.animation_.persistent_id_)    
-Text = '?? ? ÊãÊ ÇÑÓÇá ÇáãÊÍÑßå Çáíå .. '
+Text = 'ğŸ“¨ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù…ØªØ­Ø±ÙƒÙ‡ Ø§Ù„ÙŠÙ‡ .. '
 elseif msg.content_.ID == 'MessageVoice' then    
 sendVoice(id_user, msg.id_, msg.content_.voice_.voice_.persistent_id_)    
-Text = '?? ? ÊãÊ ÇÑÓÇá ÇáÈÕãå Çáíå .. '
+Text = 'ğŸ“¨ â”‡ ØªÙ…Øª Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ø¨ØµÙ…Ù‡ Ø§Ù„ÙŠÙ‡ .. '
 end     
-sendText(Id_Sudo,Text..'\n'..'?? ?  ~ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
+sendText(Id_Sudo,Text..'\n'..'ğŸ‘¤ â”‡  ~ ['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
 end,nil);end,nil);end,nil);end,nil);end 
 if DevPir3te(msg) then
-if text == 'ÊİÚíá ÇáÊæÇÕá ??' then  
+if text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ ğŸ”›' then  
 database:del(bot_id..'Texting:In:Bv') 
-send(msg.chat_id_, msg.id_,'?? ?  Êã ÊİÚíá ÇáÊæÇÕá ') 
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡  ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ ') 
 end
-if text == 'ÊÚØíá ÇáÊæÇÕá ??' then  
+if text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ âœ–ï¸' then  
 database:set(bot_id..'Texting:In:Bv',true) 
-send(msg.chat_id_, msg.id_,'?? ?  Êã ÊÚØíá ÇáÊæÇÕá ') 
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡  ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„ØªÙˆØ§ØµÙ„ ') 
 end
-if text =='ÇáÇÍÕÇÆíÇÊ ??' then
+if text =='Ø§Ù„Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª ğŸ“ˆ' then
 local Groups = database:scard(bot_id..'Pir3te:Chek:Groups')  
 local Users = database:scard(bot_id..'Pir3te:UsersBot')  
-send(msg.chat_id_, msg.id_,'?? ? ÇÍÕÇÆíÇÊ ÇáÈæÊ \n\n?? ? ÚÏÏ ÇáãÌãæÚÇÊ *~ '..Groups..'\n?? ? ÚÏÏ ÇáãÔÊÑßíä ~ '..Users..'*')
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡ Ø§Ø­ØµØ§Ø¦ÙŠØ§Øª Ø§Ù„Ø¨ÙˆØª \n\nğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª *~ '..Groups..'\nğŸ‘¤ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† ~ '..Users..'*')
 end
-if text == "ÊäÙíİ ÇáãÔÊÑßíä ??" then
+if text == "ØªÙ†Ø¸ÙŠÙ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† ğŸ‘¤" then
 local pv = database:smembers(bot_id..'Pir3te:UsersBot')  
 local sendok = 0
 for i = 1, #pv do
 tdcli_function({ID='GetChat',chat_id_ = pv[i]},function(arg,dataq)
 tdcli_function ({ ID = "SendChatAction",chat_id_ = pv[i], action_ = {  ID = "SendMessageTypingAction", progress_ = 100} },function(arg,data) 
 if data.ID and data.ID == "Ok"  then
-print('\27[30;33m»» THE USER IS SAVE ME ?\n»» '..pv[i]..'\n\27[1;37m')
+print('\27[30;33mÂ»Â» THE USER IS SAVE ME â†“\nÂ»Â» '..pv[i]..'\n\27[1;37m')
 else
-print('\27[30;31m»» THE USER IS BLOCK ME ?\n»» '..pv[i]..'\n\27[1;37m')
+print('\27[30;31mÂ»Â» THE USER IS BLOCK ME â†“\nÂ»Â» '..pv[i]..'\n\27[1;37m')
 database:srem(bot_id..'Pir3te:UsersBot',pv[i])  
 sendok = sendok + 1
 end
 if #pv == i then 
 if sendok == 0 then
-send(msg.chat_id_, msg.id_,'?? ? áÇ íæÌÏ ãÔÊÑßíä æåãííä')   
+send(msg.chat_id_, msg.id_,'ğŸ‘¤ â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø´ØªØ±ÙƒÙŠÙ† ÙˆÙ‡Ù…ÙŠÙŠÙ†')   
 else
 local ok = #pv - sendok
-send(msg.chat_id_, msg.id_,'*?? ? ÚÏÏ ÇáãÔÊÑßíä ÇáÇä ~ '..#pv..'\n?? ? Êã ÇáÚËæÑ Úáì ~ '..sendok..' ãÔÊÑß ŞÇã ÈÍÙÑ ÇáÈæÊ\n? ? ÇÕÈÍ ÚÏÏ ÇáãÔÊÑßíä ÇáÇä ~ '..ok..' ãÔÊÑß *')   
+send(msg.chat_id_, msg.id_,'*ğŸ‘¥ â”‡ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† Ø§Ù„Ø§Ù† ~ '..#pv..'\nğŸ’¢ â”‡ ØªÙ… Ø§Ù„Ø¹Ø«ÙˆØ± Ø¹Ù„Ù‰ ~ '..sendok..' Ù…Ø´ØªØ±Ùƒ Ù‚Ø§Ù… Ø¨Ø­Ø¸Ø± Ø§Ù„Ø¨ÙˆØª\nâ˜‘ â”‡ Ø§ØµØ¨Ø­ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø´ØªØ±ÙƒÙŠÙ† Ø§Ù„Ø§Ù† ~ '..ok..' Ù…Ø´ØªØ±Ùƒ *')   
 end
 end
 end,nil)
@@ -13651,7 +6268,7 @@ end,nil)
 end
 return false
 end
-if text == "ÊäÙíİ ÇáßÑæÈÇÊ ??" then
+if text == "ØªÙ†Ø¸ÙŠÙ Ø§Ù„ÙƒØ±ÙˆØ¨Ø§Øª ğŸ—‘" then
 local group = database:smembers(bot_id..'Pir3te:Chek:Groups')  
 local w = 0
 local q = 0
@@ -13659,19 +6276,19 @@ for i = 1, #group do
 tdcli_function({ID='GetChat',chat_id_ = group[i]
 },function(arg,data)
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusMember" then
-print('\27[30;34m»» THE BOT IS NOT ADMIN ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;34mÂ»Â» THE BOT IS NOT ADMIN â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 w = w + 1
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusLeft" then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 q = q + 1
-print('\27[30;35m»» THE BOT IS LEFT GROUP ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;35mÂ»Â» THE BOT IS LEFT GROUP â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusKicked" then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
 q = q + 1
-print('\27[30;36m»» THE BOT IS KICKED GROUP ?\n»» '..group[i]..'\n\27[1;37m')
+print('\27[30;36mÂ»Â» THE BOT IS KICKED GROUP â†“\nÂ»Â» '..group[i]..'\n\27[1;37m')
 end
 if data and data.code_ and data.code_ == 400 then
 database:srem(bot_id..'Pir3te:Chek:Groups',group[i])  
@@ -13679,123 +6296,123 @@ w = w + 1
 end
 if #group == i then 
 if (w + q) == 0 then
-send(msg.chat_id_, msg.id_,'?? ? áÇ ÊæÌÏ ãÌãæÚÇÊ æåãíå ')   
+send(msg.chat_id_, msg.id_,'ğŸ‘¥ â”‡ Ù„Ø§ ØªÙˆØ¬Ø¯ Ù…Ø¬Ù…ÙˆØ¹Ø§Øª ÙˆÙ‡Ù…ÙŠÙ‡ ')   
 else
 local Mohmad = (w + q)
 local sendok = #group - Mohmad
 if q == 0 then
 Mohmad = ''
 else
-Mohmad = '\n?? ?  Êã ÇÒÇáÉ ~ '..q..' ãÌãæÚÇÊ ãä ÇáÈæÊ'
+Mohmad = '\nğŸš¯ â”‡  ØªÙ… Ø§Ø²Ø§Ù„Ø© ~ '..q..' Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ù…Ù† Ø§Ù„Ø¨ÙˆØª'
 end
 if w == 0 then
 storm = ''
 else
-storm = '\n?? ?  Êã ÇÒÇáÉ ~'..w..' ãÌãæÚå áÇä ÇáÈæÊ ÚÖæ'
+storm = '\nğŸš¯ â”‡  ØªÙ… Ø§Ø²Ø§Ù„Ø© ~'..w..' Ù…Ø¬Ù…ÙˆØ¹Ù‡ Ù„Ø§Ù† Ø§Ù„Ø¨ÙˆØª Ø¹Ø¶Ùˆ'
 end
-send(msg.chat_id_, msg.id_,'*?? ?  ÚÏÏ ÇáãÌãæÚÇÊ ÇáÇä ~ '..#group..' ãÌãæÚå '..storm..''..Mohmad..'\n?? ? ÇÕÈÍ ÚÏÏ ÇáãÌãæÚÇÊ ÇáÇä ~ '..sendok..' ãÌãæÚÇÊ*\n')   
+send(msg.chat_id_, msg.id_,'*ğŸ‘¥ â”‡  Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„Ø§Ù† ~ '..#group..' Ù…Ø¬Ù…ÙˆØ¹Ù‡ '..storm..''..Mohmad..'\nğŸ”˜ â”‡ Ø§ØµØ¨Ø­ Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„Ø§Ù† ~ '..sendok..' Ù…Ø¬Ù…ÙˆØ¹Ø§Øª*\n')   
 end
 end
 end,nil)
 end
 return false
 end
-if text == 'ÊİÚíá ÇáÈæÊ ÎÏãí ??' then
+if text == 'ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø®Ø¯Ù…ÙŠ ğŸ”“' then
 database:del(bot_id..'Pir3te:Free:Add:Bots') 
-send(msg.chat_id_, msg.id_,'\n?? ? Êã ÊİÚíá ÇáÈæÊ ÇáÎÏãí ') 
+send(msg.chat_id_, msg.id_,'\nğŸ“« â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ ') 
 end
-if text == 'ÊÚØíá ÇáÈæÊ ÎÏãí ??' then
+if text == 'ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø®Ø¯Ù…ÙŠ ğŸ”' then
 database:set(bot_id..'Pir3te:Free:Add:Bots',true) 
-send(msg.chat_id_, msg.id_,'\n?? ? Êã ÊÚØíá ÇáÈæÊ ÇáÎÏãí') 
+send(msg.chat_id_, msg.id_,'\nğŸ“« â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø¨ÙˆØª Ø§Ù„Ø®Ø¯Ù…ÙŠ') 
 end
-if text=="ÇĞÇÚå ÎÇÕ ???" and msg.reply_to_message_id_ == 0 then
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø®Ø§Øµ ğŸ—£ï¸" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÓæÇÁ ~ { ãáÕŞ, ãÊÍÑßå, ÕæÑå, ÑÓÇáå }\n?? ? ááÎÑæÌ ÇÑÓá ÇáÛÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø³ÙˆØ§Ø¡ ~ { Ù…Ù„ØµÙ‚, Ù…ØªØ­Ø±ÙƒÙ‡, ØµÙˆØ±Ù‡, Ø±Ø³Ø§Ù„Ù‡ }\nğŸ“« â”‡ Ù„Ù„Ø®Ø±ÙˆØ¬ Ø§Ø±Ø³Ù„ Ø§Ù„ØºØ§Ø¡ ") 
 return false
 end 
-if text=="ÇĞÇÚå ??" and msg.reply_to_message_id_ == 0 then
+if text=="Ø§Ø°Ø§Ø¹Ù‡ ğŸ“¡" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÓæÇÁ ~ { ãáÕŞ, ãÊÍÑßå, ÕæÑå, ÑÓÇáå }\n?? ? ááÎÑæÌ ÇÑÓá ÇáÛÇÁ ") 
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø³ÙˆØ§Ø¡ ~ { Ù…Ù„ØµÙ‚, Ù…ØªØ­Ø±ÙƒÙ‡, ØµÙˆØ±Ù‡, Ø±Ø³Ø§Ù„Ù‡ }\nğŸ“« â”‡ Ù„Ù„Ø®Ø±ÙˆØ¬ Ø§Ø±Ø³Ù„ Ø§Ù„ØºØ§Ø¡ ") 
 return false
 end  
-if text=="ÇĞÇÚå ÈÇáÊæÌíå??" and msg.reply_to_message_id_ == 0  then
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ğŸ“«" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÇáÊæÌíå ÇáÇä") 
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø§Ù„Ø§Ù†") 
 return false
 end 
-if text=="ÇĞÇÚå ÈÇáÊæÌíå ÎÇÕ ??" and msg.reply_to_message_id_ == 0  then
+if text=="Ø§Ø°Ø§Ø¹Ù‡ Ø¨Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø®Ø§Øµ ğŸ“¬" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."Pir3te:Status:Bc") and not DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"?? ? ÇáÇĞÇÚå ãÚØáå ãä ŞÈá ÇáãØæÑ ÇáÇÓÇÓí")
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ Ù…Ø¹Ø·Ù„Ù‡ Ù…Ù† Ù‚Ø¨Ù„ Ø§Ù„Ù…Ø·ÙˆØ± Ø§Ù„Ø§Ø³Ø§Ø³ÙŠ")
 return false
 end
 database:setex(bot_id.."Pir3te:Pir3te:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
-send(msg.chat_id_, msg.id_,"?? ? ÇÑÓá áí ÇáÊæÌíå ÇáÇä") 
+send(msg.chat_id_, msg.id_,"ğŸ“¥ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ØªÙˆØ¬ÙŠÙ‡ Ø§Ù„Ø§Ù†") 
 return false
 end 
-if text == "ÊİÚíá ÇáÇĞÇÚå ??" then
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ ğŸ””" then
 database:del(bot_id.."Pir3te:Status:Bc") 
-send(msg.chat_id_, msg.id_,"\n?? ? Êã ÊİÚíá ÇáÇĞÇÚå " ) 
+send(msg.chat_id_, msg.id_,"\nğŸ“« â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ " ) 
 return false
 end 
-if text == "ÊÚØíá ÇáÇĞÇÚå ??" then
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡ ğŸ”•" then
 database:set(bot_id.."Pir3te:Status:Bc",true) 
-send(msg.chat_id_, msg.id_,"\n?? ? Êã ÊÚØíá ÇáÇĞÇÚå") 
+send(msg.chat_id_, msg.id_,"\nğŸ“« â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ø§Ø°Ø§Ø¹Ù‡") 
 return false
 end 
-if text == "ÊİÚíá ÇáãÛÇÏÑå ??" then
+if text == "ØªÙØ¹ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ù‡ ğŸ”" then
 database:del(bot_id.."Pir3te:Left:Bot"..msg.chat_id_)  
-send(msg.chat_id_, msg.id_,"?? ? Êã ÊİÚíá ãÛÇÏÑÉ ÇáÈæÊ") 
+send(msg.chat_id_, msg.id_,"ğŸ“« â”‡ ØªÙ… ØªÙØ¹ÙŠÙ„ Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ø¨ÙˆØª") 
 return false 
 end
-if text == "ÊÚØíá ÇáãÛÇÏÑå ??" then
+if text == "ØªØ¹Ø·ÙŠÙ„ Ø§Ù„Ù…ØºØ§Ø¯Ø±Ù‡ ğŸ”“" then
 database:set(bot_id.."Pir3te:Left:Bot"..msg.chat_id_,true)   
-send(msg.chat_id_, msg.id_, "?? ? Êã ÊÚØíá ãÛÇÏÑÉ ÇáÈæÊ") 
+send(msg.chat_id_, msg.id_, "ğŸ”˜ â”‡ ØªÙ… ØªØ¹Ø·ÙŠÙ„ Ù…ØºØ§Ø¯Ø±Ø© Ø§Ù„Ø¨ÙˆØª") 
 return false 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'ÇáÛÇÁ ?' then   
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇáÛÇÁ ÍİÙ ßáíÔå ÓÊÇÑÊ") 
+if text == 'Ø§Ù„ØºØ§Ø¡ âœ–' then   
+send(msg.chat_id_, msg.id_,"ğŸ”˜ â”‡ ØªÙ… Ø§Ù„ØºØ§Ø¡ Ø­ÙØ¸ ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª") 
 database:del(bot_id..'Start:Bots') 
 return false
 end
 database:set(bot_id.."Start:Bot",text)  
-send(msg.chat_id_, msg.id_,'?? ? Êã ÍİÙ ßáíÔå ÓÊÇÑÊ') 
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡ ØªÙ… Ø­ÙØ¸ ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª') 
 database:del(bot_id..'Start:Bots') 
 return false
 end
-if text == 'ÖÚ ßáíÔå ÓÊÇÑÊ ??' then
+if text == 'Ø¶Ø¹ ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª ğŸ“§' then
 database:set(bot_id..'Start:Bots',true) 
-send(msg.chat_id_, msg.id_,'?? ? ÇÑÓá áí ÇáßáíÔå ÇáÇä') 
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡ Ø§Ø±Ø³Ù„ Ù„ÙŠ Ø§Ù„ÙƒÙ„ÙŠØ´Ù‡ Ø§Ù„Ø§Ù†') 
 return false
 end
-if text == 'ÍĞİ ßáíÔå ÓÊÇÑÊ ??' then
+if text == 'Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª ğŸƒ' then
 database:del(bot_id..'Start:Bot') 
-send(msg.chat_id_, msg.id_,'?? ? Êã ÍĞİ ßáíÔå ÓÊÇÑÊ') 
+send(msg.chat_id_, msg.id_,'ğŸ”˜ â”‡ ØªÙ… Ø­Ø°Ù ÙƒÙ„ÙŠØ´Ù‡ Ø³ØªØ§Ø±Øª') 
 end
-if text == ("ãÓÍ ŞÇÆãå ÇáÚÇã ??") and DevPir3te(msg) then
+if text == ("Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù… ğŸ“®") and DevPir3te(msg) then
 database:del(bot_id.."Pir3te:GBan:User")
-send(msg.chat_id_, msg.id_, "\n?? ? Êã ãÓÍ ŞÇÆãå ÇáÚÇã")
+send(msg.chat_id_, msg.id_, "\nğŸ“® â”‡ ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù…")
 return false
 end
-if text == ("ãÓÍ ÇáãØæÑíä ??") and DevPir3te(msg) then
+if text == ("Ù…Ø³Ø­ Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ† ğŸš¸") and DevPir3te(msg) then
 database:del(bot_id.."Pir3te:Sudo:User")
-send(msg.chat_id_, msg.id_, "\n?? ?  Êã ãÓÍ ŞÇÆãÉ ÇáãØæÑíä  ")
+send(msg.chat_id_, msg.id_, "\nğŸ“® â”‡  ØªÙ… Ù…Ø³Ø­ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ†  ")
 end
-if text == ("ŞÇÆãå ÇáÚÇã ??") and DevPir3te(msg) then
+if text == ("Ù‚Ø§Ø¦Ù…Ù‡ Ø§Ù„Ø¹Ø§Ù… ğŸ“Œ") and DevPir3te(msg) then
 local list = database:smembers(bot_id.."Pir3te:GBan:User")
-t = "\n? ? ŞÇÆãÉ ÇáãÍÙæÑíä ÚÇã \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø­Ø¸ÙˆØ±ÙŠÙ† Ø¹Ø§Ù… \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -13805,14 +6422,14 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãÍÙæÑíä ÚÇã"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø­Ø¸ÙˆØ±ÙŠÙ† Ø¹Ø§Ù…"
 end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("ÇáãØæÑíä ??") and DevPir3te(msg) then
+if text == ("Ø§Ù„Ù…Ø·ÙˆØ±ÙŠÙ† ğŸ•¹") and DevPir3te(msg) then
 local list = database:smembers(bot_id.."Pir3te:Sudo:User")
-t = "\n? ? ŞÇÆãÉ ãØæÑíä ÇáÈæÊ \n? ? ? ? ? ? ? ? ? \n"
+t = "\nâ›” â”‡ Ù‚Ø§Ø¦Ù…Ø© Ù…Ø·ÙˆØ±ÙŠÙ† Ø§Ù„Ø¨ÙˆØª \nâ”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ â”‰ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."Pir3te:User:Name" .. v)
 if username then
@@ -13822,11 +6439,11 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "? ? áÇ íæÌÏ ãØæÑíä"
+t = "âœ– â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ù…Ø·ÙˆØ±ÙŠÙ†"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'ÌáÈ äÓÎå ÇÍÊíÇØíå ??' then
+if text == 'Ø¬Ù„Ø¨ Ù†Ø³Ø®Ù‡ Ø§Ø­ØªÙŠØ§Ø·ÙŠÙ‡ ğŸ“' then
 local list = database:smembers(bot_id..'Pir3te:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
@@ -13891,10 +6508,10 @@ t = t..'}}'
 local File = io.open('./File_Libs/'..bot_id..'.json', "w")
 File:write(t)
 File:close()
-sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', '?? ?  ÚÏÏ ãÌãæÚÇÊ ÇáÊí İí ÇáÈæÊ { '..#list..'}')
+sendDocument(msg.chat_id_, msg.id_,'./File_Libs/'..bot_id..'.json', 'ğŸ“® â”‡  Ø¹Ø¯Ø¯ Ù…Ø¬Ù…ÙˆØ¹Ø§Øª Ø§Ù„ØªÙŠ ÙÙŠ Ø§Ù„Ø¨ÙˆØª { '..#list..'}')
 end
-if text == "ÊÍÏíË ÇáÓæÑÓ ??" then
-send(msg.chat_id_,msg.id_,'? ? Êã ÇáÊÍÏíË')
+if text == "ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³ â˜‘ï¸" then
+send(msg.chat_id_,msg.id_,'â˜‘ â”‡ ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ«')
 os.execute('rm -rf Pir3te.lua')
 os.execute('rm -rf start.lua')
 os.execute('wget https://raw.githubusercontent.com/Pir3te/Pir3te/master/Pir3te.lua')
@@ -13902,9 +6519,9 @@ os.execute('wget https://raw.githubusercontent.com/Pir3te/Pir3te/master/start.lu
 dofile('Pir3te.lua')  
 return false
 end
-if text == "ÊÍÏíË ?" then
+if text == "ØªØ­Ø¯ÙŠØ« â™»" then
 dofile("Pir3te.lua")  
-send(msg.chat_id_, msg.id_, "? ? Êã ÇáÊÍÏíË")
+send(msg.chat_id_, msg.id_, "â˜‘ â”‡ ØªÙ… Ø§Ù„ØªØ­Ø¯ÙŠØ«")
 end
 end
 end --- Chat_Type = 'UserBot' 
@@ -14018,9 +6635,9 @@ if NewCmmd then
 database:del(bot_id.."Pir3te:Set:Cmd:Group:New1"..msg.chat_id_..":"..text)
 database:del(bot_id.."Pir3te:Set:Cmd:Group:New"..msg.chat_id_)
 database:srem(bot_id.."Pir3te:List:Cmd:Group:New"..msg.chat_id_,text)
-send(msg.chat_id_, msg.id_,"?? ? Êã ÇÒÇáÉ ÇáÇãÑ ãä ÇáãÌãæÚå")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ ØªÙ… Ø§Ø²Ø§Ù„Ø© Ø§Ù„Ø§Ù…Ø± Ù…Ù† Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ù‡")  
 else
-send(msg.chat_id_, msg.id_,"?? ? áÇ íæÌÏ ÇãÑ ÈåÇĞÇ ÇáÇÓã ÊÇßÏ ãä ÇáÇãÑ æÇÚÏ ÇáãÍÇæáå")  
+send(msg.chat_id_, msg.id_,"ğŸ”° â”‡ Ù„Ø§ ÙŠÙˆØ¬Ø¯ Ø§Ù…Ø± Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ø§Ø³Ù… ØªØ§ÙƒØ¯ Ù…Ù† Ø§Ù„Ø§Ù…Ø± ÙˆØ§Ø¹Ø¯ Ø§Ù„Ù…Ø­Ø§ÙˆÙ„Ù‡")  
 end
 database:del(bot_id.."Pir3te:Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
@@ -14032,19 +6649,19 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "ŞÑÕÇä")
+local Name_Bot = (database:get(bot_id.."Pir3te:Name:Bot") or "Ù‚Ø±ØµØ§Ù†")
 if not database:get(bot_id.."Pir3te:Fun_Bots"..msg.chat_id_) then
-if text ==  ""..Name_Bot..' Ôäæ ÑÆíß ÈåĞÇ' and tonumber(msg.reply_to_message_id_) > 0 then     
+if text ==  ""..Name_Bot..' Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø°Ø§' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'áæßí æÒÇÍİ ãä ÓÇÚ ÒÍİáí æÍÖÑÊå ??','ÎæÔ æáÏ æ æÑÏå ãÇá Çááå ??','íáÚÈ Ú ÇáÈäÇÊ ??', 'æáÏ ÒÇíÚÊå ÇáßÇÚ ????','ÕÇß íÎÈá æãÚÖá ','ãÍáæ æÔæÇÑÈå ÌäåÇ ãßäÇÓå ????????','ÇãæÊ Úáíå ??','åæå ÛíÑ ÇáÍÈ ãÇá Çäí ??','ãæ ÎæÔ æáÏ ÕÑÇÍå ??','ÇÏÈÓÒ æãíÍÊÑã ÇáÈäÇÊ  ', 'İÏ æÇÍÏ ŞĞÑ ????','ãÇØíŞå ßá ãÇ ÇßãÔå ÑíÍÊå ÌäåÇ ÈÎÇÎ Èİ ÈÇİ ãÇá ÍÔÑÇÊ ??????','ãæ ÎæÔ æáÏ ??' } 
+local Fun = {'Ù„ÙˆÙƒÙŠ ÙˆØ²Ø§Ø­Ù Ù…Ù† Ø³Ø§Ø¹ Ø²Ø­ÙÙ„ÙŠ ÙˆØ­Ø¶Ø±ØªÙ‡ ğŸ˜’','Ø®ÙˆØ´ ÙˆÙ„Ø¯ Ùˆ ÙˆØ±Ø¯Ù‡ Ù…Ø§Ù„ Ø§Ù„Ù„Ù‡ ğŸ™„','ÙŠÙ„Ø¹Ø¨ Ø¹ Ø§Ù„Ø¨Ù†Ø§Øª ğŸ™„', 'ÙˆÙ„Ø¯ Ø²Ø§ÙŠØ¹ØªÙ‡ Ø§Ù„ÙƒØ§Ø¹ ğŸ˜¶ğŸ™Š','ØµØ§Ùƒ ÙŠØ®Ø¨Ù„ ÙˆÙ…Ø¹Ø¶Ù„ ','Ù…Ø­Ù„Ùˆ ÙˆØ´ÙˆØ§Ø±Ø¨Ù‡ Ø¬Ù†Ù‡Ø§ Ù…ÙƒÙ†Ø§Ø³Ù‡ ğŸ˜‚ğŸ¤·ğŸ¼â€â™€ï¸','Ø§Ù…ÙˆØª Ø¹Ù„ÙŠÙ‡ ğŸŒ','Ù‡ÙˆÙ‡ ØºÙŠØ± Ø§Ù„Ø­Ø¨ Ù…Ø§Ù„ Ø§Ù†ÙŠ â¤ï¸','Ù…Ùˆ Ø®ÙˆØ´ ÙˆÙ„Ø¯ ØµØ±Ø§Ø­Ù‡ â˜¹ï¸','Ø§Ø¯Ø¨Ø³Ø² ÙˆÙ…ÙŠØ­ØªØ±Ù… Ø§Ù„Ø¨Ù†Ø§Øª  ', 'ÙØ¯ ÙˆØ§Ø­Ø¯ Ù‚Ø°Ø± ğŸ™„ğŸ˜’','Ù…Ø§Ø·ÙŠÙ‚Ù‡ ÙƒÙ„ Ù…Ø§ Ø§ÙƒÙ…Ø´Ù‡ Ø±ÙŠØ­ØªÙ‡ Ø¬Ù†Ù‡Ø§ Ø¨Ø®Ø§Ø® Ø¨Ù Ø¨Ø§Ù Ù…Ø§Ù„ Ø­Ø´Ø±Ø§Øª ğŸ˜‚ğŸ¤·â€â™€ï¸','Ù…Ùˆ Ø®ÙˆØ´ ÙˆÙ„Ø¯ ğŸ¤“' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
 return false
 end  
-if text == ""..Name_Bot..' Ôäæ ÑÆíß ÈåÇí' and tonumber(msg.reply_to_message_id_) > 0 then    
+if text == ""..Name_Bot..' Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø§ÙŠ' and tonumber(msg.reply_to_message_id_) > 0 then    
 function FunBot(extra, result, success) 
-local Fun = {'ÇáßÈÏ ãÇá Çäí åíå ','ÎÊæáí ãÇÍÈåÇ ','ÎÇäÊäí æíå ÕÏíŞí ??','ÈÓ áæ ÇáßİåÇ Çáå ÇÚÖåÇ ??','ÎæÔ Èäíå ÈÓ ÚÏå ãßÓÑÇÊ ÒÇíÏå æäÇŞÕå ãäÇ æãäÇ æåíå ÊÏÑí ÈäİÓåÇ ??','ÌĞÇÈå æãäÇİŞå ÓæÊáí ãÔßáå æíå ÇáÍÈ ãÇáÊí ','Æææææææææİ ÇãæÊ Ú ÑÈåÇ ','ÏíÑæ ÈÇáßã ãäåÇ ÊáÚÈ Ú ÇáæáÏ ?? ÖÍßÊ Ú æÇÍÏ ŞØÊå Çíİæä 7 ','ÕÏíŞÊí æÎÊí æÑæÍí æÍíÇÊí ','İÏ æÍÏå ãäÍÑİå ??','ÓÇßäå ÈÇáÚáÇæí æäÊå ÍÏÏ ÈÚÏ áÓÇäåÇ áÓÇä ÏáÇáå ????','Çã ÓÍæÑå ÓÍÑÊ ÇÎæíÇ æÚáßÊå 6 ÓäæÇÊ ??','ãÇÍÈåÇ ??','Èáå åÇí ÌåÑå ÊÓÆá ÚáíåÇ ¿ ','ÈÑÈß ÆäÊå æÇááå İÇÑÛ æÈØÑÇä æãÇÚÏß Ôí ÊÓæí ÌÇí ÊÓÆá Ú ÈäÇÊ ÇáÚÇáã æáí íáå ??','íÇÎí Èäíå ÍÈæÈå ÈÓ áÈÚÑß ãÚãí ÚáíåÇ ÊÔÑÈ åæÇí ??' } 
+local Fun = {'Ø§Ù„ÙƒØ¨Ø¯ Ù…Ø§Ù„ Ø§Ù†ÙŠ Ù‡ÙŠÙ‡ ','Ø®ØªÙˆÙ„ÙŠ Ù…Ø§Ø­Ø¨Ù‡Ø§ ','Ø®Ø§Ù†ØªÙ†ÙŠ ÙˆÙŠÙ‡ ØµØ¯ÙŠÙ‚ÙŠ ğŸ˜”','Ø¨Ø³ Ù„Ùˆ Ø§Ù„ÙƒÙÙ‡Ø§ Ø§Ù„Ù‡ Ø§Ø¹Ø¶Ù‡Ø§ ğŸ’”','Ø®ÙˆØ´ Ø¨Ù†ÙŠÙ‡ Ø¨Ø³ Ø¹Ø¯Ù‡ Ù…ÙƒØ³Ø±Ø§Øª Ø²Ø§ÙŠØ¯Ù‡ ÙˆÙ†Ø§Ù‚ØµÙ‡ Ù…Ù†Ø§ ÙˆÙ…Ù†Ø§ ÙˆÙ‡ÙŠÙ‡ ØªØ¯Ø±ÙŠ Ø¨Ù†ÙØ³Ù‡Ø§ ğŸ˜’','Ø¬Ø°Ø§Ø¨Ù‡ ÙˆÙ…Ù†Ø§ÙÙ‚Ù‡ Ø³ÙˆØªÙ„ÙŠ Ù…Ø´ÙƒÙ„Ù‡ ÙˆÙŠÙ‡ Ø§Ù„Ø­Ø¨ Ù…Ø§Ù„ØªÙŠ ','Ø¦ÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙ Ø§Ù…ÙˆØª Ø¹ Ø±Ø¨Ù‡Ø§ ','Ø¯ÙŠØ±Ùˆ Ø¨Ø§Ù„ÙƒÙ… Ù…Ù†Ù‡Ø§ ØªÙ„Ø¹Ø¨ Ø¹ Ø§Ù„ÙˆÙ„Ø¯ ğŸ˜¶ Ø¶Ø­ÙƒØª Ø¹ ÙˆØ§Ø­Ø¯ Ù‚Ø·ØªÙ‡ Ø§ÙŠÙÙˆÙ† 7 ','ØµØ¯ÙŠÙ‚ØªÙŠ ÙˆØ®ØªÙŠ ÙˆØ±ÙˆØ­ÙŠ ÙˆØ­ÙŠØ§ØªÙŠ ','ÙØ¯ ÙˆØ­Ø¯Ù‡ Ù…Ù†Ø­Ø±ÙÙ‡ ğŸ˜¥','Ø³Ø§ÙƒÙ†Ù‡ Ø¨Ø§Ù„Ø¹Ù„Ø§ÙˆÙŠ ÙˆÙ†ØªÙ‡ Ø­Ø¯Ø¯ Ø¨Ø¹Ø¯ Ù„Ø³Ø§Ù†Ù‡Ø§ Ù„Ø³Ø§Ù† Ø¯Ù„Ø§Ù„Ù‡ ğŸ™„ğŸ¤','Ø§Ù… Ø³Ø­ÙˆØ±Ù‡ Ø³Ø­Ø±Øª Ø§Ø®ÙˆÙŠØ§ ÙˆØ¹Ù„ÙƒØªÙ‡ 6 Ø³Ù†ÙˆØ§Øª ğŸ¤•','Ù…Ø§Ø­Ø¨Ù‡Ø§ ğŸ™','Ø¨Ù„Ù‡ Ù‡Ø§ÙŠ Ø¬Ù‡Ø±Ù‡ ØªØ³Ø¦Ù„ Ø¹Ù„ÙŠÙ‡Ø§ ØŸ ','Ø¨Ø±Ø¨Ùƒ Ø¦Ù†ØªÙ‡ ÙˆØ§Ù„Ù„Ù‡ ÙØ§Ø±Øº ÙˆØ¨Ø·Ø±Ø§Ù† ÙˆÙ…Ø§Ø¹Ø¯Ùƒ Ø´ÙŠ ØªØ³ÙˆÙŠ Ø¬Ø§ÙŠ ØªØ³Ø¦Ù„ Ø¹ Ø¨Ù†Ø§Øª Ø§Ù„Ø¹Ø§Ù„Ù… ÙˆÙ„ÙŠ ÙŠÙ„Ù‡ ğŸ¼','ÙŠØ§Ø®ÙŠ Ø¨Ù†ÙŠÙ‡ Ø­Ø¨ÙˆØ¨Ù‡ Ø¨Ø³ Ù„Ø¨Ø¹Ø±Ùƒ Ù…Ø¹Ù…ÙŠ Ø¹Ù„ÙŠÙ‡Ø§ ØªØ´Ø±Ø¨ Ù‡ÙˆØ§ÙŠ ğŸ˜¹' } 
 send(msg.chat_id_,result.id_,''..Fun[math.random(#Fun)]..'') 
 end  
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
@@ -14063,7 +6680,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 database:incr(bot_id..'Pir3te:message_edit'..result.chat_id_..result.sender_user_id_)
 local Text = result.content_.text_
 if database:get(bot_id.."Pir3te:Lock:edit"..msg.chat_id_) and not Text and not BasicConstructor(result) then
-Reply_Status(result,result.sender_user_id_,"reply","?? ? ŞÇã ÈÇáÊÚÏíá Úáì ÇáãíÏíÇ")  
+Reply_Status(result,result.sender_user_id_,"reply","ğŸ“¬ â”‡ Ù‚Ø§Ù… Ø¨Ø§Ù„ØªØ¹Ø¯ÙŠÙ„ Ø¹Ù„Ù‰ Ø§Ù„Ù…ÙŠØ¯ÙŠØ§")  
 DeleteMessage(result.chat_id_,{[0] = data.message_id_}) 
 end
 local text = result.content_.text_
@@ -14148,7 +6765,7 @@ end
 if text then
 local Pir3te_Msg = database:get(bot_id.."Pir3te:Add:Filter:Rp2"..text..result.chat_id_)   
 if Pir3te_Msg then    
-Reply_Status(result,result.sender_user_id_,"reply","?? ? "..Pir3te_Msg)  
+Reply_Status(result,result.sender_user_id_,"reply","ğŸ“¬ â”‡ "..Pir3te_Msg)  
 DeleteMessage(result.chat_id_, {[0] = data.message_id_})     
 return false
 end
@@ -14193,7 +6810,7 @@ end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print('\27[30;32m»» Êã ÊÚÏíá åĞÇ ÇáäÓÎå ÈæÇÓØå ÍÓä ãÄíÏ ««\n\27[1;37m')
+print('\27[30;32mÂ»Â» ØªÙ… ØªØ¹Ø¯ÙŠÙ„ Ù‡Ø°Ø§ Ø§Ù„Ù†Ø³Ø®Ù‡ Ø¨ÙˆØ§Ø³Ø·Ù‡ Ø­Ø³Ù† Ù…Ø¤ÙŠØ¯ Â«Â«\n\27[1;37m')
 local list = database:smembers(bot_id..'Pir3te:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
