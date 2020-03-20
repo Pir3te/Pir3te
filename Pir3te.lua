@@ -5755,7 +5755,6 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-
 if text == 'الاوامر'  then
 Text = [[
 • هناك  5 اوامر لعرضها ✅
@@ -5770,6 +5769,7 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
+
 
 if text == 'م1'  then
 Text = [[
@@ -5998,7 +5998,6 @@ Text = [[
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
-
 
 end ---- Chat_Type = 'GroupBot' 
 end ---- Chat_Type = 'GroupBot' 
