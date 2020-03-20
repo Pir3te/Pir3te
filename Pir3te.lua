@@ -16,7 +16,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,853647243,725624600,665877797}
+List_Sudos = {Id_Sudo,725624600,665877797}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -5600,7 +5600,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n📂 ┇ اهلا بك في متجر ملفات قرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n📂 ┇ اهلا بك في متجر ملفات القرصان \n📮 ┇ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n📌 ┇ تدل علامة (✔) الملف مفعل\n".."📌 ┇ تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -5740,18 +5740,20 @@ send(msg.chat_id_, msg.id_, "☑ ┇ تم التحديث")
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
-🔰 اهلا بك في سورس القرصان   🔰
+🔰 اهلا بك في سورس القرصان  🔰
 
-🌐┇Pirate TEAM 
+🌐┇ [Pir3te TEAM](https://t.me/PIRATE_TE3M)
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📊┇ [Source Channel](https://t.me/pirate_te3m)
+📊┇ [Source Channel](https://t.me/PIRATE_TE3M)
 
-📁┇ [Source  Files](https://t.me/pirate_te3m)
+📋┇ [Pir3te Dev](https://t.me/PIRATE_TE3M)
 
-🌐┇ [DEV Pirate](https://t.me/Alhassan_Talib)
+📁┇ [Source  Files](https://t.me/PIRATE_TE3M)
+
+🌐┇ [DEV Pir3te](https://t.me/Alhassan_Talib)
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-📧┇ [TWS Pirate](https://t.me/PirateTe3mBot)
+📧┇ [TWS Pir3te ](https://t.me/PirateTe3mBot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -6816,7 +6818,7 @@ end
 end
 end
 if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
-print('\27[30;32m»» تم تعديل هذا النسخه بواسطه حسن مؤيد ««\n\27[1;37m')
+print('\27[30;32m»» تم تعديل النسخه بواسطه حسن مؤيد ««\n\27[1;37m')
 local list = database:smembers(bot_id..'Pir3te:UsersBot')  
 for k,v in pairs(list) do 
 tdcli_function({ID='GetChat',chat_id_ = v},function(arg,data) end,nil) 
