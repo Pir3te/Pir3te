@@ -16,7 +16,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,853647243,725624600,665877797}
+List_Sudos = {Id_Sudo,853647243,725624600,665877797,795634295}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -5744,9 +5744,9 @@ Text = [[
 
 🌐┇Pirate TEAM 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📊┇ [Source Channel](https://t.me/pirate_te3m)
+📊┇ [Source Channel](https://t.me/Pirate_Te3m/462)
 
-📁┇ [Source  Files](https://t.me/pirate_te3m)
+📁┇ [Source  Files](https://t.me/Pirate_Te3m/462)
 
 🌐┇ [DEV Pirate](https://t.me/Alhassan_Talib)
  
