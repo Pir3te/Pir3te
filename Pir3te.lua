@@ -16,7 +16,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,853647243,725624600,665877797,795634295}
+List_Sudos = {Id_Sudo,853647243,665877797,795634295}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
@@ -3587,12 +3587,12 @@ return false
 end  
 end
 if text == "اضف رد" and Owner(msg) then
-send(msg.chat_id_, msg.id_,"📫 ┇ ارسل الكلمه التري تريد اضافتها")
+send(msg.chat_id_, msg.id_,"📫 ┇ ارسل الكلمه تريد اضافتها")
 database:set(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text == "حذف رد" and Owner(msg) then
-send(msg.chat_id_, msg.id_,"📫 ┇ ارسل الكلمه التري تريد حذفها")
+send(msg.chat_id_, msg.id_,"📫 ┇ ارسل الكلمه لحذفها")
 database:set(bot_id.."Pir3te:Set:Manager:rd"..msg.sender_user_id_..":"..msg.chat_id_,"true2")
 return false 
 end
@@ -3778,12 +3778,12 @@ end
 end
 
 if text == "اضف رد للكل" and DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"📥 ┇  ارسل الكلمه التري تريد اضافتها")
+send(msg.chat_id_, msg.id_,"📥 ┇  ارسل الكلمه تريد اضافتها")
 database:set(bot_id.."Pir3te:Set:Rd"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
 if text == "حذف رد للكل" and DevPir3te(msg) then 
-send(msg.chat_id_, msg.id_,"📫 ┇  ارسل الكلمه التري تريد حذفها")
+send(msg.chat_id_, msg.id_,"📫 ┇  ارسل الكلمه لحذفها")
 database:set(bot_id.."Pir3te:Set:On"..msg.sender_user_id_..":"..msg.chat_id_,true)
 return false 
 end
